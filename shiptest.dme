@@ -3487,4 +3487,5 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "mod_celadon\mod_celadon.dme"
 // END_INCLUDE
