@@ -2,9 +2,9 @@
 
 // Start screens
 
-/datum/sprite_accessory/ipc_screens
-	icon = 'icons/mob/ipc_accessories.dmi'
-	color_src = EYECOLOR
+// /datum/sprite_accessory/ipc_screens
+// 	icon = 'icons/mob/ipc_accessories.dmi'
+// 	color_src = EYECOLOR
 
 /datum/sprite_accessory/ipc_screens/blank
 	name = "Blank Canvas"
