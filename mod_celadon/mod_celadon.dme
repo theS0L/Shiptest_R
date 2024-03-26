@@ -1,1 +1,1 @@
-#include "_tweaks/fullscreen.dm"
+#include "__tweaks/fullscreen.dm"
