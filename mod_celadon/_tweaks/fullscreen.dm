@@ -12,7 +12,6 @@
 	. = ..()
 	C.toggle_fullscreen()
 
-
 /client/verb/toggle_fullscreen()
 	set name = "Toggle Fullscreen"
 	set category = "OOC"
