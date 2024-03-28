@@ -102,7 +102,7 @@ While using this makes the system rely on OnFire, it still gives options for tim
 	var/mob/living/carbon/human/activator = null
 	var/mob/living/simple_animal/hostile/asteroid/elite/mychild = null
 	var/potentialspawns = list(/mob/living/simple_animal/hostile/asteroid/elite/broodmother,
-								// /mob/living/simple_animal/hostile/asteroid/elite/pandora,		//MOD_CELADON-CHANGES -> mod_celadon\updates\SlightPvEOverhaul\elite_pandora\pandora.dm || BROKEN NEED FIX
+								/mob/living/simple_animal/hostile/asteroid/elite/pandora,
 								/mob/living/simple_animal/hostile/asteroid/elite/legionnaire,
 								/mob/living/simple_animal/hostile/asteroid/elite/herald)
 

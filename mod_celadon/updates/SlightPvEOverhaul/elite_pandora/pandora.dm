@@ -5,7 +5,7 @@
 
 /**
  * # Pandora
- * Turned off in mod_celadon/mod_celadon.dme, because parent file pandora.dm is broken and need fix. or not, idk why it is creating errors.
+ * 
  * A box with a similar design to the Hierophant which trades large, single attacks for more frequent smaller ones.
  * As it's health gets lower, the time between it's attacks decrease.
  * It's attacks are as follows:
