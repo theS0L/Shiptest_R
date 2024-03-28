@@ -41,7 +41,7 @@
 	wreckage = /obj/structure/mecha_wreckage/gygax/white
 
 /obj/mecha/combat/gygax/proto
-	desc = "Прототип лёгкого боевого экзоскелета.."
+	desc = "Прототип лёгкого боевого экзоскелета."
 	name = "\improper Prototype Gygax"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "proto"
@@ -51,7 +51,7 @@
 	wreckage = /obj/structure/mecha_wreckage/gygax/proto
 
 /obj/mecha/combat/gygax/alt
-	desc = "Алтерьнативная модель лёгкого экзоскелета.."
+	desc = "Алтерьнативная модель лёгкого экзоскелета."
 	name = "\improper Gygax"
 	icon = 'mod_celadon/icons/mecha/mecha.dmi'
 	icon_state = "gygax_alt"
