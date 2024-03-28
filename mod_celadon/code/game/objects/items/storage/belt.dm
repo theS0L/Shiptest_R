@@ -12,7 +12,7 @@
 	supports_variations = VOX_VARIATION
 
 /obj/item/storage/belt/security/webbing/elisium/vest_black
-	name = "Полная разгрузка , черная."
+	name = "Полная разгрузка, черная."
 	desc = "Удобный комплект для ношения всего необходимого: боеприпасов, мелкого оружия и аксессуаров. Легкий, практичный и обеспечивает свободу движения в бою.Черного цвета."
 	icon_state = "vest_black"
 	item_state = "vest_black"
