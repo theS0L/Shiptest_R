@@ -88,7 +88,6 @@
 	source_mech = list(/obj/mecha/working/ripley/mkii)
 	result_mech = /obj/mecha/working/ripley/mkii/ripley_zairjah
 
-
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/aluminizer
 	name = "Aluminizer Conversion Kit"
 	desc = "Изготовленный на заказ комплект для переоборудования Рипли."
