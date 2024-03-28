@@ -1,3 +1,4 @@
+//Turned off in mod_celadon/mod_celadon.dme, because parent file pandora.dm is broken and need fix. or not, idk why it is creating errors.
 /////////////////Juggernaut///////////////
 /mob/living/simple_animal/hostile/construct/juggernaut/wizard
 	name = "Juggernaut"
