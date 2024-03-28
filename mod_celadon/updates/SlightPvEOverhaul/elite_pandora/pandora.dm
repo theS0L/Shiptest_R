@@ -5,7 +5,7 @@
 
 /**
  * # Pandora
- *
+ * BROKEN NEEED FIX
  * A box with a similar design to the Hierophant which trades large, single attacks for more frequent smaller ones.
  * As it's health gets lower, the time between it's attacks decrease.
  * It's attacks are as follows:
