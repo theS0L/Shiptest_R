@@ -5,6 +5,6 @@
 // Features
 #include "fullscreen/_fullscreen.dme"
 
-//Items
+// Objects
 #include "cargo_items/_cargo_items.dme"
 // NOT USED
