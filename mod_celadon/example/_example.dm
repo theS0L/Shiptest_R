@@ -1,10 +1,10 @@
 /datum/modpack/example
 	/// A string name for the modpack. Used for looking up other modpacks in init.
-	name = "Example modpack"
+	name = "Name"
 	/// A string desc for the modpack. Can be used for modpack verb list as description.
-	desc = "its useless"
+	desc = "Description"
 	/// A string with authors of this modpack.
-	author = "furior"
+	author = "Yata9arasu"
 
 /datum/modpack/example/pre_initialize()
 	. = ..()
