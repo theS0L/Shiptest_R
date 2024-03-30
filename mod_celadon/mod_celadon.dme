@@ -3,6 +3,5 @@
 // #include "example/_example.dme"
 
 // EXAMPLE
-#include "_tweaks/__tweaks.dme"
-#include "mod_celadon/_mod_celadon.dme"
+#include "ipc_chassis/_ipc_chassis.dme"
 // NOT USED
