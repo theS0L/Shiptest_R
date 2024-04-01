@@ -1,0 +1,4 @@
+#include "_celadon_suits.dm"
+
+#include "mod_celadon\celadon_suits\code\armor.dm"
+#include "mod_celadon\celadon_suits\code\syndicateoldsuit.dm"
