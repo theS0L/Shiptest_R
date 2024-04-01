@@ -1,6 +1,6 @@
 /datum/modpack/subtler
-	name = "Subtler Anti-ghost"
-	desc = "Subtler for anti-ghost activities"
+	name = "Сабтлер анти-гост"
+	desc = "Сабтлер для активности, что не будет доступна гостам для просмотра"
 	author = "Yata9arasu"
 
 /datum/modpack/subtler/pre_initialize()
