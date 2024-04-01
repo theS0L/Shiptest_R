@@ -1,10 +1,10 @@
 /datum/modpack/solgov_outfit
 	/// A string name for the modpack. Used for looking up other modpacks in init.
-	name = "Name"
+	name = "solgov outfit"
 	/// A string desc for the modpack. Can be used for modpack verb list as description.
-	desc = "Description"
+	desc = "Adds outfits for solgov"
 	/// A string with authors of this modpack.
-	author = "Yata9arasu"
+	author = "SnrBydlo"
 
 /datum/modpack/solgov_outfit/pre_initialize()
 	. = ..()
