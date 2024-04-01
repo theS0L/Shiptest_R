@@ -1,10 +1,10 @@
 /datum/modpack/radio_syndicate
 	/// A string name for the modpack. Used for looking up other modpacks in init.
-	name = "Name"
+	name = "syndicate radio mute"
 	/// A string desc for the modpack. Can be used for modpack verb list as description.
-	desc = "Description"
+	desc = "Deletes hearing all radios by syndicates"
 	/// A string with authors of this modpack.
-	author = "Yata9arasu"
+	author = "SnrBydlo"
 
 /datum/modpack/radio_syndicate/pre_initialize()
 	. = ..()
