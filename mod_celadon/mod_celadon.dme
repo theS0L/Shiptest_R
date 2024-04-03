@@ -1,7 +1,7 @@
 #include "_modpack.dm"
 #include "_modpacks.dm"
 // #include "example/_example.dme"
-
+#include "radio_syndicate/_radio_syndicate.dme"
 // Features
 #include "fullscreen/_fullscreen.dme"
 #include "subtler/_subtler.dme"
