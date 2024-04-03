@@ -2,3 +2,5 @@
 
 #include "mod_celadon\celadon_suits\code\armor.dm"
 #include "mod_celadon\celadon_suits\code\syndicateoldsuit.dm"
+#include "mod_celadon\celadon_suits\code\skimitar.dm"
+#include "mod_celadon\celadon_suits\code\ElysimMerch.dm"
