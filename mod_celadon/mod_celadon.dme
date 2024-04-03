@@ -7,6 +7,7 @@
 #include "fullscreen/_fullscreen.dme"
 #include "subtler/_subtler.dme"
 #include "radio_syndicate/_radio_syndicate.dme"
+#include "mod_celadon\solgov_outfit\_solgov_outfit.dme"
 
 
 // --- ICONS --- //
@@ -30,3 +31,4 @@
 	он всегда напоминает о своём существовании. Небольшая библиотека,
 	если так вообще можно выразиться.
  ---------------------------------------------------------------------*/
+ 
