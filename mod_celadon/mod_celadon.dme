@@ -5,12 +5,13 @@
 // #include "example/_example.dme"
 
 // --- MAINTENANCE --- //
+#include "__DEFINES/___DEFINES.dme"
 #include "fullscreen/_fullscreen.dme"
 #include "subtler/_subtler.dme"
 #include "radio_syndicate/_radio_syndicate.dme"
 #include "solgov_outfit/_solgov_outfit.dme"
 #include "ipc_chassis/_ipc_chassis.dme"
-
+#include "QoL/_QoL.dme"
 
 // --- ICONS --- //
 
