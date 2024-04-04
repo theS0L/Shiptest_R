@@ -1,4 +1,4 @@
-#define COMSIG_KB_CLIENT_FULLSCREEN_DOWN "keybinding_client_fullscreen_down"
+// #define COMSIG_KB_CLIENT_FULLSCREEN_DOWN "keybinding_client_fullscreen_down"		// Перенесён в mod_celadon\__DEFINES\code\__DEFINES\fullscreen.dm
 
 /client
 	var/fullscreen = FALSE
