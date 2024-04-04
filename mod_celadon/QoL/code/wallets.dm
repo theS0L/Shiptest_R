@@ -26,5 +26,5 @@
 		/obj/item/screwdriver,
 		/obj/item/stamp,
 		/obj/item/kitchen/knife/letter_opener,
-		/obj/item/key/ship),
+		/obj/item/key),
 		list(/obj/item/screwdriver/power))

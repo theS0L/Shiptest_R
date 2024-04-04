@@ -1,5 +1,4 @@
 #include "_QoL.dm"
-
 #include "code/wallets.dm"
 #include "code/binoculars.dm"
-#include "item/neck.dmi"
+#include "code/update_icons.dm"
