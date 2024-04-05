@@ -13,7 +13,7 @@
 
 
 // --- ICONS --- //
-
+#include "species_changes/_species_changes.dme"
 
 // --- OBJECTS --- //
 #include "cargo_items/_cargo_items.dme"
