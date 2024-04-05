@@ -3487,6 +3487,7 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "mod_celadon\loadout\code\eyewear.dm"
 // END_INCLUDE
 
 // CELADON
