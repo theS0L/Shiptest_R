@@ -17,13 +17,7 @@
 			for(var/obj/item/radio/R in GLOB.all_radios["[frequency]"])
 				if(R.can_receive(frequency, map_zones))
 					radios += R
-	// Syndicate radios cannot hear all the radios in da sector. The 1984 in a nutshell.
-		if (TRANSMISSION_RADIO)
-			// Only radios not currently in subspace mode
-			for(var/obj/item/radio/R in GLOB.all_radios["[frequency]"])
-				if(!R.subspace_transmission && R.can_receive(frequency, map_zones))
-					radios += R
-
+		//Syndicate cannot hear all radios УВЫ 1984
 		if (TRANSMISSION_SUPERSPACE)
 			// Only radios which are independent
 			for(var/obj/item/radio/R in GLOB.all_radios["[frequency]"])
