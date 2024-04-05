@@ -2,6 +2,5 @@
 
 #include "code\armor.dm"
 #include "code\skimitar.dm"
-#include "code\ElysimMerch.dm"
+#include "code\elysimmerch.dm"
 #include "code\clothing.dm"
-
