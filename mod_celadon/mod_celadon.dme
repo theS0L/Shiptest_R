@@ -1,6 +1,39 @@
 #include "_modpack.dm"
 #include "_modpacks.dm"
+
+
 // #include "example/_example.dme"
+
+// --- MAINTENANCE --- //
+#include "__DEFINES/___DEFINES.dme"
 #include "fullscreen/_fullscreen.dme"
+#include "subtler/_subtler.dme"
+#include "radio_syndicate/_radio_syndicate.dme"
+#include "solgov_outfit/_solgov_outfit.dme"
+#include "ipc_chassis/_ipc_chassis.dme"
+#include "QoL/_QoL.dme"
+
+// --- ICONS --- //
+#include "species_changes/_species_changes.dme"
+
+// --- OBJECTS --- //
+#include "cargo_items/_cargo_items.dme"
 #include "elysium_stuff/_elysium_stuff.dme"
 #include "celadon_old_syndicate_rigs/_celadon_old_syndicate_rigs.dme"
+
+// --- MISC --- //
+
+
+// --- CELADON --- //
+
+
+// --- UNUSED MODS --- //
+
+
+/*------------------------------------------------------------------
+	Почему UNUSED MODS стоит хранить?
+	Потому что никто не проверяет использование тех или иных файлов
+	в коде, и мод просто исчезнет из поля зрения, когда находясь здесь
+	он всегда напоминает о своём существовании. Небольшая библиотека,
+	если так вообще можно выразиться.
+ ---------------------------------------------------------------------*/
