@@ -1,7 +1,5 @@
 #include "_modpack.dm"
 #include "_modpacks.dm"
 // #include "example/_example.dme"
-#include "mod_celadon/celadon_suits/_celadon_suits.dme"
-// Features
-// #include "fullscreen/_fullscreen.dme"
-// NOT USED
+#include "celadon_suits/_celadon_suits.dme"
+#include "celadon_old_syndicate_rigs/_celadon_old_syndicate_rigs.dme"

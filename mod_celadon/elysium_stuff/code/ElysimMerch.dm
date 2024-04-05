@@ -1,18 +1,18 @@
 // Miscelanious
 
 /obj/structure/curtain/cloth/elysim 
-	icon = 'code/obj/Elysim_patriots.dmi'
+	icon = 'mod_celadon/celadon_suits/icons/obj/Elysim_patriots.dmi'
 	icon_type = "elysim_fancy"
 	icon_state = "elysim_fancy-open"
 
 /obj/item/banner/elysim
 	name = "Elysim banner"
 	desc = "The banner of Elysim, Strengthens the faith of those who deserve."
-	icon = "code/obj/Elysim_patriots.dmi"
+	icon = 'mod_celadon/celadon_suits/icons/obj/Elysim_patriots.dmi'
 	icon_state = "banner_elysim"
 	item_state = "banner_elysim"
-	lefthand_file = 'code/mob/elysim_banner_left.dmi'
-	righthand_file = 'code/mob/elysim_banner_right.dmi'
+	lefthand_file = 'mod_celadon/celadon_suits/icons/mob/elysim_banner_left.dmi'
+	righthand_file = 'mod_celadon/celadon_suits/icons/mob/elysim_banner_right.dmi'
 	warcry = "Glory to the nation!"
 
 /obj/item/storage/book/bible/koran
@@ -20,14 +20,6 @@
 	icon_state = "koran"
 	item_state = "koran"
 	deity_name = "Allah"
-
-/obj/item/bedsheet/elysim
-	name = "\improper Elysim bedsheet"
-	desc = "It has the Elysim logo on it ."
-	icon = 'code/obj/Elysim_patriots.dmi'
-	icon_state = "sheetelysim"
-	item_state = "sheetelysimback"
-	dream_messages = list("duty", "fatherland")
 
 // Posters
 
@@ -38,40 +30,39 @@
 
 /obj/structure/sign/poster/elysim/random
 	name = "random elysim poster"
-	icon = 'code/obj/Elysim_patriots.dmi'
+	icon = 'mod_celadon/celadon_suits/icons/obj/Elysim_patriots.dmi'
 	icon_state = "random_elysim"
 	never_random = TRUE
 	random_basetype = /obj/structure/sign/poster/elysim
-	random_type = POSTER_SUBTYPES
 
 /obj/structure/sign/poster/elysim/logo // \"Breathable, if it weren't so darn cold.\"
 	name = "Elysim"
 	desc = "Poster of Elysim Republic. The most common logo. Nothing noteworthy"
-	icon = 'code/obj/Elysim_patriots.dmi'
+	icon = 'mod_celadon/celadon_suits/icons/obj/Elysim_patriots.dmi'
 	icon_state = "poster-elysim"
 
 /obj/structure/sign/poster/elysim/protest
 	name = "DownSolFed"
 	desc = "Poster of Elysim Republic. \"This poster with its entire appearance screams No deals with traitors! \""
-	icon = 'code/obj/Elysim_patriots.dmi'
+	icon = 'mod_celadon/celadon_suits/icons/obj/Elysim_patriots.dmi'
 	icon_state = "poster-nosf"
 
 /obj/structure/sign/poster/elysim/sonofelysim
 	name = "Elysim Son"
 	desc = "Poster of the Elisima Republic depicting a stately man.The inscription reads \"God will direct his punishing hand! For the glory of Elysium!\""
-	icon = 'code/obj/Elysim_patriots.dmi'
+	icon = 'mod_celadon/celadon_suits/icons/obj/Elysim_patriots.dmi'
 	icon_state = "poster-son_elysim"
 
 /obj/structure/sign/poster/elysim/ak47
 	name = "No SolFed"
 	desc = "Poster of the Elysim Republic depicting iconic weapons from a previous era. \"Even a child is ready to protect his home!\""
-	icon = 'code/obj/Elysim_patriots.dmi'
+	icon = 'mod_celadon/celadon_suits/icons/obj/Elysim_patriots.dmi'
 	icon_state = "poster-ak47"
 
 /obj/structure/sign/elysim_wall_seal
 	name = "Seal of the Elysim government"
 	desc = "A seal emblazened with a gold trim depicting the burning star, sol."
-	icon = 'code/obj/Elysim_patriots.dmi'
+	icon = 'mod_celadon/celadon_suits/icons/obj/Elysim_patriots.dmi'
 	icon_state = "elysim-wall"
 	pixel_y = 27
 
@@ -79,6 +70,6 @@
 	name = "\improper Elysim logo sign"
 	sign_change_name = "Rebel Logo - Elysim"
 	desc = "A sign with the Elysim logo on it. Glory to Human race!"
-	icon = 'code/obj/Elysim_patriots.dmi'
+	icon = 'mod_celadon/celadon_suits/icons/obj/Elysim_patriots.dmi'
 	icon_state = "elysim"
 	is_editable = TRUE

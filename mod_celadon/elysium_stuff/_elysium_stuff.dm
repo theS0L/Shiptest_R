@@ -1,4 +1,4 @@
-/datum/modpack/celadon_suits
+/datum/modpack/elysium_stuff
 	/// A string name for the modpack. Used for looking up other modpacks in init.
 	name = "Name"
 	/// A string desc for the modpack. Can be used for modpack verb list as description.
@@ -6,11 +6,11 @@
 	/// A string with authors of this modpack.
 	author = "Yata9arasu"
 
-/datum/modpack/celadon_suits/pre_initialize()
+/datum/modpack/elysium_stuff/pre_initialize()
 	. = ..()
 
-/datum/modpack/celadon_suits/initialize()
+/datum/modpack/elysium_stuff/initialize()
 	. = ..()
 
-/datum/modpack/celadon_suits/post_initialize()
+/datum/modpack/elysium_stuff/post_initialize()
 	. = ..()
