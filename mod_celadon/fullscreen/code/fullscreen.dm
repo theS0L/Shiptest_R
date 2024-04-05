@@ -3,7 +3,6 @@
 /client
 	var/fullscreen = FALSE
 
-
 /datum/keybinding/client/t_fullscreen
 	hotkey_keys = list("F11")
 	name = "change_fullscreen"
