@@ -3,3 +3,4 @@
 #include "code/binoculars.dm"
 #include "code/update_icons.dm"
 #include "code/hotkeyfix.dm"
+#include "code/lightswitch.dm"
