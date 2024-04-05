@@ -1,8 +1,8 @@
 /datum/modpack/celadon_old_syndicate_rigs
 
-	name = "Вещи элизиума и старая броня синдиката"
+	name = "Старая броня синдиката"
 
-	desc = "Штуки элизиума и старая броня синдиката"
+	desc = "Старая броня синдиката"
 
 	author = "SnrBydlo"
 
