@@ -11,9 +11,9 @@
 #include "radio_syndicate/_radio_syndicate.dme"
 #include "solgov_outfit/_solgov_outfit.dme"
 #include "ipc_chassis/_ipc_chassis.dme"
-#include "QoL/_QoL.dme"
+#include "qoL/_qoL.dme"
 #include "loadout/_loadout.dme"
-#include "AccentsAdd/_AccentsAdd.dme"
+#include "accentsadd/_accentsadd.dme"
 
 // --- ICONS --- //
 #include "species_changes/_species_changes.dme"
