@@ -32,11 +32,11 @@
 		},
 		"Офицер вылетной группы": {
 			"outfit": "/datum/outfit/job/nanotrasen/security/lp",
-			"slots": 4
+			"slots": 3
 		},
-		"Судовой офицер": {
-			"outfit": "/datum/outfit/job/nanotrasen/security",
-			"slots": 2
+		"Военный хирург": {
+			"outfit": "/datum/outfit/job/nanotrasen/paramedic",
+			"slots": 1
 		}
 	},
 	"enabled": true
