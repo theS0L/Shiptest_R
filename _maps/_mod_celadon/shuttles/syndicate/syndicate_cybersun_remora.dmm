@@ -4258,6 +4258,7 @@
 	dir = 4
 	},
 /obj/structure/table/reinforced,
+/obj/item/borg/upgrade/syndicate,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "zN" = (
@@ -4447,7 +4448,6 @@
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/plasteel/twenty,
 /obj/item/book/manual/ripley_build_and_repair,
-/obj/item/borg/upgrade/transform/syndicate_medical,
 /turf/open/floor/plasteel/tech,
 /area/ship/science/robotics)
 "Qx" = (

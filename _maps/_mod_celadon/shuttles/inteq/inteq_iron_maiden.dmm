@@ -369,10 +369,6 @@
 	pixel_x = -5;
 	pixel_y = 8
 	},
-/obj/structure/closet/secure_closet/captains/vanguard/wall{
-	dir = 4;
-	pixel_x = -28
-	},
 /obj/item/spacecash/bundle/c500{
 	pixel_y = -10
 	},
@@ -381,7 +377,6 @@
 	},
 /obj/item/gun/energy/disabler,
 /obj/item/melee/baton/loaded,
-/obj/item/gun/ballistic/revolver/horizonx,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
@@ -599,9 +594,8 @@
 /obj/structure/closet/crate/secure/weapon{
 	req_access_txt = "147"
 	},
-/obj/item/ammo_box/a556_box,
-/obj/item/ammo_box/a556_box,
-/obj/item/ammo_box/a556_box/a856,
+/obj/item/ammo_box/a762_40/inteq,
+/obj/item/ammo_box/a762_40/inteq,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "xA" = (
@@ -781,9 +775,6 @@
 /obj/structure/closet/crate/secure/weapon{
 	req_access_txt = "147"
 	},
-/obj/item/ammo_box/magazine/p16/g36sh,
-/obj/item/ammo_box/magazine/p16/g36sh,
-/obj/item/ammo_box/magazine/p16/g36sh,
 /obj/item/ammo_box/magazine/smgm10mm,
 /obj/item/ammo_box/magazine/smgm10mm,
 /obj/item/ammo_box/magazine/skm_762_40,
@@ -1246,7 +1237,7 @@
 /obj/structure/closet/crate/secure/weapon{
 	req_access_txt = "147"
 	},
-/obj/item/gun/ballistic/automatic/assault/g36sh/inteq,
+/obj/item/gun/ballistic/automatic/assault/skm/inteq,
 /obj/item/gun/ballistic/automatic/assault/skm/inteq,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
@@ -1480,7 +1471,6 @@
 /obj/item/ammo_box/c10mm,
 /obj/item/ammo_box/c10mm,
 /obj/item/ammo_box/c10mm,
-/obj/item/ammo_box/a762_40,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "ZZ" = (

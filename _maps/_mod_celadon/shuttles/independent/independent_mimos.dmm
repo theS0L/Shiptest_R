@@ -505,7 +505,6 @@
 	name = "Главный вход";
 	pixel_x = 6
 	},
-/obj/item/paper/fluff/mimos_captain_pt2,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "eb" = (
@@ -1802,7 +1801,6 @@
 /obj/item/reagent_containers/syringe/contraband/methamphetamine,
 /obj/item/reagent_containers/syringe/contraband/morphine,
 /obj/item/reagent_containers/syringe/contraband/morphine,
-/obj/item/bong,
 /obj/structure/safe/floor,
 /obj/item/beacon{
 	icon_state = "bluebeacon";
@@ -1976,8 +1974,6 @@
 /obj/item/clothing/mask/gas/mime,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/eva/evamime,
-/obj/item/clothing/head/helmet/space/eva/evamime,
 /turf/open/floor/plasteel/vaporwave{
 	icon_state = "floor"
 	},
@@ -2464,8 +2460,6 @@
 	pixel_y = 10;
 	pixel_x = -20
 	},
-/obj/item/clothing/suit/space/eva/evamime,
-/obj/item/clothing/head/helmet/space/eva/evamime,
 /obj/machinery/light/directional/west{
 	pixel_x = -38
 	},
@@ -2475,6 +2469,8 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/item/clothing/head/helmet/space/eva,
+/obj/item/clothing/suit/space/eva,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "BH" = (
@@ -2893,7 +2889,6 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /obj/item/lighter/clockwork,
 /obj/item/spacecash/bundle/c500,
-/obj/item/paper/fluff/mimos_captain_pt3,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "FG" = (
@@ -3203,8 +3198,6 @@
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/mask/gas/mime,
-/obj/item/clothing/suit/space/eva/evamime,
-/obj/item/clothing/head/helmet/space/eva/evamime,
 /turf/open/floor/plasteel/vaporwave{
 	icon_state = "floor"
 	},
@@ -3717,8 +3710,6 @@
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/mask/gas/mime,
 /obj/item/tank/internals/emergency_oxygen/double,
-/obj/item/clothing/suit/space/eva/evamime,
-/obj/item/clothing/head/helmet/space/eva/evamime,
 /turf/open/floor/plasteel/vaporwave{
 	icon_state = "floor"
 	},
@@ -4135,8 +4126,6 @@
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/mask/gas/mime,
-/obj/item/clothing/suit/space/eva/evamime,
-/obj/item/clothing/head/helmet/space/eva/evamime,
 /turf/open/floor/plasteel/vaporwave{
 	icon_state = "floor"
 	},
@@ -4182,10 +4171,6 @@
 /area/ship/security)
 "Yf" = (
 /obj/structure/table/wood/bar,
-/obj/item/bong/lungbuster{
-	pixel_y = 8;
-	pixel_x = -8
-	},
 /obj/item/reagent_containers/food/snacks/grown/cannabis{
 	pixel_x = 10;
 	pixel_y = 4

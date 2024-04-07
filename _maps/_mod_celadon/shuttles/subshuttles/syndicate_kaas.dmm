@@ -24,6 +24,7 @@
 /area/ship/medical)
 "aB" = (
 /obj/structure/table/wood/fancy/royalblack,
+/obj/item/folder/documents/syndicate/red,
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "aP" = (
@@ -273,10 +274,6 @@
 	name = "Captain rubber stamp";
 	pixel_x = 10;
 	pixel_y = 9
-	},
-/obj/item/folder/syndicate/red{
-	pixel_x = -10;
-	pixel_y = 6
 	},
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)

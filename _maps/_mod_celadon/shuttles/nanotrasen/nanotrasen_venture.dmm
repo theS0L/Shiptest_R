@@ -232,7 +232,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/shuttle/engine/electric/tech1{
+/obj/machinery/power/shuttle/engine/electric{
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -608,6 +608,22 @@
 /obj/effect/spawner/lootdrop/donkpockets,
 /turf/open/floor/plating,
 /area/ship/bridge)
+"PO" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
+/obj/machinery/door/window/northleft{
+	dir = 4
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "venture_eng"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "PY" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -701,7 +717,7 @@ Sc
 nl
 nl
 nl
-io
+PO
 io
 nl
 nl
