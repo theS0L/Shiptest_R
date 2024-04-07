@@ -2,4 +2,7 @@
 
 // Система оповещений ролей в Discord
 #include "code/_components.dm"
+
+// Префиксы для кораблей и оутфиты для ролей
 #include "code/_names.dm"
+#include "code/_outfits.dm"
