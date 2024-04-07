@@ -6,6 +6,7 @@
 
 // --- MAINTENANCE --- //
 #include "__DEFINES/___DEFINES.dme"
+#include "_components/__components.dme"
 #include "fullscreen/_fullscreen.dme"
 #include "subtler/_subtler.dme"
 #include "radio_syndicate/_radio_syndicate.dme"

@@ -141,7 +141,7 @@ SUBSYSTEM_DEF(ticker)
 
 	return ..()
 
-/datum/controller/subsystem/ticker/fire()
+/* /datum/controller/subsystem/ticker/fire()		Transfer => mod_celadon/_components/_components.dm
 	switch(current_state)
 		if(GAME_STATE_STARTUP)
 			/*if(Master.initializations_finished_with_no_players_logged_in)		WS Edit - Countdown after init
@@ -149,7 +149,7 @@ SUBSYSTEM_DEF(ticker)
 			for(var/client/C in GLOB.clients)
 				window_flash(C, ignorepref = TRUE) //let them know lobby has opened up.
 			to_chat(world, "<span class='boldnotice'>Welcome to [station_name()]!</span>")
-			send2chat("<@&1100202952943218738>, запущен новый раунд на " + CONFIG_GET(string/servername) + "!", CONFIG_GET(string/chat_announce_new_game))
+			send2chat("New round starting!", CONFIG_GET(string/chat_announce_new_game))
 			SSredbot.send_discord_message("ooc", "**A new round is beginning.**")
 			current_state = GAME_STATE_PREGAME
 			//Everyone who wants to be an observer is now spawned
@@ -201,7 +201,7 @@ SUBSYSTEM_DEF(ticker)
 				toggle_ooc(TRUE) // Turn it on
 				toggle_dooc(TRUE)
 				declare_completion(force_ending)
-				Master.SetRunLevel(RUNLEVEL_POSTGAME)
+				Master.SetRunLevel(RUNLEVEL_POSTGAME) */
 
 
 /datum/controller/subsystem/ticker/proc/setup()
