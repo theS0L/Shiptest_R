@@ -109,6 +109,7 @@
 /area/ship/cargo)
 "ds" = (
 /obj/structure/firelock_frame,
+/obj/structure/glowshroom/single,
 /turf/open/floor/plating,
 /area/ship/external)
 "dw" = (
