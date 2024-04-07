@@ -14,4 +14,4 @@
 	#endif
 #endif
 
-#include "map_filesCeladon\generic\blank.dmm"
+#include "_mod_celadon\map_files\generic\blank.dmm"
