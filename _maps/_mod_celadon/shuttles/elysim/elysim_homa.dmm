@@ -108,8 +108,8 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "ds" = (
-/obj/structure/glowshroom,
 /obj/structure/firelock_frame,
+/obj/structure/glowshroom/single,
 /turf/open/floor/plating,
 /area/ship/external)
 "dw" = (
@@ -164,15 +164,15 @@
 /area/ship/cargo)
 "fp" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/assault/skm/inteq{
+/obj/item/gun/ballistic/automatic/assault/skm{
 	pixel_x = 2;
 	pixel_y = -8
 	},
-/obj/item/gun/ballistic/automatic/assault/skm/inteq{
+/obj/item/gun/ballistic/automatic/assault/skm{
 	pixel_x = 1;
 	pixel_y = 9
 	},
-/obj/item/gun/ballistic/automatic/assault/skm/inteq{
+/obj/item/gun/ballistic/automatic/assault/skm{
 	pixel_x = -5
 	},
 /turf/open/floor/plating,
@@ -286,9 +286,6 @@
 /area/ship/bridge)
 "ij" = (
 /obj/structure/chair/sofa/right,
-/obj/item/bong/lungbuster{
-	pixel_x = -11
-	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
 "ja" = (
@@ -459,7 +456,7 @@
 /area/ship/cargo)
 "nl" = (
 /obj/structure/rack,
-/obj/item/ammo_box/a762_40/inteq{
+/obj/item/ammo_box/a762_40{
 	pixel_x = -5;
 	pixel_y = -3
 	},
@@ -495,7 +492,7 @@
 	pixel_x = 11;
 	pixel_y = 7
 	},
-/obj/item/gun/ballistic/automatic/assault/skm/inteq{
+/obj/item/gun/ballistic/automatic/assault/skm{
 	pixel_x = -16;
 	pixel_y = -2
 	},
@@ -869,9 +866,6 @@
 /obj/item/toy/cards/deck/cas{
 	pixel_y = 8
 	},
-/obj/item/bong{
-	pixel_x = -10
-	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
 "zB" = (
@@ -1057,6 +1051,9 @@
 /obj/item/ammo_casing/a762_40,
 /obj/item/ammo_casing/a762_40{
 	pixel_x = 4
+	},
+/obj/item/gun/ballistic/automatic/assault/skm{
+	pixel_y = -10
 	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
@@ -1542,10 +1539,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gun/ballistic/automatic/assault/skm/inteq{
-	pixel_x = -5;
-	pixel_y = 20
-	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
 "TN" = (
