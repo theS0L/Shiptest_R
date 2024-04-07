@@ -338,7 +338,6 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/security/solgov,
 /obj/effect/turf_decal/box/red/corners{
 	dir = 4
 	},
@@ -479,7 +478,6 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/security/solgov,
 /obj/effect/turf_decal/box/red/corners,
 /obj/effect/turf_decal/box/red/corners{
 	dir = 4
@@ -902,10 +900,6 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 5
 	},
-/obj/structure/closet/secure_closet/security/solgov/pilot/wall{
-	dir = 8;
-	pixel_x = 28
-	},
 /turf/open/floor/plasteel/white,
 /area/ship/science/robotics)
 "lX" = (
@@ -1141,10 +1135,6 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/security/solgov/pilot/wall{
-	dir = 8;
-	pixel_x = 28
-	},
 /turf/open/floor/plasteel/white,
 /area/ship/science/robotics)
 "pr" = (
@@ -1171,10 +1161,6 @@
 "pV" = (
 /obj/structure/cable{
 	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/techfloor/line,
-/obj/effect/turf_decal/techfloor/line{
-	dir = 1
 	},
 /turf/open/floor/plasteel/stairs{
 	icon = 'icons/obj/stairs.dmi';
@@ -1396,12 +1382,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "1-2"
-	},
-/obj/effect/turf_decal/techfloor/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/techfloor/line{
-	dir = 8
 	},
 /turf/open/floor/plasteel/stairs{
 	icon = 'icons/obj/stairs.dmi'
@@ -2796,12 +2776,12 @@
 /turf/open/floor/plasteel/white,
 /area/ship/science/robotics)
 "FW" = (
-/obj/structure/closet/secure_closet/engineering_personal/solgov,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/structure/closet/secure_closet/engineering_personal,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "Gf" = (
@@ -2849,12 +2829,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "1-2"
-	},
-/obj/effect/turf_decal/techfloor/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/techfloor/line{
-	dir = 8
 	},
 /turf/open/floor/plasteel/stairs{
 	icon = 'icons/obj/stairs.dmi';
@@ -3646,7 +3620,6 @@
 /obj/structure/railing/wood{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/captains/solgov,
 /obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/ship/bridge)
