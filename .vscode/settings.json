@@ -66,6 +66,5 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true
 	},
-	"editor.guides.indentation": true,
-	"commentTranslate.targetLanguage": "ru"
+	"editor.guides.indentation": true
 }
