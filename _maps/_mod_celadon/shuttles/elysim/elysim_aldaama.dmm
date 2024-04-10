@@ -68,6 +68,10 @@
 	pixel_y = 12;
 	pixel_x = 2
 	},
+/obj/machinery/button/door{
+	id = "tesla";
+	pixel_y = 24
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "as" = (
@@ -294,11 +298,11 @@
 "cy" = (
 /obj/structure/grille,
 /obj/effect/decal/cleanable/glass,
+/obj/structure/window/reinforced/fulltile,
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 4;
-	id = 35
+	id = "tesla"
 	},
-/obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "cC" = (
@@ -524,6 +528,12 @@
 /area/ship/construction)
 "fF" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/door{
+	id = "eng2";
+	pixel_y = 1;
+	pixel_x = -25;
+	dir = 4
+	},
 /turf/open/floor/plating{
 	icon_state = "foam_plating"
 	},
@@ -795,7 +805,7 @@
 /obj/structure/window/reinforced/fulltile,
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 4;
-	id = 35
+	id = "tesla"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -2420,7 +2430,7 @@
 	},
 /obj/machinery/door/poddoor/shutters{
 	dir = 8;
-	id = "eng1"
+	id = "eng2"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
@@ -2707,7 +2717,7 @@
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 4;
-	id = 35
+	id = "tesla"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -2975,11 +2985,11 @@
 "If" = (
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/glass,
+/obj/structure/window/reinforced/fulltile,
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 4;
-	id = 35
+	id = "tesla"
 	},
-/obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Il" = (
@@ -2993,11 +3003,11 @@
 	dir = 6
 	},
 /obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 4;
-	id = 35
+	id = "tesla"
 	},
-/obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "ID" = (
