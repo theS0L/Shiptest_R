@@ -2153,7 +2153,7 @@
 	},
 /obj/effect/turf_decal/industrial/outline/red,
 /obj/item/radio/intercom/directional/north,
-/obj/machinery/computer/card,
+/obj/machinery/modular_computer/console/preset/command,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 
