@@ -11,6 +11,13 @@
 /obj/item/reagent_containers/food/snacks/pancakes{
 	pixel_y = 9
 	},
+/obj/item/reagent_containers/food/drinks/bottle/sake{
+	pixel_x = 4;
+	pixel_y = 21;
+	name = "Fluffy Tail Sake";
+	icon_state = "sakebottle_k";
+	desc = "On the bottle is a picture of a kitsune with nine touchable tails."
+	},
 /obj/item/reagent_containers/food/drinks/drinkingglass{
 	pixel_x = -7;
 	pixel_y = 16
@@ -748,10 +755,6 @@
 "qN" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/reagent_containers/food/drinks/bottle/sake{
-	pixel_x = 4;
-	pixel_y = -11
-	},
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew)
 "ro" = (
@@ -810,6 +813,9 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "rO" = (
@@ -835,10 +841,10 @@
 /area/ship/crew/office)
 "sc" = (
 /obj/effect/turf_decal/box/red,
-/obj/machinery/camera,
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
 	dir = 1
 	},
+/obj/machinery/camera/autoname,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "sF" = (
@@ -930,7 +936,7 @@
 	},
 /obj/machinery/light_switch{
 	dir = 1;
-	pixel_x = 13;
+	pixel_x = 10;
 	pixel_y = -20
 	},
 /turf/open/floor/plasteel/white,
@@ -1012,8 +1018,12 @@
 /obj/machinery/button/shieldwallgen{
 	id = "scholo";
 	name = "Holofield Controls";
-	pixel_x = -11;
+	pixel_x = -10;
 	pixel_y = 22
+	},
+/obj/machinery/light_switch{
+	pixel_y = 23;
+	pixel_x = 6
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
