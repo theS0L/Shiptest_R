@@ -1409,10 +1409,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/medical)
 "Hf" = (
-/obj/effect/decal/cleanable/blood/gibs/down{
-	color = #89dfff;
-	light_color = #89dfff
-	},
+/obj/effect/decal/cleanable/blood/gibs/down,
 /turf/open/floor/plasteel/tech,
 /area/ship/medical)
 "Hk" = (
