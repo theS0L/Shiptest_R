@@ -2398,7 +2398,7 @@
 /area/ship/crew/hydroponics)
 "XJ" = (
 /obj/machinery/door/poddoor/preopen{
-	id = sssss;
+	id = "medwindows";
 	name = "Window Blast Door";
 	dir = 4
 	},
