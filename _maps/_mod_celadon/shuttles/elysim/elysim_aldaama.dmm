@@ -411,14 +411,14 @@
 /turf/open/floor/wood,
 /area/ship/security)
 "dA" = (
+/obj/structure/cable/yellow,
 /obj/structure/cable/yellow{
-	icon_state = "2-4"
+	icon_state = "1-2"
 	},
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
 	},
-/turf/open/floor/plating,
-/area/space)
+/area/ship/external)
 "dG" = (
 /obj/machinery/power/terminal{
 	dir = 8
@@ -764,14 +764,13 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/security/dock)
 "if" = (
+/obj/machinery/power/solar,
 /obj/structure/cable/yellow,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
-	},
-/area/space)
+/turf/open/floor/plating,
+/area/ship/external)
 "ih" = (
 /obj/machinery/telecomms/server,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1305,10 +1304,16 @@
 /area/ship/bridge)
 "nl" = (
 /obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating,
-/area/space)
+/area/ship/external)
 "np" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -2222,7 +2227,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating,
-/area/space)
+/area/ship/external)
 "wU" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table,
@@ -3185,16 +3190,23 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "HD" = (
-/obj/machinery/power/solar,
 /obj/structure/cable/yellow,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating,
-/area/space)
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/ship/external)
 "HE" = (
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plating,
-/area/space)
+/area/ship/external)
 "HL" = (
 /obj/machinery/light/directional/west,
 /obj/structure/cable{
@@ -3340,16 +3352,8 @@
 /turf/open/floor/carpet/green,
 /area/ship/security/armory)
 "Ko" = (
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
-	},
-/area/space)
+/turf/open/floor/plating,
+/area/ship/external)
 "Kp" = (
 /obj/effect/turf_decal/industrial/warning,
 /obj/effect/turf_decal/industrial/warning{
@@ -4148,16 +4152,10 @@
 /area/ship/crew/dorm)
 "ST" = (
 /obj/structure/cable/yellow{
-	icon_state = "2-4"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating,
-/area/space)
+/area/ship/external)
 "SU" = (
 /turf/closed/wall,
 /area/ship/security/armory)
@@ -4381,14 +4379,16 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "VC" = (
-/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating{
-	icon_state = "platingdmg1"
+	icon_state = "platingdmg3"
 	},
-/area/space)
+/area/ship/external)
 "VJ" = (
 /obj/structure/rack,
 /obj/item/ammo_box/magazine/skm_762_40,
@@ -4787,12 +4787,6 @@ uP
 uP
 uP
 uP
-uP
-uP
-uP
-uP
-uP
-uP
 "}
 (2,1,1) = {"
 uP
@@ -4812,18 +4806,12 @@ uP
 uP
 uP
 uP
+Ko
 uP
 uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
+VU
+VU
+VU
 uP
 uP
 uP
@@ -4847,26 +4835,20 @@ uP
 uP
 uP
 uP
+LC
+FZ
+VU
 uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
+wJ
+VC
+wJ
 HE
-uP
+if
+dA
+if
 uP
 VU
-VU
-VU
-uP
+lB
 uP
 uP
 uP
@@ -4885,54 +4867,6 @@ uP
 uP
 uP
 uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-LC
-FZ
-VU
-uP
-wJ
-Ko
-wJ
-dA
-HD
-VC
-HD
-uP
-VU
-lB
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-"}
-(5,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
 lu
 PR
 lu
@@ -4944,7 +4878,7 @@ VU
 VU
 VU
 uP
-nl
+ST
 uP
 uP
 VU
@@ -4962,13 +4896,7 @@ uP
 uP
 uP
 "}
-(6,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(5,1,1) = {"
 uP
 VU
 VU
@@ -4986,10 +4914,10 @@ VU
 wJ
 wJ
 wJ
-ST
+nl
+HD
 if
-HD
-HD
+if
 VU
 vt
 vK
@@ -5004,13 +4932,7 @@ uP
 uP
 uP
 "}
-(7,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(6,1,1) = {"
 VU
 VU
 Sw
@@ -5028,7 +4950,7 @@ VU
 FZ
 uP
 VU
-nl
+ST
 uP
 uP
 FZ
@@ -5046,13 +4968,7 @@ uP
 uP
 uP
 "}
-(8,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(7,1,1) = {"
 uP
 VU
 Sw
@@ -5088,13 +5004,7 @@ uP
 uP
 uP
 "}
-(9,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(8,1,1) = {"
 uP
 FZ
 tF
@@ -5130,13 +5040,7 @@ FZ
 uP
 uP
 "}
-(10,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(9,1,1) = {"
 uP
 uP
 im
@@ -5172,13 +5076,7 @@ VU
 uP
 uP
 "}
-(11,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(10,1,1) = {"
 uP
 uP
 Sw
@@ -5214,13 +5112,7 @@ VU
 VU
 uP
 "}
-(12,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(11,1,1) = {"
 uP
 uP
 Sw
@@ -5256,13 +5148,7 @@ VU
 uP
 uP
 "}
-(13,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(12,1,1) = {"
 uP
 bu
 tF
@@ -5298,13 +5184,7 @@ VU
 uP
 uP
 "}
-(14,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(13,1,1) = {"
 uP
 FZ
 tF
@@ -5340,13 +5220,7 @@ uP
 uP
 uP
 "}
-(15,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(14,1,1) = {"
 uP
 VU
 im
@@ -5382,13 +5256,7 @@ Eb
 uP
 uP
 "}
-(16,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(15,1,1) = {"
 uP
 VU
 Sw
@@ -5424,13 +5292,7 @@ uP
 uP
 uP
 "}
-(17,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(16,1,1) = {"
 VU
 VU
 tF
@@ -5466,13 +5328,7 @@ uP
 uP
 uP
 "}
-(18,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(17,1,1) = {"
 FZ
 Nb
 iq
@@ -5508,13 +5364,7 @@ uP
 uP
 uP
 "}
-(19,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(18,1,1) = {"
 Nb
 iq
 SL
@@ -5550,13 +5400,7 @@ uP
 uP
 uP
 "}
-(20,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(19,1,1) = {"
 SU
 Qp
 rL
@@ -5592,13 +5436,7 @@ cT
 uP
 uP
 "}
-(21,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(20,1,1) = {"
 Ly
 zc
 JD
@@ -5634,13 +5472,7 @@ cT
 cT
 uP
 "}
-(22,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(21,1,1) = {"
 Ly
 Ly
 OQ
@@ -5676,13 +5508,7 @@ Tg
 Pk
 uP
 "}
-(23,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(22,1,1) = {"
 Nb
 JQ
 jO
@@ -5718,13 +5544,7 @@ EA
 cT
 uP
 "}
-(24,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(23,1,1) = {"
 Ly
 Rh
 oz
@@ -5760,13 +5580,7 @@ Ua
 cT
 uP
 "}
-(25,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(24,1,1) = {"
 iq
 gM
 dR
@@ -5802,13 +5616,7 @@ Xq
 Pk
 uP
 "}
-(26,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(25,1,1) = {"
 iq
 jN
 Nb
@@ -5844,13 +5652,7 @@ Dn
 Pk
 VU
 "}
-(27,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(26,1,1) = {"
 Fu
 iq
 iq
@@ -5886,13 +5688,7 @@ SE
 Pk
 VU
 "}
-(28,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(27,1,1) = {"
 uP
 uP
 uP
@@ -5928,13 +5724,7 @@ wH
 vv
 VU
 "}
-(29,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(28,1,1) = {"
 uP
 uP
 uP
@@ -5970,13 +5760,7 @@ wU
 vv
 uP
 "}
-(30,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(29,1,1) = {"
 uP
 uP
 uP
@@ -6012,13 +5796,7 @@ vv
 vv
 uP
 "}
-(31,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(30,1,1) = {"
 uP
 uP
 uP
@@ -6054,13 +5832,7 @@ uP
 uP
 uP
 "}
-(32,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(31,1,1) = {"
 uP
 uP
 uP
@@ -6096,13 +5868,7 @@ uP
 uP
 uP
 "}
-(33,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(32,1,1) = {"
 uP
 uP
 uP
@@ -6138,13 +5904,7 @@ uP
 uP
 uP
 "}
-(34,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(33,1,1) = {"
 uP
 uP
 uP
@@ -6180,13 +5940,7 @@ uP
 uP
 uP
 "}
-(35,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(34,1,1) = {"
 uP
 uP
 uP
@@ -6222,13 +5976,7 @@ uP
 uP
 uP
 "}
-(36,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
+(35,1,1) = {"
 uP
 uP
 uP
@@ -6264,6 +6012,42 @@ uP
 uP
 uP
 "}
+(36,1,1) = {"
+uP
+uP
+uP
+uP
+uP
+uP
+uP
+uP
+hM
+hM
+VU
+li
+FZ
+ng
+VU
+hM
+hM
+FZ
+li
+hM
+hM
+FZ
+uP
+uP
+uP
+uP
+uP
+uP
+uP
+uP
+uP
+uP
+uP
+uP
+"}
 (37,1,1) = {"
 uP
 uP
@@ -6274,54 +6058,6 @@ uP
 uP
 uP
 uP
-uP
-uP
-uP
-uP
-uP
-hM
-hM
-VU
-li
-FZ
-ng
-VU
-hM
-hM
-FZ
-li
-hM
-hM
-FZ
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-"}
-(38,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
 FZ
 FZ
 ng
@@ -6333,90 +6069,6 @@ VU
 VU
 ng
 FZ
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-"}
-(39,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-"}
-(40,1,1) = {"
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
-uP
 uP
 uP
 uP
