@@ -56,8 +56,8 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "bE" = (
-/obj/item/shard,
 /obj/machinery/airalarm/directional/south,
+/obj/item/shard,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "bO" = (
@@ -68,6 +68,7 @@
 /obj/machinery/light/small/directional/north,
 /obj/structure/table_frame,
 /obj/effect/decal/cleanable/sprayweb,
+/obj/item/shard,
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
 "cy" = (
@@ -435,7 +436,8 @@
 /turf/open/floor/carpet/red/airless,
 /area/ship/bridge)
 "mS" = (
-/obj/machinery/atmospherics/components/unary/tank/toxins,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible,
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
 /area/ship/crew)
 "mU" = (
@@ -628,6 +630,14 @@
 /obj/item/ammo_box/magazine/skm_762_40{
 	pixel_x = -8
 	},
+/obj/item/ammo_box/magazine/skm_762_40{
+	pixel_x = -1;
+	pixel_y = 7
+	},
+/obj/item/ammo_box/magazine/skm_762_40{
+	pixel_x = -1;
+	pixel_y = -4
+	},
 /turf/open/floor/plasteel,
 /area/ship/security/armory)
 "sE" = (
@@ -771,8 +781,8 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/item/shard,
 /obj/structure/fluff/clockwork/alloy_shards,
+/obj/item/shard,
 /turf/open/floor/plating,
 /area/ship/external)
 "xw" = (
@@ -972,10 +982,6 @@
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/carpet/red/airless,
 /area/ship/bridge)
-"Cm" = (
-/obj/item/shard,
-/turf/template_noop,
-/area/template_noop)
 "Ct" = (
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /obj/machinery/light/directional/west,
@@ -1831,7 +1837,7 @@ SR
 SR
 SR
 SR
-Cm
+SR
 KZ
 WZ
 Mc
