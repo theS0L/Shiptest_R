@@ -240,7 +240,7 @@
 	signal.send_to_receivers()
 	return
 
-/* /datum/overmap/outpost/post_undocked(datum/overmap/ship/controlled/dock_requester)
+/datum/overmap/outpost/post_undocked(datum/overmap/ship/controlled/dock_requester)
 	// just get an arbitrary hangar dock. for the message source. at this point,
 	// we don't have enough information to know which hangar the ship was docked to.
 	// however, so long as the speaker is an atom on a virtual_level in the right mapzone, we should be good.
@@ -249,11 +249,11 @@
 	for(var/datum/hangar_shaft/shaft as anything in shaft_datums)
 		if(length(shaft.hangar_docks))
 			message_src = shaft.hangar_docks[1]
-			break */
+			break
 
 	// Prepare and send a radio message about the undock over Common, in Common.
 	// See outpost post_docked() for some notes on what we're doing here.
-/* 	var/atom/movable/virtualspeaker/v_speaker = new(null, token, null)		// Вырезано так как создаёт рантаймы при удалении корабля через манипулятор (омг)
+	var/atom/movable/virtualspeaker/v_speaker = new(null, token, null)
 	var/datum/signal/subspace/vocal/signal = new(
 		message_src,
 		FREQ_COMMON,
@@ -263,7 +263,7 @@
 		list(SPAN_ROBOT),
 		list(MODE_CUSTOM_SAY_EMOTE = "coldly states")
 	)
-	signal.send_to_receivers() */
+	signal.send_to_receivers()
 
 /datum/overmap/outpost/proc/get_hangar_template(obj/docking_port/mobile/request_port)
 	RETURN_TYPE(/datum/map_template/outpost)
