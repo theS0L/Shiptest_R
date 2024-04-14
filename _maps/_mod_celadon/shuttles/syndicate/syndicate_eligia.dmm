@@ -219,9 +219,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "dK" = (
@@ -387,15 +384,6 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/carpet/blue,
 /area/ship/medical)
-"hl" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plasteel/dark,
-/area/ship/crew)
 "hE" = (
 /obj/item/radio/intercom/directional/east,
 /obj/effect/turf_decal/corner/transparent/purple/mono,
@@ -450,10 +438,10 @@
 /obj/machinery/firealarm/directional/east,
 /obj/machinery/airalarm/directional/south,
 /obj/effect/turf_decal/industrial/outline,
-/obj/machinery/atmospherics/components/unary/tank/air{
-	dir = 8;
-	piping_layer = 2
+/obj/machinery/atmospherics/components/unary/portables_connector/layer2{
+	dir = 8
 	},
+/obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/starboard)
 "iB" = (
@@ -1030,7 +1018,9 @@
 /area/ship/cargo)
 "rC" = (
 /obj/effect/turf_decal/syndicateemblem/bottom/right,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "rZ" = (
@@ -1711,9 +1701,6 @@
 /obj/machinery/light/directional/south,
 /obj/item/clothing/suit/space/hardsuit/syndi/hl,
 /obj/item/clothing/mask/gas/syndicate,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 1
-	},
 /obj/effect/turf_decal/industrial/traffic/full,
 /obj/machinery/suit_storage_unit/inherit/industrial{
 	req_access = list(11)
@@ -1788,9 +1775,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 10
-	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "El" = (
@@ -1832,7 +1816,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Fa" = (
@@ -2328,7 +2314,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "NQ" = (
@@ -2416,9 +2404,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/science)
 "Pv" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
 /obj/machinery/door/airlock/hatch{
 	dir = 4;
 	name = "Medbay"
@@ -3330,7 +3315,7 @@ tQ
 Mw
 Uc
 Yk
-hl
+Sd
 GO
 nw
 wA
