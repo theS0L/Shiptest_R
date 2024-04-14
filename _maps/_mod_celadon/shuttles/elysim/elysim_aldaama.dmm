@@ -365,7 +365,7 @@
 	},
 /obj/structure/closet/secure_closet/engineering_electrical{
 	req_access = null;
-	req_access_txt = "11";
+	req_access_txt = null;
 	req_one_access = null
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -842,7 +842,7 @@
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
 	normalspeed = 0;
-	req_access_txt = "10"
+	req_access_txt = null
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2795,7 +2795,7 @@
 	},
 /obj/structure/closet/secure_closet/engineering_welding{
 	req_access = null;
-	req_access_txt = "11";
+	req_access_txt = null;
 	req_one_access = null
 	},
 /obj/machinery/firealarm/directional/south,
@@ -4632,7 +4632,7 @@
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering";
 	normalspeed = 0;
-	req_access_txt = "10"
+	req_access_txt = null
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
