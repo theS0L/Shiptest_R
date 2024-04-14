@@ -429,12 +429,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/construction)
-"dN" = (
-/obj/machinery/camera/preset{
-	dir = 8
-	},
-/turf/template_noop,
-/area/template_noop)
 "dQ" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/dorm)
@@ -2975,12 +2969,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/incinerator)
-"GL" = (
-/obj/machinery/camera/preset{
-	dir = 5
-	},
-/turf/template_noop,
-/area/template_noop)
 "Hc" = (
 /obj/machinery/door/window/survival_pod{
 	dir = 8
@@ -4330,34 +4318,6 @@ Sk
 Sk
 Sk
 Sk
-Sk
-dN
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-dN
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-"}
-(2,1,1) = {"
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
 jX
 Hx
 jX
@@ -4375,10 +4335,8 @@ Sk
 Sk
 Sk
 Sk
-Sk
 "}
-(3,1,1) = {"
-Sk
+(2,1,1) = {"
 Sk
 Sk
 Sk
@@ -4402,10 +4360,8 @@ Sk
 Sk
 Sk
 Sk
-Sk
 "}
-(4,1,1) = {"
-Sk
+(3,1,1) = {"
 Sk
 Sk
 Sk
@@ -4429,10 +4385,8 @@ Sk
 Sk
 Sk
 Sk
-Sk
 "}
-(5,1,1) = {"
-Sk
+(4,1,1) = {"
 Sk
 Sk
 Sk
@@ -4456,10 +4410,8 @@ Sk
 Sk
 Sk
 Sk
-Sk
 "}
-(6,1,1) = {"
-Sk
+(5,1,1) = {"
 Sk
 Sk
 Sk
@@ -4483,10 +4435,8 @@ Sk
 Sk
 Sk
 Sk
-Sk
 "}
-(7,1,1) = {"
-Sk
+(6,1,1) = {"
 Sk
 Sk
 Sk
@@ -4510,10 +4460,8 @@ Sk
 Sk
 Sk
 Sk
-Sk
 "}
-(8,1,1) = {"
-Sk
+(7,1,1) = {"
 Sk
 Sk
 Sk
@@ -4537,10 +4485,8 @@ Sk
 Sk
 Sk
 Sk
-Sk
 "}
-(9,1,1) = {"
-Sk
+(8,1,1) = {"
 Sk
 Sk
 Sk
@@ -4564,10 +4510,8 @@ Sk
 Sk
 Sk
 Sk
-Sk
 "}
-(10,1,1) = {"
-Sk
+(9,1,1) = {"
 Sk
 Sk
 Sk
@@ -4591,10 +4535,8 @@ Sk
 Sk
 Sk
 Sk
-Sk
 "}
-(11,1,1) = {"
-Sk
+(10,1,1) = {"
 Sk
 Sk
 Sk
@@ -4618,10 +4560,8 @@ Sk
 Sk
 Sk
 Sk
-Sk
 "}
-(12,1,1) = {"
-Sk
+(11,1,1) = {"
 Sk
 Sk
 Yw
@@ -4645,10 +4585,8 @@ FG
 AT
 Sk
 Sk
-Sk
 "}
-(13,1,1) = {"
-Sk
+(12,1,1) = {"
 Sk
 Sk
 uZ
@@ -4672,10 +4610,8 @@ Um
 Ez
 Sk
 Sk
-Sk
 "}
-(14,1,1) = {"
-Sk
+(13,1,1) = {"
 Sk
 Sk
 zD
@@ -4699,10 +4635,8 @@ PS
 zD
 Sk
 Sk
-Sk
 "}
-(15,1,1) = {"
-Sk
+(14,1,1) = {"
 Sk
 Sk
 zD
@@ -4726,10 +4660,8 @@ PS
 zD
 Sk
 Sk
-Sk
 "}
-(16,1,1) = {"
-Sk
+(15,1,1) = {"
 rd
 OQ
 pj
@@ -4753,10 +4685,8 @@ HN
 al
 OQ
 tp
-Sk
 "}
-(17,1,1) = {"
-Sk
+(16,1,1) = {"
 Zs
 XE
 PB
@@ -4780,10 +4710,8 @@ aU
 aU
 mA
 aK
-Sk
 "}
-(18,1,1) = {"
-Sk
+(17,1,1) = {"
 NY
 uP
 Cs
@@ -4807,10 +4735,8 @@ fz
 He
 jr
 NY
-Sk
 "}
-(19,1,1) = {"
-Sk
+(18,1,1) = {"
 NY
 uP
 Wx
@@ -4834,10 +4760,8 @@ ls
 wK
 AN
 NY
-Sk
 "}
-(20,1,1) = {"
-Sk
+(19,1,1) = {"
 Ps
 uP
 LP
@@ -4861,10 +4785,8 @@ YZ
 ui
 jr
 ev
-Sk
 "}
-(21,1,1) = {"
-Sk
+(20,1,1) = {"
 NY
 PB
 PB
@@ -4888,10 +4810,8 @@ qE
 aU
 aU
 NY
-Sk
 "}
-(22,1,1) = {"
-Sk
+(21,1,1) = {"
 NY
 hr
 sV
@@ -4915,10 +4835,8 @@ XU
 xQ
 hr
 NY
-Sk
 "}
-(23,1,1) = {"
-Sk
+(22,1,1) = {"
 Zs
 DT
 DT
@@ -4942,10 +4860,8 @@ Bd
 Bd
 Bd
 aK
-Sk
 "}
-(24,1,1) = {"
-Sk
+(23,1,1) = {"
 NY
 aP
 LF
@@ -4969,10 +4885,8 @@ uo
 uQ
 Cw
 NY
-Sk
 "}
-(25,1,1) = {"
-Sk
+(24,1,1) = {"
 NY
 aP
 gu
@@ -4996,10 +4910,8 @@ Ki
 Ay
 Cw
 NY
-Sk
 "}
-(26,1,1) = {"
-Sk
+(25,1,1) = {"
 NY
 aP
 sm
@@ -5023,10 +4935,8 @@ jP
 oI
 Bd
 NY
-Sk
 "}
-(27,1,1) = {"
-Sk
+(26,1,1) = {"
 NY
 SN
 OB
@@ -5050,10 +4960,8 @@ nK
 Qo
 Cw
 NY
-Sk
 "}
-(28,1,1) = {"
-Sk
+(27,1,1) = {"
 NY
 aP
 Zf
@@ -5077,10 +4985,8 @@ dV
 CF
 Cw
 NY
-Sk
 "}
-(29,1,1) = {"
-Sk
+(28,1,1) = {"
 NY
 aP
 Yf
@@ -5104,10 +5010,8 @@ Wj
 Dq
 Cw
 NY
-Sk
 "}
-(30,1,1) = {"
-Sk
+(29,1,1) = {"
 NY
 aP
 hU
@@ -5131,10 +5035,8 @@ ZQ
 ms
 Cw
 NY
-Sk
 "}
-(31,1,1) = {"
-Sk
+(30,1,1) = {"
 NY
 DT
 DT
@@ -5158,10 +5060,8 @@ hr
 hr
 hr
 NY
-Sk
 "}
-(32,1,1) = {"
-Sk
+(31,1,1) = {"
 Ps
 hr
 XI
@@ -5185,10 +5085,8 @@ Kd
 Jy
 hr
 ev
-Sk
 "}
-(33,1,1) = {"
-Sk
+(32,1,1) = {"
 NY
 hr
 RA
@@ -5212,10 +5110,8 @@ dC
 wA
 hr
 NY
-Sk
 "}
-(34,1,1) = {"
-Sk
+(33,1,1) = {"
 Zs
 hr
 Op
@@ -5239,10 +5135,8 @@ kv
 Op
 hr
 aK
-Sk
 "}
-(35,1,1) = {"
-Sk
+(34,1,1) = {"
 NY
 jE
 gq
@@ -5266,10 +5160,8 @@ TS
 WA
 jE
 NY
-Sk
 "}
-(36,1,1) = {"
-Sk
+(35,1,1) = {"
 NY
 jE
 ES
@@ -5293,10 +5185,8 @@ Mb
 Hg
 jE
 NY
-Sk
 "}
-(37,1,1) = {"
-Sk
+(36,1,1) = {"
 NY
 jE
 sK
@@ -5320,10 +5210,8 @@ Vh
 aZ
 jE
 NY
-Sk
 "}
-(38,1,1) = {"
-Sk
+(37,1,1) = {"
 NY
 Nf
 Eb
@@ -5347,10 +5235,8 @@ Nf
 Eb
 Eb
 NY
-Sk
 "}
-(39,1,1) = {"
-Sk
+(38,1,1) = {"
 Jo
 OQ
 om
@@ -5374,10 +5260,8 @@ RJ
 Ln
 OQ
 oA
-Sk
 "}
-(40,1,1) = {"
-Sk
+(39,1,1) = {"
 Sk
 Sk
 Sk
@@ -5401,10 +5285,8 @@ Li
 Sk
 Sk
 Sk
-Sk
 "}
-(41,1,1) = {"
-Sk
+(40,1,1) = {"
 Sk
 Sk
 Sk
@@ -5428,10 +5310,8 @@ Uu
 Sk
 Sk
 Sk
-Sk
 "}
-(42,1,1) = {"
-Sk
+(41,1,1) = {"
 Sk
 Sk
 Sk
@@ -5455,10 +5335,8 @@ Sk
 Sk
 Sk
 Sk
-Sk
 "}
-(43,1,1) = {"
-Sk
+(42,1,1) = {"
 Sk
 Sk
 Sk
@@ -5476,34 +5354,6 @@ CE
 RJ
 RJ
 fm
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-"}
-(44,1,1) = {"
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-GL
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-GL
-Sk
 Sk
 Sk
 Sk

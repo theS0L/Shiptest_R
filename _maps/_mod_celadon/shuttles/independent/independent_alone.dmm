@@ -421,19 +421,6 @@
 /area/ship/bridge)
 
 (1,1,1) = {"
-hw
-hw
-hw
-hw
-hw
-hw
-hw
-hw
-hw
-hw
-"}
-(2,1,1) = {"
-hw
 pz
 hw
 pz
@@ -442,10 +429,8 @@ hw
 pz
 hw
 pz
-hw
 "}
-(3,1,1) = {"
-hw
+(2,1,1) = {"
 pz
 FY
 pz
@@ -454,10 +439,8 @@ Jb
 pz
 FY
 pz
-hw
 "}
-(4,1,1) = {"
-hw
+(3,1,1) = {"
 pz
 lk
 kC
@@ -466,10 +449,8 @@ Gr
 jd
 lk
 pz
-hw
 "}
-(5,1,1) = {"
-hw
+(4,1,1) = {"
 pz
 TU
 YD
@@ -478,10 +459,8 @@ Ou
 YD
 hO
 pz
-hw
 "}
-(6,1,1) = {"
-hw
+(5,1,1) = {"
 pz
 pz
 pz
@@ -490,10 +469,8 @@ fY
 pz
 pz
 pz
-hw
 "}
-(7,1,1) = {"
-hw
+(6,1,1) = {"
 pz
 pn
 Wp
@@ -502,10 +479,8 @@ ry
 zu
 bd
 pz
-hw
 "}
-(8,1,1) = {"
-hw
+(7,1,1) = {"
 pz
 xO
 vw
@@ -514,10 +489,8 @@ ll
 CA
 bd
 pz
-hw
 "}
-(9,1,1) = {"
-hw
+(8,1,1) = {"
 pz
 pz
 pz
@@ -526,10 +499,8 @@ wd
 pz
 pz
 pz
-hw
 "}
-(10,1,1) = {"
-hw
+(9,1,1) = {"
 pz
 oR
 HH
@@ -538,10 +509,8 @@ OZ
 dJ
 qR
 pz
-hw
 "}
-(11,1,1) = {"
-hw
+(10,1,1) = {"
 pz
 Gt
 SC
@@ -550,10 +519,8 @@ Hy
 OZ
 UL
 pz
-hw
 "}
-(12,1,1) = {"
-hw
+(11,1,1) = {"
 pz
 je
 VO
@@ -562,10 +529,8 @@ ut
 VY
 tK
 pz
-hw
 "}
-(13,1,1) = {"
-hw
+(12,1,1) = {"
 pz
 pz
 pz
@@ -574,10 +539,8 @@ cl
 pz
 pz
 pz
-hw
 "}
-(14,1,1) = {"
-hw
+(13,1,1) = {"
 pz
 hw
 hw
@@ -586,17 +549,4 @@ hw
 hw
 hw
 pz
-hw
-"}
-(15,1,1) = {"
-hw
-hw
-hw
-hw
-hw
-hw
-hw
-hw
-hw
-hw
 "}
