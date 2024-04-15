@@ -2452,7 +2452,7 @@
 #include "code\modules\mob\living\bloodcrawl.dm"
 #include "code\modules\mob\living\damage_procs.dm"
 #include "code\modules\mob\living\death.dm"
-#include "code\modules\mob\living\emote.dm"
+//#include "code\modules\mob\living\emote.dm"			=# Mod Celadon =>  #=
 #include "code\modules\mob\living\inhand_holder.dm"
 #include "code\modules\mob\living\init_signals.dm"
 #include "code\modules\mob\living\life.dm"
@@ -3488,3 +3488,7 @@
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
 // END_INCLUDE
+
+// CELADON
+#include "mod_celadon\mod_celadon.dme"
+

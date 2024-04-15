@@ -1,0 +1,6 @@
+#include "_elysium_stuff.dm"
+
+#include "code\armor.dm"
+#include "code\skimitar.dm"
+#include "code\elysimmerch.dm"
+#include "code\clothing.dm"

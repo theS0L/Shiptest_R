@@ -2,9 +2,9 @@
 
 // Start screens
 
-/datum/sprite_accessory/ipc_screens
-	icon = 'icons/mob/ipc_accessories.dmi'
-	color_src = EYECOLOR
+// /datum/sprite_accessory/ipc_screens 			//MOD_CELADON-CHANGES -> mod_celadon\code\modules\mob\dead\new_player\sprite_accessories\ipc.dm
+// 	icon = 'icons/mob/ipc_accessories.dmi'
+// 	color_src = EYECOLOR
 
 /datum/sprite_accessory/ipc_screens/blank
 	name = "Blank Canvas"
