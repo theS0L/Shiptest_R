@@ -328,6 +328,19 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 9
 	},
+/mob/living/simple_animal/hostile/asteroid/hivelord{
+	name = "Kirill";
+	faction = list("neutral");
+	a_intent = "help";
+	desc = "Truly the cutest creature, when you hug him, it feels like a whole army is hugging you, his name is Kirill... adorable";
+	mob_size = 1;
+	response_help_simple = "hug";
+	response_help_continuous = "hugs"
+	},
+/obj/structure/bed/dogbed{
+	name = "Kiril bed";
+	anchored = 1
+	},
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "go" = (
@@ -902,7 +915,6 @@
 /area/ship/bridge)
 "uJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/circuitboard/machine/autolathe,
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
@@ -1530,6 +1542,7 @@
 	pixel_y = 8
 	},
 /obj/item/stack/sheet/mineral/plasma/twenty,
+/obj/item/storage/toolbox/electrical,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Fz" = (
@@ -1921,22 +1934,10 @@
 "Nk" = (
 /obj/structure/window/reinforced/tinted/frosted,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/bed/dogbed{
-	name = "Kiril bed";
-	anchored = 1
-	},
-/mob/living/simple_animal/hostile/asteroid/hivelord{
-	name = "Kirill";
-	faction = list("neutral");
-	a_intent = "help";
-	desc = "Truly the cutest creature, when you hug him, it feels like a whole army is hugging you, his name is Kirill... adorable";
-	mob_size = 1;
-	response_help_simple = "hug";
-	response_help_continuous = "hugs"
-	},
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 1
 	},
+/obj/machinery/rnd/server,
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "Nn" = (
@@ -2263,6 +2264,10 @@
 "Vs" = (
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
+"VE" = (
+/obj/machinery/holopad/emergency/command,
+/turf/open/floor/carpet/red_gold,
+/area/ship/bridge)
 "VI" = (
 /obj/machinery/light/small/directional/south,
 /obj/structure/sign/poster/official/fruit_bowl{
@@ -2320,17 +2325,10 @@
 /area/ship/bridge)
 "Wy" = (
 /obj/machinery/light/directional/west,
-/obj/structure/rack,
-/obj/item/chair/plastic{
-	pixel_y = 16
-	},
-/obj/item/chair/plastic{
-	pixel_y = 8
-	},
-/obj/item/chair/plastic,
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 8
 	},
+/obj/machinery/autolathe/hacked,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "WE" = (
@@ -2890,7 +2888,7 @@ HO
 SE
 dh
 gn
-Vs
+VE
 BC
 Qb
 jv
