@@ -344,6 +344,9 @@
 	dir = 4
 	},
 /obj/machinery/airalarm/directional/north,
+/obj/machinery/firealarm/directional/west{
+	pixel_y = -14
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/dorm)
 "gW" = (
@@ -1248,6 +1251,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
+/obj/machinery/firealarm/directional/west{
+	pixel_y = -14
+	},
 /turf/open/floor/plasteel/freezer,
 /area/ship/crew/toilet)
 "BD" = (
@@ -1364,7 +1370,7 @@
 	pixel_x = 28
 	},
 /obj/item/toy/plush/spider,
-/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/clothing/head/papersack,
 /turf/open/floor/plasteel/white,
 /area/ship/engineering)
@@ -1670,6 +1676,7 @@
 /obj/machinery/light/directional/west{
 	pixel_x = -35
 	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "Mv" = (
@@ -1700,6 +1707,7 @@
 /obj/structure/sign/poster/contraband/red_rum{
 	pixel_y = 32
 	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "Nd" = (
@@ -1924,6 +1932,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/machinery/firealarm/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "Up" = (
@@ -2081,6 +2090,10 @@
 /obj/machinery/light_switch{
 	pixel_y = 25;
 	pixel_x = -12
+	},
+/obj/machinery/firealarm/directional/north{
+	pixel_y = 29;
+	pixel_x = 10
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)
