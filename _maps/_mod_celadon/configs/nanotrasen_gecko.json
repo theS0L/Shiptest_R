@@ -29,15 +29,19 @@
 		},
 		"Engine Technician": {
 			"outfit": "/datum/outfit/job/nanotrasen/engineer",
-			"slots": 2
+			"slots": 1
+		},
+		"Medical Doctor": {
+			"outfit": "/datum/outfit/job/nanotrasen/doctor",
+			"slots": 1
 		},
 		"Salvage Technician": {
 			"outfit": "/datum/outfit/job/nanotrasen/miner",
-			"slots": 2
+			"slots": 1
 		},
 		"Deckhand": {
 			"outfit": "/datum/outfit/job/nanotrasen/assistant",
-			"slots": 4
+			"slots": 2
 		}
 	},
 	"enabled": true
