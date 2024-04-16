@@ -6,3 +6,9 @@
 // Префиксы для кораблей и оутфиты для ролей
 #include "code/_names.dm"
 #include "code/_outfits.dm"
+
+// Emotes and Emote Panel
+
+#include "code/emotes/emotes_living.dm"
+#include "code/emotes/emotes.dm"
+#include "code/emotes/emote_panel.dm"
