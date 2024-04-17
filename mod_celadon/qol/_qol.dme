@@ -7,3 +7,4 @@
 #include "code/ai/ailaws.dm"
 #include "code/ai/aimodules.dm"
 #include "code/ai/silicon.dm"
+#include "code/hair.dm"
