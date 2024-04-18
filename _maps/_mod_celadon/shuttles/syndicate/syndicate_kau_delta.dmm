@@ -143,7 +143,6 @@
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "dg" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -634,6 +633,7 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 10
 	},
+/obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "nO" = (
@@ -679,9 +679,6 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/cargo/port)
 "px" = (
-/obj/structure/sign/poster/syndicate{
-	pixel_y = 32
-	},
 /obj/machinery/power/terminal{
 	dir = 4
 	},
@@ -810,7 +807,6 @@
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "sd" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -996,7 +992,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo/port)
 "xe" = (
-/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
@@ -1010,6 +1005,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 1
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/hallway/central)
 "xj" = (
@@ -1117,7 +1115,6 @@
 /area/ship/bridge)
 "yo" = (
 /obj/structure/table/reinforced,
-/obj/machinery/light/directional/north,
 /obj/item/modular_computer/tablet/preset/advanced{
 	icon_state = "tablet-syndicate";
 	icon_state_powered = "tablet-syndicate";
@@ -1717,6 +1714,7 @@
 	dir = 9
 	},
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
+/obj/machinery/light/directional/north,
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "JY" = (
@@ -1779,7 +1777,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/maintenance/port)
 "KQ" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -1928,7 +1925,6 @@
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
 	dir = 4
 	},
-/obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
@@ -2850,7 +2846,7 @@ Av
 Dz
 aR
 np
-HO
+hx
 Jt
 vz
 uv

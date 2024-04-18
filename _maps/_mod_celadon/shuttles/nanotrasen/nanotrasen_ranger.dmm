@@ -435,8 +435,8 @@
 	height = 15;
 	dwidth = 15
 	},
-/turf/template_noop,
-/area/template_noop)
+/turf/open/floor/engine/hull,
+/area/ship/external)
 "eo" = (
 /obj/structure/rack,
 /obj/item/flashlight/seclite{
@@ -4762,8 +4762,6 @@ zW
 zW
 zW
 zW
-zW
-zW
 LV
 tg
 tg
@@ -4795,8 +4793,6 @@ zW
 zW
 "}
 (2,1,1) = {"
-zW
-zW
 zW
 zW
 zW
@@ -4835,8 +4831,6 @@ zW
 zW
 zW
 zW
-zW
-zW
 LV
 ks
 Jw
@@ -4869,8 +4863,6 @@ zW
 zW
 "}
 (4,1,1) = {"
-zW
-zW
 zW
 zW
 LV
@@ -4908,8 +4900,6 @@ zW
 (5,1,1) = {"
 zW
 zW
-zW
-zW
 LV
 Zl
 Vq
@@ -4943,8 +4933,6 @@ zW
 zW
 "}
 (6,1,1) = {"
-zW
-zW
 zW
 zW
 vm
@@ -4981,8 +4969,6 @@ zW
 "}
 (7,1,1) = {"
 zW
-zW
-zW
 vm
 vm
 vm
@@ -5018,8 +5004,6 @@ zW
 "}
 (8,1,1) = {"
 zW
-zW
-zW
 vm
 xp
 Aw
@@ -5054,8 +5038,6 @@ fV
 zW
 "}
 (9,1,1) = {"
-zW
-zW
 vm
 vm
 YK
@@ -5091,8 +5073,6 @@ fV
 fV
 "}
 (10,1,1) = {"
-zW
-zW
 vm
 sF
 oi
@@ -5128,8 +5108,6 @@ sR
 fV
 "}
 (11,1,1) = {"
-zW
-zW
 vm
 ix
 Kt
@@ -5165,8 +5143,6 @@ VP
 fV
 "}
 (12,1,1) = {"
-zW
-zW
 vm
 vV
 GC
@@ -5202,8 +5178,6 @@ Dx
 fV
 "}
 (13,1,1) = {"
-zW
-zW
 vm
 GE
 vh
@@ -5239,8 +5213,6 @@ iH
 fV
 "}
 (14,1,1) = {"
-zW
-zW
 vm
 XS
 Xb
@@ -5276,8 +5248,6 @@ fV
 fV
 "}
 (15,1,1) = {"
-zW
-zW
 JR
 JR
 JR
@@ -5313,8 +5283,6 @@ xv
 gg
 "}
 (16,1,1) = {"
-zW
-zW
 JR
 js
 kh
@@ -5350,8 +5318,6 @@ gg
 gg
 "}
 (17,1,1) = {"
-zW
-zW
 JR
 Iy
 ym
@@ -5387,8 +5353,6 @@ BA
 gg
 "}
 (18,1,1) = {"
-zW
-zW
 JR
 vB
 cW
@@ -5424,8 +5388,6 @@ yK
 gg
 "}
 (19,1,1) = {"
-zW
-zW
 JR
 tb
 mQ
@@ -5461,8 +5423,6 @@ yC
 gg
 "}
 (20,1,1) = {"
-zW
-zW
 JR
 IQ
 XH
@@ -5498,8 +5458,6 @@ Mc
 gg
 "}
 (21,1,1) = {"
-zW
-zW
 JR
 JR
 JR
@@ -5536,8 +5494,6 @@ gg
 "}
 (22,1,1) = {"
 zW
-zW
-zW
 QV
 jA
 KQ
@@ -5572,8 +5528,6 @@ QV
 zW
 "}
 (23,1,1) = {"
-zW
-zW
 zW
 wq
 HA
@@ -5610,9 +5564,7 @@ zW
 "}
 (24,1,1) = {"
 zW
-zW
-zW
-wq
+ef
 Yy
 Ur
 Hy
@@ -5646,8 +5598,6 @@ wq
 zW
 "}
 (25,1,1) = {"
-zW
-zW
 zW
 hN
 jA
@@ -5683,8 +5633,6 @@ hz
 zW
 "}
 (26,1,1) = {"
-ef
-zW
 zW
 zW
 Tb
@@ -5722,8 +5670,6 @@ zW
 (27,1,1) = {"
 zW
 zW
-zW
-zW
 Tb
 Rn
 mJ
@@ -5759,8 +5705,6 @@ zW
 (28,1,1) = {"
 zW
 zW
-zW
-zW
 Tb
 ZS
 rg
@@ -5794,8 +5738,6 @@ zW
 zW
 "}
 (29,1,1) = {"
-zW
-zW
 zW
 zW
 Tb
@@ -5834,8 +5776,6 @@ zW
 zW
 zW
 zW
-zW
-zW
 Tb
 Tb
 DE
@@ -5868,8 +5808,6 @@ zW
 zW
 "}
 (31,1,1) = {"
-zW
-zW
 zW
 zW
 zW
@@ -5917,8 +5855,6 @@ zW
 zW
 zW
 zW
-zW
-zW
 Mf
 Mf
 Lk
@@ -5942,8 +5878,6 @@ zW
 zW
 "}
 (33,1,1) = {"
-zW
-zW
 zW
 zW
 zW
@@ -5991,8 +5925,6 @@ zW
 zW
 zW
 zW
-zW
-zW
 Te
 zW
 Lk
@@ -6028,8 +5960,6 @@ zW
 zW
 zW
 zW
-zW
-zW
 wq
 zW
 Lk
@@ -6053,8 +5983,6 @@ zW
 zW
 "}
 (36,1,1) = {"
-zW
-zW
 zW
 zW
 zW
