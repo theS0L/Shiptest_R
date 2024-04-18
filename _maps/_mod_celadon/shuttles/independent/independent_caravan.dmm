@@ -607,9 +607,6 @@
 	},
 /obj/item/storage/backpack/satchel/leather,
 /obj/item/storage/backpack/satchel/leather/withwallet,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
 /obj/item/clothing/under/utility,
 /obj/item/clothing/under/utility,
 /obj/item/clothing/under/utility/skirt,
@@ -944,6 +941,10 @@
 "qM" = (
 /obj/structure/table/reinforced,
 /obj/machinery/newscaster/directional/south,
+/obj/item/implant/radio{
+	pixel_x = -7
+	},
+/obj/machinery/jukebox/boombox,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/bridge)
 "qN" = (
@@ -1250,7 +1251,6 @@
 /obj/item/analyzer,
 /obj/item/holosign_creator/atmos,
 /obj/item/storage/belt/utility/atmostech,
-/obj/item/radio/off,
 /obj/item/clothing/glasses/meson/engine/tray,
 /obj/item/pipe_dispenser,
 /obj/item/multitool,
@@ -2880,7 +2880,6 @@
 /obj/item/storage/backpack/messenger/com,
 /obj/item/storage/backpack/satchel/cap,
 /obj/item/pen/survival,
-/obj/item/radio/off,
 /obj/item/clothing/shoes/laceup,
 /obj/item/clothing/shoes/workboots/mining,
 /obj/item/reagent_containers/food/drinks/flask/gold,
