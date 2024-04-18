@@ -4,3 +4,5 @@
 #include "code\skimitar.dm"
 #include "code\elysimmerch.dm"
 #include "code\clothing.dm"
+#include "code/hats.dm"
+#include "code/suits.dm"
