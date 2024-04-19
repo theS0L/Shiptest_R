@@ -64,11 +64,23 @@
 	icon_state = "shemag_white"
 	mob_overlay_state = "shemag_white"
 
-/obj/item/clothing/head/space/elysm/space_helm
+/obj/item/clothing/head/space/elysm
 	name = "Void"
 	desc = "Этого тут быть не должно.."
 	icon = 'mod_celadon/elysium_stuff/icons/obj/hats.dmi'
 	mob_overlay_icon = 'mod_celadon/elysium_stuff/icons/mob/space.dmi'
+	clothing_flags = STOPSPRESSUREDAMAGE | THICKMATERIAL | SNUG_FIT | BLOCK_GAS_SMOKE_EFFECT | ALLOWINTERNALS
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
+	heat_protection = HEAD
+	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
+	flash_protect = FLASH_PROTECTION_WELDER
+	strip_delay = 50
+	equip_delay_other = 50
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
+	resistance_flags = NONE
+	dog_fashion = null
 
 /obj/item/clothing/head/space/elysm/space_helm
 	name = "Elysium EVA Helmet"
@@ -76,3 +88,4 @@
 	icon_state = "space_elysium"
 	mob_overlay_state = "armband"
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 15, "energy" = 20, "bomb" = 35, "bio" = 100, "rad" = 75, "fire" = 50, "acid" = 100)
+
