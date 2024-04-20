@@ -443,11 +443,6 @@
 	},
 /obj/item/storage/backpack/duffelbag/syndie,
 /obj/item/storage/backpack/duffelbag/syndie,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
@@ -1181,6 +1176,9 @@
 /obj/item/reagent_containers/food/drinks/soda_cans/pwr_game{
 	pixel_x = -1;
 	pixel_y = 8
+	},
+/obj/item/implant/radio{
+	pixel_x = 10
 	},
 /turf/open/floor/carpet/red,
 /area/ship/crew/dorm)

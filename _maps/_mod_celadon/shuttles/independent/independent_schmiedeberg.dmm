@@ -1295,7 +1295,6 @@
 "rC" = (
 /obj/machinery/light/small/directional/south,
 /obj/structure/closet/crate/secure/loot,
-/obj/item/plunger/reinforced,
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt,
@@ -2383,7 +2382,9 @@
 /obj/structure/chair/sofa/left{
 	dir = 8
 	},
-/obj/item/toy/plush/snakeplushie,
+/obj/item/toy/plush/snakeplushie{
+	pixel_x = -1
+	},
 /turf/open/floor/carpet/blue,
 /area/ship/crew)
 "KO" = (

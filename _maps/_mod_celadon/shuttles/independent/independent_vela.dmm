@@ -2888,7 +2888,7 @@
 /obj/structure/table/reinforced,
 /obj/item/gps{
 	gpstag = "GOLD-VHEV";
-	pixel_x = -5;
+	pixel_x = -6;
 	pixel_y = -2
 	},
 /obj/machinery/button/door{
@@ -7779,9 +7779,6 @@
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 9
 	},
-/obj/item/clothing/under/rank/civilian/cookjorts,
-/obj/item/clothing/under/rank/civilian/cookjorts,
-/obj/item/clothing/under/rank/civilian/cookjorts,
 /turf/open/floor/pod/dark,
 /area/ship/cargo)
 "Qg" = (
