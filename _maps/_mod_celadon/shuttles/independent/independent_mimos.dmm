@@ -507,7 +507,10 @@
 "eh" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/reagent_dispensers/plumbed,
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel/vaporwave{
 	icon_state = "floorscorched2"
 	},
@@ -760,7 +763,9 @@
 /turf/open/floor/white,
 /area/ship/crew)
 "hU" = (
-/obj/structure/chair/sofa/corner,
+/obj/structure/chair/sofa/blue/old/right{
+	dir = 4
+	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/crew/library)
 "ix" = (
@@ -2196,9 +2201,6 @@
 	dir = 4
 	},
 /obj/machinery/airalarm/directional/south,
-/obj/structure/chair/comfy/black{
-	dir = 8
-	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/crew/library)
 "zb" = (
@@ -3286,6 +3288,9 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "KD" = (
@@ -3602,7 +3607,7 @@
 /area/ship/security)
 "Qy" = (
 /obj/machinery/light/small/directional/east,
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/blue/old/left{
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,

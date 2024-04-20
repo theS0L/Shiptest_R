@@ -38,7 +38,6 @@
 	pixel_x = 28
 	},
 /obj/item/clothing/accessory/armband/engine,
-/obj/item/clothing/suit/hazardvest,
 /obj/item/clothing/head/hardhat/dblue,
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/storage/backpack/industrial,
@@ -57,6 +56,10 @@
 /obj/effect/turf_decal/steeldecal/steel_decals3{
 	dir = 4
 	},
+/obj/item/clothing/mask/gas/atmos,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/clothing/head/helmet/space/light/engineer,
+/obj/item/clothing/suit/space/engineer,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "bA" = (
@@ -631,11 +634,11 @@
 "kR" = (
 /obj/effect/turf_decal/industrial/warning,
 /obj/machinery/light/small/directional/north,
-/obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/engineer,
-/obj/item/clothing/head/helmet/space/light/engineer,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/mask/gas/atmos,
+/obj/machinery/power/ship_gravity,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "lE" = (
@@ -2641,6 +2644,9 @@
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable{
 	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)

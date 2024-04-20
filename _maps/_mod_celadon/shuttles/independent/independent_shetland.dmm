@@ -397,6 +397,9 @@
 /obj/effect/turf_decal/miskilamo_big/one{
 	dir = 8
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "eV" = (
@@ -3366,6 +3369,9 @@
 	pixel_x = 11;
 	pixel_y = 23
 	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "HV" = (
@@ -4304,6 +4310,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
+"QJ" = (
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/effect/turf_decal/industrial/outline/yellow,
+/turf/open/floor/plating,
+/area/ship/engineering/engine)
 "QP" = (
 /obj/structure/cable{
 	icon_state = "4-10"
@@ -5549,7 +5563,7 @@ tj
 uZ
 WU
 Qb
-UH
+QJ
 eI
 oD
 LC

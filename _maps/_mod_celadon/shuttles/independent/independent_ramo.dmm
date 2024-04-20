@@ -362,7 +362,10 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/airalarm/directional/east,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "aM" = (

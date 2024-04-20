@@ -3112,11 +3112,18 @@
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/dorm)
 "ES" = (
-/obj/structure/chair/sofa/right{
-	dir = 1
-	},
 /turf/open/floor/carpet/stellar,
 /area/ship/crew/canteen)
+"EZ" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/ship/engineering/engine)
 "Fb" = (
 /obj/structure/table/wood/poker,
 /obj/item/storage/fancy/cigarettes/cigpack_robustgold,
@@ -3740,9 +3747,6 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "Kh" = (
-/obj/structure/chair/sofa/corner{
-	dir = 1
-	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/carpet/stellar,
 /area/ship/crew/canteen)
@@ -5267,9 +5271,6 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/medical)
 "ZY" = (
-/obj/structure/chair/sofa/left{
-	dir = 4
-	},
 /obj/item/toy/plush/among{
 	pixel_x = 8;
 	pixel_y = -8
@@ -6435,7 +6436,7 @@ Zg
 Zg
 Zg
 VA
-cF
+EZ
 ag
 BV
 Sw

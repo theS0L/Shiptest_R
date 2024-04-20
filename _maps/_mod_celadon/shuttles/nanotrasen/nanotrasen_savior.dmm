@@ -613,8 +613,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "in" = (
-/obj/machinery/suit_storage_unit/engine,
 /obj/machinery/light/small/directional/north,
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "io" = (
@@ -639,6 +642,21 @@
 	},
 /turf/template_noop,
 /area/template_noop)
+"iy" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/effect/turf_decal/industrial/fire{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/ship/engineering)
 "iG" = (
 /obj/structure/closet/secure_closet/captains,
 /turf/open/floor/carpet/royalblue,
@@ -1016,7 +1034,7 @@
 	},
 /obj/item/toy/figure/cmo{
 	pixel_x = -16;
-	pixel_y = 16
+	pixel_y = 15
 	},
 /obj/item/radio/intercom/directional/east,
 /turf/open/floor/wood,
@@ -1994,9 +2012,6 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "zn" = (
-/obj/structure/chair/comfy/brown{
-	dir = 1
-	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
@@ -3664,9 +3679,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/structure/chair/comfy/brown{
-	dir = 1
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/wood,
 /area/ship/crew/crewtwo)
@@ -4057,11 +4069,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/vending/tool,
 /obj/structure/closet/firecloset/wall{
 	dir = 1;
 	pixel_y = -28
 	},
+/obj/machinery/suit_storage_unit/engine,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "XK" = (
@@ -4283,7 +4295,7 @@ Jz
 bY
 Vf
 in
-WK
+iy
 qW
 WK
 WK

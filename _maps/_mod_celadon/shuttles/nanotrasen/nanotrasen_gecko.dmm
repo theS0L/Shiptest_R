@@ -3838,6 +3838,7 @@
 	dir = 1;
 	pixel_y = -16
 	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "VK" = (

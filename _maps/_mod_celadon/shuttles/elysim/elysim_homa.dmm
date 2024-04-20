@@ -61,7 +61,7 @@
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "aM" = (
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/brown/corpo/right{
 	dir = 8
 	},
 /turf/open/floor/carpet/green,
@@ -224,7 +224,7 @@
 /area/template_noop)
 "fX" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/sofa/corner{
+/obj/structure/chair/sofa/brown/corpo/corner{
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
@@ -246,11 +246,11 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "gs" = (
-/obj/structure/chair/sofa/corner{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/sofa/brown/corpo/corner{
+	dir = 8
+	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
 "gQ" = (
@@ -446,6 +446,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -829,7 +832,10 @@
 "wF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/closet/cardboard,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "xd" = (
@@ -906,10 +912,10 @@
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "yE" = (
-/obj/structure/chair/sofa/left{
+/obj/machinery/light/small/directional/west,
+/obj/structure/chair/sofa/brown/corpo/left{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/west,
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
 "yN" = (
@@ -1496,7 +1502,7 @@
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "PP" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown/corpo/directional{
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
@@ -1622,7 +1628,7 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "VE" = (
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown/corpo/directional{
 	dir = 4
 	},
 /turf/open/floor/carpet/green,

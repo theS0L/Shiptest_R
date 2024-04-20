@@ -212,7 +212,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
-/obj/effect/landmark/start/shaft_miner,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "db" = (
@@ -1050,6 +1049,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "mY" = (
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "mZ" = (
@@ -1734,6 +1734,7 @@
 "vB" = (
 /obj/machinery/airalarm/directional/west,
 /obj/effect/turf_decal/industrial/outline/yellow,
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "vN" = (
@@ -2038,7 +2039,6 @@
 	icon_state = "1-4"
 	},
 /obj/structure/chair/office,
-/obj/effect/landmark/start/station_engineer,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "yr" = (
@@ -2111,8 +2111,11 @@
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "yT" = (
-/obj/machinery/airalarm/directional/east,
 /obj/effect/turf_decal/industrial/outline/yellow,
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "yV" = (
@@ -2524,14 +2527,14 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
-/obj/effect/landmark/start/station_engineer,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Er" = (
-/obj/machinery/atmospherics/components/unary/tank/toxins{
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/atmospherics/components/unary/portables_connector{
 	dir = 8
 	},
-/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "EB" = (
@@ -2929,10 +2932,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "HW" = (
-/obj/machinery/atmospherics/components/unary/tank/toxins{
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/atmospherics/components/unary/portables_connector{
 	dir = 4
 	},
-/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "Ic" = (
@@ -2978,7 +2982,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "IB" = (
-/obj/effect/landmark/start/shaft_miner,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "ID" = (
@@ -3968,6 +3971,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/light/small/directional/west,
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "UW" = (
@@ -4442,6 +4446,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/port)

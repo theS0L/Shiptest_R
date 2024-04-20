@@ -947,6 +947,11 @@
 	pixel_y = -23;
 	pixel_x = 10
 	},
+/obj/machinery/autolathe/hacked,
+/obj/item/stack/sheet/metal/five,
+/obj/item/stack/sheet/metal/five,
+/obj/item/stack/sheet/glass/five,
+/obj/item/stack/sheet/glass/five,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "cd" = (
@@ -965,12 +970,8 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/autolathe/hacked,
 /obj/machinery/firealarm/directional/south,
-/obj/item/stack/sheet/glass/five,
-/obj/item/stack/sheet/glass/five,
-/obj/item/stack/sheet/metal/five,
-/obj/item/stack/sheet/metal/five,
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
 "cf" = (
@@ -1358,23 +1359,20 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering/atmospherics)
 "cN" = (
-/obj/structure/chair/sofa/left{
-	icon_state = "sofaend_left";
+/obj/machinery/firealarm/directional/west,
+/obj/structure/chair/sofa/brown/corpo/left{
 	dir = 1
 	},
-/obj/machinery/firealarm/directional/west,
 /turf/open/floor/carpet/red,
 /area/ship/crew/dorm)
 "cO" = (
-/obj/structure/chair/sofa{
-	icon_state = "sofamiddle";
+/obj/structure/chair/sofa/brown/corpo/directional{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
 /area/ship/crew/dorm)
 "cP" = (
-/obj/structure/chair/sofa/right{
-	icon_state = "sofaend_right";
+/obj/structure/chair/sofa/brown/corpo/right{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
@@ -4104,7 +4102,7 @@
 	req_ship_access = 1;
 	req_access = list(6)
 	},
-/mob/living/carbon/monkey,
+/mob/living/carbon/monkey/angry,
 /turf/open/floor/plasteel/white,
 /area/ship/science/xenobiology)
 "mG" = (
@@ -4461,8 +4459,8 @@
 /area/ship/engineering/electrical)
 "QF" = (
 /obj/machinery/door/window/brigdoor/westleft,
-/mob/living/carbon/monkey/angry,
 /obj/effect/decal/cleanable/blood,
+/mob/living/carbon/monkey/angry,
 /turf/open/floor/plasteel/white,
 /area/ship/science/xenobiology)
 "RO" = (
@@ -4561,8 +4559,8 @@
 	icon_state = "rwindow";
 	dir = 8
 	},
-/mob/living/carbon/monkey,
 /obj/effect/decal/cleanable/blood,
+/mob/living/carbon/monkey/angry,
 /turf/open/floor/plasteel/white,
 /area/ship/science/xenobiology)
 

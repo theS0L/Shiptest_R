@@ -385,12 +385,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"gy" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
-/turf/open/floor/carpet/red_gold,
-/area/ship/bridge)
 "gP" = (
 /obj/machinery/atmospherics/components/trinary/mixer{
 	dir = 8
@@ -960,7 +954,10 @@
 /turf/open/floor/engine,
 /area/ship/engineering/atmospherics)
 "rd" = (
-/obj/structure/chair/sofa{
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/chair/sofa/brown/corpo/directional{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -1895,8 +1892,8 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/structure/chair/sofa/right,
 /obj/structure/extinguisher_cabinet/directional/north,
+/obj/structure/chair/sofa/brown/corpo/right,
 /turf/open/floor/wood,
 /area/ship/crew)
 "IO" = (
@@ -2072,10 +2069,10 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
-/obj/structure/chair/sofa/corner{
+/obj/machinery/newscaster/directional/south,
+/obj/structure/chair/sofa/brown/corpo/corner{
 	dir = 8
 	},
-/obj/machinery/newscaster/directional/south,
 /turf/open/floor/wood,
 /area/ship/crew)
 "Lv" = (
@@ -2253,8 +2250,8 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
-/obj/structure/chair/sofa/corner,
 /obj/machinery/light/directional/north,
+/obj/structure/chair/sofa/brown/corpo/corner,
 /turf/open/floor/wood,
 /area/ship/crew)
 "Pw" = (
@@ -2287,7 +2284,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/structure/chair/sofa{
+/obj/structure/chair/sofa/brown/corpo/directional{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -2700,7 +2697,7 @@
 "XQ" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/item/radio/intercom/directional/south,
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/brown/corpo/left{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -2813,7 +2810,10 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/tank_dispenser/oxygen,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "YL" = (
@@ -3420,7 +3420,7 @@ BT
 Ok
 Sh
 Lv
-gy
+Lv
 nR
 "}
 (25,1,1) = {"

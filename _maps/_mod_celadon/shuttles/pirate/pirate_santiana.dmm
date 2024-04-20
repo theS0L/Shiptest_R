@@ -941,7 +941,6 @@
 /turf/closed/wall,
 /area/ship/hallway/central)
 "cf" = (
-/obj/structure/chair/comfy/brown,
 /obj/effect/decal/cleanable/food/tomato_smudge,
 /turf/open/floor/wood/walnut{
 	icon_state = "wood-broken"
@@ -1069,7 +1068,6 @@
 /turf/open/floor/plasteel,
 /area/ship/security/armory)
 "cw" = (
-/obj/structure/reagent_dispensers/fueltank,
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -1077,6 +1075,7 @@
 /obj/machinery/light_switch{
 	pixel_y = 27
 	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "cx" = (
@@ -1151,7 +1150,6 @@
 /turf/open/floor/plating,
 /area/ship/medical)
 "cF" = (
-/obj/structure/chair/sofa/right,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm)
@@ -1284,7 +1282,6 @@
 /turf/open/floor/wood/ebony,
 /area/ship/hallway/central)
 "cT" = (
-/obj/structure/chair/sofa/corner,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/north,
@@ -1615,10 +1612,6 @@
 /turf/open/floor/plating,
 /area/ship/crew/dorm)
 "dD" = (
-/obj/structure/chair/comfy/black{
-	icon_state = "comfychair";
-	dir = 4
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/wrapping,
@@ -1659,10 +1652,6 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm)
 "dI" = (
-/obj/structure/chair/sofa/left{
-	icon_state = "sofaend_left";
-	dir = 8
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -1678,6 +1667,7 @@
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/south,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "dK" = (
@@ -1861,10 +1851,6 @@
 	},
 /area/ship/crew/dorm)
 "ef" = (
-/obj/structure/chair/comfy/brown{
-	icon_state = "comfychair";
-	dir = 1
-	},
 /obj/effect/decal/cleanable/vomit,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/walnut{
