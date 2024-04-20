@@ -56,7 +56,6 @@
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/crewtwo)
 "ap" = (
-/obj/structure/closet/secure_closet/captains/vanguard,
 /obj/item/clothing/suit/armor/hos/inteq/honorable{
 	name = "Expensive vanguard battlecoat"
 	},
@@ -71,7 +70,6 @@
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
-/obj/item/gun/ballistic/revolver/horizonx,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
 "aq" = (
@@ -1123,12 +1121,6 @@
 	},
 /turf/open/floor/engine,
 /area/ship/engineering/atmospherics)
-"gn" = (
-/obj/structure/chair/comfy/brown{
-	dir = 4
-	},
-/turf/open/floor/carpet/black,
-/area/ship/crew/dorm)
 "gr" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
@@ -1304,6 +1296,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engine)
 "hu" = (
@@ -1658,9 +1651,6 @@
 	},
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 4
-	},
-/obj/structure/chair/sofa/right{
-	dir = 8
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo/office)
@@ -2751,20 +2741,10 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/rack,
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_box/a556_box/m903,
 /turf/open/floor/plating{
 	explosion_block = 7
 	},
 /area/ship/security/armory)
-"rz" = (
-/obj/machinery/porta_turret/syndicate/energy/inteq,
-/obj/machinery/porta_turret{
-	faction = list("turret","InteQ")
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/bridge)
 "rA" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 5
@@ -2934,7 +2914,6 @@
 	req_access_txt = "147;148"
 	},
 /obj/item/ammo_box/magazine/smgm10mm,
-/obj/item/ammo_box/magazine/p16/g36drum,
 /obj/item/ammo_box/magazine/p16,
 /obj/item/ammo_box/magazine/m12g/small,
 /turf/open/floor/engine{
@@ -3882,7 +3861,6 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/sofa/right,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/dorm)
 "yb" = (
@@ -4454,7 +4432,6 @@
 /obj/structure/sign/poster/official/ue_no{
 	pixel_x = 32
 	},
-/obj/structure/chair/sofa/left,
 /obj/structure/sign/poster/contraband/peacemaker{
 	pixel_y = 32
 	},
@@ -5414,10 +5391,6 @@
 	picked_color = "Burgundy"
 	},
 /obj/structure/closet/crate/engineering/electrical,
-/obj/item/bong/lungbuster{
-	pixel_y = 8;
-	pixel_x = -8
-	},
 /obj/item/reagent_containers/food/snacks/grown/cannabis{
 	pixel_x = 10;
 	pixel_y = 4
@@ -5723,9 +5696,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/crewtwo)
 "Hl" = (
@@ -5801,9 +5771,6 @@
 	},
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 4
-	},
-/obj/structure/chair/sofa/left{
-	dir = 8
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo/office)
@@ -7785,10 +7752,6 @@
 	},
 /obj/item/storage/toolbox/ammo/c9mm,
 /obj/item/storage/toolbox/ammo/c10mm,
-/obj/item/gun/ballistic/automatic/assault/g36sh/inteq,
-/obj/item/gun/ballistic/automatic/assault/g36/inteq,
-/obj/item/ammo_box/a556_box/a856,
-/obj/item/ammo_box/a556_box/a856,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Vc" = (
@@ -8139,9 +8102,6 @@
 /obj/item/ammo_box/magazine/m45,
 /obj/item/ammo_box/magazine/smgm10mm,
 /obj/item/ammo_box/magazine/m45,
-/obj/item/ammo_box/magazine/p16/g36,
-/obj/item/ammo_box/magazine/p16/g36sh,
-/obj/item/ammo_box/magazine/p16/g36sh,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "XK" = (
@@ -9186,7 +9146,7 @@ Vx
 fn
 DR
 TT
-gn
+IV
 OZ
 rP
 xW
@@ -9219,7 +9179,7 @@ Vx
 Vx
 Vx
 fn
-rz
+gy
 eL
 Bm
 GD

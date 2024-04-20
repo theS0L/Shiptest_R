@@ -30,6 +30,9 @@
 /obj/structure/cable{
 	icon_state = "1-10"
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
 "al" = (
@@ -913,6 +916,10 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "jr" = (
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
 "jv" = (
@@ -1303,9 +1310,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
+/obj/structure/chair/comfy/grey/directional/east,
 /turf/open/floor/wood/maple,
 /area/ship/hallway/port)
 "pd" = (
@@ -1840,9 +1845,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/structure/chair/comfy/black{
-	dir = 8
-	},
+/obj/structure/chair/comfy/grey/directional/west,
 /turf/open/floor/wood/maple,
 /area/ship/hallway/port)
 "wm" = (
@@ -2169,9 +2172,6 @@
 /turf/open/floor/grass/ship/jungle,
 /area/ship/bridge)
 "AY" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
 /obj/structure/railing{
 	dir = 8
 	},
@@ -2181,6 +2181,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+/obj/structure/chair/comfy/grey/directional/east,
 /turf/open/floor/wood/maple,
 /area/ship/hallway/port)
 "AZ" = (
@@ -3883,9 +3884,6 @@
 /turf/open/floor/wood/maple,
 /area/ship/hallway/central)
 "Wy" = (
-/obj/structure/chair/comfy/black{
-	dir = 8
-	},
 /obj/structure/railing{
 	dir = 4
 	},
@@ -3893,6 +3891,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
+/obj/structure/chair/comfy/grey/directional/west,
 /turf/open/floor/wood/maple,
 /area/ship/hallway/port)
 "WJ" = (

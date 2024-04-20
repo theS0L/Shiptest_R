@@ -153,6 +153,17 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
+"cW" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/watertank,
+/turf/open/floor/plating,
+/area/ship/maintenance/starboard)
 "de" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor/shutters{
@@ -263,8 +274,8 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science/robotics)
 "ed" = (
-/obj/structure/chair/sofa,
 /obj/item/radio/intercom/directional/north,
+/obj/structure/chair/sofa/brown/corpo/directional,
 /turf/open/floor/carpet/red,
 /area/ship/crew)
 "et" = (
@@ -359,7 +370,12 @@
 	icon_state = "2-8"
 	},
 /obj/structure/extinguisher_cabinet/directional/north,
-/obj/structure/reagent_dispensers/watertank,
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 1
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/starboard)
 "gB" = (
@@ -1108,13 +1124,13 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/structure/chair/sofa/right{
-	dir = 4
-	},
 /obj/effect/landmark/start/assistant,
 /obj/machinery/light_switch{
 	pixel_x = -20;
 	pixel_y = 12;
+	dir = 4
+	},
+/obj/structure/chair/sofa/brown/corpo/right{
 	dir = 4
 	},
 /turf/open/floor/carpet/red,
@@ -2204,10 +2220,10 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "KN" = (
-/obj/structure/chair/sofa/corner{
+/obj/machinery/firealarm/directional/north,
+/obj/structure/chair/sofa/brown/corpo/corner{
 	dir = 4
 	},
-/obj/machinery/firealarm/directional/north,
 /turf/open/floor/carpet/red,
 /area/ship/crew)
 "Lv" = (
@@ -2806,9 +2822,9 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Wg" = (
-/obj/structure/chair/sofa/left,
 /obj/machinery/computer/helm/viewscreen/directional/north,
 /obj/effect/landmark/start/assistant,
+/obj/structure/chair/sofa/brown/corpo/left,
 /turf/open/floor/carpet/red,
 /area/ship/crew)
 "Wi" = (
@@ -3134,7 +3150,7 @@ Pf
 kg
 rz
 sj
-XU
+cW
 XU
 pH
 sj

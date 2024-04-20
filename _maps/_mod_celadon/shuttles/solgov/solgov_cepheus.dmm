@@ -2781,7 +2781,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/structure/closet/secure_closet/engineering_personal,
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "Gf" = (
@@ -3715,6 +3715,7 @@
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 6
 	},
+/obj/structure/closet/secure_closet/engineering_personal,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "Tu" = (

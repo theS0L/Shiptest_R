@@ -1229,6 +1229,7 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 8
 	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo/port)
 "Ay" = (

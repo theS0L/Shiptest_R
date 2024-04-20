@@ -164,6 +164,12 @@
 /obj/effect/turf_decal/number/three{
 	dir = 4
 	},
+/obj/structure/closet/crate{
+	color = "#ffcc00";
+	name = "spare fuel crate"
+	},
+/obj/item/stack/sheet/mineral/plasma/twenty,
+/obj/item/stack/sheet/mineral/uranium/twenty,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "ks" = (
@@ -639,15 +645,11 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/structure/closet/crate{
-	color = "#ffcc00";
-	name = "spare fuel crate"
-	},
-/obj/item/stack/sheet/mineral/plasma/twenty,
-/obj/item/stack/sheet/mineral/uranium/twenty,
 /obj/effect/turf_decal/number/five{
 	dir = 4
 	},
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "St" = (

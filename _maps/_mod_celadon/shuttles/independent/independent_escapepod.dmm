@@ -79,6 +79,16 @@
 /obj/structure/cable{
 	icon_state = "0-1"
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"C" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "F" = (
@@ -171,7 +181,7 @@ Z
 a
 Z
 m
-Z
+C
 Z
 "}
 (6,1,1) = {"
@@ -179,7 +189,7 @@ a
 Z
 H
 Z
-a
+Z
 "}
 (7,1,1) = {"
 a

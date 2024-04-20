@@ -214,6 +214,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "kS" = (

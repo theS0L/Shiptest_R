@@ -463,24 +463,10 @@
 	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate,
-/obj/item/vending_refill/engineering,
-/obj/item/vending_refill/engineering,
-/obj/item/vending_refill/engivend,
-/obj/item/vending_refill/engivend,
-/obj/item/vending_refill/hydronutrients,
-/obj/item/vending_refill/hydronutrients,
-/obj/item/vending_refill/boozeomat,
-/obj/item/vending_refill/boozeomat,
-/obj/item/vending_refill/medical,
-/obj/item/vending_refill/medical,
-/obj/item/vending_refill/cigarette,
-/obj/item/vending_refill/cigarette,
-/obj/item/vending_refill/snack,
-/obj/item/vending_refill/snack,
-/obj/item/vending_refill/sovietsoda,
-/obj/item/vending_refill/cola,
-/obj/item/vending_refill/cola,
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/storage)
 "iO" = (
@@ -1808,6 +1794,24 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/structure/closet/crate,
+/obj/item/vending_refill/cola,
+/obj/item/vending_refill/cola,
+/obj/item/vending_refill/sovietsoda,
+/obj/item/vending_refill/snack,
+/obj/item/vending_refill/snack,
+/obj/item/vending_refill/cigarette,
+/obj/item/vending_refill/cigarette,
+/obj/item/vending_refill/medical,
+/obj/item/vending_refill/medical,
+/obj/item/vending_refill/boozeomat,
+/obj/item/vending_refill/boozeomat,
+/obj/item/vending_refill/hydronutrients,
+/obj/item/vending_refill/hydronutrients,
+/obj/item/vending_refill/engivend,
+/obj/item/vending_refill/engivend,
+/obj/item/vending_refill/engineering,
+/obj/item/vending_refill/engineering,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "Ka" = (

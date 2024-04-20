@@ -1425,6 +1425,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plasteel/tech,
 /area/ship/maintenance/fore)
 "oQ" = (
@@ -3890,10 +3891,6 @@
 /obj/effect/turf_decal/corner/opaque/yellow/half,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
-"WW" = (
-/obj/structure/chair/comfy/brown,
-/turf/open/floor/carpet/orange,
-/area/ship/bridge)
 "WZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
@@ -4748,7 +4745,7 @@ gB
 Dr
 uS
 Sp
-WW
+UP
 Uf
 Dr
 El
