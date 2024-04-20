@@ -227,12 +227,12 @@
 	pixel_x = -2;
 	pixel_y = -4
 	},
-/obj/item/radio/off{
-	pixel_x = 6;
-	pixel_y = 7
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/implant/radio{
+	pixel_x = 3;
+	pixel_y = 11
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "aE" = (
@@ -2236,11 +2236,6 @@
 /obj/item/storage/belt/utility,
 /obj/item/storage/belt/utility{
 	pixel_y = 6
-	},
-/obj/item/radio/off,
-/obj/item/radio/off{
-	pixel_x = -3;
-	pixel_y = 3
 	},
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/machinery/light_switch{

@@ -737,7 +737,6 @@
 /obj/item/gps/mining,
 /obj/item/gps/mining,
 /obj/structure/closet/crate/miningcar,
-/obj/item/disk/holodisk/rube/disk7,
 /obj/item/grenade/chem_grenade/cleaner,
 /obj/effect/turf_decal/corner_steel_grid,
 /obj/effect/turf_decal/corner_steel_grid{
@@ -777,8 +776,6 @@
 	},
 /obj/structure/table/wood,
 /obj/item/pipe_dispenser,
-/obj/item/disk/holodisk/rube/disk4,
-/obj/item/disk/holodisk/rube/disk3,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "hf" = (
@@ -1266,7 +1263,6 @@
 /obj/item/holosign_creator/atmos,
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/clothing/gloves/color/yellow,
-/obj/item/disk/holodisk/rube/disk6,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/storage)
 "mi" = (
@@ -1460,7 +1456,6 @@
 /obj/effect/turf_decal/corner/opaque/yellow/border{
 	dir = 1
 	},
-/obj/item/disk/holodisk/rube/disk4,
 /turf/open/floor/mineral/titanium,
 /area/ship/bridge)
 "od" = (
@@ -2648,12 +2643,10 @@
 /obj/item/radio/intercom/wideband/table{
 	pixel_y = -9
 	},
-/obj/item/disk/holodisk/rube/disk1,
-/obj/item/disk/holodisk/rube/disk2,
-/obj/item/disk/holodisk/rube/disk3,
-/obj/item/disk/holodisk/rube/disk4,
-/obj/item/disk/holodisk/rube/disk5,
-/obj/item/disk/holodisk/rube/disk6,
+/obj/item/radio{
+	pixel_x = 6;
+	pixel_y = 13
+	},
 /turf/open/floor/mineral/titanium,
 /area/ship/bridge)
 "zL" = (
@@ -3903,7 +3896,6 @@
 	dir = 8
 	},
 /obj/structure/table/wood,
-/obj/item/disk/holodisk/rube/disk5,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "LK" = (

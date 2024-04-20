@@ -3851,7 +3851,6 @@
 "oa" = (
 /obj/item/multitool,
 /obj/item/clothing/glasses/meson/engine/tray,
-/obj/item/radio/off,
 /obj/item/storage/belt/utility/atmostech,
 /obj/item/holosign_creator/atmos,
 /obj/item/analyzer,
@@ -4155,7 +4154,6 @@
 	dir = 8;
 	pixel_x = 28
 	},
-/obj/item/clothing/under/rank/civilian/cookjorts,
 /obj/item/clothing/shoes/cookflops,
 /obj/item/clothing/suit/toggle/chef,
 /obj/item/clothing/under/rank/civilian/chef,
@@ -10814,6 +10812,10 @@
 /obj/item/storage/pill_bottle/neurine{
 	pixel_x = -2;
 	pixel_y = 6
+	},
+/obj/item/implant/radio{
+	pixel_x = -11;
+	pixel_y = 11
 	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/dorm)
