@@ -18,6 +18,21 @@
 	pixel_x = -5;
 	pixel_y = -3
 	},
+/obj/item/clothing/head/helmet/m10_elysium{
+	pixel_y = -13;
+	pixel_x = 7
+	},
+/obj/item/clothing/head/helmet/m10_elysium{
+	pixel_x = 14;
+	pixel_y = -7
+	},
+/obj/item/clothing/head/helmet/m10_elysium{
+	pixel_x = 18
+	},
+/obj/item/clothing/head/helmet/m10_elysium{
+	pixel_x = 18;
+	pixel_y = 9
+	},
 /turf/open/floor/plasteel,
 /area/ship/security/dock)
 "aD" = (
@@ -269,6 +284,9 @@
 	},
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/item/areaeditor/shuttle,
+/obj/item/melee/skimitar{
+	pixel_y = 6
+	},
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "hn" = (
@@ -342,9 +360,6 @@
 /area/ship/crew/canteen)
 "jH" = (
 /obj/structure/mineral_door/wood,
-/obj/structure/curtain/cloth/grey{
-	color = "#0A470E"
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -354,6 +369,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
+/obj/structure/curtain/cloth/elysim,
 /turf/open/floor/plating,
 /area/ship/crew/canteen)
 "jJ" = (
@@ -485,9 +501,23 @@
 /obj/item/radio,
 /obj/item/radio,
 /obj/item/disk/design_disk/ammo_1911,
-/obj/item/clothing/under/rank/engineering/engineer/hazard,
-/obj/item/clothing/under/rank/engineering/engineer/hazard,
-/obj/item/clothing/under/rank/engineering/engineer/hazard,
+/obj/item/clothing/head/bandana/elysium/black,
+/obj/item/clothing/head/bandana/elysium/black,
+/obj/item/clothing/head/bandana/elysium/green,
+/obj/item/clothing/head/bandana/elysium/green,
+/obj/item/clothing/head/bandana/elysium/white,
+/obj/item/clothing/head/bandana/elysium/white,
+/obj/item/clothing/shoes/wheelys,
+/obj/item/clothing/shoes/wheelys,
+/obj/item/clothing/head/shemag/white,
+/obj/item/clothing/head/shemag/white,
+/obj/item/clothing/head/shemag/white,
+/obj/item/clothing/head/shemag/green,
+/obj/item/clothing/head/shemag/green,
+/obj/item/clothing/head/shemag/green,
+/obj/item/clothing/head/shemag/black,
+/obj/item/clothing/head/shemag/black,
+/obj/item/clothing/head/shemag/black,
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "lT" = (
@@ -883,11 +913,9 @@
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
 "yN" = (
-/obj/structure/curtain/cloth/grey{
-	color = "#0A470E"
-	},
 /obj/structure/bed,
 /obj/item/bedsheet/clown,
+/obj/structure/curtain/cloth/elysim,
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "zh" = (
@@ -1108,6 +1136,7 @@
 	dir = 4;
 	layer = 4.1
 	},
+/obj/item/banner/elysim,
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "Hy" = (
@@ -1134,7 +1163,12 @@
 /area/ship/crew/canteen)
 "HI" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/suit_storage_unit/standard_unit,
+/obj/machinery/suit_storage_unit/inherit{
+	req_access_txt = "147"
+	},
+/obj/item/clothing/head/space/elysm/space_helm,
+/obj/item/clothing/suit/space/elysm/EVA_armored,
+/obj/item/clothing/mask/breath,
 /turf/open/floor/plating,
 /area/ship/security/dock)
 "HM" = (
@@ -1340,6 +1374,7 @@
 	pixel_x = 11;
 	pixel_y = 23
 	},
+/obj/item/clothing/suit/space/elysm/junk,
 /turf/open/floor/plating,
 /area/ship/security/dock)
 "NF" = (
@@ -1388,7 +1423,11 @@
 "NQ" = (
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck/cas{
-	pixel_y = 8
+	pixel_y = 8;
+	pixel_x = -9
+	},
+/obj/item/storage/book/bible/koran{
+	pixel_x = 6
 	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
@@ -1562,7 +1601,12 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Vf" = (
-/obj/machinery/suit_storage_unit/standard_unit,
+/obj/machinery/suit_storage_unit/inherit{
+	req_access_txt = "147"
+	},
+/obj/item/clothing/head/space/elysm/space_helm,
+/obj/item/clothing/suit/space/elysm/EVA_armored,
+/obj/item/clothing/mask/breath,
 /turf/open/floor/plasteel,
 /area/ship/security/dock)
 "Vs" = (

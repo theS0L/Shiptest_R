@@ -1525,6 +1525,18 @@
 "vv" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/siding/wood,
+/obj/item/radio{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/radio{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/radio{
+	pixel_x = 6;
+	pixel_y = 4
+	},
 /turf/open/floor/wood,
 /area/ship/crew/dorm)
 "vB" = (
@@ -1757,7 +1769,6 @@
 /obj/item/camera,
 /obj/item/gps,
 /obj/item/binoculars,
-/obj/item/radio/off,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
@@ -2205,10 +2216,6 @@
 	dir = 8;
 	pixel_x = 32
 	},
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
@@ -2571,7 +2578,6 @@
 /obj/item/pipe_dispenser,
 /obj/item/construction/rcd/loaded,
 /obj/item/clothing/suit/hooded/wintercoat/engineering,
-/obj/item/radio/off,
 /obj/item/holosign_creator/atmos,
 /obj/item/multitool,
 /obj/item/clothing/gloves/color/yellow,
@@ -2638,7 +2644,6 @@
 /obj/item/card/id/captains_spare,
 /obj/item/pen/survival,
 /obj/item/areaeditor/shuttle,
-/obj/item/radio/off,
 /obj/structure/closet/secure_closet{
 	icon_state = "rd";
 	name = "research director's locker";
@@ -3010,7 +3015,6 @@
 /obj/item/pipe_dispenser,
 /obj/item/clothing/glasses/meson/engine/tray,
 /obj/machinery/atmospherics/pipe/simple/green/visible/layer5,
-/obj/item/radio/off,
 /obj/item/storage/belt/utility/atmostech,
 /obj/item/holosign_creator/atmos,
 /obj/item/analyzer,

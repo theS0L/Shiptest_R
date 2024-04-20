@@ -7,7 +7,6 @@
 // --- MAINTENANCE --- //
 #include "__DEFINES/___DEFINES.dme"
 #include "_components/__components.dme"
-#include "fullscreen/_fullscreen.dme"
 #include "subtler/_subtler.dme"
 #include "radio_syndicate/_radio_syndicate.dme"
 #include "solgov_outfit/_solgov_outfit.dme"
@@ -28,7 +27,7 @@
 // --- MISC --- //
 #include "balance/_balance.dme"
 #include "fixes/_fixes.dme"
-
+#include "ipc_surgery/_ipc_surgery.dme"
 
 // --- CELADON --- //
 

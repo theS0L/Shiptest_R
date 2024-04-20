@@ -42,4 +42,9 @@ GLOBAL_LIST_INIT(ship_faction_to_prefixes, list(
 	"Elisium" = list(
 		"EUSF",
 	),
+	"Pan-Gezenan Federation" = list(
+		"PGF",
+		"PGFMC",
+		"PGFN",
+	),
 ))

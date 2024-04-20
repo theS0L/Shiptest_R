@@ -563,12 +563,12 @@
 	pixel_x = -9;
 	pixel_y = 7
 	},
-/obj/item/radio/off{
-	pixel_x = 6;
-	pixel_y = 7
-	},
 /obj/machinery/airalarm/directional/west,
 /obj/effect/turf_decal/corner/opaque/blue/half,
+/obj/item/implant/radio,
+/obj/item/implant/radio,
+/obj/item/implant/radio,
+/obj/item/implant/radio,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "mC" = (
@@ -2125,10 +2125,6 @@
 "WL" = (
 /obj/structure/table,
 /obj/item/storage/belt/utility,
-/obj/item/radio/off{
-	pixel_x = 6;
-	pixel_y = 7
-	},
 /obj/machinery/atmospherics/pipe/simple/orange/hidden,
 /obj/machinery/light/directional/west,
 /obj/item/storage/box/lights/mixed,
