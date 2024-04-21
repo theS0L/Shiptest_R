@@ -4,3 +4,4 @@
 #include "code/engine/circuits.dm"
 #include "code/engine/enginebalance.dm"
 #include "code/engine/rnd.dm"
+#include "code/collector.dm"

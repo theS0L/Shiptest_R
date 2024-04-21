@@ -1,5 +1,4 @@
-// stored_energy += (pulse_strength-RAD_COLLECTOR_EFFICIENCY)*RAD_COLLECTOR_COEFFICIENT
-/* #define RAD_COLLECTOR_EFFICIENCY 1 	// radiation needs to be over this amount to get power 		//MOD_CELADON-CHANGES -> mod_celadon\balance\code\collector.dm
+#define RAD_COLLECTOR_EFFICIENCY 1 	// radiation needs to be over this amount to get power 		// Взято из -> code\modules\power\singularity\collector.dm строка 2
 #define RAD_COLLECTOR_COEFFICIENT 400
 #define RAD_COLLECTOR_STORED_OUT 0.001	// (this*100)% of stored power outputted per tick. Doesn't actualy change output total, lower numbers just means collectors output for longer in absence of a source
 #define RAD_COLLECTOR_MINING_CONVERSION_RATE 0.00001 //This is gonna need a lot of tweaking to get right. This is the number used to calculate the conversion of watts to research points per process()
@@ -255,4 +254,3 @@
 #undef RAD_COLLECTOR_OUTPUT
 #undef PUBLIC_TECHWEB_GAIN
 #undef PRIVATE_TECHWEB_GAIN
- */
