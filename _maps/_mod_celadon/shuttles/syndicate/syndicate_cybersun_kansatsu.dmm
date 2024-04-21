@@ -724,9 +724,6 @@
 /obj/item/clothing/glasses/meson/engine,
 /turf/open/floor/plating,
 /area/ship/engineering)
-"pH" = (
-/turf/open/floor/plasteel/dark,
-/area/ship/crew/office)
 "qB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -912,7 +909,8 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/vending/boozeomat/all_access{
-	pixel_x = 32
+	pixel_x = 32;
+	density = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)
@@ -1055,8 +1053,7 @@
 "xl" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/structure/easel{
-	pixel_y = 3;
-	pixel_x = 5
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
@@ -1285,8 +1282,8 @@
 /turf/open/floor/plasteel/white,
 /area/ship/crew)
 "BY" = (
-/obj/item/rack_parts/shelf,
 /obj/effect/turf_decal/box,
+/obj/structure/crate_shelf,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "Ce" = (
@@ -1947,7 +1944,7 @@
 "UQ" = (
 /obj/effect/turf_decal/box,
 /obj/machinery/light/directional/east,
-/obj/item/rack_parts/shelf,
+/obj/structure/crate_shelf,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "Vw" = (
@@ -2459,7 +2456,7 @@ TK
 Ce
 jy
 rQ
-pH
+rQ
 Cp
 rQ
 wQ
