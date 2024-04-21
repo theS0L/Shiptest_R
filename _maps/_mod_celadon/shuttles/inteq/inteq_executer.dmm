@@ -50,8 +50,15 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 6
 	},
-/obj/item/gun/energy/e_gun/nuclear,
-/obj/item/gun/energy/e_gun/nuclear,
+/obj/item/gun/energy/laser/e10{
+	pixel_y = 6
+	},
+/obj/item/gun/energy/laser/e10{
+	pixel_y = 2
+	},
+/obj/item/gun/energy/laser/e10{
+	pixel_y = -1
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "aG" = (
@@ -59,7 +66,7 @@
 /obj/item/clothing/mask/gas/sechailer,
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/industrial/traffic/fulltile,
-/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "aQ" = (
@@ -222,7 +229,7 @@
 /obj/item/clothing/mask/gas/sechailer,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/turf_decal/industrial/traffic/fulltile,
-/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "cg" = (
@@ -345,12 +352,6 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "dq" = (
-/obj/machinery/power/terminal{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "ds" = (
@@ -528,11 +529,16 @@
 /turf/open/floor/carpet/black,
 /area/ship/hallway/central)
 "gd" = (
-/obj/structure/guncase,
-/obj/item/gun/energy/e_gun/smg,
-/obj/item/gun/energy/e_gun/smg,
 /obj/effect/turf_decal/techfloor,
-/turf/open/floor/plasteel/tech/grid,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4;
+	layer = 2.030
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8;
+	layer = 2.030
+	},
+/turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "ge" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -980,9 +986,6 @@
 	},
 /obj/structure/closet/crate/freezer,
 /obj/machinery/iv_drip,
-/obj/item/reagent_containers/blood/random,
-/obj/item/reagent_containers/blood/random,
-/obj/item/reagent_containers/blood/random,
 /obj/machinery/light/directional/south,
 /obj/item/reagent_containers/blood/universal,
 /obj/item/reagent_containers/blood/universal,
@@ -1238,6 +1241,7 @@
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/item/gun/energy/e_gun/adv_stopping,
 /obj/item/areaeditor/shuttle,
+/obj/item/stock_parts/cell/gun/upgraded,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "nB" = (
@@ -1594,17 +1598,11 @@
 /area/ship/engineering/electrical)
 "rp" = (
 /obj/structure/closet/crate/medical,
-/obj/item/storage/firstaid/medical{
-	pixel_y = 4
-	},
-/obj/item/storage/firstaid/regular,
-/obj/item/storage/firstaid/regular{
-	pixel_y = -5
-	},
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/spawner/lootdrop/maintenance/three,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "ru" = (
@@ -1690,19 +1688,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "to" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
 /obj/machinery/door/poddoor{
 	dir = 8;
 	id = "exec_eng_armor"
 	},
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "tw" = (
@@ -1736,20 +1726,17 @@
 /area/ship/maintenance/fore)
 "tX" = (
 /obj/structure/rack,
-/obj/item/gun/energy/laser/e10{
-	pixel_y = 9
-	},
-/obj/item/gun/energy/laser/e10{
-	pixel_y = 6
-	},
-/obj/item/gun/energy/laser/e10{
-	pixel_y = 2
-	},
-/obj/item/gun/energy/laser/e10{
-	pixel_y = -1
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/turf_decal/corner/opaque/bar/full,
+/obj/item/stock_parts/cell/gun/empty,
+/obj/item/stock_parts/cell/gun/empty{
+	pixel_x = -8;
+	pixel_y = -2
+	},
+/obj/item/stock_parts/cell/gun/empty{
+	pixel_y = 3;
+	pixel_x = 9
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "ub" = (
@@ -1844,7 +1831,9 @@
 	pixel_y = 23;
 	pixel_x = -12
 	},
-/obj/structure/filingcabinet/security,
+/obj/machinery/suit_storage_unit/inherit/industrial,
+/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
+/obj/item/clothing/mask/gas/sechailer,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "uY" = (
@@ -1925,16 +1914,10 @@
 "wz" = (
 /obj/structure/rack,
 /obj/item/gun_voucher{
-	pixel_x = -9
-	},
-/obj/item/gun_voucher{
 	pixel_x = -3
 	},
 /obj/item/gun_voucher{
 	pixel_x = 2
-	},
-/obj/item/gun_voucher{
-	pixel_x = 8
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/effect/turf_decal/corner/opaque/bar/full,
@@ -1979,7 +1962,6 @@
 	dir = 8
 	},
 /obj/structure/guncase,
-/obj/item/gun/energy/lasercannon/unrestricted,
 /obj/effect/turf_decal/techfloor{
 	dir = 10
 	},
@@ -2534,15 +2516,6 @@
 "Fe" = (
 /turf/open/floor/plasteel/tech,
 /area/ship/maintenance/fore)
-"FB" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
 "Ga" = (
 /obj/machinery/door/airlock/public/glass{
 	dir = 1;
@@ -3258,7 +3231,7 @@
 	pixel_y = 1
 	},
 /obj/effect/turf_decal/industrial/traffic/fulltile,
-/obj/item/clothing/suit/space/hardsuit/syndi/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "Pb" = (
@@ -3494,23 +3467,16 @@
 /area/ship/bridge)
 "SE" = (
 /obj/structure/rack,
-/obj/item/stock_parts/cell/gun/upgraded{
-	pixel_x = -10;
-	pixel_y = 5
-	},
-/obj/item/stock_parts/cell/gun/upgraded{
-	pixel_x = -4;
-	pixel_y = 5
-	},
-/obj/item/stock_parts/cell/gun/upgraded{
-	pixel_x = 3;
-	pixel_y = 5
-	},
-/obj/item/stock_parts/cell/gun/upgraded{
-	pixel_x = 10;
-	pixel_y = 5
-	},
 /obj/effect/turf_decal/corner/opaque/bar/full,
+/obj/item/stock_parts/cell/gun/empty,
+/obj/item/stock_parts/cell/gun/empty{
+	pixel_y = -3;
+	pixel_x = -7
+	},
+/obj/item/stock_parts/cell/gun/empty{
+	pixel_y = 3;
+	pixel_x = 11
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "SP" = (
@@ -4052,10 +4018,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 2;
-	layer = 2.030
-	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "Ze" = (
@@ -4158,7 +4120,7 @@ El
 oF
 qd
 sF
-FB
+El
 sF
 qd
 hG

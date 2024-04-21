@@ -296,6 +296,8 @@
 /obj/item/clothing/head/beret/black,
 /obj/item/clothing/head/beret/black,
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
+/obj/item/storage/backpack/duffelbag/syndie,
+/obj/item/storage/backpack/duffelbag/syndie,
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm)
 "ge" = (
@@ -395,21 +397,14 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/item/storage/firstaid/brute{
-	pixel_y = 8
-	},
-/obj/item/storage/firstaid/fire{
-	pixel_y = 4
-	},
-/obj/item/storage/firstaid/medical{
-	pixel_y = -1
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
 	},
+/obj/item/storage/firstaid/regular,
+/obj/effect/spawner/lootdrop/maintenance/six,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo/port)
 "hx" = (
@@ -1405,9 +1400,9 @@
 	name = "ammo locker"
 	},
 /obj/item/storage/backpack/duffelbag/syndie/ammo/smg,
-/obj/item/storage/backpack/duffelbag/syndie/ammo/shotgun,
 /obj/item/storage/backpack/duffelbag/syndie/ammo/smg,
-/obj/item/storage/backpack/duffelbag/syndie/ammo/shotgun,
+/obj/item/ammo_box/magazine/m12g,
+/obj/item/ammo_box/magazine/m12g,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Dz" = (
@@ -2134,8 +2129,8 @@
 /obj/item/gun/ballistic/shotgun/bulldog/unrestricted{
 	pixel_y = -12
 	},
-/obj/item/gun/ballistic/shotgun/bulldog/unrestricted{
-	pixel_y = 9
+/obj/item/gun/energy/ionrifle/carbine{
+	pixel_y = 8
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
@@ -2287,6 +2282,9 @@
 /obj/item/toy/figure/syndie{
 	pixel_x = -10;
 	pixel_y = 8
+	},
+/obj/item/toy/nuke{
+	pixel_y = -5
 	},
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
