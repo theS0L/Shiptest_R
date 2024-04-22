@@ -8,3 +8,4 @@
 #include "code/ai/aimodules.dm"
 #include "code/ai/silicon.dm"
 #include "code/hair.dm"
+#include "code/glasses.dm"
