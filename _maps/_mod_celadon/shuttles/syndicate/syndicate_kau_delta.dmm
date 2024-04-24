@@ -1145,7 +1145,6 @@
 	},
 /obj/item/storage/backpack/duffelbag/syndie/c4,
 /obj/item/storage/box/syndie_kit/signaler,
-/obj/item/storage/box/firingpins,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "xN" = (
@@ -2161,11 +2160,11 @@
 /obj/item/gun/ballistic/automatic/smg/c20r/sc_c20r{
 	pixel_y = -5
 	},
-/obj/item/gun/ballistic/shotgun/bulldog/unrestricted{
-	pixel_y = -12
-	},
 /obj/item/gun/energy/ionrifle/carbine{
 	pixel_y = 8
+	},
+/obj/item/gun/ballistic/shotgun/bulldog{
+	pixel_y = -10
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
