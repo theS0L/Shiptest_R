@@ -480,7 +480,7 @@
 /area/ship/bridge)
 "mf" = (
 /obj/structure/closet/wall{
-	dir = 4;
+	dir = 8;
 	pixel_x = -28;
 	name = "uniform closet"
 	},
@@ -865,7 +865,6 @@
 /area/ship/bridge)
 "uB" = (
 /obj/structure/closet/emcloset/wall{
-	dir = 1;
 	pixel_y = -28
 	},
 /obj/item/tank/internals/emergency_oxygen/double,
@@ -1485,7 +1484,7 @@
 /area/ship/security/armory)
 "Fr" = (
 /obj/structure/closet/wall{
-	dir = 4;
+	dir = 8;
 	pixel_x = -28;
 	name = "gear closet"
 	},

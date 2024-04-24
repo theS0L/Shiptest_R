@@ -159,7 +159,7 @@
 	dir = 9
 	},
 /obj/structure/closet/secure_closet/wall{
-	dir = 8;
+	dir = 4;
 	icon_state = "sec_wall";
 	name = "clothing locker";
 	pixel_x = 28;
@@ -394,7 +394,7 @@
 	name = "Commander magazine (Rubbershot 9mm)"
 	},
 /obj/structure/closet/secure_closet/wall{
-	dir = 4;
+	dir = 8;
 	icon_state = "sec_wall";
 	name = "firearms locker";
 	pixel_x = -28;
@@ -546,7 +546,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/closet/emcloset/wall{
-	dir = 4;
+	dir = 8;
 	pixel_x = -28
 	},
 /obj/effect/turf_decal/number/five{
@@ -728,7 +728,7 @@
 /obj/item/clothing/head/helmet/sec,
 /obj/item/clothing/head/helmet/sec,
 /obj/structure/closet/secure_closet/wall{
-	dir = 8;
+	dir = 4;
 	icon_state = "sec_wall";
 	name = "armor locker";
 	pixel_x = 28;
@@ -1042,7 +1042,7 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/structure/closet/secure_closet/wall{
-	dir = 4;
+	dir = 8;
 	icon_state = "sec_wall";
 	name = "firearms locker";
 	pixel_x = -28;
@@ -1348,7 +1348,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/closet/firecloset/wall{
-	dir = 8;
+	dir = 4;
 	pixel_x = 28
 	},
 /turf/open/floor/plating,
@@ -1583,7 +1583,6 @@
 /obj/item/storage/belt/security/webbing/inteq,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
 /obj/structure/closet/secure_closet/wall{
-	dir = 1;
 	icon_state = "solgov_wall";
 	name = "head of security's closet";
 	pixel_y = -28;
@@ -1611,7 +1610,7 @@
 /obj/item/ammo_box/magazine/toy/pistol,
 /obj/item/ammo_box/magazine/toy/pistol,
 /obj/structure/closet/wall/red{
-	dir = 8;
+	dir = 4;
 	pixel_x = 28;
 	name = "foam gun cabinet"
 	},
@@ -1948,7 +1947,6 @@
 /area/template_noop)
 "UJ" = (
 /obj/structure/closet/secure_closet/wall{
-	dir = 1;
 	icon_state = "solgov_wall";
 	name = "captain's closet";
 	pixel_y = -28;
