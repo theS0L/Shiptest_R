@@ -1,6 +1,13 @@
 import { useBackend, useLocalState } from '../backend';
 import { Window } from '../layouts';
-import { Section, Input, Stack, Collapsible } from '../components';
+import {
+  Box,
+  Section,
+  Input,
+  Stack,
+  Collapsible,
+  LabeledList,
+} from '../components';
 
 export const ModpacksList = (props, context) => {
   return (
@@ -22,7 +29,7 @@ export const ModpacksListContent = (props, context) => {
 
   const searchBar = (
     <Input
-      placeholder="Искать модпак по имени, описанию или автору..."
+      placeholder="Искать модпак..."
       fluid
       onInput={(e, value) => setSearchText(value)}
     />
@@ -31,18 +38,18 @@ export const ModpacksListContent = (props, context) => {
   return (
     <>
       <Stack.Item>
-        <Section fill title="Фильтры">
-          {searchBar}
-        </Section>
+        <Section fill>{searchBar}</Section>
       </Stack.Item>
       <Stack.Item grow>
         <Section
           fill
           scrollable
           title={
-            searchText.length > 0
-              ? `Результаты поиска "${searchText}"`
-              : `Все модификации - ${modpacks.length}`
+            searchText.length > 0 ? (
+              <span>Результаты поиска "{searchText}":</span>
+            ) : (
+              <span>Все модификации &mdash; {modpacks.length}</span>
+            )
           }
         >
           <Stack fill vertical>
@@ -64,9 +71,23 @@ export const ModpacksListContent = (props, context) => {
                       : true)
                 )
                 .map((modpack) => (
-                  <Collapsible key={modpack.name} title={modpack.name}>
-                    <Section title="Авторы">{modpack.author}</Section>
-                    <Section title="Описание">{modpack.desc}</Section>
+                  <Collapsible
+                    color="transparent"
+                    key={modpack.name}
+                    title={<span class="color-white">{modpack.name}</span>}
+                  >
+                    <Box pb={2} pt={1} pl={4}>
+                      <LabeledList>
+                        <LabeledList.Item label="Описание">
+                          <Box style={{ 'white-space': 'pre-wrap' }}>
+                            {modpack.desc}
+                          </Box>
+                        </LabeledList.Item>
+                        <LabeledList.Item label="Автор">
+                          {modpack.author}
+                        </LabeledList.Item>
+                      </LabeledList>
+                    </Box>
                   </Collapsible>
                 ))}
             </Stack.Item>
