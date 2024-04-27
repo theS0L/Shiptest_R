@@ -386,9 +386,6 @@
 /area/ship/engineering)
 "fM" = (
 /obj/machinery/firealarm/directional/north,
-/obj/structure/sign/warning/nosmoking{
-	pixel_x = 32
-	},
 /obj/structure/rack,
 /obj/item/roller{
 	pixel_x = -5;
@@ -1793,6 +1790,13 @@
 "xD" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/button/door{
+	id = "solc_airblast";
+	name = "Cargo Bay Doors";
+	pixel_y = 8;
+	pixel_x = -24;
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/ship/hallway/port)
 "xF" = (
@@ -3632,6 +3636,11 @@
 	port_direction = 1;
 	preferred_direction = 1
 	},
+/obj/machinery/door/poddoor{
+	dir = 3;
+	name = "Cargo Bay Blast Door";
+	id = "solc_airblast"
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/port)
 "SZ" = (
@@ -3766,6 +3775,11 @@
 /obj/effect/turf_decal/industrial/warning,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
+	},
+/obj/machinery/door/poddoor{
+	dir = 3;
+	name = "Cargo Bay Blast Door";
+	id = "solc_airblast"
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/port)
@@ -4187,7 +4201,7 @@
 "Yy" = (
 /obj/machinery/power/port_gen/pacman{
 	anchored = 1;
-	component_parts = obj/item/stock_parts/micro_laser/ultra
+	component_parts = /obj/item/stock_parts/micro_laser/ultra
 	},
 /obj/structure/cable/yellow,
 /obj/machinery/light/small/directional/west,
@@ -4694,8 +4708,8 @@ Qy
 (15,1,1) = {"
 an
 az
-az
 xs
+az
 CC
 bP
 Eh
