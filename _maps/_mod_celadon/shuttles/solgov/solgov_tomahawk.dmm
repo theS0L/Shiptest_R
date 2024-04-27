@@ -3818,8 +3818,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer4,
-/obj/item/stock_parts/manipulator/nano,
 /obj/item/stock_parts/micro_laser/high,
+/obj/item/stock_parts/capacitor/adv,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "TG" = (
