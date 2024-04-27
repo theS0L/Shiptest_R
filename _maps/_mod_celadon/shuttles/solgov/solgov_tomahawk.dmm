@@ -2575,6 +2575,9 @@
 	name = "Sonnensoldner Locker Room";
 	req_one_access = list(1,10)
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "FL" = (
