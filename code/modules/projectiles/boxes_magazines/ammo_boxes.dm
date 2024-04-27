@@ -362,7 +362,13 @@
 
 /obj/item/ammo_box/a308
 	name = "ammo box (.308)"
-	icon_state = "a308box"
+	// [CELADON-EDIT] - CELADON_WEAPONS
+	// icon_state = "a308box" // CELADON-EDIT - ORIGINAL
+	// [CELADON-ADD]
+	icon = 'mod_celadon/weapons/icons/ammo/ammo.dmi'
+	// [/CELADON-ADD]
+	icon_state = "win308new"
+	// [/CELADON-EDIT]
 	ammo_type = /obj/item/ammo_casing/a308
 	max_ammo = 30
 

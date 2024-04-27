@@ -1,10 +1,13 @@
 /datum/emote/living/carbon/human
 	mob_type_allowed_typecache = list(/mob/living/carbon/human)
 
-/* /datum/emote/living/carbon/human/cry			// Celadon Mod => mod_celadon/_components/code/emotes.dm
+/datum/emote/living/carbon/human/cry
 	key = "cry"
 	key_third_person = "cries"
-	message = "cries."
+	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
+	// message = "cries." // CELADON-EDIT - ORIGINAL
+	message = "плачет."
+	// [/CELADON-EDIT]
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/dap
@@ -16,13 +19,19 @@
 
 /datum/emote/living/carbon/human/eyebrow
 	key = "eyebrow"
-	message = "raises an eyebrow."
+	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
+	// message = "raises an eyebrow." // CELADON-EDIT - ORIGINAL
+	message = "приподнимает бровь."
+	// [/CELADON-EDIT]
 
 /datum/emote/living/carbon/human/grumble
 	key = "grumble"
 	key_third_person = "grumbles"
-	message = "grumbles!"
-	emote_type = EMOTE_AUDIBLE */
+	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
+	// message = "grumbles!" // CELADON-EDIT - ORIGINAL
+	message = "ворчит!"
+	// [/CELADON-EDIT]
+	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/handshake
 	key = "handshake"
@@ -31,26 +40,36 @@
 	hands_use_check = TRUE
 	emote_type = EMOTE_AUDIBLE
 
-/* /datum/emote/living/carbon/human/hug			// Celadon Mod => mod_celadon/_components/code/emotes.dm
+/datum/emote/living/carbon/human/hug
 	key = "hug"
 	key_third_person = "hugs"
-	message = "hugs themself."
-	message_param = "hugs %t."
+	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
+	// message = "hugs themself." // CELADON-EDIT - ORIGINAL
+	// message_param = "hugs %t." // CELADON-EDIT - ORIGINAL
+	message = "обнимает себя."
+	message_param = "обнимает %t."
+	// [/CELADON-EDIT]
 	hands_use_check = TRUE
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/mumble
 	key = "mumble"
 	key_third_person = "mumbles"
-	message = "mumbles!"
+	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
+	// message = "mumbles!" // CELADON-EDIT - ORIGINAL
+	message = "бормочет!"
+	// [/CELADON-EDIT]
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/scream
 	key = "scream"
 	key_third_person = "screams"
-	message = "screams!"
+	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
+	// message = "screams!" // CELADON-EDIT - ORIGINAL
+	message = "кричит!"
+	// [/CELADON-EDIT]
 	emote_type = EMOTE_AUDIBLE
-	vary = TRUE */
+	vary = TRUE
 
 /datum/emote/living/carbon/human/scream/get_sound(mob/living/user)
 	if(!ishuman(user))
@@ -70,12 +89,15 @@
 	else if(islizard(H))
 		return pick('sound/voice/lizard/lizard_scream_1.ogg', 'sound/voice/lizard/lizard_scream_2.ogg', 'sound/voice/lizard/lizard_scream_3.ogg', 'sound/voice/lizard/lizard_scream_4.ogg')
 
-/* /datum/emote/living/carbon/human/hiss //lizard			// Celadon Mod => mod_celadon/_components/code/emotes.dm
+/datum/emote/living/carbon/human/hiss //lizard
 	key = "hiss"
 	key_third_person = "hisses"
-	message = "hisses!"
+	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
+	// message = "hisses!" // CELADON-EDIT - ORIGINAL
+	message = "шипит!"
+	// [/CELADON-EDIT]
 	emote_type = EMOTE_AUDIBLE
-	vary = TRUE */
+	vary = TRUE
 
 /datum/emote/living/carbon/human/hiss/get_sound(mob/living/user)
 	if(!ishuman(user))
@@ -96,7 +118,7 @@
 	if(islizard(user))
 		return 'sound/voice/lizard/squeal.ogg' //This is from Bay
 
-/datum/emote/living/carbon/human/tailthump //lizard
+/datum/emote/living/carbon/human/tailthump //lizard + vox
 	key = "thump"
 	key_third_person = "thumps their tail"
 	message = "thumps their tail!"
@@ -106,7 +128,7 @@
 /datum/emote/living/carbon/human/tailthump/get_sound(mob/living/user)
 	if(!ishuman(user))
 		return
-	if(islizard(user))
+	if(islizard(user) || (isvox(user)))
 		return 'sound/voice/lizard/tailthump.ogg' //https://freesound.org/people/TylerAM/sounds/389665/
 
 /datum/emote/living/carbon/human/weh //lizard
@@ -122,32 +144,48 @@
 	if(islizard(user))
 		return 'sound/voice/lizard/weh.ogg'
 
-/* /datum/emote/living/carbon/human/pale			// Celadon Mod => mod_celadon/_components/code/emotes.dm
+/datum/emote/living/carbon/human/pale
 	key = "pale"
-	message = "goes pale for a second."
+	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
+	// message = "goes pale for a second." // CELADON-EDIT - ORIGINAL
+	message = "бледнеет."
+	// [/CELADON-EDIT]
 
 /datum/emote/living/carbon/human/raise
 	key = "raise"
 	key_third_person = "raises"
-	message = "raises a hand."
+	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
+	// message = "raises a hand." // CELADON-EDIT - ORIGINAL
+	message = "поднимает руки."
+	// [/CELADON-EDIT]
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/human/salute
 	key = "salute"
 	key_third_person = "salutes"
-	message = "salutes."
-	message_param = "salutes to %t."
+	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
+	// message = "salutes." // CELADON-EDIT - ORIGINAL
+	// message_param = "salutes to %t." // CELADON-EDIT - ORIGINAL
+	message = "салютует."
+	message_param = "салютует %t."
+	// [/CELADON-EDIT]
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/human/shrug
 	key = "shrug"
 	key_third_person = "shrugs"
-	message = "shrugs."
+	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
+	// message = "shrugs." // CELADON-EDIT - ORIGINAL
+	message = "пожимает плечами."
+	// [/CELADON-EDIT]
 
 /datum/emote/living/carbon/human/wag
 	key = "wag"
 	key_third_person = "wags"
-	message = "wags their tail." */
+	// [CELADON-EDIT] - CELADON_COMPONENTS_EMOTE - Эмоции
+	// message = "wags their tail." // CELADON-EDIT - ORIGINAL
+	message = "начинает махать хвостом."
+	// [/CELADON-EDIT]
 
 /datum/emote/living/carbon/human/wag/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
@@ -317,3 +355,34 @@
 /datum/emote/living/carbon/human/robot_tongue/sad/run_emote(mob/user, params)
 	if(..())
 		playsound(user.loc, 'sound/misc/sadtrombone.ogg', 50)
+
+//kepi (plus one vox i guess)
+
+/datum/emote/living/carbon/human/kepiclick
+	key = "click"
+	key_third_person = "clicks"
+	message = "clicks."
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/carbon/human/kepiclick/get_sound(mob/living/user)
+	if(!ishuman(user))
+		return
+	if(iskepori(user) || (isvox(user)))
+		return 'sound/voice/kepori/kepiclick.ogg' //https://freesound.org/people/Ambiabstract/sounds/584212/
+
+/datum/emote/living/carbon/human/kepiwhistle
+	key = "whistle"
+	key_third_person = "whistles"
+	message = "whistles!"
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/carbon/human/kepiwhistle/get_sound(mob/living/user)
+	if(!ishuman(user))
+		return
+	if(iskepori(user))
+		return 'sound/voice/kepori/kepiwhistle.ogg' //https://freesound.org/people/Andreas.Mustola/sounds/338277/
+
+/datum/emote/living/carbon/human/kepiwoop // i have yet to find a woop sound that doesnt suck i will do it later
+	key = "woop"
+	key_third_person = "woops"
+	message = "woops!"

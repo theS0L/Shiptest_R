@@ -1,0 +1,9 @@
+#ifndef MODPACK_CELADON_DEFINES
+#define MODPACK_CELADON_DEFINES
+
+#include "__defines.dm"
+
+#include "code/_defines/access.dm"
+#include "code/_defines/cards_ids.dm"
+
+#endif

@@ -1630,7 +1630,9 @@
 "qM" = (
 /obj/structure/grille,
 /obj/docking_port/stationary{
-	dir = 8
+	dwidth = 15;
+	height = 15;
+	width = 30
 	},
 /turf/open/floor/plating,
 /area/ship/external)
@@ -2599,14 +2601,14 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "zP" = (
-/obj/structure/chair/sofa/corner{
-	dir = 4
-	},
 /mob/living/simple_animal/hostile/retaliate/goose{
 	name = "Khasir"
 	},
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 8
+	},
+/obj/structure/chair/sofa/brown/corpo/left{
+	dir = 4
 	},
 /turf/open/floor/carpet/green,
 /area/ship/security)
@@ -2922,6 +2924,24 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering)
+"CU" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/catwalk/over/plated_catwalk/white{
+	color = "#4c535b"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating,
+/area/ship/engineering/electrical)
 "Df" = (
 /obj/machinery/light/small/directional/south,
 /obj/machinery/vending/tool,
@@ -3400,6 +3420,10 @@
 /area/ship/construction)
 "IH" = (
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -3647,11 +3671,11 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "LY" = (
-/obj/structure/chair/sofa{
-	dir = 4
-	},
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 8
+	},
+/obj/structure/chair/sofa/brown/corpo/directional{
+	dir = 4
 	},
 /turf/open/floor/carpet/green,
 /area/ship/security)
@@ -3987,9 +4011,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Qc" = (
-/obj/structure/chair/sofa/right{
-	dir = 4
-	},
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = -3;
@@ -3997,6 +4018,9 @@
 	},
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 8
+	},
+/obj/structure/chair/sofa/brown/corpo/right{
+	dir = 4
 	},
 /turf/open/floor/carpet/green,
 /area/ship/security)
@@ -4392,7 +4416,6 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "TR" = (
-/obj/structure/chair/sofa/left,
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/floor/carpet/green,
 /area/ship/security)
@@ -4870,15 +4893,16 @@
 /area/ship/engineering)
 "ZJ" = (
 /obj/structure/fans/tiny,
-/obj/docking_port/mobile{
-	launch_status = 0;
-	port_direction = 8;
-	preferred_direction = 8;
-	dir = 4
-	},
 /obj/machinery/door/poddoor/shutters{
 	dir = 4;
 	id = "shutt1"
+	},
+/obj/docking_port/mobile{
+	dir = 2;
+	launch_status = 0;
+	port_direction = 8;
+	preferred_direction = 4;
+	set_dir_on_move = 4
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -5731,7 +5755,7 @@ XH
 GH
 OA
 tt
-GE
+CU
 IH
 Pk
 jn

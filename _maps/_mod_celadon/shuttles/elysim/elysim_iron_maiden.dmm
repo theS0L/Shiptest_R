@@ -132,7 +132,7 @@
 "gd" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/corner/transparent/green/half,
-/obj/structure/chair/sofa,
+/obj/structure/chair/sofa/brown/corpo/directional,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "gx" = (
@@ -234,6 +234,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plating,
 /area/ship/crew/cryo)
 "kS" = (
@@ -303,7 +304,7 @@
 	},
 /obj/structure/closet/wall/orange{
 	name = "fuel locker";
-	dir = 4;
+	dir = 8;
 	pixel_x = -28
 	},
 /obj/effect/decal/cleanable/insectguts,
@@ -327,8 +328,8 @@
 /obj/effect/turf_decal/corner/transparent/green{
 	dir = 8
 	},
-/obj/structure/chair/sofa/corner,
 /obj/item/trash/chips,
+/obj/structure/chair/sofa/brown/corpo/corner,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "nL" = (
@@ -633,7 +634,8 @@
 	icon_door = "red_wall";
 	icon_state = "generic_wall";
 	name = "equipment locker";
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /obj/effect/decal/cleanable/oil,
 /obj/item/clothing/head/bandana/elysium/green,
@@ -703,7 +705,8 @@
 	icon_door = "red_wall";
 	icon_state = "generic_wall";
 	name = "equipment locker";
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /obj/item/trash/chips,
 /obj/item/clothing/head/bandana/elysium/green,
@@ -753,8 +756,7 @@
 	icon_door = "red_wall";
 	icon_state = "generic_wall";
 	name = "equipment locker";
-	pixel_y = -28;
-	dir = 1
+	pixel_y = -28
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/trash/chips,
@@ -1006,10 +1008,10 @@
 /obj/effect/turf_decal/corner/transparent/green/half{
 	dir = 8
 	},
-/obj/structure/chair/sofa/left{
+/obj/effect/decal/cleanable/greenglow,
+/obj/structure/chair/sofa/brown/corpo/left{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "LV" = (
@@ -1071,7 +1073,8 @@
 /obj/structure/closet/wall{
 	icon_door = "orange_wall";
 	name = "uniform closet";
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /obj/item/radio,
 /obj/item/radio,
@@ -1125,7 +1128,8 @@
 	icon_door = "red_wall";
 	icon_state = "generic_wall";
 	name = "equipment locker";
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/head/bandana/elysium/green,
@@ -1301,7 +1305,8 @@
 	},
 /obj/structure/closet/wall{
 	icon_state = "emergency_wall";
-	pixel_y = 28
+	pixel_y = 28;
+	dir = 1
 	},
 /obj/item/tank/internals/oxygen,
 /obj/item/tank/internals/oxygen,
@@ -1313,7 +1318,7 @@
 "Uj" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/corner/transparent/green/half,
-/obj/structure/chair/sofa/right,
+/obj/structure/chair/sofa/brown/corpo/right,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "Uk" = (
@@ -1341,7 +1346,7 @@
 /obj/structure/closet/secure_closet/wall{
 	icon_door = "med_wall";
 	name = "medical locker";
-	dir = 4;
+	dir = 8;
 	pixel_x = -28
 	},
 /obj/structure/cable{
@@ -1362,8 +1367,7 @@
 	icon_door = "red_wall";
 	icon_state = "generic_wall";
 	name = "equipment locker";
-	pixel_y = -28;
-	dir = 1
+	pixel_y = -28
 	},
 /obj/structure/cable{
 	icon_state = "5-9"
