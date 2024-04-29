@@ -31,7 +31,8 @@ ID мода: CELADON_STRUCTURES
 
 ### Изменения *кор кода*
 
-- Отсутствуют
+- EDIT: `code\game\objects\items\decal_painter.dm`: `/obj/item/floor_painter`, `/obj/item/floor_painter/interact`
+- EDIT: `code\game\turfs\open\floor\plasteel_floor.dm`: `/turf/open/floor/plasteel`: `icon`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
