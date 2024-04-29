@@ -22,6 +22,7 @@ ID мода: CELADON_STRUCTURES
 
 Этот мод добавляет новые объекты для карт, а именно: 
 Сам объект статуи Копо -> `code\game\objects\structures\statues.dm` и его иконка "masson_kills" в файле `statue.dmi`
+Логотипы Целадон и Элизиум как turf -> `mod_celadon\structures\code\logo.dm`
 
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
@@ -72,7 +73,7 @@ ID мода: CELADON_STRUCTURES
 
 ### Авторы:
 
-Maybe-Anton
+Maybe-Anton, MrCat15352
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
