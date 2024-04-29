@@ -18,7 +18,7 @@
 /obj/effect/turf_decal/elysium_logo/two_two
 	icon_state = "22"
 
-/obj/effect/turf_decal/elysium_logo/two_one
+/obj/effect/turf_decal/elysium_logo/two_three
 	icon_state = "23"
 
 /obj/effect/turf_decal/elysium_logo/three_one
@@ -51,7 +51,7 @@
 /obj/effect/turf_decal/celadon_logo/two_two
 	icon_state = "22"
 
-/obj/effect/turf_decal/celadon_logo/two_one
+/obj/effect/turf_decal/celadon_logo/two_three
 	icon_state = "23"
 
 /obj/effect/turf_decal/celadon_logo/three_one
