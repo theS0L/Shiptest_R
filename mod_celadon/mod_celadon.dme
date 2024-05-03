@@ -17,6 +17,7 @@
 
 // --- ICONS --- //
 #include "species_changes/_species_changes.dme"
+#include "resprite/_resprite.dme"
 
 // --- SOUNDS --- //
 
