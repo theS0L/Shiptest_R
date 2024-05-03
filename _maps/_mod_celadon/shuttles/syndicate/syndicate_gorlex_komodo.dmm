@@ -1258,8 +1258,8 @@
 /obj/item/clothing/mask/gas/syndicate,
 /obj/item/tank/internals/oxygen,
 /obj/item/clothing/shoes/magboots/syndie{
-	pixel_x = -6;
-	pixel_y = -5
+	pixel_x = -11;
+	pixel_y = -11
 	},
 /obj/item/clothing/suit/space/hardsuit/syndi/elite/oldsst,
 /turf/open/floor/plasteel/tech,
