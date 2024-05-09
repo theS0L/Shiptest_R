@@ -4629,7 +4629,7 @@
 /area/ship/bridge)
 "Mu" = (
 /obj/structure/fluff/broken_flooring{
-	color = "b1d48e"
+	color = "#b1d48e"
 	},
 /turf/open/floor/plating,
 /area/ship/crew/office)

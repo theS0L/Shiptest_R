@@ -402,4 +402,4 @@
 /datum/map_template/shuttle/subshuttles/nail
 	file_name = "pgf_nail"
 	name = "Nail-class Boarding Vessel"
-	prefix = "PGF"
+	prefix = "PIRATE"
