@@ -366,11 +366,6 @@
 	name = "Falcon Dropship"
 	prefix = "NTSV"
 
-/datum/map_template/shuttle/subshuttles/crux
-	file_name = "minutemen_crux"
-	name = "Crux Dropship"
-	prefix = "CMSV"
-
 /datum/map_template/shuttle/subshuttles/ancon
 	file_name = "nanotrasen_ancon"
 	name = "Nanotrasen Ancon-Class Command Ship"
