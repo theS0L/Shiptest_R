@@ -10,9 +10,9 @@
 -->
 
 <!-- Название мода. Не важно на русском или на английском. -->
-## DEFINES
+## FOV
 
-ID мода: CELADON_DEFINES
+ID мода: FOV
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -20,22 +20,7 @@ ID мода: CELADON_DEFINES
 
 ### Описание мода
 
-Этот мод нужен для хранения глобальных дефайнов или просто дефайнов модпаков, использующихся больше 1 раза
-`mod_celadon\_defines\code\_defines\cards_ids.dm`: id карты
-`mod_celadon\_defines\code\_defines\access.dm`: коды доступов
-
-Это все нужно для FOV
-`mod_celadon\_defines\code\_helpers.dm`: это хелперс
-`mod_celadon\_defines\code\_defines\dcs\signals_mob_main.dm`
-`mod_celadon\_defines\code\_defines\dcs\signals.dm`
-`mod_celadon\_defines\code\_defines\clothers.dm`
-`mod_celadon\_defines\code\_defines\declarations.dm`
-`mod_celadon\_defines\code\_defines\fov.dm`
-`mod_celadon\_defines\code\_defines\layers.dm`
-
-
-
-
+Этот мод должен добавлять механику изменения фова. Он работает, но нечего не происходит. Возможно что-то блокируется. Было портировано все с ново ТГ.
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -64,7 +49,7 @@ ID мода: CELADON_DEFINES
 
 ### Дефайны
 
-- `mod_celadon\_defines\code\_defines\access.dm`: `ACCESS_INTEQ_GENERAL`, `ACCESS_INTEQ_SECURITY`, `ACCESS_INTEQ_CAPTAIN`
+- Отсутствуют
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
   в которые ты их добавил, а также перечисли имена.
@@ -75,7 +60,12 @@ ID мода: CELADON_DEFINES
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- Отсутствуют
+- `code/_defines/clothers.dm`
+- `code/_defines/layers.dm`
+- `code/_defines/fov.dm`
+- `code/_defines/declarations.dm`
+- `code/_defines/dcs/signals.dm`
+- `code/_defines/dcs/signals_mob_main.dm`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.
@@ -85,7 +75,7 @@ ID мода: CELADON_DEFINES
 
 ### Авторы:
 
-Voiko, MrCat15352
+MrCat15352
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
