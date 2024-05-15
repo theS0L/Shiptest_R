@@ -323,12 +323,12 @@ var/timer = 20
 	emote_with_delay("grumble", timer)
 
 /mob/living/carbon/human/verb/emote_mumble()
-	set name = "~ Бармотать"
+	set name = "~ Бормотать"
 	set category = "Эмоции"
 	emote_with_delay("mumble", timer)
 
 /mob/living/carbon/human/verb/emote_scream()
-	set name = "> Кричать "
+	set name = "> Кричать"
 	set category = "Эмоции"
 	emote_with_delay("scream", timer)
 
