@@ -37,6 +37,7 @@
 
 // --- MOBS --- //
 #include "mobs/_mobs.dme"
+#include "drakeborgs/_drakeborgs.dme"
 
 // --- MISC --- //
 #include "balance/_balance.dme"
