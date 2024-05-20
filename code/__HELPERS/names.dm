@@ -278,6 +278,12 @@ GLOBAL_DATUM(syndicate_code_response_regex, /regex)
 	"Nanotrasen" = list(
 		"NTSV",
 	),
+	"N+S Logistics" = list(
+		"NSSV",
+	),
+	"Vigilitas Interstellar" = list(
+		"VISV",
+	),
 	"Frontiersmen Fleet" = list(
 		"FFV",
 	),
