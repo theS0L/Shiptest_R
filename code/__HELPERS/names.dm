@@ -271,6 +271,10 @@ GLOBAL_DATUM(syndicate_code_response_regex, /regex)
 		"CMSV",
 		"CMGSV",
 	),
+	"CLIP Government" = list(
+		"LGSV",
+		"CGSV",
+	),
 	"Nanotrasen" = list(
 		"NTSV",
 	),
