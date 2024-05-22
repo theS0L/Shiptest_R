@@ -248,6 +248,7 @@
 /obj/machinery/light/small/directional/north{
 	pixel_x = 16
 	},
+/obj/item/defibrillator/loaded,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "p" = (
