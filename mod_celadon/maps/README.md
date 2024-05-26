@@ -84,7 +84,9 @@ ID мода: CELADON_CONFIGS_MAPS
 
 ### Авторы:
 
-MrCat15352, Overteh, Molniz, MysticalFaceLesS
+
+MrCat15352, Overteh, Molniz, MysticalFaceLesS, Mirag1993
+
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
