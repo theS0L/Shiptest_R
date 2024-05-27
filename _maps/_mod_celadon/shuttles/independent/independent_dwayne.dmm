@@ -1570,9 +1570,6 @@
 	pixel_x = 5;
 	pixel_y = 8
 	},
-/obj/item/areaeditor/shuttle{
-	pixel_x = -11
-	},
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 1
 	},
