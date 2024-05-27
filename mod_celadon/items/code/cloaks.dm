@@ -1,4 +1,4 @@
-/obj/item/clothing/trenchcoat
+/obj/item/clothing/replica_trenchcoat
 	icon = 'mod_celadon/items/icons/obj/suits/cloaks.dmi'
 	mob_overlay_icon = 'mod_celadon/items/icons/mob/suits/cloaks.dmi'
 	slot_flags = ITEM_SLOT_OCLOTHING | ITEM_SLOT_NECK
