@@ -5,6 +5,7 @@
 	lefthand_file = 'mod_celadon/weapons/icons/guns/guns_lefthand.dmi'
 	righthand_file = 'mod_celadon/weapons/icons/guns/guns_righthand.dmi'
 	fire_sound = 'mod_celadon/_components/sounds/gun/g36sh.ogg'
+//	mob_overlay_icon = прописать оверлей на спину , нужны спрайты!!
 	icon_state = "g36sh"
 	item_state = "g36sh"
 	mag_type = /obj/item/ammo_box/magazine/p16/g36sh
@@ -67,6 +68,9 @@
 	name = "\improper G36"
 	desc = "Наследие огненной эры Союза Человечества , калибра 5.56x45 . Технология производства восстановлена минитменами , но ввиду усложненной конструкции продана корпорации InteQ. Используется сотрудниками InteQ по сей день , как оружие для элитных наемников. "
 	icon = 'mod_celadon/weapons/icons/guns/48x32guns.dmi'
+	lefthand_file = 'mod_celadon/weapons/icons/guns/guns_lefthand.dmi'
+	righthand_file = 'mod_celadon/weapons/icons/guns/guns_righthand.dmi'
+//	mob_overlay_icon = прописать оверлей на спину , нужны спрайты!!
 	fire_sound = 'mod_celadon/_components/sounds/gun/g36.ogg'
 	icon_state = "g36"
 	item_state = "g36"
