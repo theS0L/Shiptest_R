@@ -91,7 +91,7 @@
 	if (!alternate_magazine)
 		alternate_magazine = new mag_type(src)
 		spawnwithmagazine = FALSE
-		mag_type = /obj/item/ammo_box/magazine/p16/g36
+		mag_type = /obj/item/ammo_box/magazine/p16
 
 /obj/item/gun/ballistic/automatic/assault/g36/burst_select()
 	var/mob/living/carbon/human/user = usr
