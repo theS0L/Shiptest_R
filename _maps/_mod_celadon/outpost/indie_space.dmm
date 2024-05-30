@@ -2145,6 +2145,9 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/elysim_wall_seal{
+	pixel_x = 3
+	},
 /turf/open/floor/plasteel,
 /area/outpost/hallway/central)
 "op" = (
@@ -2424,6 +2427,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/patterned,
+/area/outpost/cargo)
+"qu" = (
+/obj/structure/sign/elysim,
+/turf/closed/indestructible/reinforced,
 /area/outpost/cargo)
 "qv" = (
 /obj/structure/table/wood,
@@ -3885,6 +3892,10 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
+"ys" = (
+/obj/structure/sign/elysim,
+/turf/closed/indestructible/wood,
+/area/outpost/crew/bar)
 "yv" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
@@ -3906,6 +3917,10 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/wood,
 /area/outpost/crew/bar)
+"yG" = (
+/obj/structure/sign/elysim,
+/turf/closed/indestructible/reinforced,
+/area/outpost/vacant_rooms)
 "yN" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/donkpockets,
@@ -5700,6 +5715,9 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/steeldecal/steel_decals9,
+/obj/structure/sign/elysim{
+	pixel_x = -32
+	},
 /turf/open/floor/plasteel,
 /area/outpost/hallway/central)
 "Jo" = (
@@ -6389,6 +6407,10 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/office)
+"Nk" = (
+/obj/structure/sign/elysim,
+/turf/closed/indestructible/reinforced,
+/area/outpost/hallway/port)
 "No" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/donut/jelly,
@@ -7675,6 +7697,10 @@
 /obj/item/radio/intercom/directional/east,
 /turf/open/floor/plasteel,
 /area/outpost/hallway/central)
+"Vj" = (
+/obj/structure/sign/elysim,
+/turf/closed/indestructible/reinforced,
+/area/outpost/security)
 "Vp" = (
 /obj/structure/flora/grass/jungle,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -13800,7 +13826,7 @@ Ut
 ZM
 ZM
 ZM
-ZM
+ys
 ZM
 ZM
 Cc
@@ -15395,7 +15421,7 @@ LL
 LL
 YJ
 XE
-LL
+Nk
 SC
 uL
 Xl
@@ -16379,7 +16405,7 @@ SE
 SV
 ic
 Vp
-LL
+Nk
 UI
 Sk
 zb
@@ -16729,7 +16755,7 @@ HD
 HD
 HD
 HD
-Uw
+qu
 jo
 zC
 KS
@@ -16986,7 +17012,7 @@ gZ
 Uw
 Uw
 Uw
-LL
+Nk
 Uq
 Aw
 LL
@@ -17605,7 +17631,7 @@ HD
 HD
 HD
 wL
-wL
+yG
 wL
 wL
 wL
@@ -17981,7 +18007,7 @@ xk
 wL
 pS
 Am
-Lh
+Vj
 Lh
 Lh
 Lh
