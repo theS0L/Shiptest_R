@@ -19,7 +19,35 @@
 /whitesands/icons/ @MrCat15352
 
 # CI and tool chains
+<<<<<<< ours
 /tools/ @MysticalFaceLesS
+=======
+/tools/ @shiptest-ss13/admins
+
+
+# MAINTAINERS
+
+# FalloutFalcon
+
+/code/game/objects/items/storage/ration.dm @FalloutFalcon
+/code/modules/food_and_drinks/drinks/drinks/breakawayflask.dm @FalloutFalcon
+/code/modules/food_and_drinks/food/ration.dm @FalloutFalcon
+/code/modules/mob/living/simple_animal/hostile/mining_mobs/hivelord.dm @FalloutFalcon
+/code/modules/projectiles/ @FalloutFalcon
+/code/modules/reagents/chemistry/reagents/trickwine_reagents.dm @FalloutFalcon
+/code/modules/unit_tests/icons/ @FalloutFalcon
+
+# MarkSuckerberg
+
+/code/controllers/subsystem/shuttle.dm @MarkSuckerberg
+/code/modules/shuttle/ @MarkSuckerberg
+/code/modules/overmap/ @MarkSuckerberg
+/_maps/RandomRuins/LavaRuins/lavaland_surface_sloth.dmm @MarkSuckerberg
+
+
+# CONTRIBUTORS
+
+>>>>>>> theirs
 
 #SIC SEMPER TYRANNIS
 #/_maps/RandomRuins/LavaRuins/lavaland_surface_sloth.dmm @MrCat15352
