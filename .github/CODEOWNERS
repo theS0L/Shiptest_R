@@ -5,6 +5,7 @@
 # to the same file or dir, add them to the end under Multiple Owners
 
 # MrCat15352
+
 /code/controllers/subsystem/shuttle.dm @MrCat15352
 /code/modules/shuttle/ @MrCat15352
 /code/modules/overmap/ @MrCat15352
@@ -19,35 +20,29 @@
 /whitesands/icons/ @MrCat15352
 
 # CI and tool chains
-<<<<<<< ours
-/tools/ @MysticalFaceLesS
-=======
-/tools/ @shiptest-ss13/admins
 
+/tools/ @MysticalFaceLesS
 
 # MAINTAINERS
 
-# FalloutFalcon
+# MysticalFaceLesS
 
-/code/game/objects/items/storage/ration.dm @FalloutFalcon
-/code/modules/food_and_drinks/drinks/drinks/breakawayflask.dm @FalloutFalcon
-/code/modules/food_and_drinks/food/ration.dm @FalloutFalcon
-/code/modules/mob/living/simple_animal/hostile/mining_mobs/hivelord.dm @FalloutFalcon
-/code/modules/projectiles/ @FalloutFalcon
-/code/modules/reagents/chemistry/reagents/trickwine_reagents.dm @FalloutFalcon
-/code/modules/unit_tests/icons/ @FalloutFalcon
+/code/game/objects/items/storage/ration.dm @MysticalFaceLesS
+/code/modules/food_and_drinks/drinks/drinks/breakawayflask.dm @MysticalFaceLesS
+/code/modules/food_and_drinks/food/ration.dm @MysticalFaceLesS
+/code/modules/mob/living/simple_animal/hostile/mining_mobs/hivelord.dm @MysticalFaceLesS
+/code/modules/projectiles/ @MysticalFaceLesS
+/code/modules/reagents/chemistry/reagents/trickwine_reagents.dm @MysticalFaceLesS
+/code/modules/unit_tests/icons/ @MysticalFaceLesS
 
-# MarkSuckerberg
+# molnizz
 
-/code/controllers/subsystem/shuttle.dm @MarkSuckerberg
-/code/modules/shuttle/ @MarkSuckerberg
-/code/modules/overmap/ @MarkSuckerberg
-/_maps/RandomRuins/LavaRuins/lavaland_surface_sloth.dmm @MarkSuckerberg
-
+/code/controllers/subsystem/shuttle.dm @molnizz
+/code/modules/shuttle/ @molnizz
+/code/modules/overmap/ @molnizz
+/_maps/RandomRuins/LavaRuins/lavaland_surface_sloth.dmm @molnizz
 
 # CONTRIBUTORS
-
->>>>>>> theirs
 
 #SIC SEMPER TYRANNIS
 #/_maps/RandomRuins/LavaRuins/lavaland_surface_sloth.dmm @MrCat15352
