@@ -2247,6 +2247,9 @@
 /obj/structure/closet,
 /turf/open/floor/carpet,
 /area/awaymission/BMPship/Fore)
+"lG" = (
+/turf/closed/mineral/gibtonite,
+/area/awaymission/BMPship)
 "pe" = (
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/corner/transparent/bar,
@@ -2452,9 +2455,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
-"IA" = (
-/turf/closed/mineral/gibtonite,
-/area/awaymission/BMPship)
 "JI" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -2484,6 +2484,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
+"Ma" = (
+/turf/closed/mineral/gibtonite,
+/area/awaymission/BMPship/Midship)
 "Mx" = (
 /turf/closed/mineral/random,
 /area/awaymission/BMPship/Midship)
@@ -2551,9 +2554,6 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/wood,
 /area/awaymission/BMPship/Fore)
-"VG" = (
-/turf/closed/mineral/gibtonite,
-/area/awaymission/BMPship/Midship)
 "WI" = (
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
@@ -3373,7 +3373,7 @@ gb
 gb
 gb
 gb
-IA
+lG
 gb
 gb
 hv
@@ -4132,7 +4132,7 @@ fm
 at
 gL
 gs
-VG
+Ma
 Mx
 gb
 gb

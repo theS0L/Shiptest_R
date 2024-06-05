@@ -181,8 +181,7 @@
 /obj/item/storage/backpack/duffelbag/clown/syndie,
 /obj/item/clothing/shoes/clown_shoes/banana_shoes/combat,
 /obj/item/clothing/suit/space/hardsuit/ert/clown{
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100);
-	status_traits = list(nodrop)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 35, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
 	},
 /turf/open/floor/noslip,
 /area/overmap_encounter/planetoid/cave/explored)
