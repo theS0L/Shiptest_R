@@ -38,6 +38,7 @@
 #include "items/_items.dme"
 #include "flora/_flora.dme"
 #include "musician/_musician.dme"
+#include "food_and_drinks/_food_and_drinks.dme"
 
 // --- MOBS --- //
 #include "mobs/_mobs.dme"
