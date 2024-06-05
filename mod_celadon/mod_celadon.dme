@@ -37,6 +37,7 @@
 #include "mechas/_mechas.dme"
 #include "items/_items.dme"
 #include "flora/_flora.dme"
+#include "musician/_musician.dme"
 
 // --- MOBS --- //
 #include "mobs/_mobs.dme"
