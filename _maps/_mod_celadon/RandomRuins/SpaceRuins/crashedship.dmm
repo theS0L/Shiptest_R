@@ -2232,7 +2232,7 @@
 /turf/closed/mineral/diamond,
 /area/awaymission/BMPship)
 "hw" = (
-/turf/closed/mineral/bananium,
+/turf/closed/mineral/gold,
 /area/awaymission/BMPship)
 "hE" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -2452,6 +2452,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/BMPship/Aft)
+"IA" = (
+/turf/closed/mineral/gibtonite,
+/area/awaymission/BMPship)
 "JI" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -2548,6 +2551,9 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/wood,
 /area/awaymission/BMPship/Fore)
+"VG" = (
+/turf/closed/mineral/gibtonite,
+/area/awaymission/BMPship/Midship)
 "WI" = (
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
@@ -3367,7 +3373,7 @@ gb
 gb
 gb
 gb
-gb
+IA
 gb
 gb
 hv
@@ -3519,14 +3525,14 @@ gb
 gb
 gb
 gb
-gb
-gb
-gb
-gb
-gb
-gb
-gb
 hw
+gb
+gb
+gb
+gb
+gb
+gb
+gb
 gb
 gb
 fS
@@ -3627,7 +3633,7 @@ gb
 gb
 gb
 gb
-hw
+gb
 gb
 gb
 gb
@@ -3676,10 +3682,10 @@ gb
 gb
 gb
 gb
-gb
-gb
-gb
 hw
+gb
+gb
+gb
 gb
 gb
 gb
@@ -3725,7 +3731,7 @@ gb
 gb
 gb
 gb
-gb
+hw
 gb
 gb
 gb
@@ -3979,7 +3985,7 @@ gb
 gb
 gb
 gb
-gb
+hw
 gb
 gb
 gb
@@ -4126,7 +4132,7 @@ fm
 at
 gL
 gs
-Mx
+VG
 Mx
 gb
 gb
