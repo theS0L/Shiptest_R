@@ -143,3 +143,10 @@
 	. = ..()
 	if(slot == ITEM_SLOT_EARS)
 		ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
+
+// У реплики не должно быть брони
+/obj/item/clothing/under/rank/centcom/officer/replica
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/under/rank/centcom/officer_skirt/replica
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
