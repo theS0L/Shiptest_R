@@ -1493,7 +1493,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
-/obj/structure/closet/wall/directional/south,
+/obj/structure/closet/wall/directional/south{
+	name = "supply closet"
+	},
 /turf/open/floor/wood,
 /area/ship/crew/library)
 "nM" = (

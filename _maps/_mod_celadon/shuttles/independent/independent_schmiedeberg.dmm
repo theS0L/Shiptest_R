@@ -366,7 +366,9 @@
 /obj/item/hand_labeler_refill,
 /obj/item/storage/firstaid/medical,
 /obj/item/wrench/medical,
-/obj/structure/closet/wall/white/directional/south,
+/obj/structure/closet/wall/white/directional/south{
+	name = "Pharmacist's Locker"
+	},
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
 "eu" = (
