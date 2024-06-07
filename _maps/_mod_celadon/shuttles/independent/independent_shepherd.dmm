@@ -1490,14 +1490,10 @@
 /obj/item/lighter,
 /obj/item/toner,
 /obj/item/table_bell/brass,
-/obj/structure/closet/wall{
-	dir = 1;
-	name = "supply closet";
-	pixel_y = -30
-	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
+/obj/structure/closet/wall/directional/south,
 /turf/open/floor/wood,
 /area/ship/crew/library)
 "nM" = (
