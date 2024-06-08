@@ -37,7 +37,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/red_star, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/independed, 32)
 
 /obj/structure/sign/flag/elysium
-	name = "Seal of the elysium government"
+	name = "Seal of the Elysium government"
 	desc = "A seal emblazened with a gold trim depicting the burning star, sol."
 	icon = 'mod_celadon/flags/icons/flags.dmi'
 	icon_state = "flag_elysium"
@@ -64,8 +64,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/inteq, 32)
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/nanotrasen, 32)
 
 /obj/structure/sign/flag/separatists
-	name = "flag of the elysium Separatists"
-	desc = "The flag of elysium Separatists."
+	name = "flag of the Elysium Separatists"
+	desc = "The flag of Elysium Separatists."
 	icon = 'mod_celadon/flags/icons/flags.dmi'
 	icon_state = "flag_separatist"
 	item_flag = /obj/item/sign/flag/separatists
@@ -121,8 +121,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/syndicate, 32)
 	sign_path = /obj/structure/sign/flag/independed
 
 /obj/item/sign/flag/elysium
-	name = "folded flag of the elysium government"
-	desc = "The folded flag of elysium government."
+	name = "folded flag of the Elysium government"
+	desc = "The folded flag of Elysium government."
 	icon = 'mod_celadon/flags/icons/flags.dmi'
 	icon_state = "folded_elysium"
 	sign_path = /obj/structure/sign/flag/elysium
@@ -142,8 +142,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/syndicate, 32)
 	sign_path = /obj/structure/sign/flag/nanotrasen
 
 /obj/item/sign/flag/separatists
-	name = "folded flag of the elysium Separatists"
-	desc = "The folded flag of elysium Separatists."
+	name = "folded flag of the Elysium Separatists"
+	desc = "The folded flag of Elysium Separatists."
 	icon = 'mod_celadon/flags/icons/flags.dmi'
 	icon_state = "folded_separatist"
 	sign_path = /obj/structure/sign/flag/separatists
