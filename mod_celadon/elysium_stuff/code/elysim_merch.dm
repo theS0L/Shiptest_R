@@ -1,18 +1,18 @@
 // Miscelanious
 
-/obj/structure/curtain/cloth/elysim
-	icon = 'mod_celadon/elysium_stuff/icons/obj/Elysim_patriots.dmi'
-	icon_type = "elysim_fancy"
-	icon_state = "elysim_fancy-open"
+/obj/structure/curtain/cloth/elysium
+	icon = 'mod_celadon/elysium_stuff/icons/obj/elysium_patriots.dmi'
+	icon_type = "elysium_fancy"
+	icon_state = "elysium_fancy-open"
 
-/obj/item/banner/elysim
-	name = "Elysim banner"
-	desc = "The banner of Elysim, Strengthens the faith of those who deserve."
-	icon = 'mod_celadon/elysium_stuff/icons/obj/Elysim_patriots.dmi'
-	icon_state = "banner_elysim"
-	item_state = "banner_elysim"
-	lefthand_file = 'mod_celadon/elysium_stuff/icons/mob/elysim_banner_left.dmi'
-	righthand_file = 'mod_celadon/elysium_stuff/icons/mob/elysim_banner_right.dmi'
+/obj/item/banner/elysium
+	name = "elysium banner"
+	desc = "The banner of elysium, Strengthens the faith of those who deserve."
+	icon = 'mod_celadon/elysium_stuff/icons/obj/elysium_patriots.dmi'
+	icon_state = "banner_elysium"
+	item_state = "banner_elysium"
+	lefthand_file = 'mod_celadon/elysium_stuff/icons/mob/elysium_banner_left.dmi'
+	righthand_file = 'mod_celadon/elysium_stuff/icons/mob/elysium_banner_right.dmi'
 	warcry = "Glory to the nation!"
 
 /obj/item/storage/book/bible/koran
@@ -23,47 +23,47 @@
 
 // Posters
 
-/obj/item/poster/random_elysim
-	name = "random elysim poster"
-	poster_type = /obj/structure/sign/poster/elysim/random
-	icon_state = "rolled_elysim"
+/obj/item/poster/random_elysium
+	name = "random elysium poster"
+	poster_type = /obj/structure/sign/poster/elysium/random
+	icon_state = "rolled_elysium"
 
-/obj/structure/sign/poster/elysim/random
-	name = "random elysim poster"
-	icon = 'mod_celadon/elysium_stuff/icons/obj/Elysim_patriots.dmi'
-	icon_state = "random_elysim"
+/obj/structure/sign/poster/elysium/random
+	name = "random elysium poster"
+	icon = 'mod_celadon/elysium_stuff/icons/obj/elysium_patriots.dmi'
+	icon_state = "random_elysium"
 	never_random = TRUE
-	random_basetype = /obj/structure/sign/poster/elysim
+	random_basetype = /obj/structure/sign/poster/elysium
 	random_type = POSTER_SUBTYPES
 
-/obj/structure/sign/poster/elysim/logo // \"Breathable, if it weren't so darn cold.\"
-	name = "Elysim"
-	desc = "Poster of Elysim Republic. The most common logo. Nothing noteworthy"
-	icon = 'mod_celadon/elysium_stuff/icons/obj/Elysim_patriots.dmi'
-	icon_state = "poster-elysim"
+/obj/structure/sign/poster/elysium/logo // \"Breathable, if it weren't so darn cold.\"
+	name = "elysium"
+	desc = "Poster of elysium Republic. The most common logo. Nothing noteworthy"
+	icon = 'mod_celadon/elysium_stuff/icons/obj/elysium_patriots.dmi'
+	icon_state = "poster-elysium"
 
-/obj/structure/sign/poster/elysim/protest
+/obj/structure/sign/poster/elysium/protest
 	name = "DownSolFed"
-	desc = "Poster of Elysim Republic. \"This poster with its entire appearance screams No deals with traitors! \""
-	icon = 'mod_celadon/elysium_stuff/icons/obj/Elysim_patriots.dmi'
+	desc = "Poster of elysium Republic. \"This poster with its entire appearance screams No deals with traitors! \""
+	icon = 'mod_celadon/elysium_stuff/icons/obj/elysium_patriots.dmi'
 	icon_state = "poster-nosf"
 
-/obj/structure/sign/poster/elysim/sonofelysim
-	name = "Elysim Son"
-	desc = "Poster of the Elisima Republic depicting a stately man.The inscription reads \"God will direct his punishing hand! For the glory of Elysium!\""
-	icon = 'mod_celadon/elysium_stuff/icons/obj/Elysim_patriots.dmi'
-	icon_state = "poster-son_elysim"
+/obj/structure/sign/poster/elysium/sonofelysium
+	name = "elysium Son"
+	desc = "Poster of the elysium Republic depicting a stately man.The inscription reads \"God will direct his punishing hand! For the glory of Elysium!\""
+	icon = 'mod_celadon/elysium_stuff/icons/obj/elysium_patriots.dmi'
+	icon_state = "poster-son_elysium"
 
-/obj/structure/sign/poster/elysim/ak47
+/obj/structure/sign/poster/elysium/ak47
 	name = "No SolFed"
-	desc = "Poster of the Elysim Republic depicting iconic weapons from a previous era. \"Even a child is ready to protect his home!\""
-	icon = 'mod_celadon/elysium_stuff/icons/obj/Elysim_patriots.dmi'
+	desc = "Poster of the elysium Republic depicting iconic weapons from a previous era. \"Even a child is ready to protect his home!\""
+	icon = 'mod_celadon/elysium_stuff/icons/obj/elysium_patriots.dmi'
 	icon_state = "poster-ak47"
 
-/obj/structure/sign/elysim
-	name = "\improper Elysim logo sign"
-	sign_change_name = "Rebel Logo - Elysim"
-	desc = "A sign with the Elysim logo on it. Glory to Human race!"
-	icon = 'mod_celadon/elysium_stuff/icons/obj/Elysim_patriots.dmi'
-	icon_state = "elysim"
+/obj/structure/sign/elysium
+	name = "\improper elysium logo sign"
+	sign_change_name = "Rebel Logo - elysium"
+	desc = "A sign with the elysium logo on it. Glory to Human race!"
+	icon = 'mod_celadon/elysium_stuff/icons/obj/elysium_patriots.dmi'
+	icon_state = "elysium"
 	is_editable = TRUE
