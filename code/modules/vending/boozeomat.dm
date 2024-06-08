@@ -11,6 +11,9 @@
 		/obj/item/reagent_containers/food/drinks/modglass/large = 10,
 		/obj/item/reagent_containers/food/drinks/flask = 3,
 		/obj/item/reagent_containers/food/drinks/ice = 10,
+		// [CELADON-ADD] - CELADON_FOOD_AND_DRINKS
+		/obj/item/reagent_containers/food/drinks/soda_cans/synthanol = 10,
+		// [/CELADON-ADD]
 		/obj/item/reagent_containers/food/drinks/bottle/orangejuice = 4,
 		/obj/item/reagent_containers/food/drinks/bottle/tomatojuice = 4,
 		/obj/item/reagent_containers/food/drinks/bottle/limejuice = 4,
