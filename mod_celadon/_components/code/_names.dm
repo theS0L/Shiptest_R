@@ -6,7 +6,7 @@
 #define FACTION_INDEPENDENT "Independent"
 #define FACTION_ELYSIUM "Elysium"
 #define FACTION_EVENT "Event"
-#define FACTION_PIRATES "Пираты"
+#define FACTION_PIRATES "Pirates"
 
 #define PREFIX_SYNDICATE list("SEV", "SSV", "SMMV", "PCAC", "SSASV", "SSSV", "SOSSV", "TSSV", "SABSV", "BSSV", "ASSV", "MSSV", "LSSV", "DSSV")
 #define PREFIX_SOLGOV list("SGSV", "BSFSV", "ASFSV", "SSFSV", "MDSFSV", "LSFSV", "MSFSV", "SPSFSV")
