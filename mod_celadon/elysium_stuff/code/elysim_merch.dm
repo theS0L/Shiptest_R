@@ -38,7 +38,7 @@
 
 /obj/structure/sign/poster/elysium/logo // \"Breathable, if it weren't so darn cold.\"
 	name = "Elysium"
-	desc = "Poster of elysium Republic. The most common logo. Nothing noteworthy"
+	desc = "Poster of Elysium Republic. The most common logo. Nothing noteworthy"
 	icon = 'mod_celadon/elysium_stuff/icons/obj/elysium_patriots.dmi'
 	icon_state = "poster-elysium"
 
