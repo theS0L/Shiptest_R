@@ -63,7 +63,7 @@
 /obj/structure/sign/elysium
 	name = "\improper Elysium logo sign"
 	sign_change_name = "Rebel Logo - Elysium"
-	desc = "A sign with the elysium logo on it. Glory to Human race!"
+	desc = "A sign with the Elysium logo on it. Glory to Human race!"
 	icon = 'mod_celadon/elysium_stuff/icons/obj/elysium_patriots.dmi'
 	icon_state = "elysium"
 	is_editable = TRUE
