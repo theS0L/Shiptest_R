@@ -345,7 +345,9 @@
 	dir = 1
 	},
 /obj/structure/table,
-/obj/item/weldingtool/hugetank/empty,
+/obj/item/weldingtool/hugetank/empty{
+	pixel_x = -3
+	},
 /obj/item/clothing/glasses/welding,
 /obj/item/toy/crayon/green,
 /turf/open/floor/plasteel,
