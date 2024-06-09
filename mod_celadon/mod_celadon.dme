@@ -41,6 +41,7 @@
 #include "pizzamat/_pizzamat.dme"
 #include "barsigns/_barsigns.dme"
 #include "stamps/_stamps.dme"
+#include "turrets/_turrets.dme"
 
 // --- MOBS --- //
 #include "mobs/_mobs.dme"
