@@ -37,7 +37,6 @@
 	random_basetype = /obj/structure/sign/poster/solfed
 	random_type = POSTER_SUBTYPES
 
-
 /obj/structure/sign/poster/solfed/solfed
 	name = "Poster - Solar Federation"
 	desc = "The flag of the Solar Federation. As the galactic hegemony, they still haven't decided to plant their flag everywhere. Or have they?"
@@ -140,6 +139,14 @@
 	mob_overlay_icon = 'mod_celadon/solfed_stuff/icons/mob/head.dmi'
 	icon_state = "elysium_brigade_m11"
 	item_state = "elysium_brigade_m11"
+
+/obj/item/clothing/head/helmet/solfedm11/elysium
+	name = "Elysium brigade m11 wraps helmet"
+	desc = "This is a Solar Federation M11 helmet in desert coloring. It has the Solar Federation flag on the left side of the helmet. This particular helmet is wrapped in green cloth to have better facial protection. It is usually worn by the Solar Federation Elysium Brigade."
+	icon = 'mod_celadon/solfed_stuff/icons/elysium_brigade.dmi'
+	mob_overlay_icon = 'mod_celadon/solfed_stuff/icons/mob/head.dmi'
+	icon_state = "elysium_brigade_m10_wraps"
+	item_state = "elysium_brigade_m10_wraps"
 
 /obj/item/clothing/suit/armor/solfed/elysium/jacket
 	name = "Elysium Brigade formal jacket"
