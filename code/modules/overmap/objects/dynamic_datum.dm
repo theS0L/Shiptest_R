@@ -148,7 +148,7 @@
 	landing_sound = planet.landing_sound
 	preserve_level = planet.preserve_level //it came to me while I was looking at chickens
 
-	if(vlevel_height >= 255 && vlevel_width >= 255) //little easter egg
+	if(vlevel_height >= 300 && vlevel_width >= 300) //little easter egg
 		planet_name = "LV-[pick(rand(11111,99999))]"
 		token.icon_state = "sector"
 		Rename(planet_name)
