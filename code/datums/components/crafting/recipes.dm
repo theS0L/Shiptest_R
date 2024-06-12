@@ -25,8 +25,6 @@
  */
 /datum/crafting_recipe/proc/check_requirements(mob/user, list/collected_requirements)
 	return TRUE
-<<<<<<< ours
-=======
 
 /datum/crafting_recipe/IED
 	name = "IED"
@@ -1143,4 +1141,3 @@
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 8, /obj/item/stack/sheet/metal = 5, /datum/reagent/srm_bacteria = 30)
 	time = 50
 	category = CAT_PRIMAL
->>>>>>> theirs
