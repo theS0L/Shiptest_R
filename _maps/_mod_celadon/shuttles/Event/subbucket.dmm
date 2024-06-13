@@ -209,6 +209,7 @@
 	dir = 4
 	},
 /obj/item/megaphone/command,
+/obj/item/gun/energy/e_gun/mini,
 /turf/open/floor/carpet/nanoweave/blue,
 /area/ship/bridge)
 "dO" = (
@@ -584,6 +585,11 @@
 /obj/structure/cable,
 /obj/item/toy/crayon/red,
 /obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = 12
+	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/fore)
 "kM" = (
@@ -3118,6 +3124,9 @@
 /obj/machinery/light/small/directional/south,
 /obj/item/reagent_containers/spray/pepper{
 	pixel_y = -7
+	},
+/obj/item/areaeditor/blueprints{
+	name = "coloni blueprints"
 	},
 /turf/open/floor/carpet/nanoweave/blue,
 /area/ship/bridge)
