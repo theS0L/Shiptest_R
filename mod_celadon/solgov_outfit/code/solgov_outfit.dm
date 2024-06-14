@@ -57,6 +57,7 @@
 /datum/outfit/job/solgov/captain/elysium_celadon/post_equip(mob/living/carbon/human/H)
     var/obj/item/card/id/I = H.wear_id
     I.registered_name = H.real_name
+    I.assignment = "Musharif"
     I.access = list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY)
 
     for (var/datum/bank_account/bank_account in SSeconomy.bank_accounts)
@@ -71,7 +72,6 @@
 //	Хос	//
 /datum/outfit/job/solgov/overseer/elysium_celadon
 	name = "SolGov - Elysium Mulazim"
-	id_assignment = "Mulazim"
 
 	head = /obj/item/clothing/head/solfed/elysium/beret
 	uniform = /obj/item/clothing/under/solgov/elysium
@@ -84,6 +84,7 @@
 /datum/outfit/job/solgov/overseer/elysium_celadon/post_equip(mob/living/carbon/human/H)
     var/obj/item/card/id/I = H.wear_id
     I.registered_name = H.real_name
+    I.assignment = "Mulazim"
     I.access = list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY)
 
     for (var/datum/bank_account/bank_account in SSeconomy.bank_accounts)
@@ -98,8 +99,8 @@
 //	Офицер	//
 /datum/outfit/job/solgov/sonnensoldner/elysium_celadon
 	name = "SolGov - Elysium Haris"
-	id_assignment = "Haris"
 
+	id = /obj/item/card/id/solgov/elysium
 	head = null
 	suit = null
 	gloves = null
@@ -109,6 +110,7 @@
 /datum/outfit/job/solgov/sonnensoldner/elysium_celadon/post_equip(mob/living/carbon/human/H)
     var/obj/item/card/id/I = H.wear_id
     I.registered_name = H.real_name
+    I.assignment = "Haris"
     I.access = list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_BRIG, ACCESS_SECURITY)
 
     for (var/datum/bank_account/bank_account in SSeconomy.bank_accounts)
@@ -124,6 +126,7 @@
 /datum/outfit/job/solgov/doctor/elysium_celadon
 	name = "SolGov - Elysium Shafi"
 
+	id = /obj/item/card/id/solgov/elysium
 	head = null
 	suit = null
 	gloves = null
@@ -133,6 +136,7 @@
 /datum/outfit/job/solgov/doctor/elysium_celadon/post_equip(mob/living/carbon/human/H)
     var/obj/item/card/id/I = H.wear_id
     I.registered_name = H.real_name
+    I.assignment = "Shafi"
     I.access = list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_SECURITY)
 
     for (var/datum/bank_account/bank_account in SSeconomy.bank_accounts)
@@ -146,8 +150,9 @@
 
 //	Инженер	//
 /datum/outfit/job/solgov/engineer/elysium_celadon
-	name = "SolGov - Elysium Fanni"
+	name = "SolGov - Elysium Khabeer Fanni"
 
+	id = /obj/item/card/id/solgov/elysium
 	head = null
 	suit = null
 	gloves = null
@@ -157,6 +162,7 @@
 /datum/outfit/job/solgov/engineer/elysium_celadon/post_equip(mob/living/carbon/human/H)
     var/obj/item/card/id/I = H.wear_id
     I.registered_name = H.real_name
+    I.assignment = "Khabeer Fanni"
     I.access = list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_SECURITY)
 
     for (var/datum/bank_account/bank_account in SSeconomy.bank_accounts)
