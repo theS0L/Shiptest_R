@@ -28,11 +28,11 @@
 			"outfit": "/datum/outfit/job/solgov/sonnensoldner/elysium_celadon",
 			"slots": 4
 		},
-		"Medical Doctor": {
+		"Shafi": {
 			"outfit": "/datum/outfit/job/solgov/doctor/elysium_celadon",
 			"slots": 1
 		},
-		"Ship Engineer": {
+		"Khabeer Fanni": {
 			"outfit": "/datum/outfit/job/solgov/engineer/elysium_celadon",
 			"slots": 1
 		}

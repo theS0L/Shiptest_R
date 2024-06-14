@@ -445,6 +445,7 @@
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 1
 	},
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/green,
 /area/ship/crew/chapel)
 "dH" = (
@@ -531,8 +532,11 @@
 	pixel_x = 20;
 	pixel_y = 13
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/showroomfloor,
-/area/ship/hallway/central)
+/area/ship/hallway/fore)
 "ec" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -839,6 +843,9 @@
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/engineering)
+"gp" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/hallway/fore)
 "gA" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -1017,8 +1024,8 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/light_switch{
-	pixel_x = -13;
-	pixel_y = 22
+	pixel_x = 11;
+	pixel_y = 24
 	},
 /obj/structure/bed,
 /obj/structure/curtain/cloth/elysium,
@@ -1395,7 +1402,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor,
-/area/ship/hallway/central)
+/area/ship/hallway/fore)
 "kH" = (
 /obj/machinery/cryopod{
 	dir = 1
@@ -2223,8 +2230,11 @@
 /obj/machinery/door/airlock/grunge{
 	name = "Bathroom"
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/wood/yew,
-/area/ship/hallway/central)
+/area/ship/hallway/fore)
 "rU" = (
 /obj/structure/closet/wall{
 	icon_door = "orange_wall";
@@ -2813,6 +2823,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/wood/yew,
 /area/ship/hallway/central)
 "wC" = (
@@ -2966,6 +2979,9 @@
 	},
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 6
+	},
+/obj/machinery/light/small/directional/east{
+	light_color = "#d8b1b1"
 	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/chapel)
@@ -3214,8 +3230,12 @@
 	pixel_y = 5
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel/showroomfloor,
-/area/ship/hallway/central)
+/area/ship/hallway/fore)
 "zC" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/security/armory)
@@ -3886,8 +3906,11 @@
 	pixel_x = 27
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/showroomfloor,
-/area/ship/hallway/central)
+/area/ship/hallway/fore)
 "Ef" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -4598,6 +4621,11 @@
 	},
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 10
+	},
+/obj/machinery/light_switch{
+	pixel_x = -21;
+	pixel_y = 12;
+	dir = 4
 	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/chapel)
@@ -5571,8 +5599,11 @@
 /obj/structure/sign/poster/solfed/random{
 	pixel_x = 32
 	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plasteel/showroomfloor,
-/area/ship/hallway/central)
+/area/ship/hallway/fore)
 "SK" = (
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
@@ -6245,6 +6276,9 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 5
 	},
+/obj/machinery/light/small/directional/east{
+	light_color = "#d8b1b1"
+	},
 /turf/open/floor/wood/yew,
 /area/ship/hallway/central)
 "XM" = (
@@ -6355,7 +6389,7 @@
 	},
 /obj/structure/curtain/cloth/elysium,
 /turf/open/floor/plasteel/showroomfloor,
-/area/ship/hallway/central)
+/area/ship/hallway/fore)
 "Ze" = (
 /obj/effect/turf_decal/solgov/all/center_left,
 /obj/structure/sign/poster/solfed/elysium{
@@ -6708,11 +6742,11 @@ to
 DT
 hp
 nD
-to
-to
-to
-to
-to
+gp
+gp
+gp
+gp
+gp
 RR
 RR
 RR
@@ -6730,11 +6764,11 @@ GT
 YG
 oI
 RG
-to
+gp
 Zd
 kE
 zB
-to
+gp
 RR
 RR
 RR
@@ -6756,7 +6790,7 @@ rO
 DW
 ea
 SE
-to
+gp
 RR
 RR
 RR
