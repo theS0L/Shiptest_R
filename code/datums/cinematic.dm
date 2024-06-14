@@ -19,10 +19,10 @@
 	qdel(playing)
 
 /atom/movable/screen/cinematic
-//[CELADON-EDIT] event_cly
+// [CELADON-EDIT] - EVENT_CLY
 //	icon = 'icons/effects/station_explosion.dmi' - // CELADON-EDIT - ORIGINAL
 	icon = 'mod_celadon/event_cly/icons/station_explosion.dmi'
-//[CELADON-EDIT]
+// [/CELADON-EDIT]
 	icon_state = "station_intact"
 	plane = SPLASHSCREEN_PLANE
 	layer = SPLASHSCREEN_LAYER
@@ -289,7 +289,7 @@ Nuke.Explosion()
 Narsie()
 	-> Cinematic(CULT,world)
 */
-//[CELADON-ADD] - event_cly
+// [CELADON-ADD] - EVENT_CLY
 /datum/cinematic/colony_nuke
 	id = CINEMATIC_COLONYDESTRUCT
 
@@ -300,4 +300,4 @@ Narsie()
 	flick("colony_explode",screen)
 	special()
 	screen.icon_state = "summary_colony"
-//[/CELADON-ADD]
+// [/CELADON-ADD]
