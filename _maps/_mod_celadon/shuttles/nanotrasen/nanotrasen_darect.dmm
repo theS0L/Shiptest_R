@@ -412,7 +412,6 @@
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/obj/item/areaeditor/shuttle,
 /obj/item/flashlight/lamp/green{
 	pixel_x = 6;
 	pixel_y = 7
@@ -879,17 +878,22 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 6
 	},
-/obj/item/gun/ballistic/automatic/smg/vector{
-	pixel_y = 7
+/obj/structure/guncase{
+	anchored = 1
 	},
-/obj/structure/guncase,
-/obj/item/gun/ballistic/automatic/smg/vector,
-/obj/item/gun/ballistic/automatic/smg/vector{
+/obj/item/gun/energy/e_gun/iot{
 	pixel_y = -7
 	},
-/obj/item/gun/ballistic/automatic/smg/vector{
-	pixel_y = -13
+/obj/item/gun/energy/e_gun/iot{
+	pixel_y = -1
 	},
+/obj/item/gun/energy/e_gun{
+	pixel_y = 2
+	},
+/obj/item/gun/energy/e_gun{
+	pixel_y = 8
+	},
+/obj/item/gun/energy/ionrifle,
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
 "qb" = (
@@ -1299,6 +1303,7 @@
 	},
 /obj/structure/bed,
 /obj/item/bedsheet/grey,
+/obj/item/radio/intercom/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "yE" = (
@@ -1518,37 +1523,32 @@
 	pixel_x = -7;
 	dir = 1
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_y = 7;
-	pixel_x = 5
+/obj/item/stock_parts/cell/gun{
+	pixel_x = 6
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_y = 7;
-	pixel_x = -2
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun{
+	pixel_x = -7
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_y = 11;
-	pixel_x = -2
+/obj/item/stock_parts/cell/gun{
+	pixel_x = -4;
+	pixel_y = 5
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_y = 5;
-	pixel_x = -6
+/obj/item/stock_parts/cell/gun{
+	pixel_x = 4;
+	pixel_y = 5
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_y = 5;
-	pixel_x = -6
+/obj/item/stock_parts/cell/gun{
+	pixel_x = -12;
+	pixel_y = 5
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_y = 5;
-	pixel_x = -6
+/obj/item/stock_parts/cell/gun{
+	pixel_x = -9;
+	pixel_y = 5
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_y = 5;
-	pixel_x = -6
-	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_y = 4;
-	pixel_x = -2
+/obj/item/stock_parts/cell/gun{
+	pixel_x = -1;
+	pixel_y = 5
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
@@ -2511,7 +2511,6 @@
 /obj/item/door_seal,
 /obj/item/door_seal,
 /obj/item/door_seal,
-/obj/item/disk/design_disk/ammo_c9mm,
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
 "WR" = (
