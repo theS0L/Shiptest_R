@@ -4,7 +4,7 @@
 	icon = 'mod_celadon/mobs/icons/animal.dmi'
 	icon_state = "roach"
 	icon_living = "roach_move"
-	icon_aggro = "roach"
+	icon_aggro = "roach_move"
 	icon_dead = "roach_dead"
 	maxHealth = 10
 	health = 10
@@ -37,70 +37,16 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 25, "rad" = 50, "fire" = 0, "acid" = 0)
 
 
-//When roaches die near a leader, the leader may call for reinforcements
-// /mob/living/simple_animal/hostile/asteroid/roach/death()
-// 	.=..()
-// 	if(.)
-// 		for(var/mob/living/simple_animal/hostile/asteroid/roach/fuhrer/F in range(src,8))
-// 			if(!F.stat)
-// 				F.distress_call()
+// When roaches die near a leader, the leader may call for reinforcements
+/mob/living/simple_animal/hostile/asteroid/roach/death()
+	. = ..()
+	if(.)
+		for(var/mob/living/simple_animal/hostile/asteroid/roach/fuhrer/F in range(src,8))
+			if(!F.stat)
+				F.distress_call()
 
-// 		layer = BELOW_MOB_LAYER // Below stunned roaches
+		layer = BELOW_MOB_LAYER // Below stunned roaches
 
-// 		if(prob(3))
-// 			visible_message(span_danger("\the [src] hacks up a tape!"))
-// 			new /obj/item/stack/tape(get_turf(src))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer
-	// preloaded_reagents = list("protein" = 6, "seligitillin" = 6, "fuhrerole" = 12, "diplopterum" = 6)
-	name = "Fuhrer meat"
-	desc = "A glorious slab of sickly-green bubbling meat cut from a fuhrer roach. it emanates an aura of dominance. Delicious!"
-	icon_state = "xenomeat"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
-	bitesize = 4
-	filling_color = "#E2FFDE"
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/xeno
-	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/xeno
-	tastes = list("meat" = 6)
-	foodtype = RAW | MEAT
-
-
-/obj/item/reagent_containers/food/snacks/meat/roachmeat
-	name = "Kampfer meat"
-	desc = "A slab of sickly-green bubbling meat cut from a kampfer roach. You swear you can see it still twitching occasionally. Delicious!"
-	icon_state = "xenomeat"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 1)
-	bitesize = 4
-	filling_color = "#E2FFDE"
-	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/xeno
-	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/xeno
-	tastes = list("meat" = 1, "acid" = 1)
-	foodtype = RAW | MEAT
+		if(prob(3))
+			visible_message(span_danger("\the [src] hacks up a tape!"))
+			new /obj/item/stack/tape(get_turf(src))

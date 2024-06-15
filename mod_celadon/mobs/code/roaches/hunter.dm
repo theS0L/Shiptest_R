@@ -1,7 +1,10 @@
-/*/mob/living/carbon/superior_animal/roach/hunter
+/mob/living/simple_animal/hostile/asteroid/roach/hunter
 	name = "Jager Roach"
 	desc = "A monstrous, dog-sized cockroach. This one has bigger claws."
 	icon_state = "jager"
+	icon_living = "jager_move"
+	icon_aggro = "jager"
+	icon_dead = "jager_dead"
 
 	turns_per_move = 3
 	maxHealth = 25
@@ -10,22 +13,12 @@
 
 	melee_damage_lower = 4
 	melee_damage_upper = 8
-	armor_divisor = ARMOR_PEN_DEEP
-	wound_mult = WOUNDING_EXTREME
+	armour_penetration = 30
 
-	attacktext = list("slashed", "rended", "diced")
+	speak_emote = list("slashed", "rended", "diced")
 
-	meat_type = /obj/item/reagent_containers/food/snacks/meat/roachmeat/jager
-	meat_amount = 3
-	rarity_value = 11.25
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/roachmeat/jager = 3)
 
 	// Armor related variables - jager jacket
-	armor = list(
-		melee = 5,
-		bullet = 2,
-		energy = 2,
-		bomb = 0,
-		bio = 25,
-		rad = 50
-	)
-*/
+	armor = list("melee" = 5, "bullet" = 2, "laser" = 2, "energy" = 2, "bomb" = 0, "bio" = 25, "rad" = 50, "fire" = 0, "acid" = 0)
+
