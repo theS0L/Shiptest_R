@@ -15,7 +15,7 @@
 		ammo_set = FALSE
 		ammo_type = /obj/item/ammo_casing
 
-/obj/item/ammo_box/generic/proc/update_max_ammo(obj/item/ammo_casing/ammo) // и зачем это ? что за бред ?
+/obj/item/ammo_box/generic/proc/update_max_ammo(obj/item/ammo_casing/ammo)
 	if(ammo.bullet_per_box)
 		max_ammo = round(ammo.bullet_per_box)
 	else

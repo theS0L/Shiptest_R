@@ -45,7 +45,6 @@
 //	icon_state = "rifle-brass"
 //	caliber = "5.56x45mm"
 //	projectile_type = /obj/projectile/bullet/a556_45 // CELADON-EDIT - ORIGINAL
-
 /obj/item/ammo_casing/a556_45
 	name = "5.56x45mm bullet casing"
 	desc = "A 5.56x45mm bullet casing."
@@ -53,7 +52,6 @@
 	caliber = "5.56x45mm"
 	projectile_type = /obj/projectile/bullet/a556_45
 	bullet_per_box = 80
-
 // [/CELADON-EDIT]
 
 // 5.45x39mm (SKM-24v)
@@ -102,7 +100,7 @@
 
 //.308 (M514 EBR & CM-GAL-S)
 
-//[СELADON-REMOVE] - CELADON_WEAPONS - хватит это терпеть! Теперь эти патроны только в модпаке
+//[СELADON-REMOVE] - CELADON_WEAPONS - хватит это терпеть! Теперь эти патроны только в модпаке - mod_celadon\weapons\code\modules\projectiles\ammunition\ballistic\rifle.dm
 /*
 /obj/item/ammo_casing/a308
 	name = ".308 bullet casing"
@@ -112,7 +110,7 @@
 	projectile_type = /obj/projectile/bullet/a308
 	bullet_per_box = 20
 */
-//[СELADON-REMOVE]
+//[/СELADON-REMOVE]
 
 /obj/item/ammo_casing/caseless/c299
 	name = ".229 Eoehoma caseless bullet casing"

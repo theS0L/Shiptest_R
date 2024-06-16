@@ -59,7 +59,7 @@
 //.308 WIN (M514 & GAL DMRs)
 
 
-//[СELADON-REMOVE] - CELADON_WEAPONS - хватит это терпеть! Теперь эти патроны только в модпаке
+//[СELADON-REMOVE] - CELADON_WEAPONS - хватит это терпеть! Теперь эти патроны только в модпаке - mod_celadon\weapons\code\modules\projectiles\projectile\bullets\rifle.dm
 /*
 /obj/projectile/bullet/a308
 	name = ".308"
@@ -67,7 +67,7 @@
 	damage = 30
 	armour_penetration = 40
 */
-//[СELADON-REMOVE]
+//[/СELADON-REMOVE]
 
 
 // 8x58mm caseless (SG-669)
@@ -75,8 +75,8 @@
 /obj/projectile/bullet/a858
 	name = "8x58mm caseless bullet"
 	speed = 0.3
-	damage = 50
-	armour_penetration = 15
+	damage = 35
+	armour_penetration = 40
 
 // .299 Eoehoma Caseless (E-40)
 

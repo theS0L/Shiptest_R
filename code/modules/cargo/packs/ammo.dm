@@ -215,7 +215,7 @@
 	contains = list(/obj/item/ammo_box/c9mm)
 	cost = 250
 
-//[СELADON-REMOVE] - CELADON_WEAPONS - хватит это терпеть! Хрен я эти патроны дам продавать по 500 кредитов
+//[СELADON-REMOVE] - CELADON_WEAPONS - хватит это терпеть! Хрен я эти патроны дам продавать по 500 кредитов - mod_celadon/weapons/code/ammo.dm
 /*
 /datum/supply_pack/ammo/a308_ammo_box
 	name = "308 Ammo Box Crate"
@@ -223,7 +223,7 @@
 	contains = list(/obj/item/ammo_box/a308)
 	cost = 500
 */
-//[СELADON-REMOVE]
+//[/СELADON-REMOVE]
 
 /datum/supply_pack/ammo/c9mmap_ammo_box
 	name = "9mm AP Ammo Box Crate"
