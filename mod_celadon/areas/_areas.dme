@@ -4,5 +4,6 @@
 #include "_areas.dm"
 
 #include "code/outpost.dm"
+#include "code/ship_areas.dm"
 
 #endif
