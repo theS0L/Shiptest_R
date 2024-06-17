@@ -1,0 +1,8 @@
+#ifndef MODPACK_CELADON_AREAS
+#define MODPACK_CELADON_AREAS
+
+#include "_areas.dm"
+
+#include "code/outpost.dm"
+
+#endif
