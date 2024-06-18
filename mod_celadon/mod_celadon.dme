@@ -72,7 +72,8 @@
 	если так вообще можно выразиться. Чтобы включить модпак, перенеси
 	его выше.*/
 
+// --- EVENTS --- //
+
 // #include "event_td/_event_td.dme" // Ивент на атаку и защита
 
-// --- EVENTS --- //
-#include "event_cly/_event_cly.dme"
+//#include "event_cly/_event_cly.dme"
