@@ -239,6 +239,7 @@
 /obj/item/tank/internals/anesthetic,
 /obj/machinery/light/directional/east,
 /obj/machinery/firealarm/directional/north,
+/obj/effect/spawner/lootdrop/armory_contraband,
 /turf/open/floor/plasteel/white,
 /area/ship/medical/surgery)
 "eE" = (
@@ -516,6 +517,7 @@
 	pixel_x = 9
 	},
 /obj/effect/spawner/lootdrop/waste/trash,
+/obj/effect/spawner/lootdrop/gloves,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "hm" = (
@@ -2491,6 +2493,7 @@
 	pixel_x = -10;
 	pixel_y = 7
 	},
+/obj/effect/spawner/lootdrop/ration,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "IY" = (
@@ -3467,6 +3470,7 @@
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/tool_surgery_adv,
 /turf/open/floor/plasteel/white,
 /area/ship/medical/surgery)
 "Vf" = (
