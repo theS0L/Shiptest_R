@@ -363,8 +363,6 @@
 		item_state = "dshotgun_sawn"
 		mob_overlay_state = item_state
 
-<<<<<<< ours
-=======
 // sawn off beforehand
 /obj/item/gun/ballistic/shotgun/doublebarrel/presawn
 	name = "sawn-off double-barreled shotgun"
@@ -384,7 +382,6 @@
 	item_state = "dshotgun_sawn"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual/lethal
 
->>>>>>> theirs
 /obj/item/gun/ballistic/shotgun/doublebarrel/roumain
 	name = "HP antique double-barreled shotgun"
 	desc = "A special-edition shotgun hand-made by Hunter's Pride with a high-quality walnut stock inlaid with brass scrollwork. Shotguns like this are very rare outside of the Saint-Roumain Militia's ranks. Otherwise functionally identical to a common double-barreled shotgun. Chambered in 12g."
