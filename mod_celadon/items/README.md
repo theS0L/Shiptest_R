@@ -77,7 +77,7 @@ ID мода: CELADON_ITEMS
 
 ### Авторы:
 
-MrCat15352, MysticalFaceLesS
+MrCat15352, MysticalFaceLesS, RalseiDreemuurr
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
