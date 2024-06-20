@@ -43,16 +43,16 @@
 	flags = LANGUAGE_HIDE_ICON_IF_NOT_UNDERSTOOD
 	space_chance = 40
 	syllables = list(
-		"za", "az", "ze", "ez", "zi", "iz", "zo", "oz", "zu", "uz", "zs", "sz",
-		"ha", "ah", "he", "eh", "hi", "ih", "ho", "oh", "hu", "uh", "hs", "sh",
-		"la", "al", "le", "el", "li", "il", "lo", "ol", "lu", "ul", "ls", "sl",
-		"ka", "ak", "ke", "ek", "ki", "ik", "ko", "ok", "ku", "uk", "ks", "sk",
-		"sa", "as", "se", "es", "si", "is", "so", "os", "su", "us", "ss", "ss",
-		"ra", "ar", "re", "er", "ri", "ir", "ro", "or", "ru", "ur", "rs", "sr",
-		"a",  "a",  "e",  "e",  "i",  "i",  "o",  "o",  "u",  "u",  "s",  "s"
+		"ぁ", "ほ", "ま", "ゑ",
+		"ざ", "ぷ", "ぽ", "ぼ",
+		"ね", "ひ", "ち", "ゐ",
+		"か", "ガ", "げ", "ご",
+		"ヸ", "キ", "で", "ぅ",
+		"ヷ", "ヂ", "エ", "ぐ",
+		"セ",  "ゾ",  "じ",  "べ"
 	)
 	icon = "mod_celadon/items/icons/obj/language.dmi"
-	icon_state = "lizard"
+	icon_state = "thayos"
 	default_priority = 90
 
 /datum/language/fuyo
@@ -62,14 +62,15 @@
 	flags = LANGUAGE_HIDE_ICON_IF_NOT_UNDERSTOOD
 	space_chance = 40
 	syllables = list(
-		"za", "az", "ze", "ez", "zi", "iz", "zo", "oz", "zu", "uz", "zs", "sz",
-		"ha", "ah", "he", "eh", "hi", "ih", "ho", "oh", "hu", "uh", "hs", "sh",
-		"la", "al", "le", "el", "li", "il", "lo", "ol", "lu", "ul", "ls", "sl",
-		"ka", "ak", "ke", "ek", "ki", "ik", "ko", "ok", "ku", "uk", "ks", "sk",
-		"sa", "as", "se", "es", "si", "is", "so", "os", "su", "us", "ss", "ss",
-		"ra", "ar", "re", "er", "ri", "ir", "ro", "or", "ru", "ur", "rs", "sr",
-		"a",  "a",  "e",  "e",  "i",  "i",  "o",  "o",  "u",  "u",  "s",  "s"
+		"阿", "热", "哦",
+		"贝", "赛", "佩",
+		"非", "伊", "艾和",
+		"给", "伊可罗肯", "艾斯",
+		"得", "卡", "泰",
+		"也", "艾了", "吴",
+		"用",  "艾姆",  "艾弗"
 	)
 	icon = "mod_celadon/items/icons/obj/language.dmi"
-	icon_state = "lizard"
+	icon_state = "fuyo"
 	default_priority = 90
+
