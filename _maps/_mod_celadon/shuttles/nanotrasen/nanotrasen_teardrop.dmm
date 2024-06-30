@@ -4162,7 +4162,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 6
 	},
-/obj/structure/guncase{
+/obj/structure/guncloset{
 	desc = "A locker that holds weapons.";
 	name = "weapon locker";
 	anchored = 1;

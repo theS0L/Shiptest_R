@@ -2163,7 +2163,7 @@
 /obj/machinery/light/directional/west{
 	pixel_x = -35
 	},
-/obj/structure/guncase,
+/obj/structure/guncloset,
 /obj/effect/turf_decal/industrial/traffic/full,
 /obj/item/gun/energy/ionrifle/carbine,
 /obj/item/gun/ballistic/automatic/ebr{
