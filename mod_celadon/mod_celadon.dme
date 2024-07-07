@@ -57,6 +57,9 @@
 #include "robotic_honk/_robotic_honk.dme"
 #include "ai_laws/_ai_laws.dme"
 
+// --- RETURNS --- //
+#include "crusher_trophy/_crusher_trophy.dme"
+
 // --- DONATORS --- //
 
 
