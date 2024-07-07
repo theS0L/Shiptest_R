@@ -3131,7 +3131,7 @@
 	pixel_y = 6
 	},
 /obj/item/gps{
-	gpstag = "SFSV Chronicle"
+	gpstag = "SGSV Chronicle"
 	},
 /obj/item/pen/fountain/solgov,
 /obj/effect/decal/cleanable/dirt/dust,
