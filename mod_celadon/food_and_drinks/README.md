@@ -30,6 +30,7 @@ ID мода: CELADON_FOOD_AND_DRINKS
 
 - ADD: `code/modules/vending/cola.dm` -> добавлен синтанол в банке
 - ADD: `code/modules/vending/boozeomat.dm` -> добавлен синтанол в банке
+- EDIT: `code/modules/mob/living/carbon/human/species_types/IPC.dm` -> удален флаг `NOMOUTH`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
