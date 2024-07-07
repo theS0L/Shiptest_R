@@ -654,7 +654,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plating{
+/turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -3695,7 +3695,7 @@
 	},
 /obj/effect/turf_decal/borderfloor/full,
 /obj/machinery/light/floor,
-/turf/open/floor/plating{
+/turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -6906,7 +6906,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/turf_decal/borderfloor/full,
-/turf/open/floor/plating{
+/turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -7447,7 +7447,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/turf/open/floor/plating{
+/turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -9583,7 +9583,7 @@
 	},
 /obj/effect/turf_decal/borderfloor/full,
 /obj/machinery/light/floor,
-/turf/open/floor/plating{
+/turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -10774,7 +10774,7 @@
 	},
 /obj/effect/turf_decal/borderfloor/full,
 /obj/machinery/light/floor,
-/turf/open/floor/plating{
+/turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -12250,7 +12250,7 @@
 	icon_state = "1-4"
 	},
 /obj/effect/turf_decal/borderfloor/full,
-/turf/open/floor/plating{
+/turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -12602,7 +12602,7 @@
 	},
 /obj/effect/turf_decal/borderfloor/full,
 /obj/machinery/light/floor,
-/turf/open/floor/plating{
+/turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -13128,7 +13128,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/borderfloor/full,
-/turf/open/floor/plating{
+/turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -13486,7 +13486,7 @@
 	},
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/borderfloor/full,
-/turf/open/floor/plating{
+/turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -13796,7 +13796,7 @@
 	},
 /obj/effect/turf_decal/borderfloor/full,
 /obj/machinery/light/floor,
-/turf/open/floor/plating{
+/turf/open/floor/plasteel/patterned/cargo_one{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
