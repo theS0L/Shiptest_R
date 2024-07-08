@@ -315,7 +315,7 @@ SUBSYSTEM_DEF(overmap)
 		)
 		used_ruin.load(ruin_turf)
 		ruin_turfs[used_ruin.name] = ruin_turf
-	// [CELADON-EDIT]
+	// [/CELADON-EDIT]
 
 	// fill in the turfs, AFTER generating the ruin. this prevents them from generating within the ruin
 	// and ALSO prevents the ruin from being spaced when it spawns in
@@ -344,7 +344,7 @@ SUBSYSTEM_DEF(overmap)
 		primary_docking_turf.y,
 		primary_docking_turf.z
 		)
-	// [CELADON-EDIT]
+	// [/CELADON-EDIT]
 
 	// [CELADON-ADD] - CELADON_MAP_EXPANSION - Добавление координат для док портов
 	var/turf/third_docking_turf = locate(
@@ -358,7 +358,7 @@ SUBSYSTEM_DEF(overmap)
 		primary_docking_turf.y+60+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
 		primary_docking_turf.z
 		)
-	// [CELADON-ADD]
+	// [/CELADON-ADD]
 
 	var/list/docking_ports = list()
 
@@ -398,7 +398,7 @@ SUBSYSTEM_DEF(overmap)
 	fourth_dock.dheight = 0
 	fourth_dock.dwidth = 0
 	docking_ports += fourth_dock
-	// [CELADON-ADD]
+	// [/CELADON-ADD]
 
 	// [CELADON-REMOVE] - CELADON_MAP_EXPANSION - Чтобы не возникало лишних док портов
 	// if(!used_ruin)
