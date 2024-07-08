@@ -346,7 +346,7 @@ SUBSYSTEM_DEF(overmap)
 		)
 	// [CELADON-EDIT]
 
-	// [CELADON-EDIT] - CELADON_MAP_EXPANSION - Добавление координат для док портов
+	// [CELADON-ADD] - CELADON_MAP_EXPANSION - Добавление координат для док портов
 	var/turf/third_docking_turf = locate(
 		primary_docking_turf.x,
 		primary_docking_turf.y+60+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
@@ -358,7 +358,7 @@ SUBSYSTEM_DEF(overmap)
 		primary_docking_turf.y+60+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
 		primary_docking_turf.z
 		)
-	// [CELADON-EDIT]
+	// [CELADON-ADD]
 
 	var/list/docking_ports = list()
 
@@ -380,7 +380,7 @@ SUBSYSTEM_DEF(overmap)
 	secondary_dock.dwidth = 0
 	docking_ports += secondary_dock
 
-	// [CELADON-EDIT] - CELADON_MAP_EXPANSION - Создание док порта исходя из ранее заданных координат
+	// [CELADON-ADD] - CELADON_MAP_EXPANSION - Создание док порта исходя из ранее заданных координат
 	var/obj/docking_port/stationary/third_dock = new(third_docking_turf)
 	third_dock.dir = NORTH
 	third_dock.name = "[encounter_name] docking location #3"
@@ -398,7 +398,7 @@ SUBSYSTEM_DEF(overmap)
 	fourth_dock.dheight = 0
 	fourth_dock.dwidth = 0
 	docking_ports += fourth_dock
-	// [CELADON-EDIT]
+	// [CELADON-ADD]
 
 	// [CELADON-REMOVE] - CELADON_MAP_EXPANSION - Чтобы не возникало лишних док портов
 	// if(!used_ruin)
