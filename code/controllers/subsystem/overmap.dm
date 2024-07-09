@@ -291,18 +291,6 @@ SUBSYSTEM_DEF(overmap)
 	mapgen.generate_turfs(vlevel.get_unreserved_block())
 
 	// [CELADON-EDIT] - CELADON_MAP_EXPANSION - Координаты спавна руин
-	// var/list/ruin_turfs = list()	// CELADON-EDIT -> ORIGINAL
-	// if(used_ruin)	// CELADON-EDIT -> ORIGINAL
-	// 	var/turf/ruin_turf = locate(	// CELADON-EDIT -> ORIGINAL
-	// 		rand(	// CELADON-EDIT -> ORIGINAL
-	// 			vlevel.low_x+6 + vlevel.reserved_margin,	// CELADON-EDIT -> ORIGINAL
-	// 			vlevel.high_x-used_ruin.width-6 - vlevel.reserved_margin	// CELADON-EDIT -> ORIGINAL
-	// 		),	// CELADON-EDIT -> ORIGINAL
-	// 		vlevel.high_y-used_ruin.height-6 - vlevel.reserved_margin,	// CELADON-EDIT -> ORIGINAL
-	// 		vlevel.z_value	// CELADON-EDIT -> ORIGINAL
-	// 	)	// CELADON-EDIT -> ORIGINAL
-	// 	used_ruin.load(ruin_turf)	// CELADON-EDIT -> ORIGINAL
-	// 	ruin_turfs[used_ruin.name] = ruin_turf	// CELADON-EDIT -> ORIGINAL
 	var/list/ruin_turfs = list()
 	if(used_ruin)
 		var/turf/ruin_turf = locate(
@@ -310,6 +298,7 @@ SUBSYSTEM_DEF(overmap)
 				vlevel.low_x+6 + vlevel.reserved_margin,
 				vlevel.high_x-used_ruin.width-6 - vlevel.reserved_margin
 			),
+	// 		vlevel.high_y-used_ruin.height-6 - vlevel.reserved_margin,	// CELADON-EDIT -> ORIGINAL
 			vlevel.high_y-used_ruin.height-60 - vlevel.reserved_margin,
 			vlevel.z_value
 		)
@@ -334,12 +323,9 @@ SUBSYSTEM_DEF(overmap)
 	// now we need to offset to account for the first dock
 
 	// [CELADON-EDIT] - CELADON_MAP_EXPANSION - Смещение док порта
-	// var/turf/secondary_docking_turf = locate(	// CELADON-EDIT -> ORIGINAL
+	var/turf/secondary_docking_turf = locate(
 	// 	primary_docking_turf.x+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,	// CELADON-EDIT -> ORIGINAL
 	// 	primary_docking_turf.y,	// CELADON-EDIT -> ORIGINAL
-	// 	primary_docking_turf.z	// CELADON-EDIT -> ORIGINAL
-	// 	)	// CELADON-EDIT -> ORIGINAL
-	var/turf/secondary_docking_turf = locate(
 		primary_docking_turf.x+60+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
 		primary_docking_turf.y+75+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
 		primary_docking_turf.z
