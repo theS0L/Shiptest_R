@@ -290,7 +290,6 @@ SUBSYSTEM_DEF(overmap)
 	log_shuttle("SSOVERMAP: START_DYN_E: RUNNING MAPGEN REF [REF(mapgen)] FOR VLEV [vlevel.id] OF TYPE [mapgen.type]")
 	mapgen.generate_turfs(vlevel.get_unreserved_block())
 
-	// [CELADON-EDIT] - CELADON_MAP_EXPANSION - Координаты спавна руин
 	var/list/ruin_turfs = list()
 	if(used_ruin)
 		var/turf/ruin_turf = locate(
@@ -298,13 +297,14 @@ SUBSYSTEM_DEF(overmap)
 				vlevel.low_x+6 + vlevel.reserved_margin,
 				vlevel.high_x-used_ruin.width-6 - vlevel.reserved_margin
 			),
+	// [CELADON-EDIT] - CELADON_MAP_EXPANSION - Координаты спавна руин
 	// 		vlevel.high_y-used_ruin.height-6 - vlevel.reserved_margin,	// CELADON-EDIT -> ORIGINAL
 			vlevel.high_y-used_ruin.height-60 - vlevel.reserved_margin,
+	// [/CELADON-EDIT]
 			vlevel.z_value
 		)
 		used_ruin.load(ruin_turf)
 		ruin_turfs[used_ruin.name] = ruin_turf
-	// [/CELADON-EDIT]
 
 	// fill in the turfs, AFTER generating the ruin. this prevents them from generating within the ruin
 	// and ALSO prevents the ruin from being spaced when it spawns in
