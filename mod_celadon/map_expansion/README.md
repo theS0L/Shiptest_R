@@ -33,8 +33,6 @@ ID мода: MAP_EXPANSION
 `code\controllers\subsystem\overmap.dm` : 
 `/datum/controller/subsystem/overmap/proc/spawn_dynamic_encounter(datum/overmap/dynamic/dynamic_datum, ruin_type)` -> `var/list/ruin_turfs`
 `/datum/controller/subsystem/overmap/proc/spawn_dynamic_encounter(datum/overmap/dynamic/dynamic_datum, ruin_type)` -> `var/turf/secondary_docking_turf`
-`code\__DEFINES\maps.dm`:
-`#define QUADRANT_MAP_SIZE`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -59,7 +57,8 @@ ID мода: MAP_EXPANSION
 
 ### Дефайны
 
-- Отсутствуют
+- `code\__DEFINES\maps.dm`:
+`QUADRANT_MAP_SIZE`
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
   в которые ты их добавил, а также перечисли имена.
