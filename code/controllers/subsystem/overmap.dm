@@ -310,7 +310,7 @@ SUBSYSTEM_DEF(overmap)
 				vlevel.low_x+6 + vlevel.reserved_margin,
 				vlevel.high_x-used_ruin.width-6 - vlevel.reserved_margin
 			),
-			vlevel.high_y-used_ruin.height-75 - vlevel.reserved_margin,
+			vlevel.high_y-used_ruin.height-60 - vlevel.reserved_margin,
 			vlevel.z_value
 		)
 		used_ruin.load(ruin_turf)
@@ -341,21 +341,21 @@ SUBSYSTEM_DEF(overmap)
 	// 	)	// CELADON-EDIT -> ORIGINAL
 	var/turf/secondary_docking_turf = locate(
 		primary_docking_turf.x+60+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
-		primary_docking_turf.y,
+		primary_docking_turf.y+75+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
 		primary_docking_turf.z
 		)
 	// [/CELADON-EDIT]
 
 	// [CELADON-ADD] - CELADON_MAP_EXPANSION - Добавление координат для док портов
 	var/turf/third_docking_turf = locate(
-		primary_docking_turf.x,
-		primary_docking_turf.y+60+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
+		primary_docking_turf.x+60+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
+		primary_docking_turf.y,
 		primary_docking_turf.z
 		)
 
 	var/turf/fourth_docking_turf = locate(
-		primary_docking_turf.x+60+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
-		primary_docking_turf.y+60+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
+		primary_docking_turf.x,
+		primary_docking_turf.y+75+RESERVE_DOCK_MAX_SIZE_LONG+RESERVE_DOCK_DEFAULT_PADDING,
 		primary_docking_turf.z
 		)
 	// [/CELADON-ADD]
