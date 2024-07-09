@@ -182,7 +182,7 @@
 // 			eject_cell(user, I)
 // 			return TRUE
 // 	..()
-// [CELADON-REMOVE]
+// [/CELADON-REMOVE]
 
 /obj/item/gun/energy/can_shoot(visuals)
 	if(safety && !visuals)
