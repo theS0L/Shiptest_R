@@ -2848,13 +2848,13 @@
 	name = "captain's closet";
 	req_access_txt = "20"
 	},
-/obj/item/gun/ballistic/revolver,
 /obj/item/clothing/suit/armor/vest/capcarapace/cybersun,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/head/HoS/cybersun,
 /obj/item/clothing/under/syndicate/cybersun/officer,
 /obj/item/reagent_containers/food/drinks/flask,
 /obj/item/reagent_containers/food/drinks/bottle/gin,
+/obj/item/gun/ballistic/revolver/syndicate,
 /turf/open/floor/carpet/cyan,
 /area/ship/bridge)
 "Xi" = (

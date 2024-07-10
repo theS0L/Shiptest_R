@@ -3099,6 +3099,7 @@
 /obj/item/gun/ballistic/derringer/traitor,
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/gloves/tackler/combat/insulated,
+/obj/item/gun/ballistic/revolver/syndicate,
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "El" = (
