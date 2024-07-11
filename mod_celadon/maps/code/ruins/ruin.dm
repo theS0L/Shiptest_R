@@ -1,11 +1,11 @@
 // Пример датума для руинки
-// /datum/map_template/ruin/beachplanet/fishinghut
+// /datum/map_template/ruin/"планета"/"короткое название"
 // 	name = "Имя руинки для спавна"
 // 	id = "Айди"
 // 	description = "Описание"
 // 	suffix = "Название файла"
 
-//Руины Beachplanet
+// Руины Beachplanet
 /datum/map_template/ruin/beachplanet/fishinghut
 	name = "Fishing Hut"
 	id = "fishinghut"
@@ -48,7 +48,7 @@
 	description = "A hidden paradise on the beach"
 	suffix = "beach_float_resort.dmm"
 
-//Руины Icemoon
+// Руины Icemoon
 /datum/map_template/ruin/icemoon/hydroponicslab
 	name = "Hydroponics Lab"
 	id = "hydroponicslab"
@@ -73,7 +73,7 @@
 	description = "Safety records for early Nanotrasen Spaceworks vessels were, and always have been, top of their class. Absolutely no multi-billion credit projects have been painstakingly erased from history. (Citation Needed)"
 	suffix = "icemoon_crashed_holemaker.dmm"
 
-//Руины Jungle
+// Руины Jungle
 /datum/map_template/ruin/jungle/syndicate
 	name = "Jungle Syndicate Bunker"
 	id = "syndicatebunkerjungle"
@@ -116,7 +116,7 @@
 	description = "A forgotten library, with a few angry monkeys."
 	suffix = "jungle_abandoned_library.dmm"
 
-//Руины Lavaland
+// Руины Lavaland
 /datum/map_template/ruin/lavaland/biodome/winter
 	name = "Solarian Winter Biodome"
 	id = "biodome-winter"
@@ -156,7 +156,7 @@
 	description = "A crashed pirate ship. It would seem that it's crew died a while ago."
 	suffix = "lavaland_crashed_starwalker.dmm"
 
-//Руины Rockplanet
+// Руины Rockplanet
 /datum/map_template/ruin/rockplanet/harmfactory
 	name = "Harm Factory"
 	description = "A factory made for HARM and AGONY."
@@ -181,7 +181,7 @@
 	id = "rockplanet_nomadcrash"
 	suffix = "rockplanet_nomadcrash.dmm"
 
-//Руины Space
+// Руины Space
 /datum/map_template/ruin/space/corporate_mining
 	id = "corporate_mining"
 	suffix = "corporate_mining.dmm"
@@ -226,7 +226,7 @@
 	name = "Space Mall"
 	description = "An old shopping centre, owned by a former member of Nanotrasen's board of directors.."
 
-//Руины Wasteplanet
+// Руины Wasteplanet
 /datum/map_template/ruin/wasteplanet/weaponstest
 	name = "Weapons testing facility"
 	id = "guntested"
@@ -251,7 +251,7 @@
 	id = "abandoned_mechbay"
 	suffix = "wasteplanet_abandoned_mechbay.dmm"
 
-//Руины Whitesands
+// Руины Whitesands
 /datum/map_template/ruin/whitesands/medipen_plant
 	name = "Abandoned Medipen Factory"
 	id = "medipenplant"
