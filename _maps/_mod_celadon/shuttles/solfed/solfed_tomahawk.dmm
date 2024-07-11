@@ -1397,12 +1397,8 @@
 	icon_state = "0-2";
 	pixel_y = 1
 	},
-/obj/item/gun/ballistic/automatic/powered/gauss/gar{
-	slot_flags = 512
-	},
-/obj/item/gun/ballistic/automatic/powered/gauss/gar{
-	slot_flags = 512
-	},
+/obj/item/gun/ballistic/automatic/powered/gauss/gar,
+/obj/item/gun/ballistic/automatic/powered/gauss/gar,
 /turf/open/floor/plasteel/white,
 /area/ship/security/prison)
 "qI" = (
@@ -2380,9 +2376,7 @@
 	icon_state = "captainpack";
 	item_state = "captainpack"
 	},
-/obj/item/gun/ballistic/automatic/powered/gauss/gar{
-	slot_flags = 512
-	},
+/obj/item/gun/ballistic/automatic/powered/gauss/gar,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/office)
 "BJ" = (
