@@ -1,7 +1,7 @@
 // Пример датума для руинки
 // /datum/map_template/ruin/beachplanet/fishinghut
-// 	name = "Имя руинки"
-// 	id = "Айди для спавна"
+// 	name = "Имя руинки для спавна"
+// 	id = "Айди"
 // 	description = "Описание"
 // 	suffix = "Название файла"
 
