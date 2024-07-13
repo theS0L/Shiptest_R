@@ -50,6 +50,9 @@
 	ammo_type = /obj/item/ammo_casing/a308
 	max_ammo = 30
 
+/obj/item/ammo_box/a308/empty
+	start_empty = TRUE
+
 //Пули против мяса , минусовое пробитие , не должно пробивать даже минимальную броню , но огромный урон здоровью
 /obj/item/ammo_box/a308/a308_sp
 	name = "Коробка патронов .308(Охотничий)"

@@ -12,6 +12,9 @@
 	. = ..()
 	icon_state = "morita1_mag-[!!ammo_count()]"
 
+/obj/item/ammo_box/magazine/morita1/empty
+	start_empty = TRUE
+
 /obj/item/ammo_box/magazine/morita1/small
 	name = "\improper small assault rifle magazine (7.62x51mm)"
 	desc = "A simple assault rifle magazine designed to chamber 7.62x51mm."
@@ -38,6 +41,9 @@
 	. = ..()
 	icon_state = "morita1_drum_mag-[!!ammo_count()]"
 
+/obj/item/ammo_box/magazine/morita1/drum/empty
+	start_empty = TRUE
+
 /obj/item/ammo_box/magazine/p16/g36sh
 	name = "\improper G36-SH magazine"
 	desc = " Polymer 20-round assault rifle magazine 5.56x45mm."
@@ -50,6 +56,9 @@
 /obj/item/ammo_box/magazine/p16/g36sh/update_icon_state()
 	. = ..()
 	icon_state = "g36sh_mag-[!!ammo_count()]"
+
+/obj/item/ammo_box/magazine/p16/g36sh/empty
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/p16/g36
 	name = "\improper G36 magazine"
@@ -64,6 +73,9 @@
 	. = ..()
 	icon_state = "g36_mag-[!!ammo_count()]"
 
+/obj/item/ammo_box/magazine/p16/g36/empty
+	start_empty = TRUE
+
 /obj/item/ammo_box/magazine/p16/g36drum
 	name = "\improper G36 drum magazine"
 	desc = "Polymer high-capacyti assault rifle drum 5.56x45mm."
@@ -77,6 +89,8 @@
 	. = ..()
 	icon_state = "g36drum_mag-[!!ammo_count()]"
 
+/obj/item/ammo_box/magazine/p16/g36drum/empty
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/usp45_standart
 	name = "\improper usp.45 magazine"
@@ -92,6 +106,9 @@
 	. = ..()
 	icon_state = "usp-[!!ammo_count()]"
 
+/obj/item/ammo_box/magazine/usp45_standart/empty
+		start_empty = TRUE
+
 /obj/item/ammo_box/magazine/glock_standart
 	name = "\improper Glock 9mm magazine"
 	desc = "glock 9mm magazine"
@@ -105,3 +122,6 @@
 /obj/item/ammo_box/magazine/glock_standart/update_icon_state()
 	. = ..()
 	icon_state = "glock-[!!ammo_count()]"
+
+/obj/item/ammo_box/magazine/glock_standart/empty
+		start_empty = TRUE
