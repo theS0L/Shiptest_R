@@ -1321,8 +1321,8 @@
 	},
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
-/obj/item/gun/ballistic/automatic/assault/g36/inteq,
-/obj/item/gun/ballistic/automatic/assault/g36/inteq,
+/obj/item/gun/ballistic/automatic/assault/p16/g36/inteq,
+/obj/item/gun/ballistic/automatic/assault/p16/g36/inteq,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "UC" = (
