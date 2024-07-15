@@ -337,7 +337,7 @@
 /mob/living/simple_animal/hostile/big_legion/Initialize()
 	.=..()
 	// [CELADON-EDIT] - RETURN_TENDRILS
-	// AddComponent(/datum/component/spawner, list(/mob/living/simple_animal/hostile/asteroid/hivelord/legion/nest), 200, faction, "peels itself off from", 3)
+	// AddComponent(/datum/component/spawner, list(/mob/living/simple_animal/hostile/asteroid/hivelord/legion/nest), 200, faction, "peels itself off from", 3) // CELADON-EDIT - ORIGINAL
 	AddComponent(/datum/component/spawner, list(/mob/living/simple_animal/hostile/asteroid/hivelord/legion/nest,
 												/mob/living/simple_animal/hostile/asteroid/hivelord/legion/tendril), 200, faction, "peels itself off from", 3)
 	// [/CELADON-EDIT]

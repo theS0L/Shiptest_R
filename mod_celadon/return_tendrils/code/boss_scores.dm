@@ -7,21 +7,3 @@
 	name = "Swarmer Beacons Killed"
 	desc = "You've killed HOW many?"
 	database_id = SWARMER_BEACON_SCORE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

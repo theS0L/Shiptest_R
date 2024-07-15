@@ -26,23 +26,3 @@
 	desc = "The king is dead, long live the king!"
 	database_id = BOSS_MEDAL_KINGGOAT_CRUSHER
 	icon = "goatboss"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
