@@ -28,7 +28,7 @@ ID мода: CELADON_SAUNA
 
 ### Изменения *кор кода*
 
-- Отсутствуют
+- `code\game\objects\items\stacks\sheets\sheet_types.dm` : `GLOBAL_LIST_INIT wood_recipes`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
