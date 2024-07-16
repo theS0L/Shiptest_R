@@ -1,0 +1,9 @@
+#ifndef MODPACK_CELADON_SAUNA
+#define MODPACK_CELADON_SAUNA
+
+#include "_sauna.dm"
+
+#include "code/sauna_oven.dm"
+#include "code/smoke.dm"
+
+#endif
