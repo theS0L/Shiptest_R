@@ -64,6 +64,7 @@
 
 // --- RETURNS --- //
 #include "crusher_trophy/_crusher_trophy.dme"
+#include "return_tendrils/_return_tendrils.dme"
 
 // --- DONATORS --- //
 #include "donaters/_donaters.dme"
