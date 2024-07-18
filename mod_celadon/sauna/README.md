@@ -65,7 +65,8 @@ ID мода: CELADON_SAUNA
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- mod_celadon/effects/code/smoke.dm
+- `mod_celadon/effects/code/smoke.dm`
+- `mod_celadon/_storge_icons/icons`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

@@ -7,7 +7,7 @@
 /obj/structure/sauna_oven_steam
 	name = "sauna oven"
 	desc = "A modest sauna oven with rocks. Add some fuel, pour some water and enjoy the moment."
-	icon = 'mod_celadon/sauna/icons/sauna_oven.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/sauna_oven.dmi'
 	icon_state = "sauna_oven"
 	density = TRUE
 	anchored = TRUE
