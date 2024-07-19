@@ -36,6 +36,7 @@
 #include "structures/_structures.dme"
 #include "stuff_inteq/_stuff_inteq.dme"
 #include "tajara/_tajara.dme"
+#include "riol/_riol.dme"
 #include "weapons/_weapons.dme"
 #include "bongs/_bongs.dme"
 #include "research/_research.dme"

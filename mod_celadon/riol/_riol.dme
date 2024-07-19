@@ -1,0 +1,8 @@
+#ifndef MODPACK_CELADON_RIOL
+#define MODPACK_CELADON_RIOL
+
+#include "_riol.dm"
+
+// #include ""
+
+#endif
