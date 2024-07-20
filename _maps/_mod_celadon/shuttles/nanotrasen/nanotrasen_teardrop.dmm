@@ -3736,7 +3736,7 @@
 /obj/item/toy/plush/lizardplushie{
 	pixel_x = 14
 	},
-/obj/machinery/computer/cargo/express,
+/obj/machinery/computer/cargo,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "Ps" = (

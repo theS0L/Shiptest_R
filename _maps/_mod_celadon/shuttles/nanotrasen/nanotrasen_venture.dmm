@@ -181,7 +181,7 @@
 	dir = 4
 	},
 /obj/machinery/light/floor,
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 8
 	},
 /obj/machinery/door/firedoor/border_only{
