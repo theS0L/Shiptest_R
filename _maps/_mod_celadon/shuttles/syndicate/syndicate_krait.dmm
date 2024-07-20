@@ -3772,7 +3772,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "GE" = (
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	layer = 3
 	},
 /turf/open/floor/mineral/plastitanium/red,

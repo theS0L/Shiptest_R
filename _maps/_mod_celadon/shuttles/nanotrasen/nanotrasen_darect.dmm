@@ -931,7 +931,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/machinery/light/small/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 1
 	},
 /turf/open/floor/plasteel/patterned,

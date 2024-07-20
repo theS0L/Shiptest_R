@@ -1809,7 +1809,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered{
 	dir = 6
 	},
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 8
 	},
 /obj/effect/turf_decal/industrial/outline/red,

@@ -1582,7 +1582,7 @@
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 4
 	},
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,

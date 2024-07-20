@@ -2344,7 +2344,7 @@
 /area/ship/crew/dorm)
 "oT" = (
 /obj/effect/turf_decal/corner/opaque/yellow/border,
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -7085,7 +7085,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/computer/cargo/express,
+/obj/machinery/computer/cargo,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo/office)
 "Tu" = (
