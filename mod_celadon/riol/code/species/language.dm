@@ -1,4 +1,4 @@
-/datum/language_holder/vulpkanin
+/datum/language_holder/riol
 	understood_languages = list(
 		/datum/language/common = list(LANGUAGE_ATOM),
 		/datum/language/canilunzt = list(LANGUAGE_ATOM),
@@ -39,5 +39,5 @@
 		gender = pick(MALE, FEMALE)
 
 	if(gender == MALE)
-		return "[pick(GLOB.first_names_male_vulp)][random_name_spacer][pick(GLOB.last_names_vulp)]"
-	return "[pick(GLOB.first_names_female_vulp)][random_name_spacer][pick(GLOB.last_names_vulp)]"
+		return "[pick(GLOB.first_names_male_riol)][random_name_spacer][pick(GLOB.last_names_riol)]"
+	return "[pick(GLOB.first_names_female_riol)][random_name_spacer][pick(GLOB.last_names_riol)]"
