@@ -8,6 +8,6 @@
 
 /obj/item/reagent_containers/food/snacks/meat/steak/plain/human/riol
 	name = "riol steak"
-	icon_state = "birdsteak"
-	tastes = list("juicy chicken" = 3, "scales" = 1)
+	icon_state = "meatsteak"
+	tastes = list("meat" = 1)
 	foodtype = MEAT
