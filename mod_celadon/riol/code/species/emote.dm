@@ -38,30 +38,3 @@
 		'mod_celadon/_storge_sounds/sound/riol/growl2.ogg',
 		'mod_celadon/_storge_sounds/sound/riol/growl3.ogg',
 	)
-
-
-// /datum/emote/living/carbon/human/riol/raws
-// 	key = "raw"
-// 	key_third_person = "raws"
-// 	message = "рычит"
-// 	emote_type = EMOTE_AUDIBLE
-// 	vary = TRUE
-
-// /datum/emote/living/carbon/human/riol/raws/get_sound(mob/living/user)
-// 	return 'mod_celadon/_storge_sounds/sound/riol/purr.ogg'
-
-// /datum/emote/living/carbon/human/riol/purrl
-// 	key = "purrl"
-// 	key_third_person = "purrls"
-// 	message = "мурчит"
-// 	emote_type = EMOTE_AUDIBLE
-// 	vary = TRUE
-
-// /datum/emote/living/carbon/human/riol/purrl/get_sound(mob/living/user)
-// 	return 'mod_celadon/_storge_sounds/sound/purr_long.ogg'
-
-
-
-
-
-
