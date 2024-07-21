@@ -6,6 +6,7 @@
 #include "code/iriska.dm"
 #include "code/pets/syndicat.dm"
 #include "code/pets/syndifox.dm"
+#include "code/pets/rouge.dm"
 
 #include "code/burrows.dm"
 #include "code/roaches/reagent_containers.dm"
