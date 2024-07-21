@@ -3,6 +3,10 @@
 	icon = 'mod_celadon/_storge_icons/icons/riol/hair.dmi'
 	body_zone = BODY_ZONE_HEAD
 
+/datum/sprite_accessory/hair/riol/riol_plaine
+	name = "Plaine"
+	icon_state = "plaine"
+
 /datum/sprite_accessory/hair/riol/riol_hair_kajam
 	name = "Kajam"
 	icon_state = "kajam"
