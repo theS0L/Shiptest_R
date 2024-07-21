@@ -6,8 +6,8 @@
 
 /obj/item/organ/ears/riol
 	name = "riol ears"
-	icon = 'icons/obj/clothing/hats.dmi'	//пока такая хурма, но нужно будет сделать уши отдельно от головы и втыкнуть в какой-либо файл
-	icon_state = "kitty"					//когда будут уши в каком-то файле, тогда и поменяешь
+	icon = 'mod_celadon/_storge_icons/icons/riol/ears.dmi'	//пока такая хурма, но нужно будет сделать уши отдельно от головы и втыкнуть в какой-либо файл
+	icon_state = "riol_ears"					//когда будут уши в каком-то файле, тогда и поменяешь
 	damage_multiplier = 2
 
 /obj/item/organ/ears/riol/Insert(mob/living/carbon/human/ear_owner, special = 0, drop_if_replaced = TRUE)
@@ -34,63 +34,9 @@
 
 /obj/item/organ/eyes/riol
 	name = "Riol eyes"
-	icon = 'mod_celadon/_storge_icons/icons/riol/riol_organs.dmi'
-	icon_state = "night_eyes_off"
+	icon = 'mod_celadon/_storge_icons/icons/riol/organs.dmi'
+	icon_state = "eyes"
 	desc = "Some eyes"
-	actions_types = list(/datum/action/item_action/organ_action/toggle)
-	var/active = FALSE
-	var/current_lighting_alpha = null
-
-/obj/item/organ/eyes/riol/Initialize()
-	current_lighting_alpha = lighting_alpha
-	. = ..()
-
-/obj/item/organ/eyes/riol/Destroy()
-	//if(active)
-	//	deactivate()
-	icon_state = "eyes"
-	. = ..()
-
-/obj/item/organ/eyes/riol/Remove(mob/living/carbon/M, special = FALSE)
-	//if(active)
-	//	deactivate()
-	icon_state = "eyes"
-	. = ..()
-
-/obj/item/organ/eyes/riol/ui_action_click()
-
-	toggle_active()
-
-/obj/item/organ/eyes/riol/proc/toggle_active()
-	if(active)
-		deactivate()
-	else
-		activate()
-
-/obj/item/organ/eyes/riol/proc/activate()
-	active = TRUE
-	icon_state = "night_eyes_on"
-	current_lighting_alpha = lighting_alpha
-	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
-	see_in_dark = 6
-	owner.add_client_colour(/datum/client_colour/monochrome)
-	owner.update_sight()
-	for(var/X in actions)
-		var/datum/action/A = X
-		A.UpdateButtonIcon()
-	return TRUE
-
-/obj/item/organ/eyes/riol/proc/deactivate()
-	active = FALSE
-	icon_state = "night_eyes_off"
-	lighting_alpha = current_lighting_alpha
-	see_in_dark = 2
-	owner.remove_client_colour(/datum/client_colour/monochrome)
-	owner.update_sight()
-	for(var/X in actions)
-		var/datum/action/A = X
-		A.UpdateButtonIcon()
-	return TRUE
 
 /*
 	  ____      _     *
@@ -107,7 +53,7 @@
 
 /obj/item/organ/tail/riol/Initialize()
 	. = ..()
-	color = "#"+ random_color()
+	color = "#" + random_color()
 
 /obj/item/organ/tail/riol/Insert(mob/living/carbon/human/H, special = 0, drop_if_replaced = TRUE)
 	..()
@@ -142,7 +88,7 @@
 
 /obj/item/organ/tongue/riol
 	name = "Riol tongue"
-	desc = "The traditionally employed tongue of Ahdomai, composed of expressive yowls and chirps. Native to the Riol."
+	desc = "The traditionally employed tongue , composed of expressive yowls and chirps. Native to the Riol."
 	say_mod = "rawls"
 	taste_sensitivity = 10 // combined nose + tongue, extra sensitive
 	modifies_speech = TRUE
