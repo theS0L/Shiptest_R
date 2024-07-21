@@ -1,14 +1,5 @@
-/mob/living/carbon/human
-	var/skin_tone_nose = "black"    //Skin tone nose riol
-	var/skin_tone_riol = "Black"  //Skin tone riol
-
 /mob/living/carbon/human/species/riol
 	race = /datum/species/riol
-
-/datum/species
-	/// Does the species use skintones or not?
-	var/use_skintonesnose = FALSE
-	var/use_skintoneriol = FALSE
 
 /datum/species/riol
 	name = "\improper Riol"
@@ -21,38 +12,32 @@
 
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 
-	use_skintoneriol = TRUE
-
 	disliked_food = VEGETABLES | FRUIT | GRAIN | GROSS
 	liked_food = MEAT | RAW | DAIRY
+	digitigrade_customization = DIGITIGRADE_OPTIONAL
 
 	attack_verb = "slash"
 	attack_sound = 'sound/weapons/slash.ogg'
 	miss_sound = 'sound/weapons/slashmiss.ogg'
-	//species_clothing_path = 'icons/mob/clothing/species/kepori.dmi'
 
 	species_traits = list(EYECOLOR, LIPS, HAIR, FACEHAIR, EMOTE_OVERLAY, MUTCOLORS, MUTCOLORS_SECONDARY, SKINNOSECOLORS, SKINRIOLCOLORS, EARSRIOLCOLORS, HEADRIOLCOLORS, NOSERIOLCOLORS, CHESTRIOLCOLORS, BODYRIOLCOLORS )
 	mutant_bodyparts = list(
-		"riol_ears",
-		"riol_hairs",
-		"riol_ears_markings",
-		"riol_head_markings",
-		"riol_nose_markings",
-		"riol_facial_hairs",
-		"riol_chest_markings",
-		"riol_body_markings",
-		"riol_tail"
+		"hair",
+		"head_markings",
+		"facial_hair",
+		"body_markings",
+		"tail_accessory",
+		"tail_markings"
 		)
-	default_features = list(
+	default_features = list( // ОТРЕДАКТРОВАТЬ.................
 		"mcolor" = "0F0",
-		"riol_ears" = "Plain",
-		"riol_hairs" = "Plain",
+		"hair" = "plain",
 		"riol_ears_markings" = "None",
-		"riol_head_markings" = "None",
+		"head_markings" = "None",
 		"riol_nose_markings" = "None",
 		"riol_facial_hairs" = "None",
 		"riol_chest_markings" = "None",
-		"riol_body_markings" = "None",
+		"body_markings" = "None",
 		"riol_tail" = "long",
 		"body_size" = "Normal"
 		)
@@ -70,7 +55,7 @@
 
 	species_language_holder = /datum/language_holder/riol
 
-	ass_image = 'icons/ass/asscat.png'
+	ass_image = 'mod_celadon/_storge_icons/icons/ass/assfox.png'
 
 	mutantears = /obj/item/organ/ears/riol		//нужно отделить уши от головы. и можно кинуть их в тот же файл. потом в органе прописать путь к файлу + имя файла
 	mutanteyes = /obj/item/organ/eyes/riol
