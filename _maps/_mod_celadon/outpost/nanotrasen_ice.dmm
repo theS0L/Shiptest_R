@@ -26,10 +26,12 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 5
+	dir = 5;
+	layer = 2
 	},
 /obj/structure/disposalpipe/segment{
-	dir = 5
+	dir = 5;
+	layer = 2.36
 	},
 /obj/effect/decal/fakelattice{
 	layer = 2.010
@@ -40,6 +42,7 @@
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 4
 	},
+/obj/structure/catwalk/over/plated_catwalk,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -958,7 +961,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/whitesands/dried,
+/turf/open/floor/plating/asteroid/whitesands/dried{
+	layer = 2.9
+	},
 /area/outpost/exterior)
 "cE" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1345,7 +1350,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 10
 	},
-/turf/open/floor/plating/asteroid/whitesands/dried,
+/turf/open/floor/plating/asteroid/whitesands/dried{
+	layer = 2.9
+	},
 /area/outpost/exterior)
 "dG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2025,7 +2032,9 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
 	dir = 1
 	},
-/turf/open/floor/plating/asteroid/whitesands/dried,
+/turf/open/floor/plating/asteroid/whitesands/dried{
+	layer = 2.9
+	},
 /area/outpost/exterior)
 "fx" = (
 /obj/effect/turf_decal/siding/wood{
@@ -2578,7 +2587,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/whitesands/dried,
+/turf/open/floor/plating/asteroid/whitesands/dried{
+	layer = 2.9
+	},
 /area/outpost/exterior)
 "gL" = (
 /obj/structure/railing/wood{
@@ -3518,7 +3529,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 8
 	},
-/turf/open/floor/plating/asteroid/whitesands/dried,
+/turf/open/floor/plating/asteroid/whitesands/dried{
+	layer = 2.9
+	},
 /area/outpost/exterior)
 "ju" = (
 /obj/machinery/vending/sovietsoda{
@@ -3872,6 +3885,18 @@
 	layer = 4.1
 	},
 /turf/open/floor/plasteel/patterned/brushed{
+	light_color = "#1B1D2E";
+	light_range = 2
+	},
+/area/outpost/exterior)
+"kF" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -4267,7 +4292,9 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/turf/open/floor/plating/asteroid/whitesands/dried,
+/turf/open/floor/plating/asteroid/whitesands/dried{
+	layer = 2.9
+	},
 /area/outpost/exterior)
 "lF" = (
 /obj/effect/turf_decal/siding/white{
@@ -5232,9 +5259,9 @@
 	},
 /area/outpost/exterior)
 "nT" = (
-/obj/effect/turf_decal/borderfloor,
 /obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/patterned/brushed{
+/obj/structure/catwalk/over/plated_catwalk,
+/turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -5531,7 +5558,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 5
 	},
-/turf/open/floor/plating/asteroid/whitesands/dried,
+/turf/open/floor/plating/asteroid/whitesands/dried{
+	layer = 2.9
+	},
 /area/outpost/exterior)
 "oO" = (
 /obj/structure/table/reinforced,
@@ -6438,13 +6467,8 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/crew/garden)
 "ry" = (
-/obj/effect/turf_decal/borderfloor{
-	dir = 6
-	},
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
+/obj/effect/turf_decal/siding/white,
+/turf/open/floor/plating/asteroid/whitesands/dried,
 /area/outpost/exterior)
 "rz" = (
 /obj/structure/rack,
@@ -6762,6 +6786,15 @@
 	},
 /turf/open/floor/light,
 /area/outpost/crew/bar)
+"sF" = (
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/snow/temperatre{
+	light_color = "#1B1D2E";
+	light_range = 2
+	},
+/area/outpost/exterior)
 "sG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/white{
@@ -8215,9 +8248,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment,
 /obj/effect/decal/fakelattice{
 	layer = 2.010
+	},
+/obj/structure/disposalpipe/segment{
+	layer = 2.36
 	},
 /turf/open/floor/plating/ice/temperate{
 	light_color = "#1B1D2E";
@@ -8895,7 +8930,9 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/whitesands/dried,
+/turf/open/floor/plating/asteroid/whitesands/dried{
+	layer = 2.9
+	},
 /area/outpost/exterior)
 "xV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -9321,7 +9358,6 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/structure/disposalpipe/segment,
 /obj/effect/decal/fakelattice{
 	layer = 2.010
 	},
@@ -9330,6 +9366,9 @@
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	layer = 2.36
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre{
 	light_color = "#1B1D2E";
@@ -10032,7 +10071,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/siding/white{
 	dir = 5
 	},
@@ -10042,6 +10080,10 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	layer = 2.36
+	},
+/obj/structure/catwalk/over/plated_catwalk,
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -10305,18 +10347,9 @@
 /area/outpost/security/checkpoint)
 "BK" = (
 /obj/effect/turf_decal/siding/white{
-	dir = 5
+	dir = 10
 	},
-/obj/effect/turf_decal/borderfloor{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 4
-	},
-/turf/open/floor/plasteel/patterned/brushed{
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
+/turf/open/floor/plating/asteroid/whitesands/dried,
 /area/outpost/exterior)
 "BL" = (
 /obj/structure/catwalk/over/plated_catwalk,
@@ -10889,11 +10922,17 @@
 	},
 /area/outpost/vacant_rooms)
 "De" = (
-/obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/borderfloor{
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 1
 	},
-/turf/open/floor/plasteel/patterned/brushed{
+/obj/effect/decal/fakelattice{
+	layer = 2.010
+	},
+/obj/structure/disposalpipe/segment{
+	layer = 2.36
+	},
+/turf/open/floor/plating/asteroid/snow/temperatre{
 	light_color = "#1B1D2E";
 	light_range = 2
 	},
@@ -11465,6 +11504,13 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/outpost/medical/morgue)
+"EG" = (
+/obj/effect/turf_decal/siding/white,
+/turf/open/floor/plating/asteroid/snow/temperatre{
+	light_color = "#1B1D2E";
+	light_range = 2
+	},
+/area/outpost/exterior)
 "EH" = (
 /obj/structure/bonfire/prelit,
 /turf/open/floor/plating/asteroid/icerock/temperate{
@@ -11499,7 +11545,9 @@
 "EL" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/turf/open/floor/plating/asteroid/whitesands/dried,
+/turf/open/floor/plating/asteroid/whitesands/dried{
+	layer = 2.9
+	},
 /area/outpost/exterior)
 "EM" = (
 /obj/effect/turf_decal/siding/wood{
@@ -11572,6 +11620,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
+"EU" = (
+/obj/effect/turf_decal/siding/white/corner,
+/turf/open/floor/plating/asteroid/snow/temperatre{
+	light_color = "#1B1D2E";
+	light_range = 2
+	},
+/area/outpost/exterior)
 "EV" = (
 /obj/structure/window/reinforced,
 /obj/machinery/hydroponics/soil,
@@ -12485,7 +12540,6 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/structure/disposalpipe/segment,
 /obj/effect/decal/fakelattice{
 	layer = 2.010
 	},
@@ -12495,7 +12549,6 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
-/obj/structure/catwalk/over/plated_catwalk,
 /obj/structure/railing{
 	layer = 4.1
 	},
@@ -12504,6 +12557,10 @@
 	layer = 4.1;
 	pixel_y = 8
 	},
+/obj/structure/disposalpipe/segment{
+	layer = 2.36
+	},
+/obj/structure/catwalk/over/plated_catwalk,
 /turf/open/floor/plating/asteroid/snow/temperatre{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -12530,7 +12587,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment,
 /obj/effect/decal/fakelattice{
 	layer = 2.010
 	},
@@ -12539,6 +12595,9 @@
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	layer = 2.36
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre{
 	light_color = "#1B1D2E";
@@ -12977,9 +13036,7 @@
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/external)
 "Jc" = (
-/obj/effect/turf_decal/borderfloor{
-	dir = 5
-	},
+/obj/effect/turf_decal/borderfloor/full,
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -13246,7 +13303,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 9
 	},
-/turf/open/floor/plating/asteroid/whitesands/dried,
+/turf/open/floor/plating/asteroid/whitesands/dried{
+	layer = 2.9
+	},
 /area/outpost/exterior)
 "JM" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13747,13 +13806,15 @@
 /area/outpost/security/checkpoint)
 "Li" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 10
+	dir = 10;
+	layer = 2
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 10
 	},
 /obj/structure/disposalpipe/segment{
-	dir = 10
+	dir = 10;
+	layer = 2.36
 	},
 /obj/effect/decal/fakelattice{
 	layer = 2.010
@@ -13764,6 +13825,7 @@
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 8
 	},
+/obj/structure/catwalk/over/plated_catwalk,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -14792,7 +14854,6 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/smeltery)
 "Oe" = (
-/obj/structure/catwalk/over/plated_catwalk,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 5
 	},
@@ -14800,6 +14861,7 @@
 	dir = 5
 	},
 /obj/structure/disposalpipe/segment,
+/obj/structure/catwalk/over/plated_catwalk,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -17070,7 +17132,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/segment{
+	layer = 2.36
+	},
 /obj/effect/decal/fakelattice{
 	layer = 2.010
 	},
@@ -18426,6 +18490,12 @@
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/bar)
+"WX" = (
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/whitesands/dried,
+/area/outpost/exterior)
 "WY" = (
 /obj/machinery/door/airlock/outpost{
 	dir = 8
@@ -31364,8 +31434,8 @@ NG
 bh
 NG
 NG
-NG
-NG
+EU
+kF
 Kh
 SP
 OA
@@ -31541,7 +31611,7 @@ Tt
 wc
 wc
 wc
-Tt
+De
 Je
 HN
 HN
@@ -31738,11 +31808,11 @@ NG
 KW
 NG
 NG
-NG
+EG
 Li
 AU
 Oe
-De
+nT
 nT
 nD
 af
@@ -31925,12 +31995,12 @@ mM
 mM
 NG
 mM
-mM
-NG
-mM
+WX
+sF
+BK
 PM
 Jc
-ry
+Jc
 Bb
 Mm
 cf
@@ -32114,7 +32184,7 @@ mM
 NG
 mM
 mM
-mM
+ry
 xL
 Oy
 Vz
@@ -32301,8 +32371,8 @@ NG
 mM
 mM
 mM
-mM
-BK
+ry
+XZ
 XZ
 Ad
 Bb
