@@ -2169,16 +2169,15 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /obj/machinery/door/airlock{
-	dir = 4;
-	name = "Bathroom"
+	dir = 8
 	},
 /obj/machinery/door/poddoor/ert{
 	dir = 8;
 	id = "ice_syndi_shop"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/open/floor/wood/walnut,
 /area/outpost/storage)
@@ -10958,10 +10957,6 @@
 /turf/open/floor/plating/rust,
 /area/outpost/maintenance/fore)
 "Dm" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Shop";
-	dir = 4
-	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "ice_shop2_window";
 	dir = 8
@@ -10981,6 +10976,9 @@
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock{
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/outpost/vacant_rooms/office)
@@ -11390,13 +11388,10 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/machinery/door/airlock/outpost{
-	dir = 1;
-	name = "Security Checkpoint"
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/airlock,
 /obj/machinery/door/poddoor/ert{
 	id = "ice_general_shop"
 	},
