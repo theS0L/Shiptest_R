@@ -1,4 +1,101 @@
-// /mob/living/simple_animal
+/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge
+	name = "Руж"
+	desc = "Уникальная трёхголовая змея Офицера Телекоммуникаций синдиката. Выращена в лаборатории. У каждой головы свой характер!"
+	icon = 'mod_celadon/_storge_icons/icons/mob/pets.dmi'
+	mob_size = MOB_SIZE_SMALL
+	blood_volume = BLOOD_VOLUME_NORMAL
+	// can_collar = TRUE
+	gender = FEMALE
+	icon_state = "rouge"
+	icon_living = "rouge"
+	icon_dead = "rouge_dead"
+	// icon_resting = "rouge_rest"
+	speak_chance = 5
+	speak = list("Шшш", "Тсс!", "Тц тц тц!", "ШШшшШШшшШ!")
+	speak_emote = list("hisses")
+	emote_hear = list("Зевает", "Шипит", "Дурачится", "Толкается")
+	emote_see = list("Высовывает язык", "Кружится", "Трясёт хвостом")
+	// tts_seed = "Ladyvashj"
+	health = 20
+	maxHealth = 20
+	attack_verb_continuous = "bites"
+	attack_verb_simple = "bite"
+	melee_damage_lower = 5
+	melee_damage_upper = 6
+	var/rest = FALSE
+	var/obj/item/inventory_head
+	faction = list("neutral", "syndicate")
+	gold_core_spawnable = NO_SPAWN
+	// unique_pet = TRUE
+	// can_hide = 1
+	var/icon_resting = ""
+	var/collar_type //if the mob has collar sprites, define them.
+
+/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/verb/chasetail()
+	set name = "Chase your tail"
+	set desc = "d'awwww."
+	set category = "Animal"
+	visible_message("[src] [pick("dances around", "chases [p_their()] tail")].", "[pick("You dance around", "You chase your tail")].")
+	spin(20, 1)
+
+/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/attack_hand(mob/living/carbon/human/M)
+	. = ..()
+	switch(M.a_intent)
+		if(INTENT_HELP)
+			shh(1, M)
+		if(INTENT_HARM)
+			shh(-1, M)
+
+/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/proc/shh(change, mob/M)
+	if(!M || stat)
+		return
+	if(change > 0)
+		new /obj/effect/temp_visual/heart(loc)
+		custom_emote(EMOTE_AUDIBLE, "шип%(ит,ят)% счастливо!")
+	else
+		custom_emote(EMOTE_AUDIBLE, "шип%(ит,ят)% гневно!")
+
+/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/Initialize(mapload)
+	. = ..()
+	regenerate_icons()
+
+/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/Destroy()
+	QDEL_NULL(inventory_head)
+	return ..()
+
+/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/handle_atom_del(atom/A)
+	if(A == inventory_head)
+		inventory_head = null
+		regenerate_icons()
+	return ..()
+
+/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/Life(seconds, times_fired)
+	. = ..()
+	regenerate_icons()
+
+/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/death(gibbed)
+	..(gibbed)
+	regenerate_icons()
+
+/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/getarmor(def_zone, type)
+	var/armorval = inventory_head?.armor.getRating(type)
+	if(!def_zone)
+		armorval *= 0.5
+	else if(def_zone != BODY_ZONE_HEAD)
+		armorval = 0
+	return armorval
+
+/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/proc/update_snek_fluff() //имя, описание, эмоуты
+	// First, change back to defaults
+	name = real_name
+	desc = initial(desc)
+	// BYOND/DM doesn't support the use of initial on lists.
+	speak = list("Шшш", "Тсс!", "Тц тц тц!", "ШШшшШШшшШ!")
+	speak_emote = list("hisses")
+	emote_hear = list("Зевает", "Шипит", "Дурачится", "Толкается")
+	emote_see = list("Высовывает язык", "Кружится", "Трясёт хвостом")
+
+// /mob/living/simple_animal		// Когда-нибудь кто-то сможет полностью адаптировать Руж с её всеми механиками. А пока стабильно работает
 // 	var/icon_resting = ""
 // 	var/collar_type //if the mob has collar sprites, define them.
 
@@ -109,54 +206,7 @@
 // 			collar_type = "[initial(collar_type)]"
 // 			regenerate_icons()
 
-/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge
-	name = "Руж"
-	desc = "Уникальная трёхголовая змея Офицера Телекоммуникаций синдиката. Выращена в лаборатории. У каждой головы свой характер!"
-	icon = 'mod_celadon/_storge_icons/icons/mob/pets.dmi'
-	mob_size = MOB_SIZE_SMALL
-	blood_volume = BLOOD_VOLUME_NORMAL
-	// can_collar = TRUE
-	gender = FEMALE
-	icon_state = "rouge"
-	icon_living = "rouge"
-	icon_dead = "rouge_dead"
-	// icon_resting = "rouge_rest"
-	speak_chance = 5
-	speak = list("Шшш", "Тсс!", "Тц тц тц!", "ШШшшШШшшШ!")
-	speak_emote = list("hisses")
-	emote_hear = list("Зевает", "Шипит", "Дурачится", "Толкается")
-	emote_see = list("Высовывает язык", "Кружится", "Трясёт хвостом")
-	// tts_seed = "Ladyvashj"
-	health = 20
-	maxHealth = 20
-	attack_verb_continuous = "bites"
-	attack_verb_simple = "bite"
-	melee_damage_lower = 5
-	melee_damage_upper = 6
-	var/rest = FALSE
-	var/obj/item/inventory_head
-	faction = list("neutral", "syndicate")
-	gold_core_spawnable = NO_SPAWN
-	// unique_pet = TRUE
-	// can_hide = 1
-	var/icon_resting = ""
-	var/collar_type //if the mob has collar sprites, define them.
 
-/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/verb/chasetail()
-	set name = "Chase your tail"
-	set desc = "d'awwww."
-	set category = "Animal"
-	visible_message("[src] [pick("dances around", "chases [p_their()] tail")].", "[pick("You dance around", "You chase your tail")].")
-	spin(20, 1)
-
-
-/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/attack_hand(mob/living/carbon/human/M)
-	. = ..()
-	switch(M.a_intent)
-		if(INTENT_HELP)
-			shh(1, M)
-		if(INTENT_HARM)
-			shh(-1, M)
 
 // /mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/StartResting(updating = 1)
 // 	// ..()
@@ -180,57 +230,18 @@
 // 		if(inventory_head)
 // 			regenerate_icons()
 
-/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/proc/shh(change, mob/M)
-	if(!M || stat)
-		return
-	if(change > 0)
-		new /obj/effect/temp_visual/heart(loc)
-		custom_emote(EMOTE_AUDIBLE, "шип%(ит,ят)% счастливо!")
-	else
-		custom_emote(EMOTE_AUDIBLE, "шип%(ит,ят)% гневно!")
+// /mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/show_inv(mob/user)
+// 	if(user.incapacitated() || !Adjacent(user))
+// 		return
+// 	user.set_machine(src)
 
-/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/Initialize(mapload)
-	. = ..()
-	regenerate_icons()
+// 	var/dat = 	{"<meta charset="UTF-8"><div align='center'><b>Inventory of [name]</b></div><p>"}
+// 	dat += "<br><B>Head:</B> <A href='?src=[UID()];[inventory_head ? "remove_inv=head'>[inventory_head]" : "add_inv=head'>Nothing"]</A>"
+// 	// dat += "<br><B>Collar:</B> <A href='?src=[UID()];[pcollar ? "remove_inv=collar'>[pcollar]" : "add_inv=collar'>Nothing"]</A>"
 
-/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/Destroy()
-	QDEL_NULL(inventory_head)
-	return ..()
-
-/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/handle_atom_del(atom/A)
-	if(A == inventory_head)
-		inventory_head = null
-		regenerate_icons()
-	return ..()
-
-/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/Life(seconds, times_fired)
-	. = ..()
-	regenerate_icons()
-
-/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/death(gibbed)
-	..(gibbed)
-	regenerate_icons()
-
-/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/show_inv(mob/user)
-	if(user.incapacitated() || !Adjacent(user))
-		return
-	user.set_machine(src)
-
-	var/dat = 	{"<meta charset="UTF-8"><div align='center'><b>Inventory of [name]</b></div><p>"}
-	dat += "<br><B>Head:</B> <A href='?src=[UID()];[inventory_head ? "remove_inv=head'>[inventory_head]" : "add_inv=head'>Nothing"]</A>"
-	// dat += "<br><B>Collar:</B> <A href='?src=[UID()];[pcollar ? "remove_inv=collar'>[pcollar]" : "add_inv=collar'>Nothing"]</A>"
-
-	var/datum/browser/popup = new(user, "mob[UID()]", "[src]", 440, 250)
-	popup.set_content(dat)
-	popup.open()
-
-/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/getarmor(def_zone, type)
-	var/armorval = inventory_head?.armor.getRating(type)
-	if(!def_zone)
-		armorval *= 0.5
-	else if(def_zone != BODY_ZONE_HEAD)
-		armorval = 0
-	return armorval
+// 	var/datum/browser/popup = new(user, "mob[UID()]", "[src]", 440, 250)
+// 	popup.set_content(dat)
+// 	popup.open()
 
 // /mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/Topic(href, href_list)
 // 	// if(!(iscarbon(usr) || usr.incapacitated() || !Adjacent(usr))
@@ -282,7 +293,6 @@
 // 	else
 // 		return ..()
 
-
 // /mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/proc/place_on_head(obj/item/item_to_add, mob/user)
 
 // 	if(istype(item_to_add, /obj/item/grenade/plastic/c4)) // last thing she ever wears, I guess
@@ -328,16 +338,6 @@
 // 			sleep(1)
 
 // 	return valid
-
-/mob/living/simple_animal/hostile/retaliate/poison/snake/rouge/proc/update_snek_fluff() //имя, описание, эмоуты
-	// First, change back to defaults
-	name = real_name
-	desc = initial(desc)
-	// BYOND/DM doesn't support the use of initial on lists.
-	speak = list("Шшш", "Тсс!", "Тц тц тц!", "ШШшшШШшшШ!")
-	speak_emote = list("hisses")
-	emote_hear = list("Зевает", "Шипит", "Дурачится", "Толкается")
-	emote_see = list("Высовывает язык", "Кружится", "Трясёт хвостом")
 
 ///Этот код скопирован с кода для корги и обнуляет показатели которые ему даёт риг. Если когда нибудь змейке дадут риг, раскомментируете///
 /*
