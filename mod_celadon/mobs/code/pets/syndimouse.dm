@@ -4,7 +4,7 @@
 	body_color = "red"
 	icon_state = "mouse_red"
 	icon_living = "mouse_red"
-	desc = "It's a SyndiRat in a spacesuit."
+	desc = "It's a SyndiMouse in a spacesuit."
 	icon_dead = "mouse_red_dead"
 	held_state = "mouse_red"
 	gender = MALE
