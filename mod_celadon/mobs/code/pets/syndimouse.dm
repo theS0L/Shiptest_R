@@ -13,8 +13,8 @@
 	unsuitable_atmos_damage = 0
 	minbodytemp = 800
 	minbodytemp = 0
-	melee_damage_lower = 5
-	melee_damage_upper = 15
+	melee_damage_lower = 15
+	melee_damage_upper = 45
 	faction = list("Syndicate")
 
 /mob/living/simple_animal/mouse/Initialize()
