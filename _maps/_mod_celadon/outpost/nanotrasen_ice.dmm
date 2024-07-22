@@ -8248,9 +8248,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 1
 	},
-/obj/effect/decal/fakelattice{
-	layer = 2.010
-	},
 /obj/structure/disposalpipe/segment{
 	layer = 2.36
 	},
@@ -10925,9 +10922,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 1
-	},
-/obj/effect/decal/fakelattice{
-	layer = 2.010
 	},
 /obj/structure/disposalpipe/segment{
 	layer = 2.36
@@ -17127,22 +17121,6 @@
 /obj/effect/turf_decal/corner/opaque/black/mono,
 /turf/open/floor/plasteel,
 /area/outpost/crew/garden)
-"Tt" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
-	layer = 2.36
-	},
-/obj/effect/decal/fakelattice{
-	layer = 2.010
-	},
-/turf/open/floor/plating/asteroid/snow/temperatre{
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
-/area/outpost/exterior)
 "Tv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
@@ -31607,7 +31585,7 @@ UG
 Nj
 HN
 jP
-Tt
+De
 wc
 wc
 wc
