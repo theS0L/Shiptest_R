@@ -87,9 +87,11 @@ ID мода: CELADON_QOL
 - EDIT `code\modules\projectiles\boxes_magazines\_box_magazine.dm` -> снижена задержка загрузки патронов с коробки в магазин
 
 - EDIT `code\game\objects\structures\flora.dm` -> меняем звук падающего дерева с метеоритного на нормальный
+
 ООС вкладка	
+
 - EDIT `code\datums\helper_datums\getrev.dm` -> Убрана неиспользуемая кнопка "Show Server Revision" со вкладки ООС
-- EDIT `code\modules\client\verbs\ooc.dm` -> Убрана неиспользуемая кнопка "Message Of The Day" со вкладки ООС
+- EDIT `code\modules\client\verbs\ooc.dm` -> Убраны неиспользуемые кнопки "Message Of The Day" "Show Policy" со вкладки ООС.Перемещена кнопка "Fit Viewport" со вкладки "ООС" во вкладку "Special Verbs"
 - EDIT `code\datums\keybinding\client.dm` -> Перемещена кнопка "Toggle Fullscreen" со вкладки "ООС" во вкладку "Special Verbs"
 - EDIT `code\modules\discord\accountlink.dm` -> Убрана неиспользуемая кнопка Verify Discord Account со вкладки ООС
 - EDIT `code\modules\mob\mob.dm` Перемещена кнопка "Cancel camera view" со вкладки "ООС" во вкладку "Special Verbs"
