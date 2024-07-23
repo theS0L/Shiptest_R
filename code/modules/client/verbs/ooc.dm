@@ -158,7 +158,9 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 
 /client/verb/motd()
 	set name = "MOTD"
-	set category = "OOC"
+	// [CELADON-EDIT] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
+	//	set category = "OOC"
+	// [/CELADON-EDIT]
 	set desc ="Check the Message of the Day"
 
 	var/motd = global.config.motd
@@ -325,7 +327,10 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 
 /client/verb/fit_viewport()
 	set name = "Fit Viewport"
-	set category = "OOC"
+	// [CELADON-EDIT] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
+	//	set category = "OOC"
+	// [/CELADON-EDIT]
+	set category = "Special Verbs"
 	set desc = "Fit the width of the map window to match the viewport"
 
 	// Fetch aspect ratio
@@ -373,7 +378,9 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 /client/verb/policy()
 	set name = "Show Policy"
 	set desc = "Show special server rules related to your current character."
-	set category = "OOC"
+	// [CELADON-EDIT] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
+	//	set category = "OOC"
+	// [/CELADON-EDIT]
 
 	//Collect keywords
 	var/list/keywords = mob.get_policy_keywords()

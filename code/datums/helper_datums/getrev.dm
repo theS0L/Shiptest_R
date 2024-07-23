@@ -53,7 +53,9 @@
 		. += "<a href=\"[CONFIG_GET(string/githuburl)]/pull/[tm.number]\">#[tm.number][replacetext(details, error_matcher, /proc/shuffletext)]</a><br>"
 
 /client/verb/showrevinfo()
-	set category = "OOC"
+	// [CELADON-EDIT] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
+	//	set category = "OOC"
+	// [/CELADON-EDIT]
 	set name = "Show Server Revision"
 	set desc = "Check the current server code revision"
 
