@@ -157,7 +157,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 		to_chat(src, "<span class='notice'>There are no admin notices at the moment.</span>")
 
 /client/verb/motd()
-	set name = "MOTD"
+	set name = "MOTH"
 	// [CELADON-EDIT] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
 	//	set category = "OOC"
 	// [/CELADON-EDIT]
