@@ -1107,7 +1107,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "dg" = (
-/obj/machinery/computer/cargo/express/retro{
+/obj/machinery/computer/cargo/retro{
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters{
@@ -1773,6 +1773,9 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/newscaster/directional/east{
+	pixel_y = 13
+	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "li" = (
@@ -2060,6 +2063,9 @@
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/radio/intercom/wideband/directional/north,
+/obj/machinery/newscaster/directional/north{
+	pixel_x = 20
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "rU" = (
@@ -2647,7 +2653,7 @@
 /area/ship/cargo)
 "Du" = (
 /obj/effect/turf_decal/corner/transparent/neutral/full,
-/obj/machinery/computer/cargo/express/retro{
+/obj/machinery/computer/cargo/retro{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2799,6 +2805,7 @@
 	},
 /obj/structure/chair/sofa/brown/left/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/newscaster/directional/north,
 /turf/open/floor/wood,
 /area/ship/crew/canteen/kitchen)
 "FV" = (

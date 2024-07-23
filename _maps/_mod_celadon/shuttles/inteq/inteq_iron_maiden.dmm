@@ -282,6 +282,7 @@
 /obj/effect/turf_decal/siding/brown{
 	dir = 6
 	},
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "mO" = (
@@ -331,7 +332,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/external)
 "oo" = (
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/brown{
@@ -379,6 +380,9 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/newscaster/directional/west{
+	pixel_y = -8
+	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "qh" = (
