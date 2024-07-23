@@ -1,7 +1,9 @@
 // IF you have linked your account, this will trigger a verify of the user
 /client/verb/verify_in_discord()
 	// [CELADON-REMOVE] - CELADON_QOL - Очистка вкладки ООС, перенос части в Special Verbs
-	//	set category = "OOC"
+	/*
+	set category = "OOC"
+	*/
 	// [/CELADON-REMOVE]
 	set name = "Verify Discord Account"
 	set desc = "Verify your discord account with your BYOND account"
