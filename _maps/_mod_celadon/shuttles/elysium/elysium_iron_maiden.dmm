@@ -676,7 +676,6 @@
 /obj/item/clothing/suit/space/elysm/junk,
 /obj/item/clothing/head/space/elysm/space_helm,
 /obj/item/clothing/mask/breath,
-/obj/item/clothing/mask/bandana/black,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "ye" = (
