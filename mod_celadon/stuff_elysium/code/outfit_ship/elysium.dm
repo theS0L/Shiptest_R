@@ -1,13 +1,40 @@
+/obj/item/card/id/elysium
+	desc = "A Elysium ID with no proper access to speak of."
+	icon = 'mod_celadon/_storge_icons/icons/obj/elysium_card.dmi'
+	faction_icon = "bg_pgf"
+	icon_state = "elysium"
+
+/obj/item/card/id/elysium/captain
+	desc = "A Elysium ID with no proper access to speak of.This one indicates a Caid"
+	icon_state = "elysium"
+	assignment = "Caid"
+	job_icon = "captain"
+
+/obj/item/card/id/elysium/security
+	desc = "A Elysium ID with no proper access to speak of.This one indicates a Mukatell"
+	icon_state = "elysium"
+	assignment = "Mukatell"
+	job_icon = "securityofficer"
+
+/obj/item/card/id/elysium/assistant
+	desc = "A Elysium ID with no proper access to speak of.This one indicates a Ahisa`i"
+	icon_state = "elysium"
+	assignment = "Ahisa`i"
+	job_icon = "assistant"
+
 /datum/outfit/job/elysium
 	name = "Elysium - Base Outfit"
-	job_icon = "captain"
-	jobtype = /datum/job/captain
 
 	backpack = null
 	head = /obj/item/clothing/head/shemag/green
 	uniform = /obj/item/clothing/under/color/darkgreen
 	shoes = /obj/item/clothing/shoes/sneakers/black
-	id = /obj/item/card/id/silver
+
+/datum/outfit/job/elysium/post_equip(mob/living/carbon/human/H, visualsOnly)
+	. = ..()
+	if(visualsOnly)
+		return
+	H.faction |= list(FACTION_PLAYER_ELYSIUM)
 
 /datum/outfit/job/elysium/proc/get_elysium_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
@@ -38,6 +65,9 @@
 	back = /obj/item/storage/backpack/satchel/leather
 	uniform = /obj/item/clothing/under/color/darkgreen
 	shoes = /obj/item/clothing/shoes/sneakers/sandals
+	mask = /obj/item/clothing/mask/bandana/green
+	ears = /obj/item/radio/headset/heads/captain
+	id = /obj/item/card/id/elysium/captain
 
 /datum/outfit/job/elysium/captain/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -56,6 +86,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	head = /obj/item/clothing/head/helmet/m10_elysium
 	backpack_contents = list(/obj/item/kitchen/knife/switchblade)
+	id = /obj/item/card/id/elysium/security
 
 /datum/outfit/job/elysium/security/post_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -72,6 +103,7 @@
 	backpack = /obj/item/storage/backpack/satchel
 	uniform = /obj/item/clothing/under/utility
 	shoes = /obj/item/clothing/shoes/sneakers/black
+	id = /obj/item/card/id/elysium/assistant
 
 /datum/outfit/job/elysium/assistant/post_equip(mob/living/carbon/human/H)
 	. = ..()

@@ -1,11 +1,7 @@
 //	Syndicate
 /datum/outfit/job/syndicate/post_equip(mob/living/carbon/human/H, visualsOnly)
- 	. = ..()
- 	H.faction |= list(FACTION_PLAYER_SYNDICATE,FACTION_ANTAG_SYNDICATE)
-
-//	Elysium
-/datum/outfit/job/elysium/post_equip(mob/living/carbon/human/H)
-	H.faction |= list(FACTION_PLAYER_ELYSIUM)
+	. = ..()
+	H.faction |= list(FACTION_PLAYER_SYNDICATE,FACTION_ANTAG_SYNDICATE)
 
 //	Nanotrasen
 /datum/outfit/job/nanotrasen/post_equip(mob/living/carbon/human/H, visualsOnly)
