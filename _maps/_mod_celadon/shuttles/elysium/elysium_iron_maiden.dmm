@@ -252,7 +252,8 @@
 "kT" = (
 /obj/machinery/turretid{
 	dir = 8;
-	pixel_x = -32
+	pixel_x = -32;
+	req_access = null
 	},
 /obj/machinery/holopad,
 /obj/structure/cable{
