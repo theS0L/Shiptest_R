@@ -5,19 +5,19 @@
 	icon_state = "elysium"
 
 /obj/item/card/id/elysium/captain
-	desc = "A Elysium ID with no proper access to speak of.This one indicates a Caid"
+	desc = "A Elysium ID with no proper access to speak of. This one indicates a Caid"
 	icon_state = "elysium"
 	assignment = "Caid"
 	job_icon = "captain"
 
 /obj/item/card/id/elysium/security
-	desc = "A Elysium ID with no proper access to speak of.This one indicates a Mukatell"
+	desc = "A Elysium ID with no proper access to speak of. This one indicates a Mukatell"
 	icon_state = "elysium"
 	assignment = "Mukatell"
 	job_icon = "securityofficer"
 
 /obj/item/card/id/elysium/assistant
-	desc = "A Elysium ID with no proper access to speak of.This one indicates a Ahisa`i"
+	desc = "A Elysium ID with no proper access to speak of. This one indicates a Ahisa`i"
 	icon_state = "elysium"
 	assignment = "Ahisa`i"
 	job_icon = "assistant"
