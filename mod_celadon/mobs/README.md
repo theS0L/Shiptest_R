@@ -12,7 +12,7 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Мобы
 
-ID мода: MOBS
+ID мода: CELADON_MOBS
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -56,8 +56,8 @@ ID мода: MOBS
 
 ### Дефайны
 
-- `code/__DEFINES/~mods/roaches.dm` : `istool(A) istype(A, /obj/item)`
-- `code/__DEFINES/~mods/roaches.dm` : `isroach(A) istype(A, /mob/living/simple_animal/hostile/asteroid/roach)`
+- `code/__DEFINES/~mod_celadon/roaches.dm` : `istool(A) istype(A, /obj/item)`
+- `code/__DEFINES/~mod_celadon/roaches.dm` : `isroach(A) istype(A, /mob/living/simple_animal/hostile/asteroid/roach)`
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
   в которые ты их добавил, а также перечисли имена.
