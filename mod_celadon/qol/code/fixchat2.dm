@@ -17,7 +17,7 @@
 
 	sleep(1)
 	if (tgui_panel)
-	tgui_panel.window.send_message("ping", force = TRUE)
+		tgui_panel.window.send_message("ping", force = TRUE)
 
 	sleep(1)
 	winset(src, "output", "is-disabled=1&is-visible=0")
