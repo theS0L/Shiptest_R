@@ -90,6 +90,16 @@ ID мода: CELADON_QOL
 
 - EDIT `code/game/gamemodes/extended/extended.dm` -> меняем начальный репорт
 
+ООС вкладка	
+- EDIT `code/modules/client/verbs/ooc.dm` -> Убраны неиспользуемые кнопки "Message Of The Day" "Show Policy" со вкладки ООС.Перемещена кнопка "Fit Viewport" со вкладки "ООС" во вкладку "Special Verbs"
+- EDIT `code/datums/keybinding/client.dm` -> Перемещена кнопка "Toggle Fullscreen" со вкладки "ООС" во вкладку "Special Verbs"
+- EDIT `code/modules/mob/mob.dm` Перемещена кнопка "Cancel camera view" со вкладки "ООС" во вкладку "Special Verbs"
+- EDIT `code/modules/client/verbs/ping.dm` Убрана неиспользуемая кнопка "Ping" со вкладки "ООС
+- REMOVE `code/datums/helper_datums/getrev.dm` -> Убрана неиспользуемая кнопка "Show Server Revision" со вкладки ООС
+- REMOVE `code/modules/discord/accountlink.dm` -> Убрана неиспользуемая кнопка Verify Discord Account со вкладки ООС
+- REMOVE `code/modules/discord/toggle_notify.dm` Убрана неиспользуемая кнопка "Notify Restart" со вкладки "ООС"
+- REMOVE `code/modules/tgui_panel/external.dm` Убрана кнопка "Fix chat" со вкладки "ООС". Устаревшая функция.
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
