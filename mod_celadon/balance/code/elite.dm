@@ -3,7 +3,7 @@
 	faction = list("elitefauna")
 	maxHealth = 400
 	health = 400
-	
+
 // Turmor
 /obj/structure/elite_tumor
 	icon = 'mod_celadon/_storge_icons/icons/obj/tumor.dmi'
@@ -106,7 +106,7 @@
 	speed = 3
 	retreat_distance = 4
 	minimum_distance = 3
-	
+
 	var/turf/startingloc	// Saves the turf the mob was created at
 	var/rage_check = FALSE
 	var/blast_charges = 0
@@ -172,13 +172,7 @@
 				conjure_hostile(SOUTH)
 				conjure_hostile(WEST)
 				conjure_hostile(EAST)
-				addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 2), 20 SECONDS)
-			if(2)
-				conjure_hostile(NORTHEAST)
-				conjure_hostile(NORTHWEST)
-				conjure_hostile(SOUTHEAST)
-				conjure_hostile(SOUTHWEST)
-				addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 1), 20 SECONDS)
+				addtimer(CALLBACK(src, PROC_REF(conjure_hostiles), 2), 10 SECONDS)
 	else
 		return
 
