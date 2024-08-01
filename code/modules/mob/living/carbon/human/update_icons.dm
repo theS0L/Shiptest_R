@@ -496,7 +496,8 @@ There are several things that need to be remembered:
 		// var/obj/item/bodypart/head_bodypart = src.get_bodypart(BODY_ZONE_HEAD) // CELADON-EDIT - ORIGINAL
 		// if((head_bodypart.bodytype & BODYTYPE_SNOUT) && (I.supports_variations & SNOUTED_VARIATION)) // CELADON-EDIT - ORIGINAL
 		// 	target_overlay = "[target_overlay]_snouted" // CELADON-EDIT - ORIGINAL
-		if(dna.species.bodytype & BODYTYPE_SNOUT)
+		var/obj/item/bodypart/head_bodypart = src.get_bodypart(BODY_ZONE_HEAD)
+		if(head_bodypart.bodytype & BODYTYPE_SNOUT)
 			icon_file = SARATHI_SNOUTED_HELM_PATH
 			if(I.snout_override_icon)
 				icon_file = I.snout_override_icon
@@ -706,7 +707,8 @@ There are several things that need to be remembered:
 			// var/obj/item/bodypart/head_bodypart = src.get_bodypart(BODY_ZONE_HEAD) // CELADON-EDIT - ORIGINAL
 			// if((head_bodypart.bodytype & BODYTYPE_SNOUT) && (I.supports_variations & SNOUTED_VARIATION)) // CELADON-EDIT - ORIGINAL
 			// 	target_overlay = "[target_overlay]_snouted" // CELADON-EDIT - ORIGINAL
-			if(dna.species.bodytype & BODYTYPE_SNOUT)
+			var/obj/item/bodypart/head_bodypart = src.get_bodypart(BODY_ZONE_HEAD)
+			if(head_bodypart.bodytype & BODYTYPE_SNOUT)
 				icon_file = SARATHI_SNOUTED_MASK_PATH
 				if(I.snout_override_icon)
 					icon_file = I.snout_override_icon
