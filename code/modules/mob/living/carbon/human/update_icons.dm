@@ -498,9 +498,10 @@ There are several things that need to be remembered:
 		// 	target_overlay = "[target_overlay]_snouted" // CELADON-EDIT - ORIGINAL
 		var/obj/item/bodypart/head_bodypart = src.get_bodypart(BODY_ZONE_HEAD)
 		if(head_bodypart.bodytype & BODYTYPE_SNOUT)
-			icon_file = SARATHI_SNOUTED_HELM_PATH
-			if(I.snout_override_icon)
-				icon_file = I.snout_override_icon
+			if(icon_exists(SARATHI_SNOUTED_HELM_PATH, RESOLVE_ICON_STATE(I)))
+				icon_file = SARATHI_SNOUTED_HELM_PATH
+				if(I.snout_override_icon)
+					icon_file = I.snout_override_icon
 			else
 				handled_by_bodytype = TRUE
 		// [CELADON-EDIT] - RESPRITES
@@ -709,11 +710,12 @@ There are several things that need to be remembered:
 			// 	target_overlay = "[target_overlay]_snouted" // CELADON-EDIT - ORIGINAL
 			var/obj/item/bodypart/head_bodypart = src.get_bodypart(BODY_ZONE_HEAD)
 			if(head_bodypart.bodytype & BODYTYPE_SNOUT)
-				icon_file = SARATHI_SNOUTED_MASK_PATH
-				if(I.snout_override_icon)
-					icon_file = I.snout_override_icon
-			else
-				handled_by_bodytype = TRUE
+				if(icon_exists(SARATHI_SNOUTED_MASK_PATH, RESOLVE_ICON_STATE(I)))
+					icon_file = SARATHI_SNOUTED_MASK_PATH
+					if(I.snout_override_icon)
+						icon_file = I.snout_override_icon
+				else
+					handled_by_bodytype = TRUE
 			// [CELADON-EDIT]
 
 			if(dna.species.bodytype & BODYTYPE_VOX)
