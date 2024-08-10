@@ -1082,8 +1082,8 @@
 	hardsuit_type = "independent-sec"
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 20,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
 	// [CELADON-EDIT] - TAJARA
-	// supports_variations = VOX_VARIATION // CELADON-EDIT - ORIGINAL
-	supports_variations = VOX_VARIATION | TAJARA_VARIATION
+	// supports_variations = VOX_VARIATION | SNOUTED_VARIATION // CELADON-EDIT - ORIGINAL
+	supports_variations = VOX_VARIATION | SNOUTED_VARIATION | TAJARA_VARIATION
 	// [/CELADON-EDIT]
 
 /obj/item/clothing/suit/space/hardsuit/security/independent
@@ -1096,8 +1096,8 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/independent
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 20, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
 	// [CELADON-EDIT] - TAJARA
-	// supports_variations = VOX_VARIATION // CELADON-EDIT - ORIGINAL
-	supports_variations = VOX_VARIATION | TAJARA_VARIATION
+	// supports_variations = VOX_VARIATION | DIGITIGRADE_VARIATION // CELADON-EDIT - ORIGINAL
+	supports_variations = VOX_VARIATION | DIGITIGRADE_VARIATION | TAJARA_VARIATION
 	// [/CELADON-EDIT]
 
 	//Mining
