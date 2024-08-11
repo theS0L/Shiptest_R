@@ -216,7 +216,6 @@
 
 /obj/item/kitchen/knife/combat
 	name = "combat knife"
-	icon = 'icons/obj/world/melee.dmi'
 	icon_state = "combatknife"
 	item_state = "combatknife"
 	desc = "A military combat utility survival knife."
