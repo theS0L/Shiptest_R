@@ -216,7 +216,7 @@
 
 /obj/item/kitchen/knife/combat
 	name = "combat knife"
-	// [CELADON-REMOVE] - Путь к правильным спрайтам уже указан у родителя.
+	// [CELADON-REMOVE] - CELADON_FIXES - Путь к правильным спрайтам уже указан у родителя.
   	// icon = 'icons/obj/world/melee.dmi'
   	// [/CELADON-REMOVE]
 	icon_state = "combatknife"
