@@ -1939,7 +1939,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
-/turf/template_noop,
+/turf/open/floor/plating/rust,
 /area/template_noop)
 "pp" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -2652,12 +2652,16 @@
 	color = "#8a8a8a"
 	},
 /area/ruin/space/has_grav/ancientstation/rnd)
+"vz" = (
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plating/rust,
+/area/template_noop)
 "vB" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
 	},
-/turf/template_noop,
+/turf/open/floor/plating/rust,
 /area/template_noop)
 "vC" = (
 /obj/machinery/conveyor,
@@ -3268,7 +3272,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
-/turf/template_noop,
+/turf/open/floor/plating/rust,
 /area/template_noop)
 "Av" = (
 /mob/living/simple_animal/hostile/hivebot,
@@ -5847,7 +5851,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/turf/template_noop,
+/turf/open/floor/plating/rust,
 /area/template_noop)
 "UH" = (
 /obj/structure/sign/departments/medbay/alt,
@@ -6195,7 +6199,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
-/turf/template_noop,
+/turf/open/floor/plating/rust,
 /area/template_noop)
 "XT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8524,20 +8528,20 @@ tY
 tO
 tO
 iO
-RJ
-RJ
+vz
+vz
 UC
-RJ
-RJ
+vz
+vz
 fA
 UC
 UC
 XR
-RJ
+vz
 vB
-RJ
+vz
 UC
-RJ
+vz
 XR
 tO
 tO
@@ -8620,21 +8624,21 @@ rq
 tO
 tO
 iO
-RJ
-RJ
+vz
+vz
 Au
 UC
 UC
 ep
 UC
-RJ
-RJ
+vz
+vz
 XR
-RJ
+vz
 UC
-RJ
-RJ
-RJ
+vz
+vz
+vz
 Bp
 tO
 tO
@@ -8718,16 +8722,16 @@ tO
 iO
 pn
 UC
-RJ
-RJ
-RJ
+vz
+vz
+vz
 fA
 UC
 UC
 UC
 vB
-RJ
-RJ
+vz
+vz
 UC
 UC
 vB
