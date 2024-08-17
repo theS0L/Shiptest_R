@@ -555,6 +555,7 @@
 	suffix = "oldstation.dmm"
 	name = "Old Station"
 	description = "The old destroyed network of stations Alpha, Beta, Charlie, Tetta"
+	allow_duplicates = FALSE
 
 //							///
 //		WastePlanet ruin	///
