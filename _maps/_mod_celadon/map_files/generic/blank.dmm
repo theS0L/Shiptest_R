@@ -1114,14 +1114,6 @@
 /area/tdome/tdomeobserve)
 "dO" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/marksman/gal/inteq{
-	pixel_x = 1;
-	pixel_y = 4
-	},
-/obj/item/gun/ballistic/automatic/marksman/gal/inteq{
-	pixel_x = -4;
-	pixel_y = -2
-	},
 /turf/open/floor/plasteel,
 /area/centcom)
 "dR" = (
