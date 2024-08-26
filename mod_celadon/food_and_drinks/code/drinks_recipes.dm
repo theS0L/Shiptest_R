@@ -56,13 +56,13 @@
 	mix_message = "The mixture turns to a sickening froth."
 
 /datum/chemical_reaction/amnesia
-	result = list(/datum/reagent/consumable/ethanol/amnesia = 2)
+	results = list(/datum/reagent/consumable/ethanol/amnesia = 2)
 	required_reagents = list(/datum/reagent/consumable/ethanol/hooch = 1,
 							/datum/reagent/consumable/ethanol/vodka = 1)
 	mix_sound = 'mod_celadon/_storge_sounds/sound/effects/drinkfizz.ogg'
 
 /datum/chemical_reaction/suicider
-	result = list(/datum/reagent/consumable/ethanol/suicider = 4)
+	results = list(/datum/reagent/consumable/ethanol/suicider = 4)
 	required_reagents = list (/datum/reagent/consumable/ethanol/vodka = 1,
 							/datum/reagent/consumable/ethanol/hcider = 1,
 							/datum/reagent/fuel = 1,
