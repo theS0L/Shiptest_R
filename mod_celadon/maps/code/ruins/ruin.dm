@@ -689,3 +689,13 @@
 	id = "ps-oldminer"
 	description = "The base of an old and experienced miner"
 	suffix = "oldminer.dmm"
+
+//							///
+//		EarthSand ruin		///
+//							///
+
+/datum/map_template/ruin/earth_sand/el_town
+	name = "eltown"
+	id = "el_town"
+	description = "Town of Elysium"
+	suffix = "el_town.dmm"

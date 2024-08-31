@@ -26,6 +26,22 @@
 	preserve_level = TRUE
 	landing_sound = 'sound/effects/planet_landing_2.ogg'
 
+/datum/planet_type/earthsand
+	name = "Sand Planet"
+	desc = "Great Quicksand"
+	planet = DYNAMIC_WORLD_EARTH_SAND
+	color = COLOR_LIGHT_ORANGE
+	mapgen = /datum/map_generator/planet_generator/earth_sand
+	gravity = STANDARD_GRAVITY
+	default_baseturf = /turf/open/floor/plating/asteroid/sand
+	icon_state = "globe_2"
+	weight = 0
+	ruin_type = RUINTYPE_EARTH_SAND
+	landing_sound = 'mod_celadon/_storge_sounds/sound/events/planet_landing_3.mp3'
+
+
+// Тюрфы плазменной планеты //
+
 /turf/open/floor/plating/asteroid/plasma_gaint
 	name = "ashen sand"
 	desc = "Sand, tinted by the chemicals in the atmosphere to an uncanny shade of purple."
@@ -120,4 +136,15 @@
 	color = null
 	initial_gas_mix = PLASMA_GIANT_ATMOS
 
+// Тюрфы пустынной планеты //
 
+/turf/closed/mineral/random/whitesands/earth
+	name = "sandstone"
+	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
+	turf_type = /turf/open/floor/plating/asteroid/whitesands/earth
+	baseturfs = /turf/open/floor/plating/asteroid/whitesands/earth
+
+/turf/open/floor/plating/asteroid/whitesands/earth
+	name = "sand"
+	icon = 'icons/misc/beach.dmi'
+	icon_state = "sand"
