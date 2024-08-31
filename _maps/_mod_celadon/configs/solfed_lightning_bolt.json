@@ -15,25 +15,29 @@
 	"tags": ["Разведка", "Бой", "Шахтёрство"],
 	"limit": 1,
 	"job_slots": {
-		"Captain": {
+		"Juggernaut": {
 			"outfit": "/datum/outfit/job/solgov/bolt/captain",
 			"officer": true,
 			"slots": 1
 		},
-		"Overseer": {
+		"Scout": {
 			"outfit": "/datum/outfit/job/solgov/bolt/bureaucrat",
 			"officer": true,
 			"slots": 1
 		},
-		"Sonnensöldner": {
+		"Assault": {
 			"outfit": "/datum/outfit/job/solgov/bolt/security",
 			"slots": 2
 		},
-		"Medical Doctor": {
+		"Stormtrooper": {
+			"outfit": "/datum/outfit/job/solgov/bolt/security",
+			"slots": 2
+		},
+		"Paramedic": {
 			"outfit": "/datum/outfit/job/solgov/bolt/medic",
 			"slots": 2
 		},
-		"Ship Engineer": {
+		"Demolitionist": {
 			"outfit": "/datum/outfit/job/solgov/bolt/engineer",
 			"slots": 1
 		}
