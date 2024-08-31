@@ -3,7 +3,7 @@
 
 #include "_configs.dm"
 
-#include "code/mapgen/OldTownGenerator.dm"
+#include "code/mapgen/SandGenerator.dm"
 #include "code/mapgen/PlasmaGenerator.dm"
 
 #include "code/planet_types.dm"
