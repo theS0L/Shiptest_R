@@ -2395,7 +2395,6 @@
 	item_state = "captainpack"
 	},
 /obj/item/gun/ballistic/automatic/powered/gauss/gar{
-	desc = sss
 	},
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew/office)
