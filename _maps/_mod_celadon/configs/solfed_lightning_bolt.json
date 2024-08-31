@@ -11,7 +11,7 @@
 	"map_short_name": "Tomahawk-class",
 	"map_path": "_maps/_mod_celadon/shuttles/solfed/solfed_lightning_bolt.dmm",
 	"starting_funds": 0,
-	"description": "Томагавк переделанный под ивент, описание должны видеть только админы",
+	"description": "Корабль Солнечной Федерации класса Bolt служит для фронтовой разведки с боем.",
 	"tags": ["Разведка", "Бой", "Шахтёрство"],
 	"limit": 1,
 	"job_slots": {
