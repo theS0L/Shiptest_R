@@ -21,6 +21,7 @@
 	gravity = GRAVITY_DAMAGE_TRESHOLD
 	default_baseturf = /turf/open/floor/plating/asteroid/plasma_gaint
 	icon_state = "globe"
+	preserve_level = FALSE
 	weight = 20
 	ruin_type = RUINTYPE_PLASMA
 	landing_sound = 'sound/effects/planet_landing_2.ogg'
