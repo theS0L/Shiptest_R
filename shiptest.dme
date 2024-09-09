@@ -160,6 +160,7 @@
 #include "code\__DEFINES\~mod_celadon\fov.dm"
 #include "code\__DEFINES\~mod_celadon\generators.dm"
 #include "code\__DEFINES\~mod_celadon\names.dm"
+#include "code\__DEFINES\~mod_celadon\riol.dm"
 #include "code\__DEFINES\~mod_celadon\roaches.dm"
 #include "code\__DEFINES\~mod_celadon\tajara.dm"
 #include "code\__DEFINES\~mod_celadon\time.dm"

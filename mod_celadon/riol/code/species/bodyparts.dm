@@ -1,12 +1,12 @@
 /obj/item/bodypart/head/riol
-	icon = 'mod_celadon/_storge_icons/icons/riol/body.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_bodypats.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_RIOL
 	bodytype = BODYTYPE_RIOL | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
 
 /obj/item/bodypart/chest/riol
-	icon = 'mod_celadon/_storge_icons/icons/riol/body.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_bodypats.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_RIOL
@@ -15,28 +15,28 @@
 	bodytype = BODYTYPE_RIOL | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
 
 /obj/item/bodypart/l_arm/riol
-	icon = 'mod_celadon/_storge_icons/icons/riol/body.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_bodypats.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_RIOL
 	bodytype = BODYTYPE_RIOL | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
 
 /obj/item/bodypart/r_arm/riol
-	icon = 'mod_celadon/_storge_icons/icons/riol/body.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_bodypats.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_RIOL
 	bodytype = BODYTYPE_RIOL | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
 
 /obj/item/bodypart/leg/left/riol
-	icon = 'mod_celadon/_storge_icons/icons/riol/body.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_bodypats.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_RIOL
 	bodytype = BODYTYPE_RIOL | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
 
 /obj/item/bodypart/leg/right/riol
-	icon = 'mod_celadon/_storge_icons/icons/riol/body.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_bodypats.dmi'
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 	limb_id = SPECIES_RIOL

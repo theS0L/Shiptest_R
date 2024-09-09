@@ -1,16 +1,16 @@
-// /datum/emote/living/carbon/human/riol/can_run_emote(mob/user, status_check = TRUE , intentional)
-// 	if(!..())
-// 		return FALSE
+/datum/emote/living/carbon/human/riol/can_run_emote(mob/user, status_check = TRUE , intentional)
+	if(!..())
+		return FALSE
 
-// 	if (!isriol(user))
-// 		return FALSE
+	if (!isriol(user))
+		return FALSE
 
-// 	return TRUE
+	return TRUE
 
-/datum/emote/living/carbon/human/riol/can_run_emote(mob/user, status_check = TRUE, intentional = FALSE)
-	var/organ = user.get_organ_slot(ORGAN_SLOT_TONGUE)
-	if(istype(organ, /obj/item/organ/internal/tongue/riol))
-		return TRUE && ..()
+// /datum/emote/living/carbon/human/riol/can_run_emote(mob/user, status_check = TRUE, intentional = FALSE)
+// 	var/organ = user.get_organ_slot(ORGAN_SLOT_TONGUE)
+// 	if(istype(organ, /obj/item/organ/internal/tongue/riol))
+// 		return TRUE && ..()
 
 /datum/emote/living/carbon/human/riol/howl
 	key = "howl"
