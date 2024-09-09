@@ -259,6 +259,12 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 	while (found_anything)
 		found_anything = FALSE
 		for(var/record in shuffle(product_records))
+			// [CELADON-ADD] - CELADON_BALANCE - Производители автоматов торговых теряют огромные деньги из-за вандалов-халявщиков
+			if (prob(20))
+				say("Bzzzzzzzz...")
+				found_anything = FALSE
+				break
+			// [/CELADON-ADD]
 			var/datum/data/vending_product/R = record
 			if(R.amount <= 0) //Try to use a record that actually has something to dump.
 				continue
