@@ -5,6 +5,8 @@
 	extra_price = 100
 	///A variable to change on a per instance basis on the map that allows the instance to remove cost and ID requirements
 	all_items_free = FALSE
+	/// Это нужно для проверки, а был ли автомат разобран с инструментами или нет
+	var/valid = FALSE
 
 /obj/item/vending_refill/custom
 	custom_premium_price = 200

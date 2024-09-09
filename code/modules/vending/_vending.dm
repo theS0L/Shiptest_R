@@ -354,7 +354,11 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 /obj/machinery/vending/proc/update_canister()
 	if (!component_parts)
 		return
-
+	// [CELADON-ADD] - CELADON_BALANCE - Проверка на лигитимную разборку
+	if (valid == FALSE)
+		return
+	valid = FALSE
+	// [/CELADON-ADD
 	var/obj/item/vending_refill/R = locate() in component_parts
 	if (!R)
 		CRASH("Constructible vending machine did not have a refill canister")
@@ -375,6 +379,9 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 /obj/machinery/vending/crowbar_act(mob/living/user, obj/item/I)
 	if(!component_parts)
 		return FALSE
+	// [CELADON-ADD] - CELADON_BALANCE - Да, разборка была с помощью инструмента
+	valid = TRUE
+	// [/CELADON-ADD]
 	default_deconstruction_crowbar(I)
 	return TRUE
 
