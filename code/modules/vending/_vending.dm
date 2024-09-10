@@ -751,10 +751,9 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 			. = TRUE
 			if(!vend_ready)
 				return
-			if(panel_open)
-				to_chat(usr, "<span class='warning'>The vending machine cannot dispense products while its service panel is open!</span>")
-				return
-			vend_ready = FALSE //One thing at a time!!
+			// [CELADON-ADD] - CELADON_FIXES
+			vend_ready = FALSE
+			// [/CELADON-ADD]
 			var/datum/data/vending_product/R = locate(params["ref"])
 			var/list/record_to_check = product_records + coin_records
 			if(extended_inventory)
