@@ -16,7 +16,7 @@
 		"riol_facial_hairs" = "None",
 		"riol_chest_markings" = "None",
 		"riol_body_markings" = "None",
-		"riol_tail" = "Long"
+		"riol_tail" = "default"
 	)
 
 	// randomise[RANDOM_SKIN_TONE_NOSE] = TRUE
@@ -27,12 +27,12 @@
 
 /datum/preferences/process_link(mob/user, list/href_list)
 	switch(href_list["task"])
-		if("random")
-			switch(href_list["preference"])
-				if("s_tone_nose")
-					skin_tone_nose = random_skin_tone_nose()
-				// if("s_tone_riol")
-				// 	skin_tone_riol = random_skin_tone_riol()
+		// if("random")
+		// 	switch(href_list["preference"])
+		// 		// if("s_tone_nose")
+		// 		// 	skin_tone_nose = random_skin_tone_nose()
+		// 		// if("s_tone_riol")
+		// 		// 	skin_tone_riol = random_skin_tone_riol()
 		if("input")
 			switch(href_list["preference"])
 				if("riol_ears")
