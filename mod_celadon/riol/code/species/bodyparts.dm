@@ -1,3 +1,6 @@
+/obj/item/bodypart
+	var/skin_tone_riol = ""
+
 /obj/item/bodypart/head/riol
 	icon = 'mod_celadon/_storge_icons/icons/riol/riol_bodypats.dmi'
 	should_draw_greyscale = TRUE

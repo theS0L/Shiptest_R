@@ -1,5 +1,12 @@
+/mob/living/carbon/human
+	var/skin_tone_riol = "Black"  //Skin tone riol
+
 /mob/living/carbon/human/species/riol
 	race = /datum/species/riol
+
+/datum/species
+	/// Does the species use skintones or not?
+	var/use_skintoneriol = FALSE
 
 /datum/species/riol
 	name = "\improper Riol"
@@ -38,6 +45,7 @@
 		"riol_facial_hairs" = "None",
 		"riol_chest_markings" = "None",
 		"body_markings" = "None",
+		"tail_markings" = "None",
 		"riol_tail" = "long",
 		"body_size" = "Normal"
 		)

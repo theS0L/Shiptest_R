@@ -18,26 +18,26 @@
 // 	"black"
 // )))
 
-// /proc/random_skin_tone_riol()
-// 	return pick(GLOB.skin_tones_riol)
+/proc/random_skin_tone_riol()
+	return pick(GLOB.skin_tones_riol)
 
-// GLOBAL_LIST_INIT(skin_tones_riol, sortList(list(
-// 	"Beaver Brown",
-// 	"Kochiba",
-// 	"Taupe",
-// 	"Blue-Grey",
-// 	"Dark Gray",
-// 	"Chocolate",
-// 	"Black",
-// 	"Orange",
-// 	"Cinnamon",
-// 	"Ruddy",
-// 	"Cream",
-// 	"White",
-// 	"Ivory",
-// 	"Wheat",
-// 	"Silver"
-// )))
+GLOBAL_LIST_INIT(skin_tones_riol, sortList(list(
+	"Beaver Brown",
+	"Kochiba",
+	"Taupe",
+	"Blue-Grey",
+	"Dark Gray",
+	"Chocolate",
+	"Black",
+	"Orange",
+	"Cinnamon",
+	"Ruddy",
+	"Cream",
+	"White",
+	"Ivory",
+	"Wheat",
+	"Silver"
+)))
 
 /proc/riol_name(gender)
 	if(gender == MALE)
