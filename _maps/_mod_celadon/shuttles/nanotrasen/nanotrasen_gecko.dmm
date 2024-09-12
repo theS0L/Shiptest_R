@@ -1536,7 +1536,6 @@
 	name = "refrigerator"
 	},
 /obj/item/storage/cans/sixbeer,
-/obj/item/stack/sheet/pizza/five,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "rC" = (

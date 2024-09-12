@@ -2142,7 +2142,7 @@
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
 "ms" = (
-/obj/machinery/porta_turret/ship/syndicate/heavy{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
 	dir = 9
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal{
@@ -3550,7 +3550,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
 "vd" = (
-/obj/machinery/porta_turret/ship/syndicate/heavy{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
 	dir = 5
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal{
@@ -6714,7 +6714,7 @@
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
 "Mr" = (
-/obj/machinery/porta_turret/ship/syndicate/heavy{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
 	dir = 6
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal{
@@ -7360,8 +7360,8 @@
 /obj/item/clothing/glasses/hud/security/suns,
 /obj/item/clothing/gloves/tackler/dolphin/suns,
 /obj/item/clothing/suit/toggle/suns/pkcoat,
-/obj/item/clothing/suit/armor/vest/bulletproof/suns/hos,
-/obj/item/clothing/suit/armor/vest/bulletproof/suns/ehos,
+/obj/item/clothing/suit/armor/vest/suns/hos,
+/obj/item/clothing/suit/armor/vest/suns/ehos,
 /obj/item/clothing/head/welding/suns/hos,
 /obj/item/clothing/under/syndicate/suns/pkuniform,
 /obj/item/radio/headset/syndicate/alt{
@@ -8425,7 +8425,7 @@
 	},
 /area/ship/crew/cryo)
 "We" = (
-/obj/machinery/porta_turret/ship/syndicate/heavy{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
 	dir = 10
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal{

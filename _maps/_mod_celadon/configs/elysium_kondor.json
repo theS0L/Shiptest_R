@@ -1,6 +1,7 @@
 {
 "$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
 "map_name": "Kondor-class ship",
+"faction": "/datum/faction/elysium",
 "prefix": "EUSM",
 "namelists": [
 	"WEAPONS",
@@ -16,16 +17,16 @@
 "limit": 2,
 "job_slots": {
 	"Каид": {
-		"outfit": "/datum/outfit/job/independent/assistant",
+		"outfit": "/datum/outfit/job/elysium/captain",
 		"officer": true,
 		"slots": 1
 	},
 	"Ахиса'и": {
-		"outfit": "/datum/outfit/job/independent/assistant",
+		"outfit": "/datum/outfit/job/elysium/assistant",
 		"slots": 1
 	},
 	"Мукатэлл": {
-		"outfit": "/datum/outfit/job/independent/assistant",
+		"outfit": "/datum/outfit/job/elysium/security",
 		"slots" : 2
 	}
 },

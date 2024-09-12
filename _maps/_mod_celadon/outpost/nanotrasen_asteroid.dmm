@@ -125,13 +125,13 @@
 /area/outpost/maintenance/fore)
 "aE" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/cakeslice/birthday{
-	pixel_x = -3;
-	pixel_y = -5
-	},
 /obj/effect/decal/cleanable/confetti{
 	pixel_x = -12;
 	pixel_y = -3
+	},
+/obj/item/food/cakeslice/birthday{
+	pixel_x = -3;
+	pixel_y = -5
 	},
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/bar)
@@ -179,6 +179,12 @@
 "aL" = (
 /turf/closed/mineral/random/snow,
 /area/outpost/maintenance/aft)
+"aM" = (
+/obj/effect/mob_spawn/human/elysium_outpost/bartender{
+	dir = 4
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/outpost/crew/cryo)
 "aN" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
@@ -227,7 +233,8 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /obj/machinery/firealarm/directional/north,
 /obj/item/banner/elysium{
-	pixel_x = 5
+	pixel_x = 5;
+	anchored = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/fore)
@@ -2677,7 +2684,8 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /obj/item/radio/intercom/directional/north,
 /obj/item/banner/elysium{
-	pixel_x = 3
+	pixel_x = 3;
+	anchored = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/fore)
@@ -6307,7 +6315,9 @@
 /turf/open/floor/engine/air,
 /area/outpost/engineering/atmospherics)
 "wl" = (
-/obj/machinery/cryopod,
+/obj/effect/mob_spawn/human/elysium_outpost/artist{
+	dir = 8
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/crew/cryo)
 "wn" = (
@@ -6617,7 +6627,8 @@
 	dir = 8
 	},
 /obj/item/banner/elysium{
-	pixel_x = 6
+	pixel_x = 6;
+	anchored = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
@@ -6832,7 +6843,8 @@
 	dir = 4
 	},
 /obj/item/banner/elysium{
-	pixel_x = 2
+	pixel_x = 2;
+	anchored = 1
 	},
 /turf/open/floor/concrete/tiles,
 /area/outpost/crew/garden)
@@ -6857,6 +6869,13 @@
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering/atmospherics)
+"yg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/elysium_outpost/cook{
+	dir = 4
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/outpost/crew/canteen)
 "yh" = (
 /obj/structure/rack,
 /turf/open/floor/concrete/slab_1,
@@ -9047,7 +9066,8 @@
 	dir = 4
 	},
 /obj/item/banner/elysium{
-	pixel_x = 2
+	pixel_x = 2;
+	anchored = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
@@ -10688,6 +10708,10 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/engineering/atmospherics)
+"LA" = (
+/obj/effect/mob_spawn/human/elysium_outpost/maid,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/outpost/crew/cryo)
 "LC" = (
 /obj/structure/bed,
 /obj/structure/curtain/cloth/grey,
@@ -13752,6 +13776,12 @@
 /obj/effect/turf_decal/industrial/warning,
 /turf/closed/mineral/random/jungle,
 /area/outpost/crew/garden)
+"Wr" = (
+/obj/effect/mob_spawn/human/elysium_outpost/maid{
+	dir = 1
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/outpost/crew/cryo)
 "Wu" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 6
@@ -14150,7 +14180,8 @@
 	dir = 1
 	},
 /obj/item/banner/elysium{
-	pixel_x = 6
+	pixel_x = 6;
+	anchored = 1
 	},
 /turf/open/floor/concrete/tiles,
 /area/outpost/crew/garden)
@@ -29397,7 +29428,7 @@ Pl
 Oe
 Zu
 yN
-wl
+LA
 Ou
 oh
 Rx
@@ -31079,7 +31110,7 @@ Rx
 bO
 LF
 kB
-wK
+wl
 HI
 pq
 ZS
@@ -31265,9 +31296,9 @@ vx
 Rx
 Pl
 Oe
-Zu
+Wr
 yN
-wl
+LA
 Ou
 oh
 Rx
@@ -31453,7 +31484,7 @@ Rx
 xp
 PL
 XS
-EA
+aM
 Pc
 Yf
 BQ
@@ -33104,7 +33135,7 @@ pU
 gP
 Vr
 BA
-sR
+yg
 gP
 ba
 DL

@@ -7,7 +7,7 @@
 	registered_age = null
 
 /obj/item/card/id/elysium_com/Initialize()
-	access = get_all_centcom_access()
+	access = get_all_centcom_access()+get_all_accesses_outpost()
 	. = ..()
 
 /obj/item/card/id/elysium_com/has_ship_access(datum/overmap/ship/controlled/ship)
@@ -103,7 +103,7 @@
 	name = "sleeper"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
-	faction = "elysium"
+	faction = (FACTION_PLAYER_ELYSIUM)
 	short_desc = "You are a Avanpost Elysium Private Security Officer!"
 
 /datum/outfit/avanpost
@@ -147,7 +147,7 @@
 		return
 
 	var/obj/item/card/id/W = H.wear_id
-	W.access = get_all_accesses()
+	W.access = get_all_accesses()+get_all_accesses_outpost()
 	W.access += get_centcom_access("CentCom Commander")
 	W.assignment = "CentCom Commander"
 	W.registered_name = H.real_name

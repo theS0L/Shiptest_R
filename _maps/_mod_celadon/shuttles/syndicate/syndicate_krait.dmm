@@ -563,10 +563,6 @@
 "eA" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/industrial/traffic/full,
-/obj/item/suppressor,
-/obj/item/suppressor{
-	pixel_y = 7
-	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "eJ" = (
@@ -4011,12 +4007,12 @@
 /area/ship/science)
 "IZ" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/food/snacks/store/cake/brain,
 /obj/machinery/computer/helm/viewscreen/directional/west,
 /obj/item/scalpel{
 	pixel_y = 13;
 	pixel_x = 8
 	},
+/obj/item/food/cake/brain,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science/storage)
 "Jb" = (
@@ -4726,7 +4722,7 @@
 	pixel_y = 1
 	},
 /obj/item/clothing/glasses/night{
-	pixel_y = 6
+	pixel_y = 8
 	},
 /obj/item/clothing/glasses/night{
 	pixel_x = -2;
