@@ -19,6 +19,7 @@
 #define FACTION_PGF "Pan-Gezenan Federation"
 
 #define FACTION_PLAYER_SYNDICATE "playerSyndicate"
+#define FACTION_PLAYER_PIRATE "playerPirate"
 #define FACTION_PLAYER_NANOTRASEN "playerNanotrasen"
 #define FACTION_PLAYER_FRONTIERSMEN "playerFrontiersmen"
 #define FACTION_PLAYER_MINUTEMAN "playerMinuteman"
