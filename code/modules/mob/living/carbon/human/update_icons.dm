@@ -515,6 +515,10 @@ There are several things that need to be remembered:
 		// [CELADON-ADD] - TAJARA
 		if((I.supports_variations & TAJARA_VARIATION) && (dna.species.bodytype & BODYTYPE_TAJARA))
 			icon_file = TAJARA_HEAD_PATH
+
+		// [CELADON-ADD] - CELADON_RIOL
+		if((I.supports_variations & RIOL_VARIATION) && (dna.species.bodytype & BODYTYPE_RIOL))
+			icon_file = RIOL_HEAD_PATH
 		// [/CELADON-ADD]
 
 		if(!(icon_exists(icon_file, RESOLVE_ICON_STATE(I))))
@@ -628,6 +632,9 @@ There are several things that need to be remembered:
 		// [CELADON-ADD] - TAJARA
 		else if((dna.species.bodytype & BODYTYPE_TAJARA) && (I.supports_variations & TAJARA_VARIATION))
 			icon_file = TAJARA_SUIT_PATH
+		// [CELADON-ADD] - CELADON_RIOL
+		else if((dna.species.bodytype & BODYTYPE_RIOL) && (I.supports_variations & RIOL_VARIATION))
+			icon_file = RIOL_SUIT_PATH
 		// [/CELADON-ADD]
 
 		if(!(icon_exists(icon_file, RESOLVE_ICON_STATE(I))))
@@ -716,6 +723,9 @@ There are several things that need to be remembered:
 			// [CELADON-ADD] - TAJARA
 			if((dna.species.bodytype & BODYTYPE_TAJARA) && (I.supports_variations & TAJARA_VARIATION))
 				icon_file = TAJARA_MASK_PATH
+			// [CELADON-ADD] - CELADON_RIOL
+			if((dna.species.bodytype & BODYTYPE_RIOL) && (I.supports_variations & RIOL_VARIATION))
+				icon_file = RIOL_MASK_PATH
 			// [/CELADON-ADD]
 
 
