@@ -28,7 +28,7 @@
 		},
 		"Assault": {
 			"outfit": "/datum/outfit/job/solgov/bolt/security",
-			"slots": 2
+			"slots": 1
 		},
 		"Stormtrooper": {
 			"outfit": "/datum/outfit/job/solgov/bolt/security",
