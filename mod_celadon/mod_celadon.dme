@@ -56,6 +56,7 @@
 #include "effects/_effects.dme"
 #include "repair_weebstick/_repair_weebstick.dme"
 #include "elysiumpod/_elysiumpod.dme"
+#include "boarding/_boarding.dme"
 
 
 // --- MOBS --- //
