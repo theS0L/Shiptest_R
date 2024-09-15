@@ -26,8 +26,8 @@
 	req_components = list(/obj/item/stock_parts/capacitor = 2, /obj/item/stack/ore/bluespace_crystal = 5)
 
 /obj/machinery/boarding_pad // mantis B or nothing
-	name = "phasic boarding pad"
-	desc = "Used to board enemy shuttles, one person per pad. Instructions? Simple! Take a close distance to shuttle on map, stand on this pad, select it and turn it on. You'd better get ready to kill!"
+	name = "фазовый абордажный телепортер"
+	desc = "Устройство для абордажа вражеских шаттлов, один человек на пад. Инструкции? Запросто! Подберитесь к шаттлу в упор, встаньте на телепортер и инициируйте транслокацию."
 	icon = 'mod_celadon/_storge_icons/icons/boarding.dmi'
 	icon_state = "boarding_pad"
 	circuit = /obj/item/circuitboard/machine/boarding_pad
@@ -55,7 +55,7 @@
 		if(icon_state == "boarding_pad_off")
 			icon_state = "boarding_pad"
 			playsound(src, 'sound/weapons/flash.ogg', 40, TRUE, frequency = 1.5)
-			visible_message("<span class='notice'>Boarding telepad ready to be used!</span>")
+			visible_message("<span class='notice'>Телепортер готов к использованию!</span>")
 		return
 	else
 		cooldown -= 2
@@ -67,16 +67,16 @@
 /obj/machinery/boarding_pad/attack_hand(mob/user)
 	var/mob/living/carbon/M = locate(/mob/living/carbon) in loc // if mobs more than 1, picks random to teleport
 	if(!current_ship)
-		visible_message("<span class='warning'>Pad isn't present on shuttle.</span>")
+		visible_message("<span class='warning'>Пад не находится на шаттле.</span>")
 		return
 	if(cooldown > 0)
-		visible_message("<span class='warning'>Telepad is currently recharging, wait [cooldown] seconds.</span>")
+		visible_message("<span class='warning'>Устройство заряжается, подождите [cooldown] секунд.</span>")
 		return
 	if(!M)
-		visible_message("<span class='warning'>It seems no one stands on the pad.</span>")
+		visible_message("<span class='warning'>Похоже, никого нет на паде.</span>")
 		return
 	if(!M.mind)
-		visible_message("<span class='warning'>Pad can't send mindless creatures due to galactic conventions.</span>")
+		visible_message("<span class='warning'>Пад не может отправить неразумные существа, это нарушает галактические соглашения.</span>")
 		return
 
 	var/list/objects = current_ship.get_nearby_overmap_objects()
@@ -88,14 +88,14 @@
 			ships += ship.shuttle_port
 
 	if(ships.len == 0)
-		visible_message("<span class='warning'>Lacking of ships nearby.</span>")
+		visible_message("<span class='warning'>Отсутствуют корабли поблизости.</span>")
 		return
 
-	var/obj/docking_port/mobile/selected = tgui_input_list(user, "Select ship to teleport", "Translocation menu", ships)
-	var/area/target = tgui_input_list(user, "Select shuttle area to teleport", "Translocation menu", selected.shuttle_areas)
+	var/obj/docking_port/mobile/selected = tgui_input_list(user, "Выберите шаттл для телепортации", "Меню транслокации", ships)
+	var/area/target = tgui_input_list(user, "Выберите зону шаттла для телепортации", "Меню транслокации", selected.shuttle_areas)
 
 	icon_state = "boarding_pad_charging"
-	balloon_alert(M, "Initiating, stay still...")
+	balloon_alert(M, "Инициализация, не двигайтесь...")
 	playsound(src, 'sound/weapons/flash.ogg', 40, TRUE, frequency = 0.5)
 	var/list/places = list()
 	for(var/turf/open/T in target.contents)
