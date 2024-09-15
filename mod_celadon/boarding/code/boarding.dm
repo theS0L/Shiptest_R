@@ -87,10 +87,6 @@
 		for(var/datum/overmap/ship/controlled/ship in object.contents)
 			ships += ship.shuttle_port
 
-// DEBUG
-	ships += current_ship.shuttle_port
-// DEBUG
-
 	if(ships.len == 0)
 		visible_message("<span class='warning'>Lacking of ships nearby.</span>")
 		return
