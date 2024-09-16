@@ -461,11 +461,11 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	READ_FILE(S["feature_tajara_chest_markings"], features["tajara_chest_markings"])
 	READ_FILE(S["feature_tajara_body_markings"], features["tajara_body_markings"])
 	READ_FILE(S["feature_tajara_tail"], features["tajara_tail"])
-	READ_FILE(S["tajara_ears_markings_color"], tajara_ears_markings_color)
-	READ_FILE(S["tajara_head_markings_color"], tajara_head_markings_color)
-	READ_FILE(S["tajara_nose_markings_color"], tajara_nose_markings_color)
-	READ_FILE(S["tajara_chest_markings_color"], tajara_chest_markings_color)
-	READ_FILE(S["tajara_body_markings_color"], tajara_body_markings_color)
+	READ_FILE(S["tajara_ears_markings_color"], features["tajara_ears_markings_color"])
+	READ_FILE(S["tajara_head_markings_color"], features["tajara_head_markings_color"])
+	READ_FILE(S["tajara_nose_markings_color"], features["tajara_nose_markings_color"])
+	READ_FILE(S["tajara_chest_markings_color"], features["tajara_chest_markings_color"])
+	READ_FILE(S["tajara_body_markings_color"], features["tajara_body_markings_color"])
 	// [/CELADON-ADD]
 
 	READ_FILE(S["equipped_gear"], equipped_gear)
@@ -722,11 +722,11 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["feature_tajara_chest_markings"], features["tajara_chest_markings"])
 	WRITE_FILE(S["feature_tajara_body_markings"], features["tajara_body_markings"])
 	WRITE_FILE(S["feature_tajara_tail"], features["tajara_tail"])
-	WRITE_FILE(S["tajara_ears_markings_color"], tajara_ears_markings_color)
-	WRITE_FILE(S["tajara_head_markings_color"], tajara_head_markings_color)
-	WRITE_FILE(S["tajara_nose_markings_color"], tajara_nose_markings_color)
-	WRITE_FILE(S["tajara_chest_markings_color"], tajara_chest_markings_color)
-	WRITE_FILE(S["tajara_body_markings_color"], tajara_body_markings_color)
+	WRITE_FILE(S["tajara_ears_markings_color"], features["tajara_ears_markings_color"])
+	WRITE_FILE(S["tajara_head_markings_color"], features["tajara_head_markings_color"])
+	WRITE_FILE(S["tajara_nose_markings_color"], features["tajara_nose_markings_color"])
+	WRITE_FILE(S["tajara_chest_markings_color"], features["tajara_chest_markings_color"])
+	WRITE_FILE(S["tajara_body_markings_color"], features["tajara_body_markings_color"])
 	// [/CELADON-ADD]
 
 	//Flavor text
