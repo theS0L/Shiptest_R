@@ -33,7 +33,7 @@
 	circuit = /obj/item/circuitboard/machine/boarding_pad
 	var/datum/overmap/ship/controlled/current_ship
 	var/obj/effect/overlay/vis/self_overlay
-	var/cooldown = 0
+	var/cooldown = 120
 
 /obj/machinery/boarding_pad/connect_to_shuttle(obj/docking_port/mobile/port, obj/docking_port/stationary/dock)
 	current_ship = port.current_ship
@@ -42,7 +42,6 @@
 	. = ..()
 	if(current_ship)
 		self_overlay = SSvis_overlays.add_vis_overlay(current_ship.token, icon, "teleportership_alert", layer, plane, dir, unique = TRUE)
-	cooldown = 120
 	icon_state = "boarding_pad_off"
 
 /obj/machinery/boarding_pad/Destroy()
@@ -76,7 +75,7 @@
 		visible_message("<span class='warning'>Похоже, никого нет на паде.</span>")
 		return
 	if(!M.mind)
-		visible_message("<span class='warning'>Пад не может отправить неразумные существа, это нарушает галактические соглашения.</span>")
+		visible_message("<span class='warning'>Пад не может отправить неразумное существо, это нарушает галактические соглашения.</span>")
 		return
 
 	var/list/objects = current_ship.get_nearby_overmap_objects()
@@ -94,7 +93,6 @@
 	var/obj/docking_port/mobile/selected = tgui_input_list(user, "Выберите шаттл для телепортации", "Меню транслокации", ships)
 	var/area/target = tgui_input_list(user, "Выберите зону шаттла для телепортации", "Меню транслокации", selected.shuttle_areas)
 
-	icon_state = "boarding_pad_charging"
 	balloon_alert(M, "Инициализация, не двигайтесь...")
 	playsound(src, 'sound/weapons/flash.ogg', 40, TRUE, frequency = 0.5)
 	var/list/places = list()
