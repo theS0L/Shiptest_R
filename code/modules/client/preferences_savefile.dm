@@ -612,7 +612,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	features["flavor_text"]				= sanitize_text(features["flavor_text"], initial(features["flavor_text"]))
 
 	// [CELADON-ADD] - TAJARA
-	features["skin_tone_nose"] = sanitize_inlist(skin_tone_nose, GLOB.skin_tones_nose)
+	features["skin_tone_nose"] = sanitize_inlist(features["skin_tone_nose"], GLOB.skin_tones_nose)
 	features["tajara_ears"] = sanitize_inlist(features["tajara_ears"], GLOB.tajara_ears_list, "Plain")
 	features["tajara_hairs"] = sanitize_inlist(features["tajara_hairs"], GLOB.tajara_hairs_list, "Plain")
 	features["tajara_ears_markings"] = sanitize_inlist(features["tajara_ears_markings"], GLOB.tajara_ears_markings_list, "None")
