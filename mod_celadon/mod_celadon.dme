@@ -57,7 +57,7 @@
 #include "repair_weebstick/_repair_weebstick.dme"
 #include "elysiumpod/_elysiumpod.dme"
 #include "boarding/_boarding.dme"
-
+#include "moniq/_moniq.dme"
 
 // --- MOBS --- //
 #include "mobs/_mobs.dme"
