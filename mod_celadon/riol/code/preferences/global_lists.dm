@@ -6,6 +6,7 @@ GLOBAL_LIST_EMPTY(riol_head_markings_list)
 GLOBAL_LIST_EMPTY(riol_nose_markings_list)
 GLOBAL_LIST_EMPTY(riol_chest_markings_list)
 GLOBAL_LIST_EMPTY(riol_body_markings_list)
+GLOBAL_LIST_EMPTY(riol_tail_markings_list)
 GLOBAL_LIST_EMPTY(riol_tail_list)
 GLOBAL_LIST_EMPTY(riol_animated_tail_list)
 
