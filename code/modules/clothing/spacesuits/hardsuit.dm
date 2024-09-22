@@ -426,11 +426,11 @@
 	allowed = list(/obj/item/gun, /obj/item/ammo_box,/obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/transforming/energy/sword/saber, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi
 	jetpack = /obj/item/tank/jetpack/suit
+	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
 	// [CELADON-EDIT] - TAJARA, CELADON_RIOL, BALANCE
 	// supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION // CELADON-EDIT - ORIGINAL
 	// slowdown = 0.5 // [CELADON - EDIT] - ORIGINAL
 	// var/combat_slowdown = 0 //slowdown when in combat mode // [CELADON - EDIT] - ORIGINAL
-  supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
 	var/combat_slowdown = 0.2
 	// [/CELADON - EDIT]
 	var/lightweight = 0 //used for flags when toggling
