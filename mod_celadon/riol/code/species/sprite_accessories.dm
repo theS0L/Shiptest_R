@@ -34,8 +34,6 @@
 	icon = 'mod_celadon/_storge_icons/icons/riol/riol_markings.dmi'
 	name = "None"
 	icon_state = "none"
-	// color_src = "riol_body_markings_color"
-	// em_block = TRUE
 	color_src = BODYRIOLCOLORS
 	body_zone = BODY_ZONE_CHEST
 	synthetic_icon_state = "none"
@@ -130,7 +128,6 @@
 	icon = 'mod_celadon/_storge_icons/icons/riol/riol_markings.dmi'
 	name = "None"
 	icon_state = "none"
-	// color_src = "riol_head_markings_color"
 	color_src = HEADRIOLCOLORS
 	body_zone = BODY_ZONE_HEAD
 
@@ -206,7 +203,6 @@
 
 /datum/sprite_accessory/tails/riol
 	icon = 'mod_celadon/_storge_icons/icons/riol/riol_tail.dmi'
-	// spine_key = "riol"
 	body_zone = BODY_ZONE_CHEST
 	secondary_color = TRUE
 
@@ -217,25 +213,53 @@
 	name = "Default"
 	icon_state = "default"
 
-/datum/sprite_accessory/tails/riol/default_fade
-	name = "Default fade"
-	icon_state = "default_fade"
+/datum/sprite_accessory/tails_animated/riol/default
+	name = "Default"
+	icon_state = "default"
 
-/datum/sprite_accessory/tails/riol/bushy_fluff
-	name = "Bushy fluff"
-	icon_state = "bushy_fluff"
+/datum/sprite_accessory/tails/riol/bushy
+	name = "Bushy"
+	icon_state = "bushy"
 
-/datum/sprite_accessory/tails/riol/straightbushy_tip
-	name = "Straight bushy tip"
-	icon_state = "straightbushy_tip"
+/datum/sprite_accessory/tails_animated/riol/bushy
+	name = "Bushy"
+	icon_state = "bushy"
 
-/datum/sprite_accessory/tails/riol/straightbushy_fade
-	name = "Straight bushy fade"
-	icon_state = "straightbushy_fade"
+/datum/sprite_accessory/tails/riol/straight
+	name = "Straight"
+	icon_state = "straight"
 
-/datum/sprite_accessory/tails/riol/straightbushy_fadetip
-	name = "Straight bushy fadetip"
-	icon_state = "straightbushy_fadetip"
+/datum/sprite_accessory/tails_animated/riol/straight
+	name = "Straight"
+	icon_state = "straight"
+
+/datum/sprite_accessory/tails/riol/straightbushy
+	name = "Straight bushy"
+	icon_state = "straightbushy"
+
+/datum/sprite_accessory/tails_animated/riol/straightbushy
+	name = "Straight bushy"
+	icon_state = "straightbushy"
+
+// /datum/sprite_accessory/tails/riol/default_fade
+// 	name = "Default fade"
+// 	icon_state = "default_fade"
+
+// /datum/sprite_accessory/tails/riol/bushy_fluff
+// 	name = "Bushy fluff"
+// 	icon_state = "bushy_fluff"
+
+// /datum/sprite_accessory/tails/riol/straightbushy_tip
+// 	name = "Straight bushy tip"
+// 	icon_state = "straightbushy_tip"
+
+// /datum/sprite_accessory/tails/riol/straightbushy_fade
+// 	name = "Straight bushy fade"
+// 	icon_state = "straightbushy_fade"
+
+// /datum/sprite_accessory/tails/riol/straightbushy_fadetip
+// 	name = "Straight bushy fadetip"
+// 	icon_state = "straightbushy_fadetip"
 
 // FACIAL HAIRS
 
@@ -243,8 +267,6 @@
 	icon = 'mod_celadon/_storge_icons/icons/riol/riol_facial_hairs.dmi'
 	name = "None"
 	icon_state = "facial_hair_none"
-	// color_src = "riol_facial_hairs_color"
-	// color_src = HEADRIOLCOLORS
 	body_zone = BODY_ZONE_HEAD
 
 /datum/sprite_accessory/riol_facial_hairs/riol_blaze
