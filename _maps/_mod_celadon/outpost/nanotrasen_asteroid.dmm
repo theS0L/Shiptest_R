@@ -525,12 +525,6 @@
 	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
-"cb" = (
-/obj/effect/decal/fakelattice{
-	icon_state = "lattice-12"
-	},
-/turf/open/space/basic,
-/area/outpost/external)
 "cc" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/industrial/warning{
@@ -905,9 +899,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
 "dx" = (
-/obj/effect/decal/fakelattice{
-	icon_state = "lattice-38"
-	},
+/obj/structure/lattice/clockwork,
 /turf/open/space/basic,
 /area/outpost/external)
 "dA" = (
@@ -1333,7 +1325,7 @@
 /turf/open/floor/grass,
 /area/outpost/hallway/fore)
 "fb" = (
-/obj/machinery/vending/boozeomat/syndicate_access,
+/obj/machinery/vending/boozeomat/outpost_access,
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/bar)
 "fc" = (
@@ -1873,7 +1865,7 @@
 /turf/closed/mineral/random/snow,
 /area/outpost/external)
 "gT" = (
-/obj/machinery/vending/boozeomat/syndicate_access,
+/obj/machinery/vending/boozeomat/outpost_access,
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/library)
 "gU" = (
@@ -2026,12 +2018,6 @@
 	},
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/canteen)
-"hH" = (
-/obj/effect/decal/fakelattice{
-	icon_state = "lattice-3"
-	},
-/turf/open/space/basic,
-/area/outpost/external)
 "hI" = (
 /obj/machinery/computer/atmos_alert{
 	dir = 1
@@ -2866,7 +2852,9 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
 "kF" = (
-/obj/machinery/vending/medical/syndicate_access,
+/obj/machinery/vending/medical/syndicate_access{
+	all_items_free = 1
+	},
 /obj/effect/turf_decal/corner/opaque/blue/full,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -9286,7 +9274,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
-/obj/machinery/vending/clothing,
+/obj/machinery/vending/clothing{
+	all_items_free = 1
+	},
 /obj/machinery/newscaster/directional/north{
 	pixel_y = 33
 	},
@@ -14373,12 +14363,6 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel,
 /area/outpost/operations)
-"YE" = (
-/obj/effect/decal/fakelattice{
-	icon_state = "lattice-11"
-	},
-/turf/open/space/basic,
-/area/outpost/external)
 "YF" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/coffee{
@@ -14611,7 +14595,9 @@
 /turf/closed/mineral/random/snow,
 /area/outpost/external)
 "Zr" = (
-/obj/machinery/vending/security,
+/obj/machinery/vending/security{
+	all_items_free = 1
+	},
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 6
 	},
@@ -27329,7 +27315,7 @@ Zp
 sN
 vV
 vV
-cb
+dx
 Ft
 OP
 wH
@@ -27516,8 +27502,8 @@ Zp
 HY
 Ft
 dx
-YE
-hH
+dx
+dx
 DD
 kc
 sn
@@ -27703,8 +27689,8 @@ Zp
 HY
 HY
 Ft
-hH
-hH
+dx
+dx
 nP
 wB
 vf

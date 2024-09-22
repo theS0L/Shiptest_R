@@ -393,10 +393,16 @@
 			linkedsuit.name = initial(linkedsuit.name)
 			linkedsuit.desc = initial(linkedsuit.desc)
 			linkedsuit.clothing_flags |= STOPSPRESSUREDAMAGE
+			// [CELADON - ADD] - BALANCE
+			linkedsuit.slowdown = 0.7
+			// [CELADON - ADD]
 			linkedsuit.cold_protection |= CHEST | GROIN | LEGS | FEET | ARMS | HANDS
 		else
 			linkedsuit.name += " (combat)"
 			linkedsuit.desc = linkedsuit.alt_desc
+			// [CELADON - ADD] - BALANCE
+			linkedsuit.slowdown = linkedsuit.combat_slowdown
+			// [CELADON - ADD]
 			linkedsuit.clothing_flags &= ~STOPSPRESSUREDAMAGE
 			linkedsuit.cold_protection &= ~(CHEST | GROIN | LEGS | FEET | ARMS | HANDS)
 			if(linkedsuit.lightweight)
@@ -420,12 +426,13 @@
 	allowed = list(/obj/item/gun, /obj/item/ammo_box,/obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/transforming/energy/sword/saber, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi
 	jetpack = /obj/item/tank/jetpack/suit
-	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
+	// [CELADON-EDIT] - TAJARA, CELADON_RIOL, BALANCE
 	// supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION // CELADON-EDIT - ORIGINAL
-	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
-	// [/CELADON-EDIT]
-	slowdown = 0.5
-	var/combat_slowdown = 0 //slowdown when in combat mode
+	// slowdown = 0.5 // [CELADON - EDIT] - ORIGINAL
+	// var/combat_slowdown = 0 //slowdown when in combat mode // [CELADON - EDIT] - ORIGINAL
+  supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
+	var/combat_slowdown = 0.2
+	// [/CELADON - EDIT]
 	var/lightweight = 0 //used for flags when toggling
 
 //Ramzi Syndie suit
@@ -449,7 +456,9 @@
 	lightweight = 1
 	jetpack = null
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 20,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
-	slowdown = 0.7
+	// [CELADON - REMOVE] - BALANCE
+	// slowdown = 0.7 // [CELADON - REMOVE] - ORIGINAL
+	// [CELADON - REMOVE]
 	jetpack = null
 	// [CELADON-ADD] - TAJARA, CELADON_RIOL
 	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
@@ -551,7 +560,6 @@
 	// supports_variations = VOX_VARIATION // CELADON-EDIT - ORIGINAL
 	supports_variations = VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION
 	// [/CELADON-EDIT]
-
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/inteq
 	name = "pointman hardsuit helmet"
