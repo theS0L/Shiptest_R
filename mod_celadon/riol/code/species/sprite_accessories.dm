@@ -1,98 +1,34 @@
-// Hair
-/datum/sprite_accessory/hair/riol
-	icon = 'mod_celadon/_storge_icons/icons/riol/riol_hairs.dmi'
-	body_zone = BODY_ZONE_HEAD
+////////////////////////////////////////////
+///////////		MARKINGS		////////////
+////////////////////////////////////////////
 
-/datum/sprite_accessory/hair/riol/riol_plaine
-	name = "Plaine"
-	icon_state = "plaine"
+// CHEST MARKINGS
 
-/datum/sprite_accessory/hair/riol/riol_hair_kajam
-	name = "Kajam"
-	icon_state = "kajam"
+/datum/sprite_accessory/riol_chest_markings
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_markings.dmi'
+	color_src = CHESTRIOLCOLORS
+	body_zone = BODY_ZONE_CHEST
+	synthetic_icon_state = "none"
 
-/datum/sprite_accessory/hair/riol/riol_hair_keid
-	name = "Keid"
-	icon_state = "keid"
+/datum/sprite_accessory/riol_chest_markings/none
+	name = "None"
+	icon_state = "none"
 
-/datum/sprite_accessory/hair/riol/riol_hair_adhara
-	name = "Adhara"
-	icon_state = "adhara"
+/datum/sprite_accessory/riol_chest_markings/belly
+	name = "Belly"
+	icon_state = "foxbelly"
 
-/datum/sprite_accessory/hair/riol/riol_hair_kleeia
-	name = "Kleeia"
-	icon_state = "kleeia"
+/datum/sprite_accessory/riol_chest_markings/belly_full
+	name = "Belly full"
+	icon_state = "fullbelly"
+	gender_specific = TRUE
 
-/datum/sprite_accessory/hair/riol/riol_hair_mizar
-	name = "Mizar"
-	icon_state = "mizar"
+/datum/sprite_accessory/riol_chest_markings/belly_crest
+	name = "Belly crest"
+	icon_state = "bellycrest"
+	gender_specific = TRUE
 
-/datum/sprite_accessory/hair/riol/riol_hair_apollo
-	name = "Apollo"
-	icon_state = "apollo"
-
-/datum/sprite_accessory/hair/riol/riol_hair_belle
-	name = "Belle"
-	icon_state = "belle"
-
-/datum/sprite_accessory/hair/riol/riol_hair_bun
-	name = "Bun"
-	icon_state = "bun"
-
-/datum/sprite_accessory/hair/riol/riol_hair_jagged
-	name = "Jagged"
-	icon_state = "jagged"
-
-/datum/sprite_accessory/hair/riol/riol_hair_curl
-	name = "Curl"
-	icon_state = "curl"
-
-/datum/sprite_accessory/hair/riol/riol_hair_hawk
-	name = "Hawk"
-	icon_state = "hawk"
-
-/datum/sprite_accessory/hair/riol/riol_hair_anita
-	name = "Anita"
-	icon_state = "anita"
-
-/datum/sprite_accessory/hair/riol/riol_hair_short
-	name = "Short"
-	icon_state = "short"
-
-/datum/sprite_accessory/hair/riol/riol_hair_spike
-	name = "Spike"
-	icon_state = "spike"
-
-/datum/sprite_accessory/hair/riol/riol_hair_braided
-	name = "Braided"
-	icon_state = "braided"
-
-/datum/sprite_accessory/hair/riol/riol_hair_punkbraided
-	name = "Punk Braided"
-	icon_state = "punkbraided"
-
-/datum/sprite_accessory/hair/riol/riol_hair_short2
-	name = "Short Alt."
-	icon_state = "short2"
-
-/datum/sprite_accessory/hair/riol/riol_hair_rough
-	name = "Rough-Cropped Mane"
-	icon_state = "rough"
-
-/datum/sprite_accessory/hair/riol/riol_hair_raine
-	name = "Raine"
-	icon_state = "raine"
-	gender = FEMALE
-
-/datum/sprite_accessory/hair/riol/riol_hair_jeremy
-	name = "Jeremy"
-	icon_state = "jeremy"
-
-/datum/sprite_accessory/hair/riol/riol_hair_clean_cut
-	name = "Clean Cut"
-	icon_state = "clean_cut"
-
-// BODY
+// BODY MARKINGS
 
 /datum/sprite_accessory/riol_body_markings
 	icon = 'mod_celadon/_storge_icons/icons/riol/riol_markings.dmi'
@@ -104,27 +40,22 @@
 	body_zone = BODY_ZONE_CHEST
 	synthetic_icon_state = "none"
 
-/datum/sprite_accessory/riol_body_markings/belly_fox_riol
-	name = "Riol Belly"
-	icon_state = "foxbelly"
-
-/datum/sprite_accessory/riol_body_markings/belly_full_riol
-	name = "Riol Belly 2"
-	icon_state = "fullbelly"
-	gender_specific = TRUE
-
-/datum/sprite_accessory/riol_body_markings/belly_crest_riol
-	name = "Riol Belly Crest"
-	icon_state = "bellycrest"
-	gender_specific = TRUE
-
 /datum/sprite_accessory/riol_body_markings/points_fade_riol
 	name = "Riol Points"
 	icon_state = "pointsfade"
 
+/datum/sprite_accessory/riol_body_markings/points_sharp_riol
+	name = "Riol Sharp Points"
+	icon_state = "sharppoints"
+
 /datum/sprite_accessory/riol_body_markings/points_fade_belly_riol
 	name = "Riol Points and Belly"
 	icon_state = "pointsfadebelly"
+	gender_specific = TRUE
+
+/datum/sprite_accessory/riol_body_markings/points_crest_riol
+	name = "Riol Points and Crest"
+	icon_state = "crestpoints"
 	gender_specific = TRUE
 
 /datum/sprite_accessory/riol_body_markings/points_fade_belly_alt_riol
@@ -132,134 +63,66 @@
 	icon_state = "altpointsfadebelly"
 	gender_specific = TRUE
 
-/datum/sprite_accessory/riol_body_markings/points_sharp_riol
-	name = "Riol Sharp Points"
-	icon_state = "sharppoints"
-
-/datum/sprite_accessory/riol_body_markings/points_crest_riol
-	name = "Riol Points and Crest"
-	icon_state = "crestpoints"
-	gender_specific = TRUE
-
 // HALF BODY
 
-/datum/sprite_accessory/riol_body_markings/alt_points_fade_riol
+/datum/sprite_accessory/riol_body_markings/alt_points_riol
 	name = "Riol Points Alt"
 	icon_state = "pointsfade-alt"
-
-/datum/sprite_accessory/riol_body_markings/alt_points_fade_belly_riol
-	name = "Riol Points and Belly Alt"
-	icon_state = "pointsfadebelly-alt"
-	gender_specific = TRUE
-
-/datum/sprite_accessory/riol_body_markings/alt_points_fade_belly_alt_riol
-	name = "Riol Points and Belly Alt 2"
-	icon_state = "altpointsfadebelly-alt"
-	gender_specific = TRUE
 
 /datum/sprite_accessory/riol_body_markings/alt_points_sharp_riol
 	name = "Riol Sharp Points Alt"
 	icon_state = "sharppoints-alt"
+
+/datum/sprite_accessory/riol_body_markings/alt_points_belly_riol
+	name = "Riol Points and Belly Alt"
+	icon_state = "pointsfadebelly-alt"
+	gender_specific = TRUE
 
 /datum/sprite_accessory/riol_body_markings/alt_points_crest_riol
 	name = "Riol Points and Crest Alt"
 	icon_state = "crestpoints-alt"
 	gender_specific = TRUE
 
-// TAIL
+/datum/sprite_accessory/riol_body_markings/alt_points_belly_alt_riol
+	name = "Riol Points and Belly Alt 2"
+	icon_state = "altpointsfadebelly-alt"
+	gender_specific = TRUE
 
-/datum/sprite_accessory/tails/riol
-	icon = 'mod_celadon/_storge_icons/icons/riol/riol_tail_accessory.dmi'
-	// spine_key = "riol"
-	body_zone = BODY_ZONE_CHEST
-	secondary_color = TRUE
-
-/datum/sprite_accessory/tails/riol/fluffy
-	name = "Default"
-	icon_state = "default"
-
-/datum/sprite_accessory/tails/riol/bushy
-	name = "Bushy"
-	icon_state = "bushy"
-
-/datum/sprite_accessory/tails/riol/straight
-	name = "Straight"
-	icon_state = "straight"
-
-/datum/sprite_accessory/tails/riol/straight_bushy
-	name = "Straight Bushy"
-	icon_state = "straightbushy"
-
-// HEAD ACCESSORY
-
-// FACIAL HAIRS
-
-/datum/sprite_accessory/riol_facial_hairs
-	icon = 'mod_celadon/_storge_icons/icons/riol/riol_facial_hairs.dmi'
-	name = "None"
-	icon_state = "none"
-	// color_src = "riol_facial_hairs_color"
-	// color_src = HEADRIOLCOLORS
-	body_zone = BODY_ZONE_HEAD
-
-/datum/sprite_accessory/riol_facial_hairs/riol_earfluff
-	name = "Riol Earfluff"
-	icon_state = "earfluff"
-
-/datum/sprite_accessory/riol_facial_hairs/riol_blaze
-	name = "Blaze"
-	icon_state = "blaze"
-
-/datum/sprite_accessory/riol_facial_hairs/riol_rioline
-	name = "Riol"
-	icon_state = "rioline"
-
-/datum/sprite_accessory/riol_facial_hairs/riol_rioline_fluff
-	name = "Riol and Earfluff"
-	icon_state = "riolinefluff"
-
-/datum/sprite_accessory/riol_facial_hairs/riol_mask
-	name = "Mask"
-	icon_state = "mask"
-
-/datum/sprite_accessory/riol_facial_hairs/riol_patch
-	name = "Patch"
-	icon_state = "patch"
-
-/datum/sprite_accessory/riol_facial_hairs/riol_ruff
-	name = "Ruff"
-	icon_state = "ruff"
-
-/datum/sprite_accessory/riol_facial_hairs/riol_kita
-	name = "Kita"
-	icon_state = "kita"
-
-/datum/sprite_accessory/riol_facial_hairs/riol_swift
-	name = "Swift"
-	icon_state = "swift"
-
-/datum/sprite_accessory/riol_facial_hairs/riol_elder
-	name = "Elder"
-	icon_state = "elder"
-
-/datum/sprite_accessory/riol_facial_hairs/riol_slash
-	name = "Slash"
-	icon_state = "slash"
-
-//Markings nose
+// NOSE MARKINGS
 
 /datum/sprite_accessory/riol_nose_markings
-	icon = 'mod_celadon/_storge_icons/icons/riol/riol_markings.dmi'
-	body_zone = BODY_ZONE_HEAD
-	synthetic_icon_state = "none" // Что это????
+	icon = 'mod_celadon/_storge_icons/icons/tajara/tajara_markings.dmi'
+	color_src = NOSERIOLCOLORS
+	body_zone = BODY_ZONE_CHEST
+	synthetic_icon_state = "none"
 
-/datum/sprite_accessory/riol_nose_markings/nose
-	name = "Riol Nose"
+/datum/sprite_accessory/riol_nose_markings/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/riol_nose_markings/riolnose
+	name = "Nose"
 	icon_state = "nose"
+	secondary_color = FALSE
 
-/datum/sprite_accessory/riol_nose_markings/tajnoise
-	name = "Riol Nose Alt"
+/datum/sprite_accessory/riol_nose_markings/riolnosealt
+	name = "Nose alt"
 	icon_state = "nose_alt"
+	secondary_color = FALSE
+
+// EARS MARKINGS
+
+/datum/sprite_accessory/riol_ears_markings
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_markings.dmi'
+	color_src = EARSRIOLCOLORS
+	body_zone = BODY_ZONE_HEAD
+
+/datum/sprite_accessory/riol_ears_markings/none
+	name = "None"
+
+/datum/sprite_accessory/riol_ears_markings/earfluff
+	name = "Earfluff"
+	icon_state = "earfluff"
 
 // HEAD MARKINGS
 
@@ -303,7 +166,7 @@
 	name = "Riol Points Head 2"
 	icon_state = "points_sharp"
 
-// TAIL MARKINGS
+// TAIL MARKINGS	- У нас нету маркингов хвостов. Надо подумать что делать с этим
 
 /datum/sprite_accessory/riol_tail_markings
 	icon = 'mod_celadon/_storge_icons/icons/riol/riol_tail_markings.dmi'
@@ -334,3 +197,234 @@
 	name = "Tail Black Fade White Tip"
 	tails_allowed = list("Straight Bushy")
 	icon_state = "fadetip"
+
+////////////////////////////////////////////
+///////////		NO MARKINGS		////////////
+////////////////////////////////////////////
+
+// TAIL
+
+/datum/sprite_accessory/tails/riol
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_tail.dmi'
+	// spine_key = "riol"
+	body_zone = BODY_ZONE_CHEST
+	secondary_color = TRUE
+
+/datum/sprite_accessory/tails_animated/riol
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_tail.dmi'
+
+/datum/sprite_accessory/tails/riol/default
+	name = "Default"
+	icon_state = "default"
+
+/datum/sprite_accessory/tails/riol/default_fade
+	name = "Default fade"
+	icon_state = "default_fade"
+
+/datum/sprite_accessory/tails/riol/bushy_fluff
+	name = "Bushy fluff"
+	icon_state = "bushy_fluff"
+
+/datum/sprite_accessory/tails/riol/straightbushy_tip
+	name = "Straight bushy tip"
+	icon_state = "straightbushy_tip"
+
+/datum/sprite_accessory/tails/riol/straightbushy_fade
+	name = "Straight bushy fade"
+	icon_state = "straightbushy_fade"
+
+/datum/sprite_accessory/tails/riol/straightbushy_fadetip
+	name = "Straight bushy fadetip"
+	icon_state = "straightbushy_fadetip"
+
+// FACIAL HAIRS
+
+/datum/sprite_accessory/riol_facial_hairs
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_facial_hairs.dmi'
+	name = "None"
+	icon_state = "facial_hair_none"
+	// color_src = "riol_facial_hairs_color"
+	// color_src = HEADRIOLCOLORS
+	body_zone = BODY_ZONE_HEAD
+
+/datum/sprite_accessory/riol_facial_hairs/riol_blaze
+	name = "Blaze"
+	icon_state = "facial_hair_blaze"
+
+/datum/sprite_accessory/riol_facial_hairs/riol_kita
+	name = "Kita"
+	icon_state = "facial_hair_kita"
+
+/datum/sprite_accessory/riol_facial_hairs/riol_mask
+	name = "Mask"
+	icon_state = "facial_hair_mask"
+
+/datum/sprite_accessory/riol_facial_hairs/riol_patch
+	name = "Patch"
+	icon_state = "facial_hair_patch"
+
+/datum/sprite_accessory/riol_facial_hairs/riol_ruff
+	name = "Ruff"
+	icon_state = "facial_hair_ruff"
+
+/datum/sprite_accessory/riol_facial_hairs/riol_swift
+	name = "Swift"
+	icon_state = "facial_hair_swift"
+
+/datum/sprite_accessory/riol_facial_hairs/riol_riopine
+	name = "Riopine"
+	icon_state = "facial_hair_vulpine"
+
+/datum/sprite_accessory/riol_facial_hairs/riol_brows
+	name = "Brows"
+	icon_state = "facial_hair_brows"
+
+/datum/sprite_accessory/riol_facial_hairs/riol_riopinefluff
+	name = "Riopine fluff"
+	icon_state = "facial_hair_vulpinefluff"
+
+/datum/sprite_accessory/riol_facial_hairs/riol_elder
+	name = "Elder"
+	icon_state = "facial_hair_elder"
+
+/datum/sprite_accessory/riol_facial_hairs/riol_elder_chin
+	name = "Elder chin"
+	icon_state = "facial_hair_elder_chin"
+
+/datum/sprite_accessory/riol_facial_hairs/riol_slash
+	name = "Slash"
+	icon_state = "facial_hair_slash"
+
+/datum/sprite_accessory/riol_facial_hairs/riol_earfluff
+	name = "Riol Earfluff"
+	icon_state = "facial_hair_earfluff"
+
+// /datum/sprite_accessory/riol_facial_hairs/riol_rioline
+// 	name = "Riol"
+// 	icon_state = "rioline"
+
+// /datum/sprite_accessory/riol_facial_hairs/riol_rioline_fluff
+// 	name = "Riol and Earfluff"
+// 	icon_state = "riolinefluff"
+
+
+// HAIRS
+
+/datum/sprite_accessory/hair/riol_hairs
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_hairs.dmi'
+	body_zone = BODY_ZONE_HEAD
+
+/datum/sprite_accessory/riol_hairs/riol_plain
+	name = "Plain"
+	icon_state = "hairs_plain"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_apollo
+	name = "Apollo"
+	icon_state = "hairs_apollo"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_belle
+	name = "Belle"
+	icon_state = "hairs_belle"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_belle_bands
+	name = "Belle bands"
+	icon_state = "hairs_belle_bands"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_bun
+	name = "Bun"
+	icon_state = "hairs_bun"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_curl
+	name = "Curl"
+	icon_state = "hairs_curl"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_hawk
+	name = "Hawk"
+	icon_state = "hairs_hawk"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_jagged
+	name = "Jagged"
+	icon_state = "hairs_jagged"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_keid
+	name = "Keid"
+	icon_state = "hairs_keid"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_kleeia
+	name = "Kleeia"
+	icon_state = "hairs_kleeia"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_mizar
+	name = "Mizar"
+	icon_state = "hairs_mizar"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_short
+	name = "Short"
+	icon_state = "hairs_short"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_spike
+	name = "Spike"
+	icon_state = "hairs_spike"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_braided
+	name = "Braided"
+	icon_state = "hairs_braided"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_braided_beads
+	name = "Braided beads"
+	icon_state = "hairs_braided_beads"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_punkbraided
+	name = "Punk braided"
+	icon_state = "hairs_punkbraided"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_punkbraided_flare
+	name = "Punk braided flare"
+	icon_state = "hairs_punkbraided_flare"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_rough
+	name = "Rough"
+	icon_state = "hairs_rough"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_short2
+	name = "Short 2"
+	icon_state = "hairs_short2"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_kajam
+	name = "Kajam"
+	icon_state = "hairs_kajam"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_adhara
+	name = "Adhara"
+	icon_state = "hairs_adhara"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_raine
+	name = "Raine"
+	icon_state = "hairs_raine"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_anita
+	name = "Anita"
+	icon_state = "hairs_anita"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_jeremy
+	name = "Jeremy"
+	icon_state = "hairs_jeremy"
+
+/datum/sprite_accessory/riol_hairs/riol_hair_clean_cut
+	name = "Clean cut"
+	icon_state = "hairs_clean_cut"
+
+// EARS
+
+/datum/sprite_accessory/riol_ears
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_ears.dmi'
+	body_zone = BODY_ZONE_HEAD
+	secondary_color = TRUE
+
+/datum/sprite_accessory/riol_ears/plain
+	name = "Plain"
+	icon_state = "plain"
+
+/datum/sprite_accessory/riol_ears/plain2
+	name = "Plain Alt"
+	icon_state = "plain2"
