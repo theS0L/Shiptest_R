@@ -75,6 +75,7 @@
 	H.dna.features["riol_body_markings"] = pick(GLOB.riol_body_markings_list)
 	H.dna.features["riol_tail_markings"] = pick(GLOB.riol_tail_markings_list)
 	H.dna.features["riol_tail"] = pick(GLOB.riol_tail_list)
+	H.dna.features["riol_legs"] = pick(GLOB.riol_legs_list)
 	// [/CELADON-ADD]
 
 	H.update_body()

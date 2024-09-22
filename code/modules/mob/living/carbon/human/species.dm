@@ -1097,6 +1097,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 					S = GLOB.riol_tail_list[H.dna.features["riol_tail"]]
 				if("waggingriol_tail")
 					S = GLOB.riol_animated_tail_list[H.dna.features["riol_tail"]]
+				if("riol_legs")
+					S = GLOB.riol_legs_list[H.dna.features["riol_legs"]]
 				// [/CELADON-ADD]
 			if(!S || S.icon_state == "none")
 				continue

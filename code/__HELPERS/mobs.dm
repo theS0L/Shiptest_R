@@ -128,6 +128,8 @@
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/riol_head_markings, GLOB.riol_head_markings_list)
 	if(!GLOB.riol_tail_markings_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/riol_tail_markings, GLOB.riol_tail_markings_list)
+	if(!GLOB.riol_legs_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/riol_legs, GLOB.riol_legs_list)
 	if(!GLOB.riol_tail_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/riol, GLOB.riol_tail_list)
 	if(!GLOB.riol_animated_tail_list.len)
@@ -214,6 +216,7 @@
 		"riol_body_markings" = pick(GLOB.riol_body_markings_list),
 		"riol_tail_markings" = pick(GLOB.riol_tail_markings_list),
 		"riol_tail" = pick(GLOB.riol_tail_list),
+		"riol_legs" = pick(GLOB.riol_legs_list),
 		// [/CELADON-ADD]
 	)
 

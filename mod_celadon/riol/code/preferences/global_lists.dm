@@ -9,6 +9,7 @@ GLOBAL_LIST_EMPTY(riol_body_markings_list)
 GLOBAL_LIST_EMPTY(riol_tail_markings_list)
 GLOBAL_LIST_EMPTY(riol_tail_list)
 GLOBAL_LIST_EMPTY(riol_animated_tail_list)
+GLOBAL_LIST_EMPTY(riol_legs_list)
 
 GLOBAL_LIST_INIT(riol_names_male, world.file2list("mod_celadon/riol/strings/riol_male_names.txt"))
 GLOBAL_LIST_INIT(riol_names_female, world.file2list("mod_celadon/riol/strings/riol_female_names.txt"))

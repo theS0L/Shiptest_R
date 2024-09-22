@@ -16,7 +16,13 @@
 		"riol_facial_hairs" = "None",
 		"riol_chest_markings" = "None",
 		"riol_body_markings" = "None",
-		"riol_tail" = "default"
+		"riol_tail" = "default",
+		"riol_legs" = "Normal Legs",
+		"riol_ears_markings_color" = "FFF",
+		"riol_head_markings_color" = "FFF",
+		"riol_nose_markings_color" = "FFF",
+		"riol_chest_markings_color" = "FFF",
+		"riol_body_markings_color" = "FFF"
 	)
 
 	// randomise[RANDOM_SKIN_TONE_NOSE] = TRUE
@@ -89,10 +95,11 @@
 					if(new_riol_tail)
 						features["riol_tail"] = new_riol_tail
 
-				// if("s_tone_riol")
-				// 	var/new_s_tone_riol = input(user, "Choose your character's skin-tone body:", "Character Preference")  as null|anything in GLOB.skin_tones_riol
-				// 	if(new_s_tone_riol)
-				// 		skin_tone_riol = new_s_tone_riol
+				if("riol_legs")
+					var/new_riol_legs
+					new_riol_legs = input(user, "Choose your character's legs:", "Character Preference") as null|anything in GLOB.riol_legs_list
+					if(new_riol_legs)
+						features["riol_legs"] = new_riol_legs
 
 				if("s_tone_nose")
 					var/new_s_tone_nose = input(user, "Choose your character's skin-tone nose:", "Character Preference")  as null|anything in GLOB.skin_tones_nose

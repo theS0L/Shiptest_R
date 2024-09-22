@@ -91,7 +91,7 @@
 // NOSE MARKINGS
 
 /datum/sprite_accessory/riol_nose_markings
-	icon = 'mod_celadon/_storge_icons/icons/tajara/tajara_markings.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_markings.dmi'
 	color_src = NOSERIOLCOLORS
 	body_zone = BODY_ZONE_CHEST
 	synthetic_icon_state = "none"
@@ -428,3 +428,14 @@
 /datum/sprite_accessory/riol_ears/plain2
 	name = "Plain Alt"
 	icon_state = "plain2"
+
+// LEGS
+
+/datum/sprite_accessory/riol_legs 	//legs are a special case, they aren't actually sprite_accessories but are updated with them.
+	icon = null					//These datums exist for selecting legs on preference, and little else
+
+/datum/sprite_accessory/riol_legs/none
+	name = "Normal Legs"
+
+/datum/sprite_accessory/riol_legs/digitigrade
+	name = "Digitigrade Legs"

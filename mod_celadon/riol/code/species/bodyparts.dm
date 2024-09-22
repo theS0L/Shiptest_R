@@ -45,6 +45,16 @@
 	limb_id = SPECIES_RIOL
 	bodytype = BODYTYPE_RIOL | BODYTYPE_ORGANIC | BODYTYPE_HUMANOID
 
+/obj/item/bodypart/leg/left/riol/digitigrade
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_bodypats.dmi'
+	icon_state = "riol_l_leg_digitigrade"
+	bodytype = BODYTYPE_HUMANOID | BODYTYPE_RIOL | BODYTYPE_ORGANIC | BODYTYPE_DIGITIGRADE
+
+/obj/item/bodypart/leg/right/riol/digitigrade
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_bodypats.dmi'
+	icon_state = "riol_r_leg_digitigrade"
+	bodytype = BODYTYPE_HUMANOID | BODYTYPE_RIOL | BODYTYPE_ORGANIC | BODYTYPE_DIGITIGRADE
+
 
 // Riol Robotic (Synths)
 /obj/item/bodypart/chest/robot/riol

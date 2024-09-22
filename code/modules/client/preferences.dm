@@ -1008,10 +1008,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<a href='?_src_=prefs;preference=riol_nose_markings;task=input'>[features["riol_nose_markings"]]</a><BR>"
 				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_nose_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_nose_markings_color;task=input'>Change</a>"
 
-				//dat += "<h3>Skin Tone nose</h3>"
-				//dat += "<a href='?_src_=prefs;preference=s_tone_nose;task=input'>[skin_tone_nose]</a>"
-				//dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_SKIN_TONE_NOSE]'>[(randomise[RANDOM_SKIN_TONE_NOSE]) ? "Lock" : "Unlock"]</A>"
-
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
 					dat += "</td>"
@@ -1047,9 +1043,21 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 
-				dat += "<h3>Body markings</h3>"
+				dat += "<h3>Tail markings</h3>"
 				dat += "<a href='?_src_=prefs;preference=tail_body_markings;task=input'>[features["tail_body_markings"]]</a><BR>"
 				dat += "<span style='border:1px solid #161616; background-color: #[features["tail_body_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tail_body_markings_color;task=input'>Change</a>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("riol_legs" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Legs</h3>"
+				dat += "<a href='?_src_=prefs;preference=riol_legs;task=input'>[features["riol_legs"]]</a><BR>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -2054,7 +2062,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("riol_nose_markings_color")
 					var/new_riol_nose_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["new_riol_nose_markings_color"]) as color|null
 					if(new_riol_nose_markings_color)
-						features["new_riol_nose_markings_color"] = sanitize_hexcolor(new_riol_nose_markings_color)
+						features["riol_nose_markings_color"] = sanitize_hexcolor(new_riol_nose_markings_color)
 				if("riol_chest_markings_color")
 					var/new_riol_chest_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["riol_chest_markings_color"]) as color|null
 					if(new_riol_chest_markings_color)
