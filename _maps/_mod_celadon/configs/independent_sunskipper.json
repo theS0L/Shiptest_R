@@ -6,7 +6,7 @@
 	"namelists": ["CRUISE", "NATURAL"],
 	"map_short_name": "Sunskipper-class",
 	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_sunskipper.dmm",
-	"description": "The Sunskipper-class is a state-of-the-art culinary vessel found in the frontier. It's name is a wordplay between a Kalixcian species of butterfly and ship's unique solar-powered batteries. The Sunskipper is welcomed with open arms by weary spacers of greater paycheks, who are fatigued by the monotony of their everyday meals. The ship features a self-sustaining kitchen with hydroponics and a large, deluxe dining hall, designed to serve starved travelers. It also comes with a fully-stocked bar area that allows them to drink their troubles away, if even for a brief moment.",
+	"description": "Sunskipper-class — это современное кулинарное судно, найденное на границе. Sunskipper с распростертыми объятиями встречают усталые космонавты с более высокими зарплатами, которые утомлены однообразием своих повседневных приемов пищи. На судне есть самоподдерживающаяся кухня с гидропоникой и большой, роскошный обеденный зал, предназначенный для обслуживания голодных путешественников. Он также оснащен полностью укомплектованной баром, который позволяет им выпить свои проблемы, хотя бы на короткое время.",
 	"tags": [
 		"RP Focus",
 		"Service",
