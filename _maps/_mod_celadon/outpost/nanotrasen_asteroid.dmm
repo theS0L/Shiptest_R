@@ -5091,7 +5091,7 @@
 /area/outpost/operations)
 "st" = (
 /obj/machinery/door/airlock/freezer{
-	req_access_txt = "109"
+	req_access_txt = "8124"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -7842,7 +7842,7 @@
 	},
 /obj/machinery/door/airlock/freezer{
 	dir = 4;
-	req_access_txt = "109"
+	req_access_txt = "8124"
 	},
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
 /area/outpost/crew/canteen)
