@@ -7,6 +7,7 @@
 #include "code/newscaster.dm"
 #include "code/icons.dm"
 #include "code/vending.dm"
+#include "code/rdconsole.dm"
 #include "code/robot_suit.dm"
 #include "code/shutters.dm"
 #include "code/railings.dm"
