@@ -20864,7 +20864,7 @@
 /obj/item/clothing/under/rank/security/detective/skirt,
 /obj/item/cartridge/detective,
 /obj/item/camera/detective,
-/obj/item/gun/ballistic/revolver/syndicate,
+/obj/item/gun/ballistic/revolver/viper,
 /obj/item/ammo_box/c38_box,
 /turf/open/floor/wood,
 /area/outpost/security/detective)
