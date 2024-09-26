@@ -46,12 +46,8 @@ Nothing else in the console has ID requirements.
 	var/ui_mode = RDCONSOLE_UI_MODE_NORMAL
 
 	var/research_control = TRUE
-
 	var/list/slime_already_researched = list()
 	var/list/plant_already_researched = list()
-
-GLOBAL_LIST_EMPTY(slime_already_researched)
-GLOBAL_LIST_EMPTY(plant_already_researched)
 
 /obj/machinery/computer/rdconsole/production
 	circuit = /obj/item/circuitboard/computer/rdconsole/production
@@ -129,7 +125,10 @@ GLOBAL_LIST_EMPTY(plant_already_researched)
 /obj/machinery/computer/rdconsole/attackby(obj/item/D, mob/user, params)
 	if(istype(D, /obj/item/slime_extract))
 		var/obj/item/slime_extract/E = D
+		// [CELADON-EDIT] - CELADON_FIXES - Попытка починить абуз
+		// if(!slime_already_researched[E.type])	// CELADON-EDIT - ORIGINAL
 		if(!GLOB.slime_already_researched[E.type])
+		// [/CELADON-EDIT]
 			if(!E.research)
 				playsound(src, 'sound/machines/buzz-sigh.ogg', 50, 3, -1)
 				visible_message("<span class='notice'>[src] buzzes and displays a message: Invalid extract! (You shouldn't be seeing this. If you are, tell someone.)</span>")
@@ -142,7 +141,10 @@ GLOBAL_LIST_EMPTY(plant_already_researched)
 				playsound(src, 'sound/machines/ping.ogg', 50, 3, -1)
 				visible_message("<span class='notice'>[user] inserts [E] into a slot on the [src]!</span>", "<span class='notice'>You insert [E] into a slot on the [src], producting [E.research] points from the extract's chemical makeup!</span>")
 				stored_research.add_point_list(list(TECHWEB_POINT_TYPE_GENERIC = E.research))
+				// [CELADON-EDIT] - CELADON_FIXES - Попытка починить абуз
+				// slime_already_researched[E.type] = TRUE	// CELADON-EDIT - ORIGINAL
 				GLOB.slime_already_researched[E.type] = TRUE
+				// [/CELADON-EDIT]
 				qdel(D)
 				return
 		else
@@ -152,7 +154,10 @@ GLOBAL_LIST_EMPTY(plant_already_researched)
 
 	if(istype(D, /obj/item/seeds))
 		var/obj/item/seeds/E = D
+		// [CELADON-EDIT] - CELADON_FIXES - Попытка починить абуз
+		// if(!plant_already_researched[E.type])	// CELADON-EDIT - ORIGINAL
 		if(!GLOB.plant_already_researched[E.type])
+		// [/CELADON-EDIT]
 			if(!E.research)
 				playsound(src, 'sound/machines/buzz-sigh.ogg', 50, 3, -1)
 				visible_message("<span class='warning'>[src] buzzes and displays a message: Sample quality error! Sample is either too common to be of value or too full of bugs to be of use!</span>")
@@ -161,7 +166,10 @@ GLOBAL_LIST_EMPTY(plant_already_researched)
 				playsound(src, 'sound/machines/ping.ogg', 50, 3, -1)
 				visible_message("<span class='notice'>[user] inserts [E] into a slot on the [src]!</span>", "<span class='notice'>You insert [E] into a slot on the [src], producting [E.research] points from the plant's genetic makeup!</span>")
 				stored_research.add_point_list(list(TECHWEB_POINT_TYPE_GENERIC = E.research))
+				// [CELADON-EDIT] - CELADON_FIXES - Попытка починить абуз
+				// plant_already_researched[E.type] = TRUE	// CELADON-EDIT - ORIGINAL
 				GLOB.plant_already_researched[E.type] = TRUE
+				// [/CELADON-EDIT]
 				qdel(D)
 				return
 		else
