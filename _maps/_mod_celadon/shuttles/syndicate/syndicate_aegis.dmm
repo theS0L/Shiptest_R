@@ -4700,8 +4700,8 @@
 "Us" = (
 /obj/machinery/light/directional/south,
 /obj/item/gun/ballistic/automatic/pistol,
-/obj/item/ammo_box/magazine/m10mm,
-/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
 /obj/item/kitchen/knife/combat/survival,
 /obj/item/kitchen/knife/combat/survival,
 /obj/structure/closet/secure_closet/wall/directional/east,

@@ -2789,9 +2789,9 @@
 	req_access_txt = "8485";
 	anchored = 1
 	},
-/obj/item/ammo_box/magazine/m12g/small,
+/obj/item/ammo_box/magazine/m12g_bulldog/drum,
 /obj/item/storage/toolbox/ammo/a308,
-/obj/item/ammo_box/magazine/m12g/small,
+/obj/item/ammo_box/magazine/m12g_bulldog/drum,
 /obj/item/storage/toolbox/ammo/c9mm,
 /obj/item/storage/toolbox/ammo/c9mm,
 /obj/item/ammo_box/magazine/f4_308,
@@ -3518,10 +3518,7 @@
 "xb" = (
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/igniter/incinerator_atmos,
-/obj/item/gun/ballistic/automatic/hmg/l6_saw/toy/riot{
-	name = "L6 SAW";
-	desc = "A heavy machine gun, designated 'L6 SAW'. Chambered in 7.12x82mm."
-	},
+/obj/item/gun/ballistic/automatic/toy,
 /obj/machinery/air_sensor/atmos/incinerator_tank,
 /turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
@@ -4738,8 +4735,8 @@
 	anchored = 1
 	},
 /obj/machinery/light/directional/north,
-/obj/item/gun/ballistic/shotgun/bulldog/inteq,
-/obj/item/ammo_box/magazine/m12g,
+/obj/item/gun/ballistic/shotgun/automatic/bulldog/inteq,
+/obj/item/ammo_box/magazine/m12g_bulldog/drum,
 /turf/open/floor/engine{
 	icon_state = "plastitanium";
 	explosion_block = 7
