@@ -313,6 +313,8 @@
 
 /// track our timers and reagents
 /obj/item/organ/legion_skull/proc/skull_check()
+	if(!owner)
+		return
 	if(!malignance)
 		malignance = new()
 		malignance.infect(owner, FALSE)
