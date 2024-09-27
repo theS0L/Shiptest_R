@@ -1,17 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"ab" = (
-/obj/structure/filingcabinet/double,
-/obj/item/paper{
-	default_raw_text = " Congratulations to our favorite operatives who achieved another major victory over Nanotrasen. As an additional reward for your marvelous conduct you are awarded with a free vacation to our relaxation facility. We hope your route was safe and you are all here ready to have some fun. Our friendly employees are ready to provide you with anything you want. We await further cooperation and are ready to reward for your service. Syndicate Central Command"
-	},
-/turf/open/floor/concrete{
-	light_range = 2;
-	light_color = "#FAE1AF";
-	light_power = 0.8
-	},
-/area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 1"
-	})
 "aw" = (
 /turf/open/floor/concrete{
 	light_range = 2;
@@ -19,10 +6,6 @@
 	light_power = 0.8
 	},
 /area/ruin/beach/complex)
-"bh" = (
-/obj/item/ammo_box/magazine/m57_39_asp,
-/turf/closed/mineral/random/beach,
-/area/ruin/beach)
 "bm" = (
 /obj/structure/sign/poster/contraband/grey_tide,
 /turf/closed/wall/concrete/reinforced,
@@ -47,20 +30,6 @@
 	},
 /area/ruin/beach/piratecrash/storage{
 	name = "armory"
-	})
-"cT" = (
-/obj/machinery/door/airlock{
-	name = "Airlock V";
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/concrete{
-	light_range = 1
-	},
-/area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 2"
 	})
 "df" = (
 /mob/living/simple_animal/hostile/human/syndicate/melee/sword{
@@ -182,11 +151,6 @@
 /area/ruin/beach/float_resort/villa{
 	name = "Resort generators"
 	})
-"gG" = (
-/obj/item/ammo_box/magazine/m57_39_asp,
-/obj/item/ammo_box/magazine/m57_39_asp,
-/turf/open/floor/plating/asteroid/sand/lit,
-/area/ruin/beach)
 "gH" = (
 /obj/structure/mineral_door/wood,
 /turf/open/floor/concrete{
@@ -195,7 +159,7 @@
 	light_power = 0.8
 	},
 /area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 2"
+	name = "Syndicate lake house 1"
 	})
 "gI" = (
 /obj/structure/marker_beacon,
@@ -336,6 +300,16 @@
 /area/ruin/beach/oceantown/house{
 	name = "Administration"
 	})
+"jL" = (
+/obj/structure/mineral_door/wood,
+/turf/open/floor/concrete{
+	light_range = 2;
+	light_color = "#FAE1AF";
+	light_power = 0.8
+	},
+/area/ruin/beach/oceantown/hotel{
+	name = "Syndicate lake house 2"
+	})
 "jM" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -444,18 +418,18 @@
 	light_range = 1
 	},
 /area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 1"
+	name = "Syndicate lake house 2"
 	})
 "mM" = (
 /obj/structure/sign/syndicate,
 /turf/closed/wall/concrete/reinforced,
 /area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 1"
+	name = "Syndicate lake house 2"
 	})
 "mP" = (
 /turf/closed/wall/concrete/reinforced,
 /area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 1"
+	name = "Syndicate lake house 2"
 	})
 "na" = (
 /obj/machinery/light/small/directional/south,
@@ -623,12 +597,6 @@
 /area/ruin/beach/float_resort/villa{
 	name = "Resort generators"
 	})
-"qC" = (
-/obj/structure/sign/syndicate,
-/turf/closed/wall/concrete/reinforced,
-/area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 2"
-	})
 "qJ" = (
 /obj/effect/decal/cleanable/plastic,
 /obj/effect/decal/cleanable/plastic,
@@ -654,6 +622,12 @@
 	},
 /area/ruin/beach/oceantown/bar{
 	name = "Resort bar"
+	})
+"rh" = (
+/obj/structure/sign/syndicate,
+/turf/closed/wall/concrete/reinforced,
+/area/ruin/beach/oceantown/hotel{
+	name = "Syndicate lake house 1"
 	})
 "rj" = (
 /obj/structure/cable{
@@ -722,6 +696,17 @@
 	},
 /area/ruin/beach/oceantown/bar{
 	name = "Resort bar"
+	})
+"rY" = (
+/obj/structure/bed,
+/obj/item/bedsheet/syndie,
+/turf/open/floor/concrete{
+	light_range = 2;
+	light_color = "#FAE1AF";
+	light_power = 0.8
+	},
+/area/ruin/beach/oceantown/hotel{
+	name = "Syndicate lake house 1"
 	})
 "se" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
@@ -846,16 +831,6 @@
 /area/ruin/beach/oceantown/bar{
 	name = "Resort bar"
 	})
-"vr" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/concrete{
-	light_range = 2;
-	light_color = "#FAE1AF";
-	light_power = 0.8
-	},
-/area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 1"
-	})
 "vM" = (
 /obj/structure/window/reinforced/spawner/west,
 /obj/structure/closet/secure_closet/freezer/fridge,
@@ -925,16 +900,6 @@
 	light_power = 0.8
 	},
 /area/ruin/beach)
-"wU" = (
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/concrete{
-	light_range = 2;
-	light_color = "#FAE1AF";
-	light_power = 0.8
-	},
-/area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 1"
-	})
 "xn" = (
 /obj/structure/sign/poster/contraband/c20r,
 /turf/closed/wall/concrete/reinforced,
@@ -945,19 +910,6 @@
 /turf/open/floor/carpet/red_gold,
 /area/ruin/beach/oceantown/house{
 	name = "Administration"
-	})
-"xS" = (
-/mob/living/simple_animal/hostile/human/syndicate/melee{
-	desc = "Syndicate Resort Personnel";
-	name = "Resort Personnel"
-	},
-/turf/open/floor/concrete{
-	light_range = 2;
-	light_color = "#FAE1AF";
-	light_power = 0.8
-	},
-/area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 2"
 	})
 "xX" = (
 /obj/machinery/power/apc/auto_name/directional/north{
@@ -975,17 +927,6 @@
 	},
 /area/ruin/beach/piratecrash/storage{
 	name = "armory"
-	})
-"yd" = (
-/obj/machinery/door/airlock{
-	name = "Airlock V";
-	dir = 4
-	},
-/turf/open/floor/concrete{
-	light_range = 1
-	},
-/area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 1"
 	})
 "yf" = (
 /obj/structure/cable{
@@ -1008,15 +949,6 @@
 	dir = 4
 	},
 /turf/open/floor/concrete,
-/area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 2"
-	})
-"yY" = (
-/turf/open/floor/concrete{
-	light_range = 2;
-	light_color = "#FAE1AF";
-	light_power = 0.8
-	},
 /area/ruin/beach/oceantown/hotel{
 	name = "Syndicate lake house 2"
 	})
@@ -1119,6 +1051,15 @@
 /mob/living/simple_animal/hostile/human/syndicate/ranged,
 /turf/open/floor/plating/grass/beach/lit,
 /area/ruin/beach)
+"Cg" = (
+/turf/open/floor/concrete{
+	light_range = 2;
+	light_color = "#FAE1AF";
+	light_power = 0.8
+	},
+/area/ruin/beach/oceantown/hotel{
+	name = "Syndicate lake house 1"
+	})
 "Ci" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light/directional/north,
@@ -1225,11 +1166,6 @@
 /area/ruin/beach/oceantown/hotel{
 	name = "Syndicate lake house 2"
 	})
-"Ex" = (
-/turf/closed/wall/concrete/reinforced,
-/area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 2"
-	})
 "EI" = (
 /obj/effect/decal/cleanable/plastic,
 /turf/open/floor/concrete{
@@ -1262,7 +1198,7 @@
 	light_power = 0.8
 	},
 /area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 2"
+	name = "Syndicate lake house 1"
 	})
 "FB" = (
 /obj/machinery/door/airlock,
@@ -1313,9 +1249,8 @@
 /area/ruin/beach/oceantown/hotel{
 	name = "Syndicate lake house 2"
 	})
-"Gk" = (
-/obj/structure/bed,
-/obj/item/bedsheet/syndie,
+"Gs" = (
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/concrete{
 	light_range = 2;
 	light_color = "#FAE1AF";
@@ -1352,6 +1287,20 @@
 /area/ruin/beach/oceantown/house{
 	name = "Administration"
 	})
+"Hi" = (
+/obj/machinery/door/airlock{
+	name = "Airlock V";
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/concrete{
+	light_range = 1
+	},
+/area/ruin/beach/oceantown/hotel{
+	name = "Syndicate lake house 1"
+	})
 "Ho" = (
 /mob/living/simple_animal/hostile/human/syndicate/melee/sword{
 	desc = "Syndicate Resort security"
@@ -1363,16 +1312,6 @@
 	},
 /area/ruin/beach/oceantown/house{
 	name = "Administration"
-	})
-"HB" = (
-/obj/structure/mineral_door/wood,
-/turf/open/floor/concrete{
-	light_range = 2;
-	light_color = "#FAE1AF";
-	light_power = 0.8
-	},
-/area/ruin/beach/oceantown/hotel{
-	name = "Syndicate lake house 1"
 	})
 "Ir" = (
 /obj/structure/cable{
@@ -1408,19 +1347,34 @@
 /area/ruin/beach/oceantown/house{
 	name = "Administration"
 	})
-"JX" = (
-/obj/effect/mob_spawn/human/clown/corpse,
-/obj/item/paper{
-	default_raw_text = "he dared to make a joke aboutsomeone he shouldnt have during opening ceremony. Do not reanimate"
-	},
-/turf/open/floor/plating/grass/beach/lit,
-/area/ruin/beach)
+"JK" = (
+/turf/closed/wall/concrete/reinforced,
+/area/ruin/beach/oceantown/hotel{
+	name = "Syndicate lake house 1"
+	})
 "JZ" = (
 /obj/structure/sign/poster/contraband/pwr_game,
 /turf/closed/wall/concrete/reinforced,
 /area/ruin/beach/oceantown/bar{
 	name = "Resort bar"
 	})
+"Kd" = (
+/mob/living/simple_animal/hostile/human/syndicate/melee{
+	desc = "Syndicate Resort Personnel";
+	name = "Resort Personnel"
+	},
+/turf/open/floor/concrete{
+	light_range = 2;
+	light_color = "#FAE1AF";
+	light_power = 0.8
+	},
+/area/ruin/beach/oceantown/hotel{
+	name = "Syndicate lake house 2"
+	})
+"Ko" = (
+/obj/item/ammo_box/magazine/m57_39_asp,
+/turf/closed/mineral/random/beach,
+/area/ruin/beach)
 "Ku" = (
 /obj/machinery/power/apc/auto_name/directional/north{
 	cell_type = /obj/item/stock_parts/cell/bluespace
@@ -1454,10 +1408,21 @@
 /area/ruin/beach/oceantown/house{
 	name = "Administration"
 	})
-"KP" = (
-/obj/structure/cable{
-	icon_state = "1-2"
+"Ll" = (
+/obj/structure/filingcabinet/double,
+/obj/item/paper{
+	default_raw_text = " Congratulations to our favorite operatives who achieved another major victory over Nanotrasen. As an additional reward for your marvelous conduct you are awarded with a free vacation to our relaxation facility. We hope your route was safe and you are all here ready to have some fun. Our friendly employees are ready to provide you with anything you want. We await further cooperation and are ready to reward for your service. Syndicate Central Command"
 	},
+/turf/open/floor/concrete{
+	light_range = 2;
+	light_color = "#FAE1AF";
+	light_power = 0.8
+	},
+/area/ruin/beach/oceantown/hotel{
+	name = "Syndicate lake house 1"
+	})
+"LR" = (
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/concrete{
 	light_range = 2;
 	light_color = "#FAE1AF";
@@ -1493,6 +1458,17 @@
 	light_range = 2;
 	light_color = "#FAE1AF";
 	light_power = 0.8
+	},
+/area/ruin/beach/oceantown/hotel{
+	name = "Syndicate lake house 2"
+	})
+"MB" = (
+/obj/machinery/door/airlock{
+	name = "Airlock V";
+	dir = 4
+	},
+/turf/open/floor/concrete{
+	light_range = 1
 	},
 /area/ruin/beach/oceantown/hotel{
 	name = "Syndicate lake house 1"
@@ -1638,6 +1614,13 @@
 "PN" = (
 /turf/template_noop,
 /area/template_noop)
+"QU" = (
+/obj/effect/mob_spawn/human/clown/corpse,
+/obj/item/paper{
+	default_raw_text = "he dared to make a joke aboutsomeone he shouldnt have during opening ceremony. Do not reanimate"
+	},
+/turf/open/floor/plating/grass/beach/lit,
+/area/ruin/beach)
 "QV" = (
 /obj/machinery/power/apc/auto_name/directional/north{
 	cell_type = /obj/item/stock_parts/cell/bluespace
@@ -1665,10 +1648,6 @@
 /area/ruin/beach/oceantown/house{
 	name = "Administration"
 	})
-"Rb" = (
-/obj/item/ammo_box/magazine/m57_39_asp,
-/turf/template_noop,
-/area/template_noop)
 "Re" = (
 /obj/structure/chair/stool/bar,
 /obj/structure/cable{
@@ -1891,6 +1870,18 @@
 /obj/structure/fluff/beach_umbrella/security,
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/ruin/beach)
+"Wm" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/concrete{
+	light_range = 2;
+	light_color = "#FAE1AF";
+	light_power = 0.8
+	},
+/area/ruin/beach/oceantown/hotel{
+	name = "Syndicate lake house 2"
+	})
 "WE" = (
 /obj/structure/sign/poster/contraband/power,
 /turf/closed/wall/concrete/reinforced,
@@ -2085,7 +2076,7 @@
 	})
 
 (1,1,1) = {"
-Rb
+PN
 PN
 PN
 PN
@@ -2341,7 +2332,7 @@ oI
 oI
 oI
 oI
-bh
+Ko
 oI
 oI
 oI
@@ -3103,21 +3094,21 @@ zk
 zk
 zk
 zk
-mP
-mP
-mP
-mP
-mP
-mP
-mP
-mP
-mP
-mP
-mP
-mP
-mP
-mP
-mP
+JK
+JK
+JK
+JK
+JK
+JK
+JK
+JK
+JK
+JK
+JK
+JK
+JK
+JK
+JK
 zk
 zk
 zk
@@ -3165,21 +3156,21 @@ zk
 zk
 zk
 zk
-mP
-ab
-Gk
-mP
-mP
-Gk
-ab
-mP
-ab
-Gk
-mP
-mP
-Gk
-ab
-mP
+JK
+Ll
+rY
+JK
+JK
+rY
+Ll
+JK
+Ll
+rY
+JK
+JK
+rY
+Ll
+JK
 zk
 zk
 zk
@@ -3227,21 +3218,21 @@ zk
 zk
 zk
 zk
-mP
-Mq
-Mq
-mP
-mP
-Mq
-Mq
-mP
-Mq
-Mq
-mP
-mP
-Mq
+JK
+Cg
+Cg
+JK
+JK
+Cg
+Cg
+JK
+Cg
+Cg
+JK
+JK
+Cg
 iE
-mP
+JK
 zk
 zk
 zk
@@ -3290,20 +3281,20 @@ zk
 zk
 zk
 BJ
-wU
-Mq
-mP
+Gs
+Cg
+JK
 rE
-Mq
-vr
+Cg
+LR
 tO
-wU
-Mq
-mP
+Gs
+Cg
+JK
 Xf
 iE
-vr
-mP
+LR
+JK
 zk
 zk
 zk
@@ -3351,21 +3342,21 @@ zk
 zk
 zk
 zk
-mP
-Mq
+JK
+Cg
 se
-mP
-mP
+JK
+JK
 Uz
 nI
-mP
-Mq
+JK
+Cg
 mx
-mP
-mP
+JK
+JK
 NW
 nI
-mP
+JK
 zk
 zk
 zk
@@ -3413,21 +3404,21 @@ fv
 zk
 zk
 zk
-mP
-HB
-mP
-mP
-mP
-mP
-HB
-mP
-HB
-mP
-mP
-mP
-mP
-HB
-mP
+JK
+gH
+JK
+JK
+JK
+JK
+gH
+JK
+gH
+JK
+JK
+JK
+JK
+gH
+JK
 zk
 zk
 zk
@@ -3475,21 +3466,21 @@ zk
 zk
 zk
 zk
-mP
-wU
-Mq
-Mq
-Mq
-Mq
-vr
-mP
-wU
-Mq
-Mq
-Mq
-Mq
-vr
-mP
+JK
+Gs
+Cg
+Cg
+Cg
+Cg
+LR
+JK
+Gs
+Cg
+Cg
+Cg
+Cg
+LR
+JK
 zk
 zk
 zk
@@ -3537,21 +3528,21 @@ BY
 zk
 zk
 zk
-mP
+JK
 Uw
-KP
+Fe
 in
-Mq
-Mq
-Mq
-mP
-Mq
-Mq
-Mq
-Mq
-Mq
-Mq
-mP
+Cg
+Cg
+Cg
+JK
+Cg
+Cg
+Cg
+Cg
+Cg
+Cg
+JK
 zk
 zk
 zk
@@ -3599,21 +3590,21 @@ zk
 zk
 zk
 gI
-mP
-mP
-mM
-mC
-yd
-mM
-mP
-mP
-mP
-mM
-yd
-yd
-mM
-mP
-mP
+JK
+JK
+rh
+Hi
+MB
+rh
+JK
+JK
+JK
+rh
+MB
+MB
+rh
+JK
+JK
 zk
 df
 zk
@@ -4323,7 +4314,7 @@ oI
 oI
 oI
 ZD
-JX
+QU
 CC
 Dh
 yf
@@ -5329,28 +5320,28 @@ Gd
 gI
 zk
 zk
-Ex
-Ex
-qC
-cT
+mP
+mP
+mM
+mC
 VC
-qC
-Ex
-Ex
-Ex
-qC
+mM
+mP
+mP
+mP
+mM
 VC
 VC
-qC
-Ex
-Ex
-Ex
-qC
+mM
+mP
+mP
+mP
+mM
 yX
 yX
-qC
-Ex
-Ex
+mM
+mP
+mP
 zk
 zk
 zk
@@ -5391,28 +5382,28 @@ Gd
 zk
 zk
 zk
-Ex
+mP
 Ku
-Fe
+Wm
 DW
-yY
+Mq
 WH
-yY
-Ex
+Mq
+mP
 WH
-yY
+Mq
 WH
-yY
-yY
-yY
-Ex
-yY
-yY
+Mq
+Mq
+Mq
+mP
+Mq
+Mq
 WH
-yY
-yY
-yY
-Ex
+Mq
+Mq
+Mq
+mP
 zk
 zk
 zk
@@ -5453,28 +5444,28 @@ Gd
 zk
 zk
 zk
-Ex
+mP
 ls
-yY
-yY
+Mq
+Mq
 WH
-yY
+Mq
 na
-Ex
+mP
 ls
-yY
-yY
-yY
-yY
+Mq
+Mq
+Mq
+Mq
 Mm
-Ex
+mP
 ls
-yY
-yY
+Mq
+Mq
 WH
-yY
+Mq
 na
-Ex
+mP
 zk
 zk
 zk
@@ -5515,28 +5506,28 @@ Gd
 zk
 zk
 zk
-Ex
-gH
-Ex
-Ex
-Ex
-Ex
-gH
-Ex
-gH
-Ex
-Ex
-Ex
-Ex
-gH
-Ex
-gH
-Ex
-Ex
-Ex
-Ex
-gH
-Ex
+mP
+jL
+mP
+mP
+mP
+mP
+jL
+mP
+jL
+mP
+mP
+mP
+mP
+jL
+mP
+jL
+mP
+mP
+mP
+mP
+jL
+mP
 zk
 zk
 zk
@@ -5577,28 +5568,28 @@ nQ
 gI
 zk
 zk
-Ex
-yY
+mP
+Mq
 OV
-Ex
-Ex
+mP
+mP
 Em
-xS
-Ex
-yY
+Kd
+mP
+Mq
 Ep
-Ex
-Ex
+mP
+mP
 Gi
-xS
+Kd
 GP
-yY
+Mq
 Yn
-Ex
-Ex
+mP
+mP
 Yn
-yY
-Ex
+Mq
+mP
 zk
 zk
 zk
@@ -5641,26 +5632,26 @@ zk
 zk
 xn
 Ct
-yY
-Ex
+Mq
+mP
 NT
-yY
+Mq
 na
 dL
 ls
-yY
-Ex
+Mq
+mP
 Oi
-yY
+Mq
 na
-Ex
+mP
 ls
 BI
-Ex
+mP
 BK
 rA
 na
-Ex
+mP
 zk
 zk
 zk
@@ -5701,28 +5692,28 @@ zk
 zk
 zk
 zk
-Ex
-yY
-yY
-Ex
-Ex
-yY
-yY
-Ex
-yY
-yY
-Ex
-Ex
-yY
-yY
-Ex
-yY
-yY
-Ex
-Ex
-yY
+mP
+Mq
+Mq
+mP
+mP
+Mq
+Mq
+mP
+Mq
+Mq
+mP
+mP
+Mq
+Mq
+mP
+Mq
+Mq
+mP
+mP
+Mq
 rA
-Ex
+mP
 zk
 zk
 zk
@@ -5763,28 +5754,28 @@ zk
 zk
 zk
 zk
-Ex
+mP
 hs
 Vz
-Ex
-Ex
+mP
+mP
 Vz
 dG
-Ex
+mP
 dG
 Vz
-Ex
-Ex
+mP
+mP
 Vz
 dG
-Ex
+mP
 dG
 Vz
-Ex
-Ex
+mP
+mP
 Vz
 dG
-Ex
+mP
 zk
 zk
 zk
@@ -5825,28 +5816,28 @@ cv
 cv
 cv
 zk
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
-Ex
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
+mP
 zk
 zk
 zk
@@ -6292,7 +6283,7 @@ oj
 oj
 oj
 oj
-gG
+oj
 oj
 oj
 oj
