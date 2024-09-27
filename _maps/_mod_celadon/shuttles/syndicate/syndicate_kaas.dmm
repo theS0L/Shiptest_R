@@ -1405,9 +1405,9 @@
 /area/ship/engineering)
 "Er" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/shotgun/bulldog,
-/obj/item/gun/ballistic/shotgun/bulldog,
-/obj/item/gun/ballistic/shotgun/bulldog,
+/obj/item/gun/ballistic/shotgun/automatic/bulldog,
+/obj/item/gun/ballistic/shotgun/automatic/bulldog,
+/obj/item/gun/ballistic/shotgun/automatic/bulldog,
 /obj/item/storage/backpack/duffelbag/syndie/bulldogbundle,
 /obj/item/storage/backpack/duffelbag/syndie/bulldogbundle,
 /obj/item/storage/backpack/duffelbag/syndie/bulldogbundle,
