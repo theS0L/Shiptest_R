@@ -2703,7 +2703,7 @@
 /obj/item/gun/ballistic/automatic/smg/cobra{
 	pixel_x = 14
 	},
-/obj/item/gun/ballistic/shotgun/bulldog,
+/obj/item/gun/ballistic/shotgun/automatic/bulldog,
 /turf/open/floor/pod/dark,
 /area/ship/security/armory)
 "yJ" = (
