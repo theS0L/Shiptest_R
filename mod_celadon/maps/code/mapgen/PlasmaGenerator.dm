@@ -160,7 +160,7 @@
 	)
 
 	mob_spawn_list = list(
-		/mob/living/simple_animal/hostile/big_legion = 10,
+		/mob/living/simple_animal/hostile/big_plasma = 10,
 		/obj/structure/spawner/plasma_gaint/extreme_threat = 6,
 		/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma = 20
 	)
