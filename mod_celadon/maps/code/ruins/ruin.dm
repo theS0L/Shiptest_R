@@ -614,6 +614,12 @@
 	id = "crash_kitchen"
 	suffix = "wasteplanet_crash_kitchen.dmm"
 
+/datum/map_template/ruin/wasteplanet/crahsed_abductor_ship
+	name = "Crashed Abductor Ship"
+	description = "A crashed abductor ship with something horrible goi'n inside."
+	id = "crash_abductor_ship"
+	suffix = "wasteplanet_ruined_abductor_ship.dmm"
+
 //							///
 //		Whitesand ruin		///
 //							///
