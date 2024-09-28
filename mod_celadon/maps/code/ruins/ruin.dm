@@ -695,6 +695,7 @@
 	id = "ps-dragon"
 	description = "An ancient and terrible dragon that lived for several centuries and ate hundreds of souls."
 	suffix = "dragon.dmm"
+	allow_duplicates = FALSE
 
 //							///
 //		EarthSand ruin		///
