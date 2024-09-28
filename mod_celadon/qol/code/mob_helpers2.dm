@@ -46,6 +46,8 @@
 				newletter = "т"
 			else if(lowerletter == "щ")
 				newletter = "шщ"
+			else if(lowerletter == "и")
+				newletter = "их"
 		if(rand(1, 20) == 20)
 			if(newletter == " ")
 				newletter = "...huuuhhh..."
