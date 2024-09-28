@@ -690,6 +690,13 @@
 	description = "The base of an old and experienced miner"
 	suffix = "oldminer.dmm"
 
+/datum/map_template/ruin/plasma_gaint/dragon
+	name = "dragon"
+	id = "ps-dragon"
+	description = "An ancient and terrible dragon that lived for several centuries and ate hundreds of souls."
+	suffix = "dragon.dmm"
+	allow_duplicates = FALSE
+
 //							///
 //		EarthSand ruin		///
 //							///
