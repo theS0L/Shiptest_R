@@ -33,6 +33,8 @@ ID мода: CELADON_QOL
 - перемещены технические кнопки во вкладку Special Verbs
 - обновлён функционал Fit Viewport
 - исправлен зависающий пузырик сообщения над головой куклы
+- /stutter теперь не распространяется на русские гласные
+- /slur теперь заменяет символы кириллицы на "пьяный вариант" и пропускает пробел
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -91,6 +93,9 @@ ID мода: CELADON_QOL
 - EDIT `code/game/objects/structures/flora.dm` -> меняем звук падающего дерева с метеоритного на нормальный
 
 - EDIT `code/game/gamemodes/extended/extended.dm` -> меняем начальный репорт
+
+- EDIT `code\modules\mob\mob_helpers.dm`: `/proc/slur`
+- EDIT `code\modules\mob\mob_helpers.dm`: `/proc/stutter`
 
 ООС вкладка	
 - EDIT `code/modules/client/verbs/ooc.dm` -> Убраны неиспользуемые кнопки "Message Of The Day" "Show Policy" со вкладки ООС.Перемещена кнопка "Fit Viewport" со вкладки "ООС" во вкладку "Special Verbs"
