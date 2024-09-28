@@ -111,6 +111,7 @@
 			. += "*"
 	return sanitize(.)
 
+/*			=# CELADON CHANGES => mod_celadon\qol\code\mob_helpers2.dm #=
 /**
  * Makes you speak like you're drunk
  */
@@ -149,7 +150,7 @@
 			else
 				// do nothing
 		. += "[newletter]"
-	return sanitize(.)
+	return sanitize(.)		*/
 
 /// Makes you talk like you got cult stunned, which is slurring but with some dark messages
 /proc/cultslur(phrase) // Inflicted on victims of a stun talisman
@@ -198,6 +199,7 @@
 
 #define CLOCK_CULT_SLUR(phrase) sanitize(text2ratvar(phrase))
 
+/*			=# CELADON CHANGES => mod_celadon\qol\code\mob_helpers2.dm #=
 ///Adds stuttering to the message passed in
 /proc/stutter(phrase)
 	phrase = html_decode(phrase)
@@ -214,7 +216,7 @@
 			else
 				newletter = "[newletter]-[newletter]"
 		. += newletter
-	return sanitize(.)
+	return sanitize(.)		*/
 
 ///Convert a message to derpy speak
 /proc/derpspeech(message, stuttering)
