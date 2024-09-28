@@ -499,6 +499,11 @@
 "ep" = (
 /obj/item/stack/sheet/glass/twenty,
 /obj/item/stack/sheet/metal/twenty,
+/obj/structure/closet/crate/large,
+/obj/item/storage/box/stockparts/basic,
+/obj/item/stock_parts/cell/high/plus,
+/obj/item/stock_parts/cell/high/plus,
+/obj/item/stock_parts/cell/high/plus,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "es" = (
@@ -2054,6 +2059,12 @@
 /obj/structure/closet/crate/freezer/blood,
 /obj/machinery/iv_drip,
 /obj/machinery/light/directional/east,
+/obj/machinery/door/airlock/engineering{
+	dir = 4;
+	name = "Reactor";
+	normalspeed = 0;
+	req_access_txt = "10"
+	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "uw" = (
@@ -2448,8 +2459,7 @@
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
 	name = "Reactor";
-	normalspeed = 0;
-	req_access_txt = "10"
+	normalspeed = 0
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -3694,6 +3704,22 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/port)
+"LK" = (
+/obj/structure/closet/crate/large,
+/obj/effect/spawner/lootdrop/glowstick,
+/obj/item/trash/can/food/beans,
+/obj/item/trash/energybar,
+/obj/item/trash/can,
+/obj/item/trash/can,
+/obj/item/trash/chips,
+/obj/item/trash/chips,
+/obj/item/trash/can/food/beans,
+/obj/item/trash/can/food/beans,
+/obj/item/paper/crumpled{
+	default_raw_text = "Поставка мусора от Синдиката!"
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/cargo)
 "LO" = (
 /obj/machinery/hydroponics/constructable,
 /obj/item/seeds/grass,
@@ -3909,6 +3935,7 @@
 /area/ship/hallway/fore)
 "Oa" = (
 /obj/machinery/light/directional/east,
+/obj/machinery/jukebox,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "Oi" = (
@@ -3959,9 +3986,7 @@
 	},
 /obj/item/clothing/glasses/hud/health,
 /obj/item/clothing/glasses/hud/health/prescription,
-/obj/item/clothing/under/rank/medical/paramedic,
 /obj/item/clothing/under/rank/medical/doctor,
-/obj/item/clothing/accessory/armband/medblue,
 /obj/item/clothing/accessory/armband/medblue,
 /obj/item/storage/belt/medical/webbing/paramedic,
 /obj/item/storage/belt/medical/surgery,
@@ -4127,6 +4152,10 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
+	},
+/obj/structure/closet/crate/large,
+/obj/machinery/cell_charger{
+	anchored = 0
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
@@ -6070,7 +6099,7 @@ OK
 OK
 OK
 Jo
-Md
+LK
 ep
 EE
 sq
