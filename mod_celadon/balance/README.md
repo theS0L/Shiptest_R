@@ -80,6 +80,11 @@ ADD:
 Хардсьюты:
 EDIT: `code/modules/clothing/spacesuits/hardsuit.dm`
 REMOVE: `code/modules/clothing/spacesuits/hardsuit.dm`
+
+EDIT: `code/__DEFINES/turfs.dm`	- Меняем минимальный урон необходимый для снова стены из камня
+EDIT: `code/game/turfs/closed/walls.dm` - Меняем хп стены в 2 раза = 800, увеличиваем минимальный порог урона с 8 до 25
+EDIT: `code/game/turfs/closed/minerals.dm` - Убираем флаг на минимальный дамаг стене, назначаем числовой параметр. И даем сопротивление стене из камня в 70% и хп в 1200
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

@@ -35,9 +35,14 @@
 	hitsound_type = PROJECTILE_HITSOUND_STONE
 
 	min_dam = 5
-	max_integrity = MINERAL_WALL_INTEGRITY
-	brute_mod = 1
-	burn_mod = 1
+	// [CELADON-EDIT] - CELADON_BALANCE - Делаем из картонного камня скалу!
+	// max_integrity = MINERAL_WALL_INTEGRITY
+	// brute_mod = 1
+	// burn_mod = 1	// CELADON-EDIT - ORIGINAL
+	max_integrity = 1200
+	brute_mod = 0.3
+	burn_mod = 0.3
+	// [/CELADON-EDIT]
 
 	mob_smash_flags = ENVIRONMENT_SMASH_MINERALS
 	proj_bonus_damage_flags = PROJECTILE_BONUS_DAMAGE_MINERALS
