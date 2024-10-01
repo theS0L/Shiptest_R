@@ -530,7 +530,7 @@
 /turf/open/floor/plastic,
 /area/ruin/powered)
 "Lm" = (
-/obj/item/gun/ballistic/automatic/pistol,
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 5
 	},
