@@ -11,7 +11,7 @@
 <!-- Название мода. Не важно на русском или на английском. -->
 ## Возвращение спавнов и тендрилов
 
-ID мода: RETURN_TENDRILS
+ID мода: RETURN_CONTENT
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
@@ -80,7 +80,7 @@ ID мода: RETURN_TENDRILS
   И то же самое, если ты используешь дефайны, определённые другим модом.
 
   Не используешь - напиши "Отсутствуют"
-  Примеры: `code/__defines/~mod_celadon/return_tendrils.dm`: `RETURN_TENDRILS_SPEED_MULTIPLIER`, `RETURN_TENDRILS_SPEED_BASE`
+  Примеры: `code/__defines/~mod_celadon/return_content.dm`: `RETURN_CONTENT_SPEED_MULTIPLIER`, `RETURN_CONTENT_SPEED_BASE`
 -->
 
 ### Используемые файлы, не содержащиеся в модпаке
