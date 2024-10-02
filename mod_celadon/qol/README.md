@@ -108,6 +108,8 @@ ID мода: CELADON_QOL
 - REMOVE `code/modules/discord/toggle_notify.dm` Убрана неиспользуемая кнопка "Notify Restart" со вкладки "ООС"
 - REMOVE `code/modules/tgui_panel/external.dm` Убрана кнопка "Fix chat" со вкладки "ООС". Устаревшая функция.
 
+- EDIT `code/modules/clothing/clothing.dm` -> `armor_to_protection_class` -> Замена римских цифр на числовые значения
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
