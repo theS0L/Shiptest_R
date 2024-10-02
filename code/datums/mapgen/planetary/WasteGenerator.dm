@@ -256,7 +256,7 @@
 		/obj/effect/spawner/minefield = 2
 	)
 	mob_spawn_list = list( //nor organics, more biased towards hivebots though
-		// [CELADON-ADD] - RETURN_TENDRILS
+		// [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/spawner/wasteplanet/hivebot/low_threat = 20,
 		/obj/structure/spawner/wasteplanet/hivebot/medium_threat = 10,
 		/obj/structure/spawner/wasteplanet/hivebot/high_threat = 5,
@@ -417,7 +417,7 @@
 		/obj/effect/spawner/minefield/manhack = 2
 	)
 	mob_spawn_list = list( //nor organics, more biased towards hivebots though
-		// [CELADON-ADD] - RETURN_TENDRILS
+		// [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/spawner/wasteplanet/hivebot/low_threat = 20,
 		/obj/structure/spawner/wasteplanet/hivebot/medium_threat = 10,
 		/obj/structure/spawner/wasteplanet/hivebot/high_threat = 5,
@@ -458,7 +458,7 @@
 	)
 	mob_spawn_chance = 30
 	feature_spawn_list = list(
-		// [CELADON-ADD] - RETURN_TENDRILS
+		// [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/spawner/wasteplanet/hivebot/low_threat = 20,
 		/obj/structure/spawner/wasteplanet/hivebot/medium_threat = 10,
 		/obj/structure/spawner/wasteplanet/hivebot/high_threat = 5,

@@ -112,7 +112,7 @@
 	)
 	mob_spawn_chance = 4
 	mob_spawn_list = list(
-		// [CELADON-ADD] - RETURN_TENDRILS
+		// [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/spawner/lavaland/low_threat = 8,
 		/obj/structure/spawner/lavaland/medium_threat = 3,
 		/obj/structure/spawner/lavaland/high_threat = 1,
@@ -241,7 +241,7 @@
 	)
 	mob_spawn_chance = 4
 	mob_spawn_list = list(
-		// [CELADON-ADD] - RETURN_TENDRILS
+		// [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/spawner/lavaland/low_threat = 8,
 		/obj/structure/spawner/lavaland/medium_threat = 3,
 		/obj/structure/spawner/lavaland/high_threat = 2,

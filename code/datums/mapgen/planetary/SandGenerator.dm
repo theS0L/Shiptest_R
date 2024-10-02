@@ -213,7 +213,7 @@
 	open_turf_types = list(/turf/open/floor/plating/asteroid/whitesands/dried = 1)
 	mob_spawn_chance = 4
 	mob_spawn_list = list(
-		// [CELADON-ADD] - RETURN_TENDRILS
+		// [CELADON-ADD] - RETURN_CONTENT
 		/obj/structure/spawner/lavaland/sand_world/low_threat = 14,
 		/obj/structure/spawner/lavaland/sand_world/medium_threat = 8,
 		/obj/structure/spawner/lavaland/sand_world/high_threat = 2,
