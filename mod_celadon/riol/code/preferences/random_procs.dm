@@ -41,6 +41,6 @@ GLOBAL_LIST_INIT(skin_tones_riol, sortList(list(
 
 /proc/riol_name(gender)
 	if(gender == MALE)
-		return "[pick(GLOB.riol_names_male)]-[pick(GLOB.riol_names_male)]"
+		return "[pick(GLOB.riol_names_male)]-[pick(GLOB.riol_last_names)]"
 	else
-		return "[pick(GLOB.riol_names_female)]-[pick(GLOB.riol_names_female)]"
+		return "[pick(GLOB.riol_names_female)]-[pick(GLOB.riol_last_names)]"

@@ -12,5 +12,6 @@ GLOBAL_LIST_EMPTY(riol_tail_list)
 GLOBAL_LIST_EMPTY(riol_animated_tail_list)
 GLOBAL_LIST_EMPTY(riol_legs_list)
 
-GLOBAL_LIST_INIT(riol_names_male, world.file2list("mod_celadon/riol/strings/riol_male_names.txt"))
-GLOBAL_LIST_INIT(riol_names_female, world.file2list("mod_celadon/riol/strings/riol_female_names.txt"))
+GLOBAL_LIST_INIT(riol_names_male, world.file2list("mod_celadon/riol/strings/riol_first_male.txt"))
+GLOBAL_LIST_INIT(riol_names_female, world.file2list("mod_celadon/riol/strings/riol_first_female.txt"))
+GLOBAL_LIST_INIT(riol_last_names, world.file2list("mod_celadon/riol/strings/riol_last.txt"))
