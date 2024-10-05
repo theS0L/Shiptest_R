@@ -116,39 +116,14 @@
 	species_robotic_l_leg = /obj/item/bodypart/leg/left/robot/surplus
 	species_robotic_r_leg = /obj/item/bodypart/leg/right/robot/surplus
 
-/datum/species/riol/random_name(gender,unique,lastname)
-	//code by @valtor0
-	/*
-	var/static/list/riol_female_ru_endings_list = list("и","а","о","е","й","ь") // Customise this with ru_name_syllables changes.
-	var/list/ru_name_syllables = list("кан","тай","кир","раи","кии","мир","кра","тэк","нал","вар","хар","марр","ран","дарр", \
-	"мирк","ири","дин","манг","рик","зар","раз","кель","шера","тар","кей","ар","но","маи","зир","кер","нир","ра",\
-	"ми","рир","сей","эка","гир","ари","нэй","нре","ак","таир","эрай","жин","мра","зур","рин","сар","кин","рид","эра","ри","эна")
-	*/
-	var/static/list/riol_female_en_endings_list = list("v","n","o","e","y","u") // Customise this with en_name_syllables changes.
-	var/list/en_name_syllables = list("rur","ya","sen","rawr","bar","kuk","tek","kuat","uk","vu","vuh","tah","tch","sjz","auch", \
-		"ist","yein","entch","zvich","tut","mipr","vo","bis","as","vor","nik","gro","al","anem","zanth","tzch","noch", \
-		"hel","ischt","far","va","baram","yereng","tech","lach","sam","mak","lich","gen","or","ag","ekt","gek","stag","onn", \
-		"bin","ket","yarl","volf","eyanech","kresvz","azunayn","ghchv")
-	var/apostrophe = "’"
-	var/new_name = ""
-	var/full_name = ""
+/datum/species/riol/random_name(gender = NEUTER, unique, lastname)
+	if(gender != MALE)
+		gender = pick(MALE, FEMALE)
 
-	for(var/i = 0; i<2; i++)
-		for(var/x = rand(1,2); x>0; x--)
-			new_name += pick_n_take(en_name_syllables)
-		new_name += apostrophe
-		apostrophe = ""
-	full_name = "[capitalize(lowertext(new_name))]"
-	if(gender == FEMALE)
-		var/ending = copytext(full_name, -2)
-		if(!(ending in riol_female_en_endings_list))
-			full_name += "а"
-	if(prob(75))
-		full_name += " [pick(list("Hadii","Kaitam","Jan-Hazan","Nyrir’Ahan"))]" //"Хадии","Кайтам","Жан-Хазан","Нъярир’Ахан"
-	else if(prob(80))
-		full_name += " [pick(list("Anai-Sanday","Navarr-Sanday","Roky-Sanday","Shenuar-Sanday"))]" //"Энай-Сэндай","Наварр-Сэндай","Року-Сэндай","Шенуар-Сэндай"
-	return full_name
+	if(gender == MALE)
+		return "[pick(GLOB.riol_names_male)]-[pick(GLOB.riol_last_names)]"
 
+	return "[pick(GLOB.riol_names_female)]-[pick(GLOB.riol_last_names)]"
 
 /datum/species/start_wagging_tail(mob/living/carbon/human/H)
 	if("riol_tail" in mutant_bodyparts)
