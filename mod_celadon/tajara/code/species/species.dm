@@ -131,9 +131,9 @@
 		mutant_bodyparts -= "tajara_tail"
 		mutant_bodyparts |= "waggingtajara_tail"
 
-	if("riol_tail" in mutant_bodyparts)
-		mutant_bodyparts -= "riol_tail"
-		mutant_bodyparts |= "waggingriol_tail"
+	// if("riol_tail" in mutant_bodyparts)
+	// 	mutant_bodyparts -= "riol_tail"
+	// 	mutant_bodyparts |= "waggingriol_tail"
 
 	return ..()
 
@@ -142,8 +142,8 @@
 		mutant_bodyparts -= "waggingtajara_tail"
 		mutant_bodyparts |= "tajara_tail"
 
-	if("waggingriol_tail" in mutant_bodyparts)
-		mutant_bodyparts -= "waggingriol_tail"
-		mutant_bodyparts |= "riol_tail"
+	// if("waggingriol_tail" in mutant_bodyparts)
+	// 	mutant_bodyparts -= "waggingriol_tail"
+	// 	mutant_bodyparts |= "riol_tail"
 
 	return ..()

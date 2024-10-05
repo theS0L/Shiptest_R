@@ -37,6 +37,7 @@
 		"riol_facial_hairs",
 		"riol_chest_markings",
 		"riol_body_markings",
+		"riol_tail_markings",
 		"riol_tail",
 		"riol_legs"
 		)
@@ -50,6 +51,7 @@
 		"riol_facial_hairs" = "None",
 		"riol_chest_markings" = "None",
 		"riol_body_markings" = "None",
+		"riol_tail_markings" = "None",
 		"riol_tail" = "long",
 		"riol_legs" = "Normal Legs",
 		"body_size" = "Normal"
@@ -151,13 +153,17 @@
 /datum/species/start_wagging_tail(mob/living/carbon/human/H)
 	if("riol_tail" in mutant_bodyparts)
 		mutant_bodyparts -= "riol_tail"
+		mutant_bodyparts -= "riol_tail_markings"
 		mutant_bodyparts |= "waggingriol_tail"
+		mutant_bodyparts |= "wagging_riol_tail_markings"
 
 	return ..()
 
 /datum/species/stop_wagging_tail(mob/living/carbon/human/H)
 	if("waggingriol_tail" in mutant_bodyparts)
 		mutant_bodyparts -= "waggingriol_tail"
+		mutant_bodyparts -= "wagging_riol_tail_markings"
 		mutant_bodyparts |= "riol_tail"
+		mutant_bodyparts |= "riol_tail_markings"
 
 	return ..()
