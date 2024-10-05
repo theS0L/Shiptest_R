@@ -172,15 +172,35 @@
 	// em_block = TRUE
 	color_src = "riol_tail_markings_color"
 	var/tails_allowed = list()
-	body_zone = BODY_ZONE_CHEST
-	secondary_color = TRUE
+	// body_zone = BODY_ZONE_CHEST
+	// secondary_color = TRUE
+
+/datum/sprite_accessory/riol_tail_markings_animated
+	icon = 'mod_celadon/_storge_icons/icons/riol/riol_tail_markings.dmi'
+	name = "None"
+	icon_state = "none"
+	// em_block = TRUE
+	color_src = "riol_tail_markings_color"
+	var/tails_allowed = list()
+	// body_zone = BODY_ZONE_CHEST
+	// secondary_color = TRUE
 
 /datum/sprite_accessory/riol_tail_markings/riol_default_tip
 	name = "Tail Tip"
 	tails_allowed = list("Default", "Straight Bushy")
 	icon_state = "tip"
 
+/datum/sprite_accessory/riol_tail_markings_animated/riol_default_tip
+	name = "Tail Tip"
+	tails_allowed = list("Default", "Straight Bushy")
+	icon_state = "defaulttip"
+
 /datum/sprite_accessory/riol_tail_markings/riol_default_fade
+	name = "Tail Fade"
+	tails_allowed = list("Default", "Straight Bushy")
+	icon_state = "fade"
+
+/datum/sprite_accessory/riol_tail_markings_animated/riol_default_fade
 	name = "Tail Fade"
 	tails_allowed = list("Default", "Straight Bushy")
 	icon_state = "fade"
@@ -190,7 +210,17 @@
 	tails_allowed = list("Bushy")
 	icon_state = "fluff"
 
+/datum/sprite_accessory/riol_tail_markings_animated/riol_bushy_fluff
+	name = "Tail Fluff"
+	tails_allowed = list("Bushy")
+	icon_state = "fluff"
+
 /datum/sprite_accessory/riol_tail_markings/riol_hybrid_silverf
+	name = "Tail Black Fade White Tip"
+	tails_allowed = list("Straight Bushy")
+	icon_state = "fadetip"
+
+/datum/sprite_accessory/riol_tail_markings_animated/riol_hybrid_silverf
 	name = "Tail Black Fade White Tip"
 	tails_allowed = list("Straight Bushy")
 	icon_state = "fadetip"
@@ -269,6 +299,10 @@
 	icon_state = "facial_hair_none"
 	body_zone = BODY_ZONE_HEAD
 
+/datum/sprite_accessory/tajara_facial_hairs/none
+	name = "None"
+	icon_state = "facial_hair_none"
+
 /datum/sprite_accessory/riol_facial_hairs/riol_blaze
 	name = "Blaze"
 	icon_state = "facial_hair_blaze"
@@ -332,9 +366,13 @@
 
 // HAIRS
 
-/datum/sprite_accessory/hair/riol_hairs
+/datum/sprite_accessory/riol_hairs
 	icon = 'mod_celadon/_storge_icons/icons/riol/riol_hairs.dmi'
 	body_zone = BODY_ZONE_HEAD
+
+/datum/sprite_accessory/riol_hairs/none
+	name = "None"
+	icon_state = "hairs_none"
 
 /datum/sprite_accessory/riol_hairs/riol_plain
 	name = "Plain"
