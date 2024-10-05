@@ -24,6 +24,7 @@
 	icon = 'mod_celadon/_storge_icons/icons/mob/projectile.dmi'
 	name = "Crystalline Shard"
 	icon_state = "crystal_shard"
+	range = 2
 	damage = 6
 	damage_type = BRUTE
 	speed = 3
@@ -98,8 +99,6 @@
 	move_resist = MOVE_RESIST_DEFAULT
 	pull_force = PULL_FORCE_DEFAULT
 	visible_message("<span class='userwarning'>[src] falls over with a mighty crash, the remaining legions within it falling apart!</span>")
-	new /mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma(loc)
-	new /mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma(loc)
 	new /mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma(loc)
 	..(gibbed)
 
