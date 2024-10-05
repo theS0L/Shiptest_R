@@ -1039,18 +1039,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
-			if("riol_tail_markings" in pref_species.default_features)
-				if(!mutant_category)
-					dat += APPEARANCE_CATEGORY_COLUMN
+			// if("riol_tail_markings" in pref_species.default_features) 		// Пока отключено
+			// 	if(!mutant_category)
+			// 		dat += APPEARANCE_CATEGORY_COLUMN
 
-				dat += "<h3>Tail markings</h3>"
-				dat += "<a href='?_src_=prefs;preference=tail_body_markings;task=input'>[features["tail_body_markings"]]</a><BR>"
-				dat += "<span style='border:1px solid #161616; background-color: #[features["tail_body_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=tail_body_markings_color;task=input'>Change</a>"
+			// 	dat += "<h3>Tail markings</h3>"
+			// 	dat += "<a href='?_src_=prefs;preference=riol_tail_markings;task=input'>[features["riol_tail_markings"]]</a><BR>"
+			// 	dat += "<span style='border:1px solid #161616; background-color: #[features["riol_tail_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_tail_markings_color;task=input'>Change</a>"
 
-				mutant_category++
-				if(mutant_category >= MAX_MUTANT_ROWS)
-					dat += "</td>"
-					mutant_category = 0
+			// 	mutant_category++
+			// 	if(mutant_category >= MAX_MUTANT_ROWS)
+			// 		dat += "</td>"
+			// 		mutant_category = 0
 
 			if("riol_legs" in pref_species.default_features)
 				if(!mutant_category)
@@ -2052,27 +2052,27 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				// [CELADON-ADD] - CELADON_RIOL
 				if("riol_ears_markings_color")
-					var/new_riol_ears_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["riol_ears_markings_color"]) as color|null
+					var/new_riol_ears_markings_color = input(user, "Choose your character's ears markings colour:", "Character Preference","#"+features["riol_ears_markings_color"]) as color|null
 					if(new_riol_ears_markings_color)
 						features["riol_ears_markings_color"] = sanitize_hexcolor(new_riol_ears_markings_color)
 				if("riol_head_markings_color")
-					var/new_riol_ears_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["riol_head_markings_color"]) as color|null
+					var/new_riol_ears_markings_color = input(user, "Choose your character's head markings colour:", "Character Preference","#"+features["riol_head_markings_color"]) as color|null
 					if(new_riol_ears_markings_color)
 						features["riol_head_markings_color"] = sanitize_hexcolor(new_riol_ears_markings_color)
 				if("riol_nose_markings_color")
-					var/new_riol_nose_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["new_riol_nose_markings_color"]) as color|null
+					var/new_riol_nose_markings_color = input(user, "Choose your character's nose markings colour:", "Character Preference","#"+features["new_riol_nose_markings_color"]) as color|null
 					if(new_riol_nose_markings_color)
 						features["riol_nose_markings_color"] = sanitize_hexcolor(new_riol_nose_markings_color)
 				if("riol_chest_markings_color")
-					var/new_riol_chest_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["riol_chest_markings_color"]) as color|null
+					var/new_riol_chest_markings_color = input(user, "Choose your character's chest markings colour:", "Character Preference","#"+features["riol_chest_markings_color"]) as color|null
 					if(new_riol_chest_markings_color)
 						features["riol_chest_markings_color"] = sanitize_hexcolor(new_riol_chest_markings_color)
 				if("riol_body_markings_color")
-					var/new_riol_body_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["riol_body_markings_color"]) as color|null
+					var/new_riol_body_markings_color = input(user, "Choose your character's body markings colour:", "Character Preference","#"+features["riol_body_markings_color"]) as color|null
 					if(new_riol_body_markings_color)
 						features["riol_body_markings_color"] = sanitize_hexcolor(new_riol_body_markings_color)
 				if("riol_tail_markings_color")
-					var/new_riol_tail_markings_color = input(user, "Choose your character's hair gradient colour:", "Character Preference","#"+features["riol_tail_markings_color"]) as color|null
+					var/new_riol_tail_markings_color = input(user, "Choose your character's tail markings colour:", "Character Preference","#"+features["riol_tail_markings_color"]) as color|null
 					if(new_riol_tail_markings_color)
 						features["riol_tail_markings_color"] = sanitize_hexcolor(new_riol_tail_markings_color)
 				// [/CELADON-ADD]

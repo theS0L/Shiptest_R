@@ -660,7 +660,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	features["riol_facial_hairs"] 				= sanitize_inlist(features["riol_facial_hairs"], GLOB.riol_facial_hairs_list, "None")
 	features["riol_chest_markings"] 			= sanitize_inlist(features["riol_chest_markings"], GLOB.riol_chest_markings_list, "None")
 	features["riol_body_markings"] 				= sanitize_inlist(features["riol_body_markings"], GLOB.riol_body_markings_list, "None")
-	features["riol_body_markings"] 				= sanitize_inlist(features["riol_tail_markings"], GLOB.riol_tail_markings_list, "None")
+	features["riol_tail_markings"] 				= sanitize_inlist(features["riol_tail_markings"], GLOB.riol_tail_markings_list, "None")
 	features["riol_tail"] 						= sanitize_inlist(features["riol_tail"], GLOB.riol_tail_list, "default")
 	features["riol_legs"]						= sanitize_inlist(features["riol_legs"], GLOB.riol_legs_list, "Normal Legs")
 	features["riol_ears_markings_color"]		= sanitize_hexcolor(features["riol_ears_markings_color"])
