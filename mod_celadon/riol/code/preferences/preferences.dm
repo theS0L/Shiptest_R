@@ -16,13 +16,15 @@
 		"riol_facial_hairs" = "None",
 		"riol_chest_markings" = "None",
 		"riol_body_markings" = "None",
+		"riol_tail_markings" = "None",
 		"riol_tail" = "default",
 		"riol_legs" = "Normal Legs",
 		"riol_ears_markings_color" = "FFF",
 		"riol_head_markings_color" = "FFF",
 		"riol_nose_markings_color" = "FFF",
 		"riol_chest_markings_color" = "FFF",
-		"riol_body_markings_color" = "FFF"
+		"riol_body_markings_color" = "FFF",
+		"riol_tail_markings_color" = "FFF"
 	)
 
 	// randomise[RANDOM_SKIN_TONE_NOSE] = TRUE
@@ -88,6 +90,12 @@
 					new_riol_body_markings = input(user, "Choose your character's body markings:", "Character Preference") as null|anything in GLOB.riol_body_markings_list
 					if(new_riol_body_markings)
 						features["riol_body_markings"] = new_riol_body_markings
+
+				// if("riol_tail_markings")		Отключено пока
+				// 	var/new_riol_tail_markings
+				// 	new_riol_tail_markings = input(user, "Choose your character's tail markings:", "Character Preference") as null|anything in GLOB.riol_tail_markings_list
+				// 	if(new_riol_tail_markings)
+				// 		features["riol_tail_markings"] = new_riol_tail_markings
 
 				if("riol_tail")
 					var/new_riol_tail
