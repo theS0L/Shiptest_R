@@ -174,12 +174,12 @@
 		"tajara_chest_markings_color" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
 		"tajara_body_markings_color" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
 		// [CELADON-ADD] - CELADON_RIOL
-		"riol_ears_markings_color" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
-		"riol_head_markings_color" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
-		"riol_nose_markings_color" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
-		"riol_chest_markings_color" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
-		"riol_body_markings_color" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
-		"riol_tail_markings_color" = pick("FFFFFF","7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
+		"riol_ears_markings_color" = 	pick("FFFFFF", "7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
+		"riol_head_markings_color" = 	pick("FFFFFF", "7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
+		"riol_nose_markings_color" = 	pick("FFFFFF", "7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
+		"riol_chest_markings_color" = 	pick("FFFFFF", "7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
+		"riol_body_markings_color" = 	pick("FFFFFF", "7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
+		"riol_tail_markings_color" = 	pick("FFFFFF", "7F7F7F", "7BBB7B", "7B7BBB", "BB7B7B", "7BBBBB", "BB7BBB", "BBBB7B"),
 		// [/CELADON-ADD]
 		"moth_fluff" = pick(GLOB.moth_fluff_list),
 		"moth_markings" = pick(GLOB.moth_markings_list),
