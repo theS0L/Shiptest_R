@@ -61,10 +61,10 @@
 	name = "Legate"
 	desc = "A rare and incredibly dangerous legion mutation, forming from a plethora of legion joined in union around a young necropolis spire. It's looking particularly self-confident."
 	icon = 'mod_celadon/_storge_icons/icons/mob/64x64mehafauna.dmi'
-	icon_state = "legion"
-	icon_living = "legion"
-	icon_dead = "legion"
-	health_doll_icon = "legion"
+	icon_state = "plasma"
+	icon_living = "plasma"
+	icon_dead = "plasma"
+	health_doll_icon = "plasma"
 	health = 500
 	maxHealth = 500
 	melee_damage_lower = 30
@@ -106,3 +106,6 @@
 /mob/living/simple_animal/hostile/big_plasma/Initialize()
 	.=..()
 	AddComponent(/datum/component/spawner, list(/mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal_plasma), 200, faction, "peels itself off from", 3)
+
+/mob/living/simple_animal/hostile/big_legion
+	icon = 'mod_celadon/_storge_icons/icons/mob/64x64mehafauna.dmi'
