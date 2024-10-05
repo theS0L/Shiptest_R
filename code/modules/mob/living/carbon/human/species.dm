@@ -937,6 +937,14 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	if("riol_tail_markings" in mutant_bodyparts)
 		if(!H.dna.features["riol_tail_markings"] || H.dna.features["riol_tail_markings"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
 			bodyparts_to_add -= "riol_tail_markings"
+		else if ("tail" in mutant_bodyparts)
+			bodyparts_to_add -= "riol_tail_markings"
+
+	if("wagging_riol_tail_markings" in mutant_bodyparts)
+		if(!H.dna.features["riol_tail_markings"] || H.dna.features["riol_tail_markings"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
+			bodyparts_to_add -= "wagging_riol_tail_markings"
+		else if ("tail" in mutant_bodyparts)
+			bodyparts_to_add -= "wagging_riol_tail_markings"
 
 	if("riol_hairs" in mutant_bodyparts)
 		if(!H.dna.features["riol_hairs"] || H.dna.features["riol_hairs"] == "Plain" || (H.head && (H.head.flags_inv & HIDEHAIR)) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEHAIR)) || !HD)
@@ -1093,6 +1101,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 					S = GLOB.riol_body_markings_list[H.dna.features["riol_body_markings"]]
 				if("riol_tail_markings")
 					S = GLOB.riol_tail_markings_list[H.dna.features["riol_tail_markings"]]
+				if("wagging_riol_tail_markings")
+					S = GLOB.riol_animated_tail_markings_list[H.dna.features["riol_tail_markings"]]
 				if("riol_tail")
 					S = GLOB.riol_tail_list[H.dna.features["riol_tail"]]
 				if("waggingriol_tail")
@@ -1123,6 +1133,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				bodypart = "tail"
 			else if (bodypart == "waggingriol_tail")
 				bodypart = "waggingtail"
+			else if (bodypart == "riol_tail_markings")
+				bodypart = "tailmarkings"
 			// [/CELADON-ADD]
 
 			var/used_color_src = S.color_src
@@ -1186,7 +1198,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 						if(BODYRIOLCOLORS)
 							accessory_overlay.color = "#[H.dna.features["riol_body_markings_color"]]"
 						if(TAILRIOLCOLORS)
-							accessory_overlay.color = "#[H.dna.features["riol_body_markings_color"]]"
+							accessory_overlay.color = "#[H.dna.features["riol_tail_markings_color"]]"
 						// [/CELADON-ADD]
 
 
