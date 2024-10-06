@@ -1412,6 +1412,12 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/dop_zone_2)
+"db" = (
+/obj/effect/turf_decal/siding/blue,
+/obj/structure/chair/office/dark,
+/mob/living/simple_animal/pet/cat/space/alta,
+/turf/open/floor/plasteel/tech,
+/area/outpost/operations/outpost_command)
 "dc" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -6125,6 +6131,7 @@
 /obj/effect/turf_decal/corner/opaque/black/mono,
 /obj/effect/turf_decal/corner/opaque/neutral/diagonal,
 /obj/machinery/firealarm/directional/north,
+/mob/living/simple_animal/pet/cat/moro,
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
 "mq" = (
@@ -9254,6 +9261,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/pet/fox/emma,
 /turf/open/floor/plasteel/patterned,
 /area/outpost/security/reseption)
 "sT" = (
@@ -9827,6 +9835,8 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/obj/structure/bed/dogbed,
+/mob/living/simple_animal/pet/dog/corgi/Lisa/ada,
 /turf/open/floor/wood,
 /area/outpost/security/detective)
 "tU" = (
@@ -10467,6 +10477,7 @@
 /area/outpost/exterior)
 "vd" = (
 /obj/structure/table/glass,
+/mob/living/simple_animal/pet/fox/fennec,
 /turf/open/floor/carpet/red_gold,
 /area/outpost/medical/cmo)
 "ve" = (
@@ -16292,6 +16303,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 10
 	},
+/mob/living/simple_animal/pet/dog/corgi/Lisa/zlatchek,
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo/office)
 "Gy" = (
@@ -16749,6 +16761,7 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
+/mob/living/simple_animal/pet/cat/alta,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/checkpoint)
 "HH" = (
@@ -42032,7 +42045,7 @@ nF
 QV
 qe
 nK
-nI
+db
 vK
 mZ
 lh
