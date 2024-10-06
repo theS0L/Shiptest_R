@@ -110,6 +110,10 @@ ID мода: CELADON_QOL
 
 - EDIT `code/modules/clothing/clothing.dm` -> `armor_to_protection_class` -> Замена римских цифр на числовые значения
 
+- ADD `code\modules\mob\dead\new_player\ship_select.dm` -> Добавлено подтягивание short_name для шаблона.
+- ADD `tgui\packages\tgui\interfaces\ShipSelect.js` -> Добавлена подвкладка при покупке корабля с отображением карты.
+
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
