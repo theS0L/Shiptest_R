@@ -467,8 +467,6 @@
 /area/centcom/evac)
 "bQ" = (
 /obj/item/clothing/shoes/sandal/marisa,
-/obj/item/clothing/suit/wizrobe/marisa,
-/obj/item/clothing/head/wizard/marisa,
 /obj/item/staff/broom,
 /turf/open/floor/engine/cult,
 /area/wizard_station)
@@ -1322,12 +1320,6 @@
 	name = "sand"
 	},
 /area/centcom/supply)
-"fb" = (
-/obj/item/clothing/suit/wizrobe/black,
-/obj/item/clothing/head/wizard/black,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/turf/open/floor/plasteel,
-/area/wizard_station)
 "fc" = (
 /turf/closed/indestructible/riveted/command,
 /area/tdome/tdomeadmin)
@@ -4558,8 +4550,6 @@
 /area/centcom/evac)
 "rG" = (
 /obj/structure/table/wood,
-/obj/item/clothing/suit/wizrobe/magusblue,
-/obj/item/clothing/head/wizard/magus,
 /obj/item/staff,
 /obj/structure/mirror/magic{
 	pixel_y = 28
@@ -7780,8 +7770,6 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
-/obj/item/clothing/suit/wizrobe/red,
-/obj/item/clothing/head/wizard/red,
 /obj/item/staff,
 /obj/item/clothing/shoes/sandal/magic,
 /turf/open/floor/engine/cult,
@@ -13872,8 +13860,6 @@
 /area/centcom/control)
 "ZE" = (
 /obj/structure/table/wood,
-/obj/item/clothing/suit/wizrobe/magusred,
-/obj/item/clothing/head/wizard/magus,
 /obj/item/staff,
 /turf/open/floor/engine/cult,
 /area/wizard_station)
@@ -15832,7 +15818,7 @@ kT
 kT
 kT
 rS
-fb
+tA
 Xx
 YP
 rS
