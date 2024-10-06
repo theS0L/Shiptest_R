@@ -1872,11 +1872,14 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/garden)
 "dU" = (
-/obj/structure/closet/crate/freezer/surplus_limbs/organs,
 /obj/effect/turf_decal/corner/opaque/mauve/three_quarters{
 	dir = 8
 	},
 /obj/item/radio/intercom/directional/north,
+/obj/machinery/vending/medical/syndicate_access{
+	req_one_access_txt = "8123";
+	all_items_free = 1
+	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/storage)
 "dV" = (
@@ -2072,10 +2075,7 @@
 	pixel_x = -9;
 	network = list("outpostelysium")
 	},
-/obj/machinery/vending/medical/syndicate_access{
-	req_one_access_txt = "8123";
-	all_items_free = 1
-	},
+/obj/machinery/vending/medical,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "ep" = (
@@ -4967,6 +4967,7 @@
 	dir = 8
 	},
 /obj/machinery/airalarm/directional/west,
+/obj/structure/closet/crate/freezer/surplus_limbs/organs,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/storage)
 "jU" = (
@@ -7064,7 +7065,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/fraction/syndi)
 "nY" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/shutters,
+/obj/effect/spawner/structure/window/plasma/reinforced/shutters{
+	anchored = 1
+	},
 /obj/structure/grille/indestructable,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
@@ -7779,7 +7782,9 @@
 	},
 /area/outpost/exterior)
 "pI" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/shutters,
+/obj/effect/spawner/structure/window/plasma/reinforced/shutters{
+	anchored = 1
+	},
 /obj/structure/grille/indestructable,
 /obj/structure/sign/barsign{
 	icon_state = "cyberslyph";
@@ -16511,11 +16516,8 @@
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 8
 	},
-/obj/machinery/vending/medical/syndicate_access{
-	req_one_access_txt = "8123";
-	all_items_free = 1
-	},
 /obj/machinery/newscaster/directional/west,
+/obj/machinery/vending/medical,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "Hh" = (
@@ -19492,6 +19494,8 @@
 /area/outpost/exterior)
 "No" = (
 /obj/structure/table/wood,
+/obj/item/storage/fancy/cigarettes/derringer,
+/obj/item/clothing/mask/cigarette/pipe,
 /turf/open/floor/wood,
 /area/outpost/security/detective)
 "Np" = (
@@ -19573,6 +19577,10 @@
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/turf_decal/corner/opaque/mauve/three_quarters{
 	dir = 4
+	},
+/obj/machinery/vending/medical/syndicate_access{
+	req_one_access_txt = "8123";
+	all_items_free = 1
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/storage)
@@ -20821,7 +20829,6 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /obj/item/reagent_containers/food/drinks/flask/det,
-/obj/item/storage/fancy/cigarettes/cigars,
 /obj/item/storage/box/matches,
 /obj/item/ammo_box/a357_box/match,
 /obj/item/ammo_box/a357_box/hp,
@@ -20845,6 +20852,11 @@
 /obj/item/camera/detective,
 /obj/item/gun/ballistic/revolver/viper,
 /obj/item/ammo_box/c38_box,
+/obj/item/storage/pistolcase/detective,
+/obj/item/detective_scanner,
+/obj/item/camera_film,
+/obj/item/camera_film,
+/obj/item/toy/crayon/white,
 /turf/open/floor/wood,
 /area/outpost/security/detective)
 "PZ" = (
