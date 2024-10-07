@@ -62,6 +62,9 @@
 	var/x_pixels_moved = 0
 	var/y_pixels_moved = 0
 
+	var/list/position_to_move = list("x" = 0, "y" = 0)
+	var/list/last_anim = list("x" = 0, "y" = 0)
+
 	///ONLY USED FOR NON-SIMULATED SHIPS. The amount per burn that this ship accelerates
 	var/acceleration_speed = 0.02
 
@@ -73,6 +76,8 @@
 
 /datum/overmap/ship/Initialize(position, ...)
 	. = ..()
+	position_to_move["x"] = docked_to.x
+	position_to_move["y"] = docked_to.y
 	if(docked_to)
 		RegisterSignal(docked_to, COMSIG_OVERMAP_MOVED, PROC_REF(on_docked_to_moved))
 	if(!move_vec)
