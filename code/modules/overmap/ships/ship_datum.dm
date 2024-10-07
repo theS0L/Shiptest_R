@@ -4,6 +4,40 @@
  * Basically, any overmap object that is capable of moving by itself.
  *
  */
+
+/obj/shiptrail
+	icon = 'icons/misc/overmap.dmi'
+	icon_state = "ship_trail"
+	alpha = 200
+
+/datum/overmap/ship/proc/clear_trails()
+	if(trails[1])
+		qdel(trails[1])
+	if(trails[2])
+		qdel(trails[2])
+	if(trails[3])
+		qdel(trails[3])
+
+/datum/overmap/ship/proc/update_trails(var/obj/shiptrail/newtrail)
+	if(trails[1])
+		trails[1].alpha = 128
+		if(trails[2])
+			trails[2].alpha = 64
+			if(trails[3])
+				qdel(trails[3])
+				trails[3] = trails[2]
+				trails[2] = trails[1]
+				trails[1] = newtrail
+			else
+				trails[3] = trails[2]
+				trails[2] = trails[1]
+				trails[1] = newtrail
+		else
+			trails[2] = trails[1]
+			trails[1] = newtrail
+	else
+		trails[1] = newtrail
+
 /datum/overmap/ship
 	name = "overmap vessel"
 	char_rep = ">"
@@ -24,13 +58,33 @@
 	///Percentage of thruster power being used
 	var/burn_percentage = 50
 
+	///For bay overmap
+	var/x_pixels_moved = 0
+	var/y_pixels_moved = 0
+
 	///ONLY USED FOR NON-SIMULATED SHIPS. The amount per burn that this ship accelerates
 	var/acceleration_speed = 0.02
+
+	var/static/mutable_appearance/move_vec
+	var/skiptickfortrail = 0
+	var/list/trails = list(1 = null,
+							2 = null,
+							3 = null)
 
 /datum/overmap/ship/Initialize(position, ...)
 	. = ..()
 	if(docked_to)
 		RegisterSignal(docked_to, COMSIG_OVERMAP_MOVED, PROC_REF(on_docked_to_moved))
+	if(!move_vec)
+		move_vec = new /mutable_appearance()
+		//all these properties are always the same, and since adding something to the overlay
+		//list makes a copy, there is no reason to make a new one each call
+		move_vec.icon = 'icons/misc/overmap.dmi'
+		move_vec.icon_state = "movement_vector"
+	var/matrix/M = matrix()
+	M.Scale(1, get_speed()/3)
+	move_vec.transform = M
+	token.add_overlay(move_vec)
 
 /datum/overmap/ship/Destroy()
 	if(movement_callback_id)
@@ -61,12 +115,12 @@
  * * n_y - Speed in the Y direction to change
  */
 /datum/overmap/ship/proc/adjust_speed(n_x, n_y)
-	var/offset = 1
-	if(movement_callback_id)
-		var/previous_time = 1 / MAGNITUDE(speed_x, speed_y)
-		offset = clamp(timeleft(movement_callback_id, SSovermap_movement) / previous_time, 0, 1)
-		deltimer(movement_callback_id, SSovermap_movement)
-		movement_callback_id = null //just in case
+//	var/offset = 1
+//	if(movement_callback_id)
+//		var/previous_time = 1 / MAGNITUDE(speed_x, speed_y)
+//		offset = clamp(timeleft(movement_callback_id, SSovermap_movement) / previous_time, 0, 1)
+//		deltimer(movement_callback_id, SSovermap_movement)
+//		movement_callback_id = null //just in case
 
 	speed_x = min(max_speed, speed_x + n_x)
 	speed_y = min(max_speed, speed_y + n_y)
@@ -77,17 +131,28 @@
 		speed_y = 0
 
 	token.update_icon_state()
+	token.cut_overlay(move_vec)
+	var/matrix/M = matrix()
+	M.Scale(1, get_speed()/3)
+	move_vec.transform = M
+	token.add_overlay(move_vec)
 	update_visuals()
 
 	if(is_still() || QDELING(src) || movement_callback_id || docked_to || docking)
 		return
 
-	var/timer = 1 / MAGNITUDE(speed_x, speed_y) * offset
-	movement_callback_id = addtimer(CALLBACK(src, PROC_REF(tick_move)), timer, TIMER_STOPPABLE, SSovermap_movement)
+//	var/timer = 1 / MAGNITUDE(speed_x, speed_y) * offset
+//	movement_callback_id = addtimer(CALLBACK(src, PROC_REF(tick_move)), timer, TIMER_STOPPABLE, SSovermap_movement)
 
 /**
  * Called by [/datum/overmap/ship/proc/adjust_speed], this continually moves the ship according to its speed
  */
+
+/datum/overmap/ship/proc/not_tick_move(var/xmov, var/ymov)
+	overmap_move(x + xmov, y + ymov)
+	update_visuals()
+	token.update_screen()
+
 /datum/overmap/ship/proc/tick_move()
 	if(is_still() || QDELING(src) || docked_to)
 		adjust_speed(-speed_x, -speed_y)
@@ -129,6 +194,17 @@
 /**
  * Returns the direction the ship is moving in terms of dirs
  */
+
+/datum/overmap/ship/proc/get_alt_heading()
+	. = 0
+	var/stuff = -arctan(speed_x, speed_y)
+	stuff = stuff+90
+	if(stuff >= 360)
+		stuff = stuff-360
+	if(stuff < 0)
+		stuff = stuff+360
+	. = stuff
+
 /datum/overmap/ship/proc/get_heading()
 	. = NONE
 	if(speed_x)
@@ -146,11 +222,57 @@
  * Returns the estimated time in deciseconds to the next tile at current speed, or approx. time until reaching the destination when on autopilot
  */
 /datum/overmap/ship/proc/get_eta()
-	. += timeleft(movement_callback_id, SSovermap_movement)
-	if(!.)
+	if(speed_x == 0 && speed_y == 0)
 		return "--:--"
-	. /= 10 //they're in deciseconds
-	return "[add_leading(num2text((. / 60) % 60), 2, "0")]:[add_leading(num2text(. % 60), 2, "0")]"
+	var/x_pixels_to_move = 16
+	if(speed_x >= 0)
+		x_pixels_to_move = x_pixels_to_move-token.pixel_w
+	else
+		x_pixels_to_move = x_pixels_to_move+token.pixel_w
+	var/y_pixels_to_move = 16
+	if(speed_y >= 0)
+		y_pixels_to_move = y_pixels_to_move-token.pixel_z
+	else
+		y_pixels_to_move = y_pixels_to_move+token.pixel_z
+
+	var/stuff
+
+
+
+	var/stuffx = 0
+	if(speed_x != 0)
+		stuffx = round(x_pixels_to_move/(max(speed_x, -speed_x)*(30 SECONDS)))
+	var/stuffy = 0
+	if(speed_y != 0)
+		stuffy = round(y_pixels_to_move/(max(speed_y, -speed_y)*(30 SECONDS)))
+	if(stuffy != 0 && stuffx != 0)
+		stuff = min(stuffx, stuffy)
+	else
+		if(stuffy != 0)
+			stuff = stuffy
+		else
+			stuff = stuffx
+
+	var/minutes = round(stuff/60)
+
+	var/textone
+	if(minutes >= 10)
+		textone = "[minutes]"
+	else
+		textone = "0[minutes]"
+
+	var/texttwo
+	if(stuff-(minutes*60) >= 10)
+		texttwo = "[stuff-(minutes*60)]"
+	else
+		texttwo = "0[stuff-(minutes*60)]"
+
+	return "[textone]:[texttwo]"
+//	. += timeleft(movement_callback_id, SSovermap_movement)
+//	if(!.)
+//		return "--:--"
+//	. /= 10 //they're in deciseconds
+//	return "[add_leading(num2text((. / 60) % 60), 2, "0")]:[add_leading(num2text(. % 60), 2, "0")]"
 
 /datum/overmap/ship/process(delta_time)
 	if((burn_direction == BURN_STOP && is_still()) || docked_to || docking)
@@ -220,6 +342,7 @@
  * Updates the visuals of the ship based on heading and whether or not it's moving.
  */
 /datum/overmap/ship/proc/update_visuals()
+	var/altdirection = get_alt_heading()
 	var/direction = get_heading()
 	if(direction & EAST)
 		char_rep = ">"
@@ -231,6 +354,9 @@
 		char_rep = "v"
 	if(direction)
 		token.icon_state = "ship_moving"
-		token.dir = direction
+		token.dir = NORTH
+		var/matrix/M = matrix()
+		M.Turn(altdirection)
+		token.transform = M
 	else
 		token.icon_state = "ship"

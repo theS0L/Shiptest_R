@@ -79,6 +79,38 @@ SUBSYSTEM_DEF(overmap)
 	return ..()
 
 /datum/controller/subsystem/overmap/fire()
+	for(var/datum/overmap/ship/i in controlled_ships)
+		i.x_pixels_moved += i.speed_x*(30 SECONDS)
+		i.y_pixels_moved += i.speed_y*(30 SECONDS)
+
+		if(i.x_pixels_moved >= 16)
+			i.x_pixels_moved = i.x_pixels_moved-32
+			i.not_tick_move(1, 0)
+		if(i.x_pixels_moved <= -16)
+			i.x_pixels_moved = i.x_pixels_moved+32
+			i.not_tick_move(-1, 0)
+		if(i.y_pixels_moved >= 16)
+			i.y_pixels_moved = i.y_pixels_moved-32
+			i.not_tick_move(0, 1)
+		if(i.y_pixels_moved <= -16)
+			i.y_pixels_moved = i.y_pixels_moved+32
+			i.not_tick_move(0, -1)
+
+		i.token.pixel_w = round(i.x_pixels_moved)
+		i.token.pixel_z = round(i.y_pixels_moved)
+
+		if(i.speed_x != 0 || i.speed_y != 0)
+			if(i.skiptickfortrail < 3)
+				i.skiptickfortrail = i.skiptickfortrail+1
+			else
+				i.skiptickfortrail = 0
+				var/obj/shiptrail/S = new(i.token.loc)
+				S.pixel_w = i.token.pixel_w
+				S.pixel_z = i.token.pixel_z
+				S.transform = i.token.transform
+				i.update_trails(S)
+		else
+			i.clear_trails()
 	if(events_enabled)
 		for(var/datum/overmap/event/E as anything in events)
 			if(E.get_nearby_overmap_objects())

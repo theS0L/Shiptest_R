@@ -202,11 +202,11 @@
 		)
 		.["otherInfo"] += list(other_data)
 
-	.["x"] = current_ship.x || current_ship.docked_to.x
-	.["y"] = current_ship.y || current_ship.docked_to.y
+	.["x"] = "[current_ship.x]" || "[current_ship.docked_to.x]"
+	.["y"] = "[current_ship.y]" || "[current_ship.docked_to.y]"
 	.["docking"] = current_ship.docking
 	.["docked"] = current_ship.docked_to
-	.["heading"] = dir2text(current_ship.get_heading()) || "None"
+	.["heading"] = "[current_ship.get_alt_heading()]°"
 	.["speed"] = current_ship.get_speed()
 	.["eta"] = current_ship.get_eta()
 	.["estThrust"] = current_ship.est_thrust
