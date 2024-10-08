@@ -161,13 +161,14 @@
 		speed_y = 0
 
 	token.update_icon_state()
+	update_visuals()
+
 	token.cut_overlay(move_vec)
 	var/matrix/M = matrix()
 	M.Scale(1, get_speed()/3)
 	M.Turn(get_alt_heading())
 	move_vec.transform = M
 	token.add_overlay(move_vec)
-	update_visuals()
 
 	if(is_still() || QDELING(src) || movement_callback_id || docked_to || docking)
 		return
@@ -420,8 +421,6 @@
 	if(direction)
 //		token.icon_state = "ship_moving"
 		token.dir = NORTH
-		var/matrix/M = matrix()
 //		M.Turn(altdirection)
-		token.transform = M
 //	else
 //		token.icon_state = "ship"

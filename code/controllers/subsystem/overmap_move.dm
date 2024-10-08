@@ -62,11 +62,6 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 					var/opposite_y = cos(SIMPLIFY_DEGREES(bearing+180))*(B.shuttle_port.turf_count/A.shuttle_port.turf_count)*max(0.002, max(B.speed_y, -B.speed_y))
 					A.adjust_speed(-A.speed_x + opposite_x, -A.speed_y + opposite_y)
 					A.token.cut_overlays()
-					A.token.cut_overlay(A.ship_image)
-					var/matrix/N = matrix()
-					N.Turn(A.bow_heading)
-					A.ship_image.transform = N
-					A.token.add_overlay(A.ship_image)
 					spawn_meteors_alt(round(A.get_speed()+B.get_speed())+1, list(/obj/effect/meteor/invisible), A.shuttle_port.get_virtual_level(), angle2dir_cardinal(SIMPLIFY_DEGREES((bearing+A.bow_heading))))
 
 	return list("cpa" = round(cpa), "tcpa" = round(tcpa/10), "brg" = round(SIMPLIFY_DEGREES(bearing-A.bow_heading)))
