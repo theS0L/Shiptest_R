@@ -9,6 +9,7 @@ import {
   Knob,
   LabeledControls,
   NumberInput,
+  Divider,
 } from '../components';
 import { Window } from '../layouts';
 import { Table } from '../components/Table';
@@ -46,7 +47,7 @@ export const HelmConsole = (_props, context) => {
 
 const SharedContent = (_props, context) => {
   const { act, data } = useBackend(context);
-  const { isViewer, shipInfo = [], otherInfo = [], arpa_ships = [] } = data;
+  const { isViewer, shipInfo = [], otherInfo = [] } = data;
   return (
     <>
       <Section
@@ -144,21 +145,6 @@ const SharedContent = (_props, context) => {
           ))}
         </Table>
       </Section>
-      <Section title="ARPA">
-        <Table>
-          <Table.Row bold>
-            <Table.Cell>Name</Table.Cell>
-          </Table.Row>
-          {arpa_ships.map((ship) => (
-            <Table.Row key={ship.name}>
-              <Table.Cell>{ship.name}</Table.Cell>
-              <Table.Cell>BRG:{ship.brg}°</Table.Cell>
-              <Table.Cell>CPA:{ship.cpa}m</Table.Cell>
-              <Table.Cell>TCPA:{ship.tcpa}s</Table.Cell>
-            </Table.Row>
-          ))}
-        </Table>
-      </Section>
     </>
   );
 };
@@ -177,6 +163,7 @@ const ShipContent = (_props, context) => {
     eta,
     x,
     y,
+    arpa_ships = [],
   } = data;
   return (
     <>
@@ -218,6 +205,17 @@ const ShipContent = (_props, context) => {
             <AnimatedNumber value={eta} />
           </LabeledList.Item>
         </LabeledList>
+      </Section>
+      <Section title="ARPA">
+        {arpa_ships.map((ship) => (
+          <Table.Row key={ship.name}>
+            <Table.Cell>{ship.name}</Table.Cell>
+            <Divider vertical hidden />
+            <Table.Cell>BRG:{ship.brg}°</Table.Cell>
+            <Table.Cell>T/CPA:{ship.cpa}m {ship.tcpa}s</Table.Cell>
+          </Table.Row>
+        ))}
+
       </Section>
       <Section
         title="Engines"

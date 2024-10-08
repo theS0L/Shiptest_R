@@ -175,10 +175,10 @@
 	var/arpdequeue_pointer = 0
 	while (arpdequeue_pointer++ < arpobjects.len)
 		var/datum/overmap/ship/controlled/object = arpobjects[arpdequeue_pointer]
-		if(!istype(object, /datum/overmap)) //Not an overmap object, ignore this
+		if(!istype(object, /datum/overmap/ship/controlled)) //Not an overmap object, ignore this
 			continue
 
-		var/list/cpa_list = calculate_cpa(current_ship, object)
+		var/list/cpa_list = calculate_cpa(current_ship, object, TRUE)
 		var/list/other_data = list(
 			name = object.name,
 			brg = cpa_list["brg"],
@@ -283,7 +283,7 @@
 
 	switch(action) // Universal topics
 		if("sensor_increase")
-			current_ship.sensor_range = min(6, current_ship.sensor_range+1)
+			current_ship.sensor_range = min(5, current_ship.sensor_range+1)
 			update_static_data(usr, ui)
 			current_ship.token.update_screen()
 			return

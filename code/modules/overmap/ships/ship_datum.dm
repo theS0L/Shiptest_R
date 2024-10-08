@@ -85,6 +85,7 @@
 //	token.collision_alarm()
 	var/list/arpa_add = list()
 	for(var/obj/overmap/rendered/i in orange(4, token))
+		calculate_cpa(src, i.parent)
 		arpa_add |= i.parent
 	return arpa_add
 

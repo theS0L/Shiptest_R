@@ -39,6 +39,10 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	for(var/i = 0; i < number; i++)
 		spawn_meteor(meteortypes)
 
+/proc/spawn_meteors_alt(number = 10, list/meteortypes, port, dirc)
+	for(var/i = 0; i < number; i++)
+		spawn_meteor(meteortypes, port, 0, dirc)
+
 /proc/spawn_meteor(list/meteortypes, datum/virtual_level/vlevel, padding = MAP_EDGE_PAD, direc = "none")
 	var/turf/pickedstart
 	var/turf/pickedgoal

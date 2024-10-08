@@ -2,14 +2,14 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 	name = "Overmap Movement"
 	priority = FIRE_PRIORITY_OVERMAP_MOVEMENT
 
-/proc/calculate_cpa(datum/overmap/ship/controlled/A, datum/overmap/ship/controlled/B)
-	var/cpa = 0
-	var/tcpa = 0
+/proc/calculate_cpa(datum/overmap/ship/controlled/A, datum/overmap/ship/controlled/B, info = FALSE)
+	var/cpa = -1
+	var/tcpa = -1
 
 	var/bearing = get_angle_raw(A.token.x, A.token.y, A.token.pixel_w, A.token.pixel_z, B.token.x, B.token.y, B.token.pixel_w, B.token.pixel_z)
 	var/relative_motion_angle = get_angle_raw(B.speed_x * 60 SECONDS, B.speed_y * 60 SECONDS, 0, 0, -A.speed_x * 60 SECONDS, -A.speed_y * 60 SECONDS, 0, 0)
 	if(max(closer_angle_difference(SIMPLIFY_DEGREES(bearing+180), relative_motion_angle), -closer_angle_difference(SIMPLIFY_DEGREES(bearing+180), relative_motion_angle)) >= 90)
-		return list("cpa" = "--", "tcpa" = "--", "brg" = bearing)
+		return list("cpa" = "--", "tcpa" = "--", "brg" = round(SIMPLIFY_DEGREES(bearing-A.bow_heading)))
 	var/adjust_angle = 0
 	if(SIMPLIFY_DEGREES(bearing+180) < relative_motion_angle)
 		adjust_angle = 90
@@ -20,9 +20,11 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 	var/hypotenosis = get_pixel_distance(A.token, B.token)
 	var/alpha = max(SIMPLIFY_DEGREES(relative_motion_angle-SIMPLIFY_DEGREES(bearing+180)), -SIMPLIFY_DEGREES(relative_motion_angle-SIMPLIFY_DEGREES(bearing+180)))
 	var/beta = max(SIMPLIFY_DEGREES(angle_to_cpa-bearing), -SIMPLIFY_DEGREES(angle_to_cpa-bearing))
-	if(adjust_angle != 90)
+	if(adjust_angle != 0)
 		cpa = (sin(alpha)*hypotenosis+cos(beta)*hypotenosis)/2		//Smoothing the distance for sure
 		cpa = max(cpa, -cpa)
+	else
+		cpa = 0
 
 	var/relative_motion_x = A.speed_x - B.speed_x
 	var/relative_motion_y = A.speed_y - B.speed_y
@@ -42,21 +44,29 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 	else
 		tcpa = max(tcpa_by_x, tcpa_by_y)
 
-	if(tcpa/SSovermap_stuff.wait <= 3 && cpa <= 10)
-		var/arpdequeue_pointer = 0
-		while (arpdequeue_pointer++ < A.helms.len)
-			var/obj/machinery/computer/helm/a = A.helms[arpdequeue_pointer]
-			a.say("Proximity alarm! Possible collision situation.")
-			playsound(a, 'sound/machines/engine_alert1.ogg', 50, FALSE)
-	if(tcpa/SSovermap_stuff.wait <= 1 && cpa <= 4)
-		var/arpdequeue_pointer = 0
-		while (arpdequeue_pointer++ < A.helms.len)
-			var/obj/machinery/computer/helm/a = A.helms[arpdequeue_pointer]
-			a.say("Collision impact with vessel \"[B.name]\".")
-			playsound(a, 'sound/machines/engine_alert2.ogg', 50, FALSE)
-			var/opposite_x = sin(SIMPLIFY_DEGREES(bearing+180))*(B.shuttle_port.turf_count/A.shuttle_port.turf_count)*(A.speed_x+B.speed_x)
-			var/opposite_y = cos(SIMPLIFY_DEGREES(bearing+180))*(B.shuttle_port.turf_count/A.shuttle_port.turf_count)*(A.speed_y+B.speed_y)
-			A.adjust_speed(-A.speed_x + opposite_x, -A.speed_y + opposite_y)
-			spawn_meteor(list(/obj/effect/meteor/invisible), A.shuttle_port.get_virtual_level(), 0, angle2dir_cardinal(SIMPLIFY_DEGREES((bearing+A.bow_heading))))
+	if(!info)
+		if(cpa != -1 && tcpa != -1)
+			if(tcpa/SSovermap_stuff.wait <= 5 && cpa <= 8)
+				var/arpdequeue_pointer = 0
+				while (arpdequeue_pointer++ < A.helms.len)
+					var/obj/machinery/computer/helm/a = A.helms[arpdequeue_pointer]
+					a.say("Proximity alarm! Possible collision situation.")
+					playsound(a, 'sound/machines/engine_alert1.ogg', 50, FALSE)
+			if(tcpa/SSovermap_stuff.wait <= 1 && cpa <= 4)
+				var/arpdequeue_pointer = 0
+				while (arpdequeue_pointer++ < A.helms.len)
+					var/obj/machinery/computer/helm/a = A.helms[arpdequeue_pointer]
+					a.say("Collision impact with vessel \"[B.name]\".")
+					playsound(a, 'sound/machines/engine_alert2.ogg', 50, FALSE)
+					var/opposite_x = sin(SIMPLIFY_DEGREES(bearing+180))*(B.shuttle_port.turf_count/A.shuttle_port.turf_count)*max(0.002, max(B.speed_x, -B.speed_x))
+					var/opposite_y = cos(SIMPLIFY_DEGREES(bearing+180))*(B.shuttle_port.turf_count/A.shuttle_port.turf_count)*max(0.002, max(B.speed_y, -B.speed_y))
+					A.adjust_speed(-A.speed_x + opposite_x, -A.speed_y + opposite_y)
+					A.token.cut_overlays()
+					A.token.cut_overlay(A.ship_image)
+					var/matrix/N = matrix()
+					N.Turn(A.bow_heading)
+					A.ship_image.transform = N
+					A.token.add_overlay(A.ship_image)
+					spawn_meteors_alt(round(A.get_speed()+B.get_speed())+1, list(/obj/effect/meteor/invisible), A.shuttle_port.get_virtual_level(), angle2dir_cardinal(SIMPLIFY_DEGREES((bearing+A.bow_heading))))
 
-	return list("cpa" = cpa, "tcpa" = round(tcpa/10), "brg" = bearing)
+	return list("cpa" = round(cpa), "tcpa" = round(tcpa/10), "brg" = round(SIMPLIFY_DEGREES(bearing-A.bow_heading)))
