@@ -2,6 +2,23 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 	name = "Overmap Movement"
 	priority = FIRE_PRIORITY_OVERMAP_MOVEMENT
 
+/proc/get_relative_motion(var/A, var/B)
+	var/mins = -1
+	if(A > 0 && B > 0)
+		return B-A
+	if(A < 0 && B > 0)
+		return B*mins + A
+	if(A > 0 && B < 0)
+		return A*mins + B
+	if(A < 0 && B < 0)
+		return -(B*mins - A*mins)
+	if(A == 0 && B != 0)
+		return B
+	if(A != 0 && B == 0)
+		return -A
+	else
+		return 0
+
 /proc/calculate_cpa(datum/overmap/ship/controlled/A, datum/overmap/ship/controlled/B, info = FALSE)
 	var/cpa = -1
 	var/tcpa = -1
@@ -10,24 +27,24 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 	var/relative_motion_angle = get_angle_raw(B.speed_x * 60 SECONDS, B.speed_y * 60 SECONDS, 0, 0, -A.speed_x * 60 SECONDS, -A.speed_y * 60 SECONDS, 0, 0)
 	if(max(closer_angle_difference(SIMPLIFY_DEGREES(bearing+180), relative_motion_angle), -closer_angle_difference(SIMPLIFY_DEGREES(bearing+180), relative_motion_angle)) >= 90)
 		return list("cpa" = "--", "tcpa" = "--", "brg" = round(SIMPLIFY_DEGREES(bearing-A.bow_heading)))
-	var/adjust_angle = 0
-	if(SIMPLIFY_DEGREES(bearing+180) < relative_motion_angle)
-		adjust_angle = 90
-	else if(SIMPLIFY_DEGREES(bearing+180) > relative_motion_angle)
-		adjust_angle = -90
+//	var/adjust_angle = 0
+//	if(SIMPLIFY_DEGREES(bearing+180) < relative_motion_angle)
+//		adjust_angle = 90
+//	else if(SIMPLIFY_DEGREES(bearing+180) > relative_motion_angle)
+//		adjust_angle = -90
 
-	var/angle_to_cpa = SIMPLIFY_DEGREES(relative_motion_angle+adjust_angle+180)
+//	var/angle_to_cpa = SIMPLIFY_DEGREES(relative_motion_angle+adjust_angle+180)
 	var/hypotenosis = get_pixel_distance(A.token, B.token)
 	var/alpha = max(SIMPLIFY_DEGREES(relative_motion_angle-SIMPLIFY_DEGREES(bearing+180)), -SIMPLIFY_DEGREES(relative_motion_angle-SIMPLIFY_DEGREES(bearing+180)))
-	var/beta = max(SIMPLIFY_DEGREES(angle_to_cpa-bearing), -SIMPLIFY_DEGREES(angle_to_cpa-bearing))
-	if(adjust_angle != 0)
-		cpa = (sin(alpha)*hypotenosis+cos(beta)*hypotenosis)/2		//Smoothing the distance for sure
-		cpa = max(cpa, -cpa)
-	else
-		cpa = 0
+//	var/beta = max(SIMPLIFY_DEGREES(angle_to_cpa-bearing), -SIMPLIFY_DEGREES(angle_to_cpa-bearing))
+//	if(adjust_angle != 0)
+	cpa = sin(alpha)*hypotenosis		//Smoothing the distance for sure
+	cpa = max(cpa, -cpa)
+//	else
+//		cpa = 0
 
-	var/relative_motion_x = A.speed_x - B.speed_x
-	var/relative_motion_y = A.speed_y - B.speed_y
+	var/relative_motion_x = get_relative_motion(A.speed_x, B.speed_x)
+	var/relative_motion_y = get_relative_motion(A.speed_y, B.speed_y)
 
 	var/distance_in_x = (A.token.x*32+A.token.pixel_w)-(B.token.x*32+B.token.pixel_w)
 	var/distance_in_y = (A.token.y*32+A.token.pixel_z)-(B.token.y*32+B.token.pixel_z)
