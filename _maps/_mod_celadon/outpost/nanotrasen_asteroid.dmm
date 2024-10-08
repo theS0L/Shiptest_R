@@ -232,7 +232,7 @@
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /obj/machinery/firealarm/directional/north,
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 5;
 	anchored = 1
 	},
@@ -2669,7 +2669,7 @@
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /obj/item/radio/intercom/directional/north,
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 3;
 	anchored = 1
 	},
@@ -6573,7 +6573,7 @@
 /area/outpost/external)
 "xm" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 4
 	},
 /turf/open/floor/plating,
@@ -6614,7 +6614,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 6;
 	anchored = 1
 	},
@@ -6830,7 +6830,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 2;
 	anchored = 1
 	},
@@ -9053,7 +9053,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
 	},
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 2;
 	anchored = 1
 	},
@@ -14169,7 +14169,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 6;
 	anchored = 1
 	},
