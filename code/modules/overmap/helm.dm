@@ -170,6 +170,22 @@
 		return
 
 	.["calibrating"] = calibrating
+	.["arpa_ships"] = list()
+	var/list/arpobjects = current_ship.check_proximity()
+	var/arpdequeue_pointer = 0
+	while (arpdequeue_pointer++ < arpobjects.len)
+		var/datum/overmap/ship/controlled/object = arpobjects[arpdequeue_pointer]
+		if(!istype(object, /datum/overmap)) //Not an overmap object, ignore this
+			continue
+
+		var/list/cpa_list = calculate_cpa(current_ship, object)
+		var/list/other_data = list(
+			name = object.name,
+			brg = cpa_list["brg"],
+			cpa = cpa_list["cpa"],
+			tcpa = cpa_list["tcpa"]
+		)
+		.["arpa_ships"] += list(other_data)
 	.["otherInfo"] = list()
 	var/list/objects = current_ship.get_nearby_overmap_objects()
 	var/dequeue_pointer = 0
@@ -206,7 +222,8 @@
 	.["y"] = current_ship.y || current_ship.docked_to.y
 	.["docking"] = current_ship.docking
 	.["docked"] = current_ship.docked_to
-	.["heading"] = "[current_ship.get_alt_heading()]°"
+	.["course"] = "[current_ship.get_alt_heading()]°"
+	.["heading"] = "[current_ship.bow_heading]°"
 	.["speed"] = current_ship.get_speed()
 	.["eta"] = current_ship.get_eta()
 	.["estThrust"] = current_ship.est_thrust
@@ -214,6 +231,7 @@
 	.["aiControls"] = allow_ai_control
 	.["burnDirection"] = current_ship.burn_direction
 	.["burnPercentage"] = current_ship.burn_percentage
+	.["rotating"] = current_ship.rotating
 	for(var/datum/weakref/engine in current_ship.shuttle_port.engine_list)
 		var/obj/machinery/power/shuttle/engine/real_engine = engine.resolve()
 		if(!real_engine)
@@ -246,7 +264,7 @@
 		name = current_ship.name,
 		class = current_ship.source_template?.name,
 		mass = current_ship.shuttle_port.turf_count,
-		sensor_range = 4
+		sensor_range = current_ship.sensor_range
 	)
 	.["canFly"] = TRUE
 	.["aiUser"] = issilicon(user)
@@ -264,6 +282,16 @@
 	. = TRUE
 
 	switch(action) // Universal topics
+		if("sensor_increase")
+			current_ship.sensor_range = min(6, current_ship.sensor_range+1)
+			update_static_data(usr, ui)
+			current_ship.token.update_screen()
+			return
+		if("sensor_decrease")
+			current_ship.sensor_range = max(1, current_ship.sensor_range-1)
+			update_static_data(usr, ui)
+			current_ship.token.update_screen()
+			return
 		if("rename_ship")
 			var/new_name = params["newName"]
 			if(!new_name)
@@ -307,6 +335,24 @@
 
 	if(!current_ship.docked_to && !current_ship.docking)
 		switch(action)
+			if("rotate_left")
+				if(current_ship.rotating == -1)
+					current_ship.rotating = 0
+					current_ship.rotation_velocity = 0
+					STOP_PROCESSING(SSphysics, current_ship)
+				else
+					current_ship.rotating = -1
+					START_PROCESSING(SSphysics, current_ship)
+				return
+			if("rotate_right")
+				if(current_ship.rotating == 1)
+					current_ship.rotating = 0
+					current_ship.rotation_velocity = 0
+					STOP_PROCESSING(SSphysics, current_ship)
+				else
+					current_ship.rotating = 1
+					START_PROCESSING(SSphysics, current_ship)
+				return
 			if("act_overmap")
 				if(SSshuttle.jump_mode > BS_JUMP_CALLED)
 					to_chat(usr, "<span class='warning'>Cannot dock due to bluespace jump preperations!</span>")

@@ -39,12 +39,14 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	for(var/i = 0; i < number; i++)
 		spawn_meteor(meteortypes)
 
-/proc/spawn_meteor(list/meteortypes, datum/virtual_level/vlevel, padding = MAP_EDGE_PAD)
+/proc/spawn_meteor(list/meteortypes, datum/virtual_level/vlevel, padding = MAP_EDGE_PAD, direc = "none")
 	var/turf/pickedstart
 	var/turf/pickedgoal
 	var/max_i = 10//number of tries to spawn meteor.
 	while(!isspaceturf(pickedstart))
 		var/startSide = pick(GLOB.cardinals)
+		if(direc != "none")
+			startSide = direc
 		pickedstart = vlevel.get_side_turf(startSide, padding)
 		pickedgoal = vlevel.get_side_turf(REVERSE_DIR(startSide), padding)
 		max_i--
@@ -225,6 +227,19 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	threat = 10
 
 /obj/effect/meteor/big/meteor_effect()
+	..()
+	explosion(src.loc, 1, 2, 3, 4, 0)
+
+//Invisible
+/obj/effect/meteor/invisible
+	name = "G-Imact"
+	alpha = 0
+	hits = 6
+	heavy = 1
+	dropamt = 4
+	threat = 10
+
+/obj/effect/meteor/invisible/meteor_effect()
 	..()
 	explosion(src.loc, 1, 2, 3, 4, 0)
 

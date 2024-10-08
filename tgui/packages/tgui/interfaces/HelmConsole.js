@@ -46,7 +46,7 @@ export const HelmConsole = (_props, context) => {
 
 const SharedContent = (_props, context) => {
   const { act, data } = useBackend(context);
-  const { isViewer, shipInfo = [], otherInfo = [] } = data;
+  const { isViewer, shipInfo = [], otherInfo = [], arpa_ships = [] } = data;
   return (
     <>
       <Section
@@ -91,6 +91,20 @@ const SharedContent = (_props, context) => {
             >
               <AnimatedNumber value={shipInfo.sensor_range} />
             </ProgressBar>
+            <Table.Cell>
+              <Button
+                tooltip="Decrease Signal Length"
+                tooltipPosition="right"
+                icon="arrow-left"
+                onClick={() => act('sensor_decrease')}
+              />
+              <Button
+                tooltip="Increase Signal Length"
+                tooltipPosition="right"
+                icon="arrow-right"
+                onClick={() => act('sensor_increase')}
+              />
+            </Table.Cell>
           </LabeledList.Item>
           {shipInfo.mass && (
             <LabeledList.Item label="Mass">
@@ -130,6 +144,21 @@ const SharedContent = (_props, context) => {
           ))}
         </Table>
       </Section>
+      <Section title="ARPA">
+        <Table>
+          <Table.Row bold>
+            <Table.Cell>Name</Table.Cell>
+          </Table.Row>
+          {arpa_ships.map((ship) => (
+            <Table.Row key={ship.name}>
+              <Table.Cell>{ship.name}</Table.Cell>
+              <Table.Cell>BRG:{ship.brg}°</Table.Cell>
+              <Table.Cell>CPA:{ship.cpa}m</Table.Cell>
+              <Table.Cell>TCPA:{ship.tcpa}s</Table.Cell>
+            </Table.Row>
+          ))}
+        </Table>
+      </Section>
     </>
   );
 };
@@ -143,6 +172,7 @@ const ShipContent = (_props, context) => {
     estThrust,
     burnPercentage,
     speed,
+    course,
     heading,
     eta,
     x,
@@ -174,6 +204,9 @@ const ShipContent = (_props, context) => {
           </LabeledList.Item>
           <LabeledList.Item label="Heading">
             <AnimatedNumber value={heading} />
+          </LabeledList.Item>
+          <LabeledList.Item label="Course">
+            <AnimatedNumber value={course} />
           </LabeledList.Item>
           <LabeledList.Item label="Position">
             X
@@ -278,6 +311,7 @@ const ShipControlContent = (_props, context) => {
     burnPercentage,
     speed,
     estThrust,
+    rotating,
   } = data;
   let flyable = !data.docking && !data.docked;
 
@@ -309,7 +343,7 @@ const ShipControlContent = (_props, context) => {
             tooltip="Dock in Empty Space"
             tooltipPosition="left"
             icon="sign-in-alt"
-            disabled={!flyable}
+            disabled={!flyable || speed}
             onClick={() => act('dock_empty')}
           />
           <Button
@@ -340,12 +374,10 @@ const ShipControlContent = (_props, context) => {
                   icon="arrow-left"
                   iconRotation={45}
                   mb={1}
-                  color={burnDirection === DIRECTIONS.northwest && 'good'}
+                  color={rotating === -1 && 'good'}
                   disabled={!flyable}
                   onClick={() =>
-                    act('change_heading', {
-                      dir: DIRECTIONS.northwest,
-                    })
+                    act('rotate_left')
                   }
                 />
               </Table.Cell>
@@ -367,12 +399,10 @@ const ShipControlContent = (_props, context) => {
                   icon="arrow-right"
                   iconRotation={-45}
                   mb={1}
-                  color={burnDirection === DIRECTIONS.northeast && 'good'}
+                  color={rotating === 1 && 'good'}
                   disabled={!flyable}
                   onClick={() =>
-                    act('change_heading', {
-                      dir: DIRECTIONS.northeast,
-                    })
+                    act('rotate_right')
                   }
                 />
               </Table.Cell>
@@ -422,20 +452,6 @@ const ShipControlContent = (_props, context) => {
             <Table.Row height={1}>
               <Table.Cell width={1}>
                 <Button
-                  icon="arrow-left"
-                  iconRotation={-45}
-                  mb={1}
-                  color={burnDirection === DIRECTIONS.southwest && 'good'}
-                  disabled={!flyable}
-                  onClick={() =>
-                    act('change_heading', {
-                      dir: DIRECTIONS.southwest,
-                    })
-                  }
-                />
-              </Table.Cell>
-              <Table.Cell width={1}>
-                <Button
                   icon="arrow-down"
                   mb={1}
                   color={burnDirection === DIRECTIONS.south && 'good'}
@@ -443,20 +459,6 @@ const ShipControlContent = (_props, context) => {
                   onClick={() =>
                     act('change_heading', {
                       dir: DIRECTIONS.south,
-                    })
-                  }
-                />
-              </Table.Cell>
-              <Table.Cell width={1}>
-                <Button
-                  icon="arrow-right"
-                  iconRotation={45}
-                  mb={1}
-                  color={burnDirection === DIRECTIONS.southeast && 'good'}
-                  disabled={!flyable}
-                  onClick={() =>
-                    act('change_heading', {
-                      dir: DIRECTIONS.southeast,
                     })
                   }
                 />

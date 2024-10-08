@@ -41,7 +41,7 @@
 /datum/overmap/ship
 	name = "overmap vessel"
 	char_rep = ">"
-	token_icon_state = "ship"
+	token_icon_state = "ship_point"
 	///Timer ID of the looping movement timer
 	var/movement_callback_id
 	///Max possible speed (1 tile per tick / 600 tiles per minute)
@@ -65,27 +65,51 @@
 	var/list/position_to_move = list("x" = 0, "y" = 0)
 	var/list/last_anim = list("x" = 0, "y" = 0)
 
+	var/list/arpa = list()
+
+	var/bow_heading = 0
+	var/rotating = 0
+	var/rotation_velocity = 0
+
 	///ONLY USED FOR NON-SIMULATED SHIPS. The amount per burn that this ship accelerates
 	var/acceleration_speed = 0.02
 
 	var/static/mutable_appearance/move_vec
+	var/static/mutable_appearance/ship_image
 	var/skiptickfortrail = 0
 	var/list/trails = list(1 = null,
 							2 = null,
 							3 = null)
 
+/datum/overmap/ship/proc/check_proximity()
+//	token.collision_alarm()
+	var/list/arpa_add = list()
+	for(var/obj/overmap/rendered/i in orange(4, token))
+		arpa_add |= i.parent
+	return arpa_add
+
 /datum/overmap/ship/Initialize(position, ...)
 	. = ..()
-	position_to_move["x"] = docked_to.x
-	position_to_move["y"] = docked_to.y
+	if(docked_to)
+		position_to_move["x"] = docked_to.x
+		position_to_move["y"] = docked_to.y
+	else
+		position_to_move["x"] = x
+		position_to_move["y"] = y
 	if(docked_to)
 		RegisterSignal(docked_to, COMSIG_OVERMAP_MOVED, PROC_REF(on_docked_to_moved))
 	if(!move_vec)
 		move_vec = new /mutable_appearance()
-		//all these properties are always the same, and since adding something to the overlay
-		//list makes a copy, there is no reason to make a new one each call
 		move_vec.icon = 'icons/misc/overmap.dmi'
 		move_vec.icon_state = "movement_vector"
+	if(!ship_image)
+		ship_image = new /mutable_appearance()
+		ship_image.icon = 'icons/misc/overmap.dmi'
+		ship_image.icon_state = "ship"
+	var/matrix/N = matrix()
+	N.Turn(bow_heading)
+	ship_image.transform = N
+	token.add_overlay(ship_image)
 	var/matrix/M = matrix()
 	M.Scale(1, get_speed()/3)
 	move_vec.transform = M
@@ -139,6 +163,7 @@
 	token.cut_overlay(move_vec)
 	var/matrix/M = matrix()
 	M.Scale(1, get_speed()/3)
+	M.Turn(get_alt_heading())
 	move_vec.transform = M
 	token.add_overlay(move_vec)
 	update_visuals()
@@ -284,20 +309,53 @@
 		change_heading(BURN_NONE)
 		return
 
-	var/added_velocity = calculate_burn(burn_direction, burn_engines(burn_percentage, delta_time))
+	if(rotating == 1)
+		bow_heading = bow_heading+rotation_velocity
+		rotation_velocity = rotation_velocity+1
+		if(bow_heading >= 360)
+			bow_heading = bow_heading-360
+	if(rotating == -1)
+		bow_heading = bow_heading+rotation_velocity
+		rotation_velocity = rotation_velocity-1
+		if(bow_heading < 0)
+			bow_heading = bow_heading+360
+
+	token.cut_overlay(ship_image)
+	var/matrix/N = matrix()
+	N.Turn(bow_heading)
+	ship_image.transform = N
+	token.add_overlay(ship_image)
+
+//	var/added_velocity = calculate_burn(burn_direction, burn_engines(burn_percentage, delta_time))
 
 	//Slows down the ship just enough to come to a full stop
+	var/newx = 0
+	var/newy = 0
 	if(burn_direction == BURN_STOP)
 		if(speed_x > 0)
-			added_velocity["x"] = max(-speed_x, added_velocity["x"])
+			newx = -min(speed_x, burn_engines(burn_percentage, delta_time))
 		else
-			added_velocity["x"] = min(-speed_x, added_velocity["x"])
+			newx = min(-speed_x, burn_engines(burn_percentage, delta_time))
 		if(speed_y > 0)
-			added_velocity["y"] = max(-speed_y, added_velocity["y"])
+			newy = -min(speed_y, burn_engines(burn_percentage, delta_time))
 		else
-			added_velocity["y"] = min(-speed_y, added_velocity["y"])
+			newy = min(-speed_y, burn_engines(burn_percentage, delta_time))
+	else
+		switch(burn_direction)
+			if(NORTH)
+				newx = burn_engines(burn_percentage, delta_time)*sin(bow_heading)
+				newy = burn_engines(burn_percentage, delta_time)*cos(bow_heading)
+			if(SOUTH)
+				newx = burn_engines(burn_percentage, delta_time)*sin(bow_heading+180)
+				newy = burn_engines(burn_percentage, delta_time)*cos(bow_heading+180)
+			if(WEST)
+				newx = burn_engines(burn_percentage, delta_time)*sin(bow_heading+270)
+				newy = burn_engines(burn_percentage, delta_time)*cos(bow_heading+270)
+			if(EAST)
+				newx = burn_engines(burn_percentage, delta_time)*sin(bow_heading+90)
+				newy = burn_engines(burn_percentage, delta_time)*cos(bow_heading+90)
 
-	adjust_speed(added_velocity["x"], added_velocity["y"])
+	adjust_speed(newx, newy)
 
 /**
  * Calculates the amount of acceleration to apply to the ship given the direction and velocity increase
@@ -340,6 +398,7 @@
 	burn_direction = direction
 	if(burn_direction == BURN_NONE)
 		STOP_PROCESSING(SSphysics, src)
+		rotating = 0
 	else
 		START_PROCESSING(SSphysics, src)
 
@@ -347,7 +406,7 @@
  * Updates the visuals of the ship based on heading and whether or not it's moving.
  */
 /datum/overmap/ship/proc/update_visuals()
-	var/altdirection = get_alt_heading()
+//	var/altdirection = get_alt_heading()
 	var/direction = get_heading()
 	if(direction & EAST)
 		char_rep = ">"
@@ -358,10 +417,10 @@
 	else if(direction & SOUTH)
 		char_rep = "v"
 	if(direction)
-		token.icon_state = "ship_moving"
+//		token.icon_state = "ship_moving"
 		token.dir = NORTH
 		var/matrix/M = matrix()
-		M.Turn(altdirection)
+//		M.Turn(altdirection)
 		token.transform = M
-	else
-		token.icon_state = "ship"
+//	else
+//		token.icon_state = "ship"
