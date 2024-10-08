@@ -235,7 +235,7 @@
 	name = "Elysium Town"
 	})
 "bt" = (
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/beach/complex{
@@ -484,7 +484,7 @@
 	},
 /area/overmap_encounter/planetoid/earth_sand)
 "dk" = (
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 9;
 	pixel_y = 0
 	},
@@ -626,7 +626,7 @@
 /area/overmap_encounter/planetoid/earth_sand)
 "eb" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/wood,
 /area/ruin/beach/complex{
 	name = "Elysium Town"
@@ -1973,7 +1973,7 @@
 /area/overmap_encounter/planetoid/earth_sand)
 "ol" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood,
 /area/ruin/beach/complex{
@@ -1981,7 +1981,7 @@
 	})
 "ow" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/ruin/beach/complex{
@@ -2424,7 +2424,7 @@
 	name = "Elysium Town"
 	})
 "rn" = (
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /obj/machinery/light/directional/north,
 /turf/open/floor/carpet/green,
 /area/ruin/beach/complex{
@@ -2443,7 +2443,7 @@
 	name = "Elysium Town"
 	})
 "rs" = (
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/plating/asteroid/sand{
 	light_power = 0.8;
 	light_range = 2;
@@ -2695,7 +2695,7 @@
 	name = "Elysium Town"
 	})
 "tG" = (
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/carpet/green,
 /area/ruin/beach/complex{
 	name = "Elysium Town"
@@ -2714,7 +2714,7 @@
 	name = "Elysium Town"
 	})
 "tQ" = (
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = -7;
 	pixel_y = 0
 	},
@@ -2793,7 +2793,7 @@
 	},
 /area/overmap_encounter/planetoid/earth_sand)
 "uH" = (
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/wood,
 /area/ruin/beach/complex{
 	name = "Elysium Town"
@@ -3347,7 +3347,7 @@
 	name = "Elysium Town"
 	})
 "Am" = (
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = -7;
 	pixel_y = 0
 	},
@@ -3484,7 +3484,7 @@
 /obj/structure/curtain/cloth/elysium{
 	pixel_x = -32
 	},
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/wood,
 /area/ruin/beach/complex{
 	name = "Elysium Town"
@@ -3512,7 +3512,7 @@
 	name = "Elysium Town"
 	})
 "By" = (
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/plating/asteroid/ship{
 	planetary_atmos = 1;
 	light_power = 0.8;
@@ -3760,7 +3760,7 @@
 "Dq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 19;
 	pixel_y = 0
 	},
@@ -4191,7 +4191,7 @@
 	light_power = 0;
 	light_range = 0
 	},
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/plating/asteroid/sand{
 	light_power = 0.8;
 	light_range = 2;
@@ -4352,7 +4352,7 @@
 	})
 "HC" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/concrete/slab_4,
 /area/overmap_encounter/planetoid/earth_sand)
 "HE" = (
@@ -4416,7 +4416,7 @@
 	})
 "Iu" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/wood{
 	icon_state = "wood-broken7"
 	},
@@ -4424,7 +4424,7 @@
 	name = "Elysium Town"
 	})
 "IG" = (
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 9;
 	pixel_y = 0
 	},
@@ -4501,7 +4501,7 @@
 	name = "Elysium Town"
 	})
 "Jq" = (
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 19;
 	pixel_y = 0
 	},
@@ -5668,7 +5668,7 @@
 	name = "Elysium Town"
 	})
 "Sp" = (
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
 /area/ruin/beach/complex{
@@ -5782,7 +5782,7 @@
 	},
 /area/overmap_encounter/planetoid/earth_sand)
 "SZ" = (
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 19;
 	pixel_y = 0
 	},
@@ -6002,7 +6002,7 @@
 	})
 "Un" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 19;
 	pixel_y = 0
 	},
@@ -6011,7 +6011,7 @@
 	name = "Elysium Town"
 	})
 "Uq" = (
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 19;
 	pixel_y = 0
 	},

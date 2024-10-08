@@ -25170,7 +25170,7 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/operations/outpost_command)
 "XR" = (
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";

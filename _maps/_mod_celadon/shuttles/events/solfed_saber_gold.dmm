@@ -48,7 +48,7 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central6{
 	pixel_y = -4
 	},
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 4;
 	anchored = 1
 	},
@@ -381,7 +381,7 @@
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 5
 	},
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 4;
 	morale_cooldown = 50000;
 	anchored = 1
@@ -3056,7 +3056,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/central)
 "xY" = (
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 4;
 	morale_cooldown = 50000;
 	anchored = 1
@@ -3932,7 +3932,7 @@
 /turf/open/floor/mineral/gold,
 /area/ship/security)
 "Ei" = (
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 4;
 	morale_cooldown = 4000;
 	anchored = 1
@@ -4288,7 +4288,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
 	},
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 4;
 	morale_cooldown = 50000;
 	anchored = 1
@@ -4990,7 +4990,7 @@
 /obj/effect/turf_decal/corner/opaque/bar/three_quarters{
 	dir = 8
 	},
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 4
 	},
 /obj/effect/turf_decal/box/red,
@@ -6303,7 +6303,7 @@
 /turf/open/floor/mineral/gold,
 /area/ship/hallway/central)
 "XM" = (
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 4;
 	morale_cooldown = 50000;
 	anchored = 1
