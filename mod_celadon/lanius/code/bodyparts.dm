@@ -1,7 +1,25 @@
 ///состав:
 /obj/item/organ/tongue/lanius
+	name = "lanius jaw"
+	desc = "Jaw of one of this lanius thing.. Better brought it back to him."
+	icon = 'mod_celadon/_storge_icons/icons/lanius/lanius_organs.dmi'
+	icon_state = "tongue"
+	decay_factor = 0
+	var/static/list/languages_possible_lanius = typecacheof(list(
+		/datum/language/lanius_rattle
+	))
+
+/obj/item/organ/tongue/lanius/Initialize(mapload)
+	. = ..()
+	languages_possible = languages_possible_lanius
+
 /obj/item/organ/eyes/lanius
 /obj/item/organ/heart/lanius
+	name = "lanius core"
+	desc = "This is core of every lanius. Where did you get this?"
+	icon = 'mod_celadon/_storge_icons/icons/lanius/lanius_organs.dmi'
+	icon_state = "heart"
+	decay_factor = 0
 /obj/item/organ/liver/lanius
 /obj/item/organ/stomach/lanius
 /obj/item/organ/ears/lanius

@@ -12,15 +12,15 @@
 	id = SPECIES_LANIUS
 	sexes = FALSE
 	special_step_sounds = 'sound/effects/footstep/heavy1.ogg'
-	loreblurb = "The Lanius are a metallic scavenger race prone to aggression, \
-	 whose biological composition somehow drains oxygen from the rooms they occupy, \
-	 making them potentially deadly adversaries."
+	loreblurb = "The Lanius are a metallic scavenger race, \
+	 whose biological composition somehow drains oxygen from atmosphere."
 	species_eye_path = 'mod_celadon/_storge_icons/icons/lanius/lanius_organs.dmi'
 	species_traits = list(EYECOLOR, EMOTE_OVERLAY, NOBLOOD, MUTCOLORS, NO_UNDERWEAR, NOHUSK, NO_BONES) //TRAIT_NOBREATH
-	inherent_traits = list(TRAIT_NOBREATH, TRAIT_RESISTHEAT,TRAIT_RESISTCOLD,TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,TRAIT_NOFIRE,TRAIT_CHUNKYFINGERS,TRAIT_RADIMMUNE,TRAIT_PIERCEIMMUNE,TRAIT_NODISMEMBER)
+	inherent_traits = list(TRAIT_NOBREATH, TRAIT_RESISTHEAT,TRAIT_RESISTCOLD,TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,TRAIT_NOFIRE,TRAIT_CHUNKYFINGERS,TRAIT_VIRUSIMMUNE,TRAIT_PIERCEIMMUNE,TRAIT_NODISMEMBER,TRAIT_SHOCKIMMUNE,TRAIT_GENELESS,TRAIT_NOLIMBDISABLE)
 	inherent_biotypes = MOB_HUMANOID | MOB_MINERAL
 	toxic_food = VEGETABLES | DAIRY | CLOTH | GROSS | MEAT | RAW
-	//armor = 55
+	meat = /obj/item/stack/sheet/plasteel{amount = 5}
+	species_language_holder = /datum/language_holder/lanius
 	brutemod = 0.75
 	burnmod = 0.75
 	punchdamagelow = 5

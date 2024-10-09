@@ -56,7 +56,8 @@ var/ration = list( /obj/item/stack/sheet/metal,
 			return FALSE
 		playsound(M.loc,pick('mod_celadon/_storge_sounds/sound/lanius/bp_sfx_RockMan_Thud1_01.ogg',
 		'mod_celadon/_storge_sounds/sound/lanius/bp_sfx_RockMan_Thud2_01.ogg',
-		'mod_celadon/_storge_sounds/sound/lanius/bp_sfx_RockMan_Thud3_01.ogg'), rand(10,50), TRUE)		SEND_SIGNAL(src, COMSIG_FOOD_EATEN, M, user)
+		'mod_celadon/_storge_sounds/sound/lanius/bp_sfx_RockMan_Thud3_01.ogg'), rand(10,50), TRUE)
+		SEND_SIGNAL(src, COMSIG_FOOD_EATEN, M, user)
 		M.reagents.add_reagent(/datum/reagent/consumable/laniusin, 5)
 		if(amount > 1)
 			amount -= 1
