@@ -62,6 +62,7 @@
 
 // --- MOBS --- //
 #include "drakeborgs/_drakeborgs.dme"
+#include "lanius/_lanius.dme"
 #include "mobs/_mobs.dme"
 
 // --- MISC --- //
