@@ -156,7 +156,7 @@
 /mob/living/carbon/proc/spray_blood(splatter_direction, splatter_strength = 3)
 	if(!isturf(loc))
 		return
-	if((NOBLOOD in dna.species.species_traits))
+	if((NOBLOOD in dna.species.species_traits)) // [CELADON - ADD] LANIUS
 		return
 	var/obj/effect/decal/cleanable/blood/hitsplatter/our_splatter = new(loc)
 
