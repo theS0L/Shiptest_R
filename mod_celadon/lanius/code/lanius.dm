@@ -1,5 +1,6 @@
 /mob/living/carbon/human/species/lanius
 	race = /datum/species/lanius
+	gib_type = /obj/effect/decal/cleanable/ash
 ///
 /mob/living/carbon/human/species/lanius/Initialize(mapload)
 	. = ..()
@@ -12,14 +13,16 @@
 	id = SPECIES_LANIUS
 	sexes = FALSE
 	special_step_sounds = 'sound/effects/footstep/heavy1.ogg'
+	species_gibs = "lanius"
 	loreblurb = "The Lanius are a metallic scavenger race, \
 	 whose biological composition somehow drains oxygen from atmosphere."
 	species_eye_path = 'mod_celadon/_storge_icons/icons/lanius/lanius_organs.dmi'
-	species_traits = list(EYECOLOR, EMOTE_OVERLAY, NOBLOOD, MUTCOLORS, NO_UNDERWEAR, NOHUSK, NO_BONES) //TRAIT_NOBREATH
-	inherent_traits = list(TRAIT_NOBREATH, TRAIT_RESISTHEAT,TRAIT_RESISTCOLD,TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,TRAIT_NOFIRE,TRAIT_CHUNKYFINGERS,TRAIT_VIRUSIMMUNE,TRAIT_PIERCEIMMUNE,TRAIT_NODISMEMBER,TRAIT_SHOCKIMMUNE,TRAIT_GENELESS,TRAIT_NOLIMBDISABLE)
-	inherent_biotypes = MOB_HUMANOID | MOB_MINERAL
+	species_traits = list(EYECOLOR, EMOTE_OVERLAY, NOBLOOD, MUTCOLORS, NO_UNDERWEAR, NOHUSK, NO_BONES)
+	inherent_traits = list(TRAIT_NOBREATH, TRAIT_RESISTHEAT,TRAIT_RESISTCOLD,TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,TRAIT_NOFIRE,TRAIT_CHUNKYFINGERS,TRAIT_VIRUSIMMUNE,TRAIT_PIERCEIMMUNE,TRAIT_NODISMEMBER,TRAIT_SHOCKIMMUNE,TRAIT_GENELESS,TRAIT_NOLIMBDISABLE,TRAIT_STABLELIVER,TRAIT_STABLEHEART)
+	inherent_biotypes = MOB_HUMANOID | MOB_ORGANIC | MOB_MINERAL
 	toxic_food = VEGETABLES | DAIRY | CLOTH | GROSS | MEAT | RAW
 	meat = /obj/item/stack/sheet/plasteel{amount = 5}
+
 	species_language_holder = /datum/language_holder/lanius
 	brutemod = 0.75
 	burnmod = 0.75
@@ -32,12 +35,13 @@
 
 	mutanttongue = /obj/item/organ/tongue/lanius
 	mutanteyes = /obj/item/organ/eyes/lanius
-	mutantheart = /obj/item/organ/heart/lanius
-	mutantliver = /obj/item/organ/liver/lanius
-	mutantstomach = /obj/item/organ/stomach/lanius
+	mutantheart = null
+	mutantliver = null
+	mutantstomach = null
 	mutantears = /obj/item/organ/ears/lanius
-	mutantlungs = null //obj/item/organ/lungs/cybernetic
+	mutantlungs = null
 	mutantappendix = null
+	mutantbrain = /obj/item/organ/brain/lanius
 
 	species_chest = /obj/item/bodypart/chest/lanius
 	species_head = /obj/item/bodypart/head/lanius
@@ -57,12 +61,5 @@
 	. = ..()
 	H.loc.remove_air(LANIUS_GAS_USE)
 
- //gg gib on death
-
-/*
-/datum/species/lanius/spec_death(gibbed, mob/living/carbon/human/H)
-	for(var/obj/item/W in H)
-		H.dropItemToGround(W)
-	for(var/i=1, i <= rand(3,5), i++)
-		new /obj/item/stack/sheet/plasteel(get_turf(H))
-*/
+/mob/living/carbon/human/species/lanius/spawn_gibs()
+		new /obj/effect/gibspawner(drop_location(), src)

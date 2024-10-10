@@ -23,7 +23,8 @@ ID мода: CELADON_LANIUS
 - play_humanstep footstep.dm
 - ui act scangate.dm
 - handle body species.dm
-
+- spawn gibs death.dm
+- on hit projectile.dm
 
 ### Дефайны
 
