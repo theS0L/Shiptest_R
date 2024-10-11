@@ -45,13 +45,22 @@
 	chance_to_affect = 15
 	spread_chance = 50
 	chain_rate = 4
-	var/safe_speed = 3
-	var/list/meteor_types = list(
+	// [CELADON-EDIT] - CELADON_FIXES - Выносим в родителя
+	// var/safe_speed = 3
+	// var/list/meteor_types = list(
+	// 	/obj/effect/meteor/dust=3,
+	// 	/obj/effect/meteor/medium=8,
+	// 	/obj/effect/meteor/big=1,
+	// 	/obj/effect/meteor/irradiated=3
+	// )	// CELADON-EDIT - ORIGINAL
+	safe_speed = 3
+	meteor_types = list(
 		/obj/effect/meteor/dust=3,
 		/obj/effect/meteor/medium=8,
 		/obj/effect/meteor/big=1,
 		/obj/effect/meteor/irradiated=3
 	)
+	// [/CELADON-EDIT]
 
 /datum/overmap/event/meteor/Initialize(position, ...)
 	. = ..()
@@ -215,7 +224,7 @@
 
 //Carp "meteors" - throws carp at the ship
 
-/datum/overmap/event/meteor/carp
+/datum/overmap/event/meteor/carp	// вынесено в mod_celadon/fixes/code/research_mission.dm, оставлено дял того чтобы не удалять кучу зависимостей
 	name = "carp migration (moderate)"
 	desc = "A migratory school of space carp. They travel at high speeds, and flying through them may cause them to impact your ship"
 	token_icon_state = "carp1"
@@ -260,7 +269,7 @@
 
 // dust clouds throw dust if you go Way Fast
 
-/datum/overmap/event/meteor/dust
+/datum/overmap/event/meteor/dust	// вынесено в mod_celadon/fixes/code/research_mission.dm, оставлено дял того чтобы не удалять кучу зависимостей
 	name = "dust cloud"
 	desc = "A cloud of spaceborne dust. Relatively harmless, unless you're travelling at relative speeds"
 	token_icon_state = "carp1"
@@ -316,10 +325,16 @@ GLOBAL_LIST_INIT(overmap_event_pick_list, list(
 	/datum/overmap/event/meteor/minor = 45,
 	/datum/overmap/event/meteor = 40,
 	/datum/overmap/event/meteor/major = 35,
-	/datum/overmap/event/meteor/carp/minor = 45,
-	/datum/overmap/event/meteor/carp = 35,
-	/datum/overmap/event/meteor/carp/major = 20,
-	/datum/overmap/event/meteor/dust = 50,
+	// [CELADON-EDIT] - CELADON_FIXES - Выносим в сои категории ивенты
+	// /datum/overmap/event/meteor/carp/minor = 45,
+	// /datum/overmap/event/meteor/carp = 35,
+	// /datum/overmap/event/meteor/carp/major = 20,
+	// /datum/overmap/event/meteor/dust = 50,	// CELADON-EDIT - ORIGINAL
+	/datum/overmap/event/carp/minor = 45,
+	/datum/overmap/event/carp = 35,
+	/datum/overmap/event/carp/major = 20,
+	/datum/overmap/event/dust = 50,
+	// [/CELADON-EDIT]
 	/datum/overmap/event/anomaly = 10
 ))
 
