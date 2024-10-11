@@ -4220,7 +4220,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	pixel_y = 27
 	},
 /obj/effect/turf_decal/techfloor/orange{

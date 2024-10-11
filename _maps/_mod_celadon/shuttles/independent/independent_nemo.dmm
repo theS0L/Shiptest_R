@@ -2591,7 +2591,7 @@
 	dir = 8;
 	sensors = list("nemo_o2_sensor"="Oxygen Tank")
 	},
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	dir = 8;
 	pixel_x = 32
 	},

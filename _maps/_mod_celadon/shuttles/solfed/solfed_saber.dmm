@@ -3732,7 +3732,7 @@
 	pixel_x = -5;
 	pixel_y = -9
 	},
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	pixel_y = 27
 	},
 /obj/structure/plaque/static_plaque/atmos{

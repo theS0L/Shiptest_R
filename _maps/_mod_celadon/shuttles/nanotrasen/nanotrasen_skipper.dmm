@@ -469,7 +469,7 @@
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
 	},
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	pixel_y = -29
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
