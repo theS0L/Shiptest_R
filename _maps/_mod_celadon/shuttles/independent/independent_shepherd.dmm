@@ -4480,7 +4480,7 @@
 /obj/item/reagent_containers/glass/mortar,
 /obj/item/pestle,
 /obj/machinery/light/small/directional/north,
-/obj/item/reagent_containers/food/condiment/enzyme,
+/obj/item/reagent_containers/condiment/enzyme,
 /obj/item/reagent_containers/syringe,
 /obj/item/reagent_containers/syringe,
 /turf/open/floor/wood/ebony,

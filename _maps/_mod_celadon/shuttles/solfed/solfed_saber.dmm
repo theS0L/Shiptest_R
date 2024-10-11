@@ -365,12 +365,12 @@
 	dir = 1
 	},
 /obj/item/melee/knife/kitchen,
-/obj/item/reagent_containers/food/condiment/peppermill{
+/obj/item/reagent_containers/condiment/peppermill{
 	desc = "Often used to flavor food or make people sneeze. Fashionably moved to the left side of the table.";
 	pixel_x = -8;
 	pixel_y = 2
 	},
-/obj/item/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/condiment/saltshaker{
 	pixel_x = 4;
 	pixel_y = 10
 	},
@@ -3732,7 +3732,7 @@
 	pixel_x = -5;
 	pixel_y = -9
 	},
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	pixel_y = 27
 	},
 /obj/structure/plaque/static_plaque/atmos{
