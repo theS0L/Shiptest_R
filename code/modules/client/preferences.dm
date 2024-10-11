@@ -1070,6 +1070,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<h3>Tail</h3>"
 				dat += "<a href='?_src_=prefs;preference=riol_tail;task=input'>[features["riol_tail"]]</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[features["riol_tail_markings_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=riol_tail_markings_color;task=input'>Change</a>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)

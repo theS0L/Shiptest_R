@@ -123,3 +123,7 @@
 		mutant_bodyparts |= "riol_tail_markings"
 
 	return ..()
+
+/datum/species/riol/on_species_gain(mob/living/carbon/C, datum/species/old_species, pref_load)
+	. = ..() //call everything from species/on_species_gain()
+	C.dna.add_mutation(OLFACTION)

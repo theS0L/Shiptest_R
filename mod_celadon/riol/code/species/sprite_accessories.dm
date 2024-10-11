@@ -90,6 +90,31 @@
 	icon_state = "altpointsfadebelly-alt"
 	gender_specific = TRUE
 
+// BODY (DIGI)
+
+/datum/sprite_accessory/riol_body_markings/points_fade_riol
+	name = "Riol Points (digitigrade)"
+	icon_state = "pointsfadedigi"
+
+/datum/sprite_accessory/riol_body_markings/points_sharp_riol
+	name = "Riol Sharp Points (digitigrade)"
+	icon_state = "sharppointsdigi"
+
+/datum/sprite_accessory/riol_body_markings/points_fade_belly_riol
+	name = "Riol Points and Belly (digitigrade)"
+	icon_state = "pointsfadebellydigi"
+	gender_specific = TRUE
+
+/datum/sprite_accessory/riol_body_markings/points_crest_riol
+	name = "Riol Points and Crest (digitigrade)"
+	icon_state = "crestpointsdigi"
+	gender_specific = TRUE
+
+/datum/sprite_accessory/riol_body_markings/points_fade_belly_alt_riol
+	name = "Riol Points and Belly Alt. (digitigrade)"
+	icon_state = "altpointsfadebellydigi"
+	gender_specific = TRUE
+
 // NOSE MARKINGS
 
 /datum/sprite_accessory/riol_nose_markings
@@ -252,9 +277,11 @@
 	icon = 'mod_celadon/_storge_icons/icons/riol/riol_tail.dmi'
 	body_zone = BODY_ZONE_CHEST
 	secondary_color = TRUE
+	color_src = TAILRIOLCOLORS
 
 /datum/sprite_accessory/tails_animated/riol
 	icon = 'mod_celadon/_storge_icons/icons/riol/riol_tail.dmi'
+	color_src = TAILRIOLCOLORS
 
 /datum/sprite_accessory/tails/riol/default
 	name = "Default"
