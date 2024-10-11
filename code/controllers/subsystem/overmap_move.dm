@@ -77,8 +77,10 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 					playsound(a, 'sound/machines/engine_alert2.ogg', 50, FALSE)
 					var/opposite_x = sin(SIMPLIFY_DEGREES(bearing+180))*(B.shuttle_port.turf_count/A.shuttle_port.turf_count)*max(0.002, max(B.speed_x, -B.speed_x))
 					var/opposite_y = cos(SIMPLIFY_DEGREES(bearing+180))*(B.shuttle_port.turf_count/A.shuttle_port.turf_count)*max(0.002, max(B.speed_y, -B.speed_y))
-					A.adjust_speed(-A.speed_x + opposite_x, -A.speed_y + opposite_y)
-					A.token.cut_overlays()
+					if(!(A.datum_flags & DF_ISPROCESSING))
+						A.adjust_speed(-A.speed_x + opposite_x, -A.speed_y + opposite_y)
+					else
+						A.vector_to_add = list("x" = -A.speed_x + opposite_x, "y" = -A.speed_y + opposite_y)
 					spawn_meteors_alt(round(A.get_speed()+B.get_speed())+1, list(/obj/effect/meteor/invisible), A.shuttle_port.get_virtual_level(), angle2dir_cardinal(SIMPLIFY_DEGREES((bearing+A.bow_heading))))
 
 	return list("cpa" = round(cpa), "tcpa" = round(tcpa/10), "brg" = round(SIMPLIFY_DEGREES(bearing-A.bow_heading)))

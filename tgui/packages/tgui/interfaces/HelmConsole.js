@@ -408,19 +408,6 @@ const ShipControlContent = (_props, context) => {
             <Table.Row height={1}>
               <Table.Cell width={1}>
                 <Button
-                  icon="arrow-left"
-                  mb={1}
-                  color={burnDirection === DIRECTIONS.west && 'good'}
-                  disabled={!flyable}
-                  onClick={() =>
-                    act('change_heading', {
-                      dir: DIRECTIONS.west,
-                    })
-                  }
-                />
-              </Table.Cell>
-              <Table.Cell width={1}>
-                <Button
                   tooltip={burnDirection === 0 ? 'Slow down' : 'Stop thrust'}
                   icon={
                     burnDirection === 0 || burnDirection === DIRECTIONS.stop
@@ -433,21 +420,6 @@ const ShipControlContent = (_props, context) => {
                   onClick={() => act('stop')}
                 />
               </Table.Cell>
-              <Table.Cell width={1}>
-                <Button
-                  icon="arrow-right"
-                  mb={1}
-                  color={burnDirection === DIRECTIONS.east && 'good'}
-                  disabled={!flyable}
-                  onClick={() =>
-                    act('change_heading', {
-                      dir: DIRECTIONS.east,
-                    })
-                  }
-                />
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row height={1}>
               <Table.Cell width={1}>
                 <Button
                   icon="arrow-down"

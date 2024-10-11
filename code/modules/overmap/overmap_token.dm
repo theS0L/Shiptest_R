@@ -11,6 +11,12 @@
 	var/atom/movable/screen/plane_master/lighting/cam_plane_master
 	var/atom/movable/screen/background/cam_background
 
+	var/obj/token_visuals/move_vec
+	var/obj/token_visuals/ship_image
+
+/obj/token_visuals
+	glide_size = 32
+
 /obj/overmap/rendered
 	render_map = TRUE
 
@@ -19,6 +25,16 @@
 	parent = new_parent
 	name = parent.name
 	icon_state = parent.token_icon_state
+	if(!move_vec)
+		move_vec = new (loc)
+		move_vec.icon = 'icons/misc/overmap.dmi'
+		move_vec.icon_state = "movement_vector"
+		move_vec.layer = move_vec.layer+1
+	if(!ship_image)
+		ship_image = new (loc)
+		ship_image.icon = 'icons/misc/overmap.dmi'
+		ship_image.icon_state = "ship"
+		ship_image.layer = ship_image.layer+2
 	if(render_map)	// Initialize map objects
 		map_name = "overmap_[REF(src)]_map"
 		cam_screen = new
@@ -45,6 +61,8 @@
 		QDEL_NULL(cam_screen)
 		QDEL_NULL(cam_plane_master)
 		QDEL_NULL(cam_background)
+	QDEL_NULL(ship_image)
+	QDEL_NULL(move_vec)
 	return ..()
 
 /obj/overmap/attack_ghost(mob/user)

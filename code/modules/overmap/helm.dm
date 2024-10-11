@@ -339,19 +339,15 @@
 				if(current_ship.rotating == -1)
 					current_ship.rotating = 0
 					current_ship.rotation_velocity = 0
-					STOP_PROCESSING(SSphysics, current_ship)
 				else
 					current_ship.rotating = -1
-					START_PROCESSING(SSphysics, current_ship)
 				return
 			if("rotate_right")
 				if(current_ship.rotating == 1)
 					current_ship.rotating = 0
 					current_ship.rotation_velocity = 0
-					STOP_PROCESSING(SSphysics, current_ship)
 				else
 					current_ship.rotating = 1
-					START_PROCESSING(SSphysics, current_ship)
 				return
 			if("act_overmap")
 				if(SSshuttle.jump_mode > BS_JUMP_CALLED)

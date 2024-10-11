@@ -5,12 +5,29 @@
 	icon = 'icons/turf/overmap.dmi'
 	icon_state = "overmap"
 	initial_gas_mix = AIRLESS_ATMOS
+	color = COLOR_GRAY
 
 //this is completely unnecessary but it looks nice
 /turf/open/overmap/Initialize(mapload, inherited_virtual_z)
 	. = ..()
 	if(!SSovermap.overmap_vlevel)
 		return
+	if(prob(25))
+		var/image/I = image('icons/turf/overmap.dmi', rand(1, 16))
+		I.pixel_x = rand(-16, 16)
+		I.pixel_y = rand(-16, 16)
+		overlays += I
+	if(prob(25))
+		var/image/I = image('icons/turf/overmap.dmi', rand(1, 16))
+		I.pixel_x = rand(-16, 16)
+		I.pixel_y = rand(-16, 16)
+		overlays += I
+	if(prob(25))
+		var/image/I = image('icons/turf/overmap.dmi', rand(1, 16))
+		I.pixel_x = rand(-16, 16)
+		I.pixel_y = rand(-16, 16)
+		overlays += I
+	icon_state = "[rand(1, 26)]"
 	var/datum/virtual_level/vlevel = SSovermap.overmap_vlevel
 	var/overmap_x = x - (vlevel.low_x + vlevel.reserved_margin) + 1
 	var/overmap_y = y - (vlevel.low_y + vlevel.reserved_margin) + 1

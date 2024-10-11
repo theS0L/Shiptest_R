@@ -139,9 +139,12 @@
 		Rename(planet.name)
 		token.name = "[planet.name]"
 
+	token.icon = planet.icon
 	token.icon_state = planet.icon_state
 	token.desc = planet.desc
 	token.color = planet.color
+	token.pixel_w = planet.pixel_w
+	token.pixel_z = planet.pixel_z
 	ruin_type = planet.ruin_type
 	default_baseturf = planet.default_baseturf
 	gravity = planet.gravity

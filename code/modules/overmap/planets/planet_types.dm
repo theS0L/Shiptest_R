@@ -8,17 +8,20 @@
 	var/gravity = 0
 	var/weather_controller_type = null
 	var/icon_state = "globe"
+	var/icon = 'icons/misc/overmap.dmi'
 	var/color = "#ffffff"
 	var/weight = 20
 	var/preserve_level = FALSE
 	var/landing_sound
+	var/pixel_w = 0
+	var/pixel_z = 0
 
 /datum/planet_type/lava
 	name = "lava planet"
 	desc = "A planet rife with seismic and volcanic activity. High temperatures and dangerous xenofauna render it dangerous for the unprepared."
 	planet = DYNAMIC_WORLD_LAVA
-	icon_state = "globe_2"
-	color = COLOR_ORANGE
+	icon_state = "volcano"
+//	color = COLOR_ORANGE
 	mapgen = /datum/map_generator/planet_generator/lava
 	default_baseturf = /turf/open/floor/plating/asteroid/basalt/lava
 	gravity = STANDARD_GRAVITY
@@ -31,8 +34,8 @@
 	name = "frozen planet"
 	desc = "A frozen planet covered in thick snow, thicker ice, and dangerous predators."
 	planet = DYNAMIC_WORLD_ICE
-	icon_state = "globe_2"
-	color = COLOR_BLUE_LIGHT
+	icon_state = "ice"
+//	color = COLOR_BLUE_LIGHT
 	mapgen = /datum/map_generator/planet_generator/snow
 	default_baseturf = /turf/open/floor/plating/asteroid/snow/icemoon
 	gravity = STANDARD_GRAVITY
@@ -44,8 +47,8 @@
 	name = "jungle planet"
 	desc = "A densely forested world, filled with vines, animals, and underbrush. Surprisingly habitable with a machete."
 	planet = DYNAMIC_WORLD_JUNGLE
-	icon_state = "globe_2"
-	color = COLOR_LIME
+	icon_state = "jungle"
+//	color = COLOR_LIME
 	mapgen = /datum/map_generator/planet_generator/jungle
 	default_baseturf = /turf/open/floor/plating/dirt/jungle
 	gravity = STANDARD_GRAVITY
@@ -57,8 +60,8 @@
 	name = "rock planet"
 	desc = "A rocky red world in the midst of terraforming. While some plants have taken hold, it is widely hostile to life."
 	planet = DYNAMIC_WORLD_ROCKPLANET
-	icon_state = "globe_2"
-	color = "#bd1313"
+	icon_state = "red"
+//	color = "#bd1313"
 	mapgen = /datum/map_generator/planet_generator/rock
 	default_baseturf = /turf/open/floor/plating/asteroid
 	gravity = STANDARD_GRAVITY
@@ -70,8 +73,8 @@
 	name = "sand planet"
 	desc = "A formerly vibrant world, turned to sand by the ravages of the ICW. The survivors of it are long mad by now."
 	planet = DYNAMIC_WORLD_SAND
-	icon_state = "globe_2"
-	color = COLOR_GRAY
+	icon_state = "sand"
+//	color = COLOR_GRAY
 	mapgen = /datum/map_generator/planet_generator/sand
 	default_baseturf = /turf/open/floor/plating/asteroid/whitesands
 	gravity = STANDARD_GRAVITY
@@ -83,8 +86,8 @@
 	name = "beach planet"
 	desc = "The platonic ideal of vacation spots. Warm, comfortable temperatures, and a breathable atmosphere."
 	planet = DYNAMIC_WORLD_BEACHPLANET
-	icon_state = "globe"
-	color = "#c6b597"
+	icon_state = "beach"
+//	color = "#c6b597"
 	mapgen = /datum/map_generator/planet_generator/beach
 	default_baseturf = /turf/open/floor/plating/asteroid/sand/lit
 	gravity = STANDARD_GRAVITY
@@ -97,7 +100,7 @@
 	desc = "Some sort of strange portal. There's no identification of what this is."
 	planet = DYNAMIC_WORLD_REEBE
 	icon_state = "wormhole"
-	color = COLOR_YELLOW
+//	color = COLOR_YELLOW
 	mapgen = /datum/map_generator/single_biome/reebe
 	gravity = STANDARD_GRAVITY
 	default_baseturf = /turf/open/chasm/reebe_void
@@ -110,7 +113,7 @@
 	desc = "A field of asteroids with significant traces of minerals."
 	planet = DYNAMIC_WORLD_ASTEROID
 	icon_state = "asteroid"
-	color = COLOR_GRAY
+//	color = COLOR_GRAY
 	mapgen = /datum/map_generator/planet_generator/asteroid
 	// Space, because asteroid maps also include space turfs and the prospect of space turfs
 	// existing without space as their baseturf scares me.
@@ -135,8 +138,8 @@
 	name = "waste disposal planet"
 	desc = "A highly oxygenated world, coated in garbage, radiation, and rust."
 	planet = DYNAMIC_WORLD_WASTEPLANET
-	icon_state = "globe_2"
-	color = "#a9883e"
+	icon_state = "waste"
+//	color = "#a9883e"
 	mapgen = /datum/map_generator/planet_generator/waste
 	default_baseturf = /turf/open/floor/plating/asteroid/wasteplanet
 	gravity = STANDARD_GRAVITY
@@ -148,8 +151,9 @@
 	name = "gas giant"
 	desc = "A floating ball of gas, with high gravity and even higher pressure."
 	planet = DYNAMIC_WORLD_GAS_GIANT
-	icon_state = "globe"
-	color = COLOR_DARK_MODERATE_ORANGE
+	icon_state = "planet-giant"
+	icon = 'icons/misc/overmap_large.dmi'
+//	color = COLOR_DARK_MODERATE_ORANGE
 	mapgen = /datum/map_generator/single_biome/gas_giant
 	gravity = GAS_GIANT_GRAVITY
 	default_baseturf = /turf/open/chasm/gas_giant
@@ -158,16 +162,21 @@
 	weight = 0
 	preserve_level = TRUE
 	landing_sound = 'sound/effects/planet_landing_1.ogg'
+	pixel_w = -8
+	pixel_z = -8
 
 /datum/planet_type/plasma_giant
 	name = "plasma giant"
 	desc = "The backbone of interstellar travel, the mighty plasma giant allows fuel collection to take place."
 	planet = DYNAMIC_WORLD_PLASMA_GIANT
-	color = COLOR_PURPLE
+//	color = COLOR_PURPLE
 	mapgen = /datum/map_generator/single_biome/plasma_giant
 	gravity = GAS_GIANT_GRAVITY
 	default_baseturf = /turf/open/chasm/gas_giant/plasma
 	weight = 0
-	icon_state = "globe"
+	icon_state = "planet-plasma"
+	icon = 'icons/misc/overmap_large.dmi'
 	preserve_level = TRUE
 	landing_sound = 'sound/effects/planet_landing_1.ogg'
+	pixel_w = -8
+	pixel_z = -8

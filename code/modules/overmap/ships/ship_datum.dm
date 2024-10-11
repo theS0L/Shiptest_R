@@ -18,25 +18,60 @@
 	if(trails[3])
 		qdel(trails[3])
 
+/datum/overmap/ship/proc/hide_trails()
+	if(trails[1])
+		trails[1].alpha = 0
+	if(trails[2])
+		trails[2].alpha = 0
+	if(trails[3])
+		trails[3].alpha = 0
+
 /datum/overmap/ship/proc/update_trails(var/obj/shiptrail/newtrail)
 	if(trails[1])
 		trails[1].alpha = 128
 		if(trails[2])
 			trails[2].alpha = 64
 			if(trails[3])
-				qdel(trails[3])
+				var/obj/first_trail = trails[3]
 				trails[3] = trails[2]
 				trails[2] = trails[1]
-				trails[1] = newtrail
+				first_trail.alpha = 200
+				first_trail.forceMove(token.loc)
+				first_trail.pixel_w = last_anim["x"]
+				first_trail.pixel_z = last_anim["y"]
+				var/matrix/M = matrix()
+				M.Turn(bow_heading)
+				first_trail.transform = M
+				trails[1] = first_trail
 			else
 				trails[3] = trails[2]
 				trails[2] = trails[1]
-				trails[1] = newtrail
+				var/obj/shiptrail/S = new(token.loc)
+				S.pixel_w = last_anim["x"]
+				S.pixel_z = last_anim["y"]
+				var/matrix/M = matrix()
+				M.Turn(bow_heading)
+				S.transform = M
+				trails[1] = S
+
 		else
 			trails[2] = trails[1]
-			trails[1] = newtrail
+			var/obj/shiptrail/S = new(token.loc)
+			S.pixel_w = last_anim["x"]
+			S.pixel_z = last_anim["y"]
+			var/matrix/M = matrix()
+			M.Turn(bow_heading)
+			S.transform = M
+			trails[1] = S
+
 	else
-		trails[1] = newtrail
+		var/obj/shiptrail/S = new(token.loc)
+		S.pixel_w = last_anim["x"]
+		S.pixel_z = last_anim["y"]
+		var/matrix/M = matrix()
+		M.Turn(bow_heading)
+		S.transform = M
+		trails[1] = S
 
 /datum/overmap/ship
 	name = "overmap vessel"
@@ -64,6 +99,7 @@
 
 	var/list/position_to_move = list("x" = 0, "y" = 0)
 	var/list/last_anim = list("x" = 0, "y" = 0)
+	var/list/vector_to_add = list("x" = 0, "y" = 0)
 
 	var/list/arpa = list()
 
@@ -74,8 +110,6 @@
 	///ONLY USED FOR NON-SIMULATED SHIPS. The amount per burn that this ship accelerates
 	var/acceleration_speed = 0.02
 
-	var/static/mutable_appearance/move_vec
-	var/static/mutable_appearance/ship_image
 	var/skiptickfortrail = 0
 	var/list/trails = list(1 = null,
 							2 = null,
@@ -99,26 +133,19 @@
 		position_to_move["y"] = y
 	if(docked_to)
 		RegisterSignal(docked_to, COMSIG_OVERMAP_MOVED, PROC_REF(on_docked_to_moved))
-	if(!move_vec)
-		move_vec = new /mutable_appearance()
-		move_vec.icon = 'icons/misc/overmap.dmi'
-		move_vec.icon_state = "movement_vector"
-	if(!ship_image)
-		ship_image = new /mutable_appearance()
-		ship_image.icon = 'icons/misc/overmap.dmi'
-		ship_image.icon_state = "ship"
-	var/matrix/N = matrix()
-	N.Turn(bow_heading)
-	ship_image.transform = N
-	token.add_overlay(ship_image)
-	var/matrix/M = matrix()
-	M.Scale(1, get_speed()/3)
-	move_vec.transform = M
-	token.add_overlay(move_vec)
+	if(token)
+		var/matrix/N = matrix()
+		N.Turn(bow_heading)
+		token.ship_image.transform = N
+		var/matrix/M = matrix()
+		M.Scale(1, get_speed()/3)
+		M.Turn(get_alt_heading())
+		token.move_vec.transform = M
 
 /datum/overmap/ship/Destroy()
-	if(movement_callback_id)
-		deltimer(movement_callback_id, SSovermap_movement)
+	clear_trails()
+//	if(movement_callback_id)
+//		deltimer(movement_callback_id, SSovermap_movement)
 	return ..()
 
 /datum/overmap/ship/complete_dock(datum/overmap/dock_target, datum/docking_ticket/ticket)
@@ -144,6 +171,7 @@
  * * n_x - Speed in the X direction to change
  * * n_y - Speed in the Y direction to change
  */
+
 /datum/overmap/ship/proc/adjust_speed(n_x, n_y)
 //	var/offset = 1
 //	if(movement_callback_id)
@@ -151,6 +179,9 @@
 //		offset = clamp(timeleft(movement_callback_id, SSovermap_movement) / previous_time, 0, 1)
 //		deltimer(movement_callback_id, SSovermap_movement)
 //		movement_callback_id = null //just in case
+
+	if(QDELING(src) || docked_to)
+		return
 
 	speed_x = min(max_speed, speed_x + n_x)
 	speed_y = min(max_speed, speed_y + n_y)
@@ -160,18 +191,18 @@
 	if(speed_y < min_speed && speed_y > -min_speed)
 		speed_y = 0
 
-	token.update_icon_state()
+	speed_x = speed_x+vector_to_add["x"]
+	speed_y = speed_y+vector_to_add["y"]
+	vector_to_add["x"] = 0
+	vector_to_add["y"] = 0
+
 	update_visuals()
 
-	token.cut_overlay(move_vec)
-	var/matrix/M = matrix()
-	M.Scale(1, get_speed()/3)
-	M.Turn(get_alt_heading())
-	move_vec.transform = M
-	token.add_overlay(move_vec)
-
-	if(is_still() || QDELING(src) || movement_callback_id || docked_to || docking)
-		return
+	if(token)
+		var/matrix/M = matrix()
+		M.Scale(1, get_speed()/3)
+		M.Turn(get_alt_heading())
+		token.move_vec.transform = M
 
 //	var/timer = 1 / MAGNITUDE(speed_x, speed_y) * offset
 //	movement_callback_id = addtimer(CALLBACK(src, PROC_REF(tick_move)), timer, TIMER_STOPPABLE, SSovermap_movement)
@@ -185,6 +216,7 @@
 	update_visuals()
 	token.update_screen()
 
+/*
 /datum/overmap/ship/proc/tick_move()
 	if(is_still() || QDELING(src) || docked_to)
 		adjust_speed(-speed_x, -speed_y)
@@ -205,7 +237,7 @@
 	var/timer = 1 / current_speed
 	movement_callback_id = addtimer(CALLBACK(src, PROC_REF(tick_move)), timer, TIMER_STOPPABLE, SSovermap_movement)
 	token.update_screen()
-
+*/
 /**
  * Returns whether or not the ship is moving in any direction.
  */
@@ -285,6 +317,12 @@
 		else
 			stuff = stuffx
 
+	if(round(stuff) == 0)
+		return "00:00"
+
+	if(round(stuff) < 0)
+		return "00:00"
+
 	var/minutes = round(stuff/60)
 
 	var/textone
@@ -307,26 +345,9 @@
 //	return "[add_leading(num2text((. / 60) % 60), 2, "0")]:[add_leading(num2text(. % 60), 2, "0")]"
 
 /datum/overmap/ship/process(delta_time)
-	if((burn_direction == BURN_STOP && is_still()) || docked_to || docking)
+	if(docked_to || docking)
 		change_heading(BURN_NONE)
 		return
-
-	if(rotating == 1)
-		bow_heading = bow_heading+rotation_velocity
-		rotation_velocity = rotation_velocity+1
-		if(bow_heading >= 360)
-			bow_heading = bow_heading-360
-	if(rotating == -1)
-		bow_heading = bow_heading+rotation_velocity
-		rotation_velocity = rotation_velocity-1
-		if(bow_heading < 0)
-			bow_heading = bow_heading+360
-
-	token.cut_overlay(ship_image)
-	var/matrix/N = matrix()
-	N.Turn(bow_heading)
-	ship_image.transform = N
-	token.add_overlay(ship_image)
 
 //	var/added_velocity = calculate_burn(burn_direction, burn_engines(burn_percentage, delta_time))
 
