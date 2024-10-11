@@ -557,7 +557,7 @@
 "fm" = (
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "fE" = (

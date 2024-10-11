@@ -6101,7 +6101,7 @@
 	},
 /area/ruin/space/has_grav/ancientstation/sec)
 "WK" = (
-/obj/item/banner/elysium{
+/obj/item/banner/elysium/mundane{
 	pixel_x = 4;
 	anchored = 1
 	},
