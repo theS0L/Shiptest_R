@@ -317,11 +317,16 @@ GLOBAL_LIST_INIT(overmap_event_pick_list, list(
 	/datum/overmap/event/electric/minor = 45,
 	/datum/overmap/event/electric = 40,
 	/datum/overmap/event/electric/major = 35,
+	// [CELADON-EDIT] - CELADON_OVERMAP - Включаем на овермапе ионные шторма
 	/* commented out until ion storms aren't literal torture
 	/datum/overmap/event/emp/minor = 45,
 	/datum/overmap/event/emp = 40,
 	/datum/overmap/event/emp/major = 45,
-	*/
+	*/	// CELADON-EDIT - ORIGINAL
+	/datum/overmap/event/emp/minor = 25,
+	/datum/overmap/event/emp = 20,
+	/datum/overmap/event/emp/major = 25,
+	// [/CELADON-EDIT]
 	/datum/overmap/event/meteor/minor = 45,
 	/datum/overmap/event/meteor = 40,
 	/datum/overmap/event/meteor/major = 35,
