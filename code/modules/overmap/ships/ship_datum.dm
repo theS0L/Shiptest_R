@@ -9,6 +9,7 @@
 	icon = 'icons/misc/overmap.dmi'
 	icon_state = "ship_trail"
 	alpha = 200
+	glide_size = 32
 
 /datum/overmap/ship/proc/clear_trails()
 	if(trails[1])
