@@ -19,6 +19,7 @@
 #include "ipc_chassis/_ipc_chassis.dme"
 #include "loadout/_loadout.dme"
 #include "map_expansion/_map_expansion.dme"
+#include "overmap/_overmap.dme"
 #include "qol/_qol.dme"
 #include "radio_syndicate/_radio_syndicate.dme"
 #include "repairs_other/_repairs_other.dme"
@@ -63,6 +64,7 @@
 
 // --- MOBS --- //
 #include "drakeborgs/_drakeborgs.dme"
+#include "lanius/_lanius.dme"
 #include "mobs/_mobs.dme"
 
 // --- MISC --- //
@@ -75,7 +77,7 @@
 
 // --- RETURNS --- //
 #include "crusher_trophy/_crusher_trophy.dme"
-#include "return_tendrils/_return_tendrils.dme"
+#include "return_content/_return_content.dme"
 
 // --- DONATORS --- //
 #include "donaters/_donaters.dme"
