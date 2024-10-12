@@ -1805,19 +1805,28 @@
 /area/ship/bridge)
 "cW" = (
 /obj/structure/table/reinforced,
-/obj/item/pneumatic_cannon/speargun{
-	pixel_x = -3;
-	pixel_y = 7
+/obj/item/throwing_star/magspear{
+	pixel_x = 4
 	},
-/obj/item/pneumatic_cannon/speargun{
-	pixel_x = -1;
-	pixel_y = 3
+/obj/item/throwing_star/magspear{
+	pixel_x = 1;
+	pixel_y = -3
 	},
-/obj/item/storage/backpack/magspear_quiver{
-	pixel_x = -1;
-	pixel_y = -7
+/obj/item/throwing_star/magspear{
+	pixel_y = 12
 	},
-/obj/item/storage/backpack/magspear_quiver,
+/obj/item/throwing_star/magspear{
+	pixel_y = 10
+	},
+/obj/item/throwing_star/magspear{
+	pixel_y = 8
+	},
+/obj/item/throwing_star/magspear{
+	pixel_y = 6
+	},
+/obj/item/throwing_star/magspear{
+	pixel_y = 4
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/external)
 "cX" = (
@@ -2398,6 +2407,14 @@
 	},
 /obj/machinery/light/small/directional/south,
 /obj/machinery/firealarm/directional/west,
+/obj/item/pneumatic_cannon/speargun{
+	pixel_x = -1;
+	pixel_y = 11
+	},
+/obj/item/pneumatic_cannon/speargun{
+	pixel_x = -3;
+	pixel_y = 7
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/external)
 "dT" = (
