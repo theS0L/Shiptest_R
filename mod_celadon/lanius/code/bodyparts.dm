@@ -22,13 +22,22 @@
 	icon_state = "heart"
 	zone = BODY_ZONE_CHEST
 
+/obj/item/organ/liver/lanius
+	zone = BODY_ZONE_HEAD
+	useable = FALSE
+	icon = null
+
 /obj/item/organ/eyes/lanius
 	useable = FALSE
+
 /obj/item/organ/ears/lanius
 	useable = FALSE
+	icon = null
+
 /obj/item/organ/stomach/lanius
 	zone = BODY_ZONE_HEAD
 	useable = FALSE
+	icon = null
 
 /obj/item/bodypart/head/lanius
 	icon = 'mod_celadon/_storge_icons/icons/lanius/lanius_bodyparts.dmi'
