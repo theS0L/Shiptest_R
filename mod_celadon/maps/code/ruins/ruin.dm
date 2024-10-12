@@ -236,14 +236,6 @@
 	This one seems to simulate the wintery climate of the northern provinces, including a sauna!"
 	suffix = "lavaland_surface_sloth.dmm"
 
-/datum/map_template/ruin/lavaland/elephant_graveyard
-	name = "Elephant Graveyard"
-	id = "Graveyard"
-	description = "An abandoned graveyard, calling to those unable to continue."
-	suffix = "lavaland_surface_elephant_graveyard.dmm"
-	allow_duplicates = FALSE
-	cost = 10
-
 /datum/map_template/ruin/lavaland/buried_shrine
 	name = "Buried Shrine"
 	id = "buried_shrine"
