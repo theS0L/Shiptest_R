@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Flower-class",
+	"map_name": "Flower ship",
 	"map_short_name": "Flower",
 	"description": "Бюджетный корабль, предназначенный для опытных ботаников.",
 	"map_path": "_maps/_mod_celadon/shuttles/independent/independent_flower.dmm",

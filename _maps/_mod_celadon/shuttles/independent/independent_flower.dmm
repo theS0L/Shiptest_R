@@ -1,18 +1,15 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aS" = (
-/obj/structure/cable,
-/obj/machinery/power/ship_gravity,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "aW" = (
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/atmospherics/components/binary/pump/layer2,
 /obj/machinery/light/directional/east,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "bQ" = (
@@ -38,7 +35,7 @@
 	preferred_direction = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/hallway/central)
+/area/ship/crew/hydroponics)
 "da" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
@@ -77,8 +74,8 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 4
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -111,18 +108,15 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
 "hn" = (
-/obj/structure/rack,
-/obj/item/storage/toolbox/mechanical{
-	pixel_y = -1
-	},
-/obj/item/storage/toolbox/electrical{
-	pixel_y = 5
-	},
-/obj/item/storage/box/disks_plantgene,
-/obj/item/storage/box/disks_plantgene,
-/obj/item/storage/box/disks_plantgene,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4{
 	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -141,13 +135,9 @@
 	dir = 1
 	},
 /obj/machinery/light_switch{
-	pixel_y = -12;
-	pixel_x = -19;
+	pixel_y = -11;
+	pixel_x = -20;
 	dir = 4
-	},
-/obj/machinery/firealarm/directional/west{
-	pixel_y = 0;
-	pixel_x = -41
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
@@ -165,7 +155,9 @@
 "iN" = (
 /obj/structure/tank_dispenser/oxygen,
 /obj/machinery/firealarm/directional/east,
-/obj/effect/turf_decal/corner/opaque/brown/three_quarters,
+/obj/effect/turf_decal/corner/opaque/brown/border{
+	dir = 6
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "iZ" = (
@@ -196,28 +188,29 @@
 	pixel_x = -14
 	},
 /obj/structure/flora/tree/chapel{
-	pixel_x = -24;
+	pixel_x = -28;
 	pixel_y = -26;
 	density = 0
 	},
 /turf/open/floor/grass,
 /area/ship/crew/hydroponics)
 "kI" = (
+/obj/structure/flora/ausbushes/leafybush,
 /turf/open/floor/grass,
 /area/ship/crew/hydroponics)
 "lz" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
+	dir = 10
+	},
 /obj/machinery/button/door{
 	dir = 8;
 	id = "flowerengines";
-	name = "Bridge Lockdown";
-	pixel_x = 21;
+	name = "Engine Lockdown";
+	pixel_x = 22;
 	pixel_y = 0
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
-	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -225,11 +218,16 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/opaque/brown/half,
+/obj/effect/turf_decal/corner/opaque/brown/border,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "nu" = (
-/obj/structure/reagent_dispensers/watertank/high,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "oa" = (
@@ -284,6 +282,9 @@
 	pixel_y = -6;
 	pixel_x = -7
 	},
+/obj/item/bong{
+	pixel_x = -8
+	},
 /turf/open/floor/grass,
 /area/ship/crew/hydroponics)
 "sq" = (
@@ -305,11 +306,14 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
-	dir = 5
-	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -326,11 +330,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
 "th" = (
-/obj/machinery/computer/cargo{
-	dir = 8
-	},
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 4
+	},
+/obj/machinery/computer/helm{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -381,8 +385,8 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/corner/opaque/brown/three_quarters{
-	dir = 8
+/obj/effect/turf_decal/corner/opaque/brown/border{
+	dir = 5
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -407,9 +411,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4{
 	dir = 4
 	},
-/obj/structure/window/reinforced/spawner{
-	dir = 8
-	},
+/obj/structure/window/fulltile,
+/obj/structure/grille,
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "flowerengines"
@@ -436,15 +439,11 @@
 	pixel_x = 0;
 	pixel_y = -17
 	},
-/obj/machinery/light_switch{
-	pixel_y = 0;
-	pixel_x = -24;
-	dir = 4
-	},
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters,
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters{
 	dir = 8
 	},
+/obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "zn" = (
@@ -454,7 +453,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/brown/half,
+/obj/effect/turf_decal/corner/opaque/brown/border,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "AB" = (
@@ -467,8 +466,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
+/obj/item/radio/intercom/directional/south,
 /turf/open/floor/plasteel/dark,
-/area/ship/hallway/central)
+/area/ship/crew/hydroponics)
 "AF" = (
 /turf/template_noop,
 /area/template_noop)
@@ -476,14 +476,21 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
 /obj/structure/cable,
+/obj/structure/cable/yellow{
+	icon_state = "2-5"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/reagent_dispensers/watertank/high,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Cf" = (
 /obj/machinery/holopad/emergency/command,
+/obj/effect/turf_decal/trimline/transparent/bottlegreen{
+	pixel_x = -1
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
 "CA" = (
@@ -493,6 +500,9 @@
 /obj/structure/table/wood,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/light/directional/north,
+/obj/machinery/firealarm/directional/west{
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
 "CK" = (
@@ -528,12 +538,12 @@
 	dir = 4
 	},
 /obj/machinery/light_switch{
-	pixel_y = -14;
-	pixel_x = -19;
+	pixel_y = -11;
+	pixel_x = -20;
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/brown/three_quarters{
-	dir = 4
+/obj/effect/turf_decal/corner/opaque/brown/border{
+	dir = 9
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -565,8 +575,18 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 4
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/rack,
+/obj/item/storage/box/disks_plantgene,
+/obj/item/storage/box/disks_plantgene,
+/obj/item/storage/box/disks_plantgene,
+/obj/item/storage/toolbox/mechanical{
+	pixel_y = -1
+	},
+/obj/item/storage/toolbox/electrical{
+	pixel_y = 5
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -583,7 +603,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/turf_decal/corner/opaque/brown/half,
+/obj/effect/turf_decal/corner/opaque/brown/border,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "FQ" = (
@@ -616,8 +636,8 @@
 	icon_state = "1-4"
 	},
 /obj/item/kirbyplants/random,
-/obj/effect/turf_decal/corner/opaque/brown/three_quarters{
-	dir = 1
+/obj/effect/turf_decal/corner/opaque/brown/border{
+	dir = 10
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
@@ -625,12 +645,13 @@
 /obj/structure/bed,
 /obj/structure/curtain/bounty,
 /obj/item/bedsheet/random,
-/obj/machinery/light/directional/north,
 /obj/machinery/firealarm/directional/east,
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters{
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters,
+/obj/machinery/light/directional/west,
+/obj/item/radio/intercom/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "IL" = (
@@ -684,9 +705,19 @@
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters{
 	dir = 8
 	},
+/obj/machinery/light_switch{
+	pixel_y = 11;
+	pixel_x = 20;
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Ku" = (
+/obj/machinery/power/port_gen/pacman,
+/obj/item/stack/sheet/mineral/plasma{
+	amount = 25
+	},
+/obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "KD" = (
@@ -704,12 +735,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "KN" = (
-/obj/machinery/power/port_gen/pacman,
-/obj/structure/cable{
-	icon_state = "0-4"
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
 	},
-/obj/item/stack/sheet/mineral/plasma{
-	amount = 25
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -796,7 +826,7 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced,
-/obj/structure/flora/ausbushes/leafybush,
+/obj/structure/flora/ausbushes/stalkybush,
 /turf/open/floor/grass,
 /area/ship/crew/hydroponics)
 "Nv" = (
@@ -830,6 +860,9 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "OQ" = (
@@ -857,6 +890,10 @@
 	pixel_x = -13;
 	pixel_y = 4
 	},
+/obj/structure/mirror{
+	pixel_x = -25;
+	pixel_y = 8
+	},
 /turf/open/floor/hangar/plasteel/white,
 /area/ship/crew/hydroponics)
 "PH" = (
@@ -867,8 +904,8 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/airalarm/directional/east,
-/obj/machinery/atmospherics/pipe/manifold/supply/visible/layer2{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -892,8 +929,14 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/apc/auto_name/directional/east,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4{
-	dir = 9
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/light_switch{
+	pixel_y = 11;
+	pixel_x = 20;
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -902,10 +945,11 @@
 	dir = 8
 	},
 /obj/structure/cable{
-	icon_state = "0-2"
+	icon_state = "0-8"
 	},
-/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2,
-/obj/machinery/firealarm/directional/east,
+/obj/structure/cable/yellow{
+	icon_state = "0-10"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "QD" = (
@@ -919,13 +963,9 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/light_switch{
-	pixel_y = 0;
-	pixel_x = 23;
-	dir = 8
+/obj/machinery/light/directional/east,
+/obj/machinery/atmospherics/components/binary/pump/layer2{
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -942,11 +982,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
 "RC" = (
-/obj/machinery/computer/helm{
-	dir = 8
-	},
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 4
+	},
+/obj/machinery/computer/cargo{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -984,9 +1024,6 @@
 /area/ship/cargo)
 "Td" = (
 /obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -999,10 +1036,13 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/cable{
-	icon_state = "1-8"
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer4{
+	dir = 9
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/firealarm/directional/east,
+/obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "UO" = (
@@ -1031,7 +1071,7 @@
 /obj/structure/toilet{
 	pixel_y = 10
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/hangar/plasteel/white,
 /area/ship/crew/hydroponics)
 "WT" = (
@@ -1079,7 +1119,6 @@
 	pixel_y = 7
 	},
 /obj/machinery/airalarm/directional/east,
-/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -1155,7 +1194,7 @@ CK
 Ey
 HI
 Nv
-AB
+Rw
 xc
 Wo
 Pu
@@ -1194,7 +1233,7 @@ Nm
 FQ
 mc
 Nv
-AB
+Rw
 qS
 Op
 OF
@@ -1207,7 +1246,7 @@ CK
 uU
 iN
 Nv
-AB
+Rw
 qS
 Op
 iZ
