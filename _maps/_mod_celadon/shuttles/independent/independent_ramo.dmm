@@ -2388,10 +2388,7 @@
 /turf/open/floor/plating,
 /area/ship/external)
 "dR" = (
-/obj/docking_port{
-	dir = 8
-	},
-/turf/template_noop,
+/turf/open/floor/plating,
 /area/template_noop)
 "dS" = (
 /obj/structure/table/reinforced,
@@ -2504,6 +2501,15 @@
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/external)
+"xU" = (
+/obj/docking_port/stationary{
+	width = 30;
+	height = 15;
+	dwidth = 15;
+	dir = 4
+	},
+/turf/template_noop,
+/area/template_noop)
 "BG" = (
 /obj/machinery/atmospherics/pipe/simple{
 	icon_state = "pipe11-3";
@@ -3098,7 +3104,7 @@ bL
 bL
 "}
 (25,1,1) = {"
-dR
+aa
 dD
 aG
 aR
@@ -3153,9 +3159,9 @@ ci
 cj
 ca
 dW
-aa
-aa
-aa
+dR
+dR
+dR
 aa
 bW
 ca
@@ -3172,7 +3178,7 @@ aa
 bW
 aa
 aa
-aa
+xU
 aa
 aa
 aa
@@ -3192,7 +3198,7 @@ aa
 bX
 bX
 bX
-bX
+ca
 aa
 aa
 aa
