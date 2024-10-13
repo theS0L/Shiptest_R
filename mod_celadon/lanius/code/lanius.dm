@@ -49,12 +49,12 @@
 	species_l_leg = /obj/item/bodypart/leg/left/lanius
 	species_r_leg = /obj/item/bodypart/leg/right/lanius
 
-	species_robotic_chest = /obj/item/bodypart/chest/robot
-	species_robotic_head = /obj/item/bodypart/head/robot
-	species_robotic_l_arm = /obj/item/bodypart/l_arm/robot/surplus
-	species_robotic_r_arm = /obj/item/bodypart/r_arm/robot/surplus
-	species_robotic_l_leg = /obj/item/bodypart/leg/left/robot/surplus
-	species_robotic_r_leg = /obj/item/bodypart/leg/right/robot/surplus
+	species_robotic_chest = /obj/item/bodypart/chest/lanius
+	species_robotic_head = /obj/item/bodypart/head/lanius
+	species_robotic_l_arm = /obj/item/bodypart/l_arm/lanius
+	species_robotic_r_arm = /obj/item/bodypart/r_arm/lanius
+	species_robotic_l_leg = /obj/item/bodypart/leg/left/lanius
+	species_robotic_r_leg = /obj/item/bodypart/leg/right/lanius
 
 /datum/species/lanius/spec_life(mob/living/carbon/human/H)
 	. = ..()
