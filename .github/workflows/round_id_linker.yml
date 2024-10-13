@@ -9,5 +9,5 @@ jobs:
     steps:
       - uses: shiptest-ss13/round_linker@v2.0.0
         with:
-          repo-token: ${{ secrets.TOKEN || secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           link-url: "https://shiptest.net/stats/rounds/"
