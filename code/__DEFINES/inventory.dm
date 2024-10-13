@@ -47,6 +47,9 @@
 #define HIDENECK (1<<10)
 #define HIDEHORNS (1<<11) 	// Used for hiding Sarathi horns.
 #define HIDESNOUT (1<<11)
+// [CELADON-ADD] - CELADON_FIX_TAIL
+#define HIDETAIL (1<<12)
+// [/CELADON-ADD]
 
 //bitflags for clothing coverage - also used for limbs
 #define HEAD (1<<0)

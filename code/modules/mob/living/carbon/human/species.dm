@@ -919,6 +919,16 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	if("tajara_ears" in mutant_bodyparts)
 		if(!H.dna.features["tajara_ears"] || H.dna.features["tajara_ears"] == "None" || (H.head && (H.head.flags_inv & HIDEHAIR)))
 			bodyparts_to_add -= "tajara_ears"
+
+	if("tajara_tail" in mutant_bodyparts)
+		if(!H.dna.features["tajara_tail"] || H.dna.features["tajara_tail"] == "None" || (H.wear_suit && (H.wear_suit.flags_inv & HIDETAIL)))
+			bodyparts_to_add -= "tajara_tail"
+
+	if("waggingtajara_tail" in mutant_bodyparts)
+		if(!H.dna.features["tajara_tail"] || H.dna.features["tajara_tail"] == "None" || (H.wear_suit && (H.wear_suit.flags_inv & HIDETAIL)))
+			bodyparts_to_add -= "waggingtajara_tail"
+		else if ("tajara_tail" in mutant_bodyparts)
+			bodyparts_to_add -= "waggingtajara_tail"
 	// [/CELADON-ADD]
 
 	////PUT ALL YOUR WEIRD ASS REAL-LIMB HANDLING HERE
