@@ -1482,13 +1482,28 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			else
 				H.remove_movespeed_modifier(/datum/movespeed_modifier/hunger)
 
-	switch(H.nutrition)
+// [CELADON - EDIT] - CELADON_LANIUS
+/* 	switch(H.nutrition) // [CELADON - EDIT] - ORIGINAL
 		if(NUTRITION_LEVEL_HUNGRY to INFINITY)
 			H.clear_alert("nutrition")
 		if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
 			H.throw_alert("nutrition", /atom/movable/screen/alert/hungry)
 		if(0 to NUTRITION_LEVEL_STARVING)
-			H.throw_alert("nutrition", /atom/movable/screen/alert/starving)
+			H.throw_alert("nutrition", /atom/movable/screen/alert/starving) */ // [/CELADON - EDIT] - ORIGINAL
+	switch(H.nutrition)
+		if(NUTRITION_LEVEL_HUNGRY to INFINITY)
+			H.clear_alert("nutrition")
+		if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
+			if(is_species(H, /datum/species/lanius))
+				H.throw_alert("nutrition", /atom/movable/screen/alert/hungry/lanius)
+			else
+				H.throw_alert("nutrition", /atom/movable/screen/alert/hungry)
+		if(0 to NUTRITION_LEVEL_STARVING)
+			if(is_species(H, /datum/species/lanius))
+				H.throw_alert("nutrition", /atom/movable/screen/alert/starving/lanius)
+			else
+				H.throw_alert("nutrition", /atom/movable/screen/alert/starving)
+// [/CELADON - EDIT]
 
 /datum/species/proc/update_health_hud(mob/living/carbon/human/H)
 	return 0
