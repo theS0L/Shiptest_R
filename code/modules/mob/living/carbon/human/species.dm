@@ -915,13 +915,19 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(!H.dna.features["tajara_hairs"] || H.dna.features["tajara_hairs"] == "Plain" || (H.head && (H.head.flags_inv & HIDEHAIR)) || (H.wear_mask && (H.wear_mask.flags_inv & HIDEHAIR)) || !HD)
 			bodyparts_to_add -= "tajara_hairs"
 
-	if("tajara_tail" in mutant_bodyparts)
-		if(!H.dna.features["tajara_tail"] || H.dna.features["tajara_tail"] == "None" || H.wear_suit && (H.wear_suit.flags_inv & HIDEJUMPSUIT))
-			bodyparts_to_add -= "tajara_tail"
-
 	if("tajara_ears" in mutant_bodyparts)
 		if(!H.dna.features["tajara_ears"] || H.dna.features["tajara_ears"] == "None" || (H.head && (H.head.flags_inv & HIDEHAIR)))
 			bodyparts_to_add -= "tajara_ears"
+
+	if("tajara_tail" in mutant_bodyparts)
+		if(!H.dna.features["tajara_tail"] || H.dna.features["tajara_tail"] == "None" || (H.wear_suit && (H.wear_suit.flags_inv & HIDETAIL)))
+			bodyparts_to_add -= "tajara_tail"
+
+	if("waggingtajara_tail" in mutant_bodyparts)
+		if(!H.dna.features["tajara_tail"] || H.dna.features["tajara_tail"] == "None" || (H.wear_suit && (H.wear_suit.flags_inv & HIDETAIL)))
+			bodyparts_to_add -= "waggingtajara_tail"
+		else if ("tajara_tail" in mutant_bodyparts)
+			bodyparts_to_add -= "waggingtajara_tail"
 
 	// [CELADON-ADD] - CELADON_RIOL
 	if("riol_nose_markings" in mutant_bodyparts)
@@ -1585,13 +1591,28 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			else
 				H.remove_movespeed_modifier(/datum/movespeed_modifier/hunger)
 
+// [CELADON - EDIT] - CELADON_LANIUS
+	// switch(H.nutrition) // [CELADON - EDIT] - ORIGINAL
+	// 	if(NUTRITION_LEVEL_HUNGRY to INFINITY)
+	// 		H.clear_alert("nutrition")
+	// 	if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
+	// 		H.throw_alert("nutrition", /atom/movable/screen/alert/hungry)
+	// 	if(0 to NUTRITION_LEVEL_STARVING)
+	// 		H.throw_alert("nutrition", /atom/movable/screen/alert/starving) // [/CELADON - EDIT] - ORIGINAL
 	switch(H.nutrition)
 		if(NUTRITION_LEVEL_HUNGRY to INFINITY)
 			H.clear_alert("nutrition")
 		if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
-			H.throw_alert("nutrition", /atom/movable/screen/alert/hungry)
+			if(is_species(H, /datum/species/lanius))
+				H.throw_alert("nutrition", /atom/movable/screen/alert/hungry/lanius)
+			else
+				H.throw_alert("nutrition", /atom/movable/screen/alert/hungry)
 		if(0 to NUTRITION_LEVEL_STARVING)
-			H.throw_alert("nutrition", /atom/movable/screen/alert/starving)
+			if(is_species(H, /datum/species/lanius))
+				H.throw_alert("nutrition", /atom/movable/screen/alert/starving/lanius)
+			else
+				H.throw_alert("nutrition", /atom/movable/screen/alert/starving)
+// [/CELADON - EDIT]
 
 /datum/species/proc/update_health_hud(mob/living/carbon/human/H)
 	return 0
