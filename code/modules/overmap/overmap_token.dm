@@ -25,17 +25,18 @@
 	parent = new_parent
 	name = parent.name
 	icon_state = parent.token_icon_state
-	if(!move_vec)
-		move_vec = new (loc)
-		move_vec.icon = 'icons/misc/overmap.dmi'
-		move_vec.icon_state = "movement_vector"
-		move_vec.layer = move_vec.layer+1
-	if(!ship_image)
-		ship_image = new (loc)
-		ship_image.icon = 'icons/misc/overmap.dmi'
-		ship_image.icon_state = "ship"
-		ship_image.layer = ship_image.layer+2
 	if(render_map)	// Initialize map objects
+		if(istype(parent, /datum/overmap/ship/controlled))
+			if(!move_vec)
+				move_vec = new (loc)
+				move_vec.icon = 'icons/misc/overmap.dmi'
+				move_vec.icon_state = "movement_vector"
+				move_vec.layer = move_vec.layer+1
+			if(!ship_image)
+				ship_image = new (loc)
+				ship_image.icon = 'icons/misc/overmap.dmi'
+				ship_image.icon_state = "ship"
+				ship_image.layer = ship_image.layer+2
 		map_name = "overmap_[REF(src)]_map"
 		cam_screen = new
 		cam_screen.name = "screen"
@@ -61,8 +62,10 @@
 		QDEL_NULL(cam_screen)
 		QDEL_NULL(cam_plane_master)
 		QDEL_NULL(cam_background)
-	QDEL_NULL(ship_image)
-	QDEL_NULL(move_vec)
+	if(ship_image)
+		QDEL_NULL(ship_image)
+	if(move_vec)
+		QDEL_NULL(move_vec)
 	return ..()
 
 /obj/overmap/attack_ghost(mob/user)

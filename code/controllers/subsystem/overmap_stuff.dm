@@ -18,9 +18,6 @@ SUBSYSTEM_DEF(overmap_stuff)
 	for(var/datum/overmap/ship/i in controlled_ships)
 		if(QDELING(i) || i.docked_to)
 			i.adjust_speed(-i.speed_x, -i.speed_y)
-		if(i.token)
-			i.token.ship_image.forceMove(i.token.loc)
-			i.token.move_vec.forceMove(i.token.loc)
 		if(!i.docked_to)
 			i.check_proximity()
 			i.x_pixels_moved += i.speed_x*(30 SECONDS)
@@ -28,8 +25,6 @@ SUBSYSTEM_DEF(overmap_stuff)
 
 			if(i.x != i.position_to_move["x"] || i.y != i.position_to_move["y"])
 				i.not_tick_move(i.position_to_move["x"]-i.x, i.position_to_move["y"]-i.y)
-				i.token.ship_image.forceMove(i.token.loc)
-				i.token.move_vec.forceMove(i.token.loc)
 				i.token.update_screen()
 			var/list/smooth_anim = list("x" = round(i.x_pixels_moved), "y" = round(i.y_pixels_moved))
 
@@ -50,16 +45,22 @@ SUBSYSTEM_DEF(overmap_stuff)
 				i.position_to_move["y"] = i.y-1
 //			i.not_tick_move(0, -1)
 
-			i.token.pixel_w = i.last_anim["x"]
-			i.token.pixel_z = i.last_anim["y"]
-			i.token.ship_image.pixel_w = i.last_anim["x"]
-			i.token.ship_image.pixel_z = i.last_anim["y"]
-			i.token.move_vec.pixel_w = i.last_anim["x"]
-			i.token.move_vec.pixel_z = i.last_anim["y"]
+			if(i.token)
+				i.token.pixel_w = i.last_anim["x"]
+				i.token.pixel_z = i.last_anim["y"]
 
-			animate(i.token, pixel_w = smooth_anim["x"], pixel_z = smooth_anim["y"], wait, 1)
-			animate(i.token.ship_image, pixel_w = smooth_anim["x"], pixel_z = smooth_anim["y"], wait, 1)
-			animate(i.token.move_vec, pixel_w = smooth_anim["x"], pixel_z = smooth_anim["y"], wait, 1)
+				animate(i.token, pixel_w = smooth_anim["x"], pixel_z = smooth_anim["y"], wait, 1)
+				if(i.token.ship_image)
+					i.token.ship_image.pixel_w = i.last_anim["x"]
+					i.token.ship_image.pixel_z = i.last_anim["y"]
+					animate(i.token.ship_image, pixel_w = smooth_anim["x"], pixel_z = smooth_anim["y"], wait, 1)
+				if(i.token.move_vec)
+					i.token.move_vec.pixel_w = i.last_anim["x"]
+					i.token.move_vec.pixel_z = i.last_anim["y"]
+					animate(i.token.move_vec, pixel_w = smooth_anim["x"], pixel_z = smooth_anim["y"], wait, 1)
+
+
+
 
 //			if(i.token.render_map)
 //				if(i.token.cam_screen)
@@ -79,7 +80,7 @@ SUBSYSTEM_DEF(overmap_stuff)
 
 SUBSYSTEM_DEF(overmap_rotation_velocity)
 	name = "Overmap Rotation Velocity"
-	wait = 3
+	wait = 4		//Пиздец немного но сойдёт
 	init_order = INIT_ORDER_OVERMAP
 	flags = SS_KEEP_TIMING|SS_NO_TICK_CHECK
 	runlevels = RUNLEVEL_SETUP | RUNLEVEL_GAME
@@ -96,6 +97,11 @@ SUBSYSTEM_DEF(overmap_rotation_velocity)
 	controlled_ships = SSovermap.controlled_ships
 	for(var/datum/overmap/ship/i in controlled_ships)
 		if(!i.docked_to)
+			if(i.token)
+				if(i.token.ship_image)
+					i.token.ship_image.alpha = 255
+				if(i.token.move_vec)
+					i.token.move_vec.alpha = 255
 			if(i.rotating == 1)
 				i.bow_heading = SIMPLIFY_DEGREES(i.bow_heading+i.rotation_velocity)
 				i.rotation_velocity = min(90, i.rotation_velocity+1)
@@ -105,4 +111,11 @@ SUBSYSTEM_DEF(overmap_rotation_velocity)
 
 			var/matrix/N = matrix()
 			N.Turn(i.bow_heading)
-			i.token.ship_image.transform = N
+			if(i.token.ship_image)
+				i.token.ship_image.transform = N
+		else
+			if(i.token)
+				if(i.token.ship_image)
+					i.token.ship_image.alpha = 0
+				if(i.token.move_vec)
+					i.token.move_vec.alpha = 0

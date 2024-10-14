@@ -13,11 +13,11 @@
 
 /datum/overmap/ship/proc/clear_trails()
 	if(trails[1])
-		qdel(trails[1])
+		QDEL_NULL(trails[1])
 	if(trails[2])
-		qdel(trails[2])
+		QDEL_NULL(trails[2])
 	if(trails[3])
-		qdel(trails[3])
+		QDEL_NULL(trails[3])
 
 /datum/overmap/ship/proc/hide_trails()
 	if(trails[1])
@@ -134,14 +134,6 @@
 		position_to_move["y"] = y
 	if(docked_to)
 		RegisterSignal(docked_to, COMSIG_OVERMAP_MOVED, PROC_REF(on_docked_to_moved))
-	if(token)
-		var/matrix/N = matrix()
-		N.Turn(bow_heading)
-		token.ship_image.transform = N
-		var/matrix/M = matrix()
-		M.Scale(1, get_speed()/3)
-		M.Turn(get_alt_heading())
-		token.move_vec.transform = M
 
 /datum/overmap/ship/Destroy()
 	clear_trails()
@@ -203,7 +195,8 @@
 		var/matrix/M = matrix()
 		M.Scale(1, get_speed()/3)
 		M.Turn(get_alt_heading())
-		token.move_vec.transform = M
+		if(token.move_vec)
+			token.move_vec.transform = M
 
 //	var/timer = 1 / MAGNITUDE(speed_x, speed_y) * offset
 //	movement_callback_id = addtimer(CALLBACK(src, PROC_REF(tick_move)), timer, TIMER_STOPPABLE, SSovermap_movement)
@@ -213,9 +206,16 @@
  */
 
 /datum/overmap/ship/proc/not_tick_move(var/xmov, var/ymov)
+	if(QDELING(src))
+		return
 	overmap_move(x + xmov, y + ymov)
 	update_visuals()
-	token.update_screen()
+	if(token)
+		token.update_screen()
+		if(token.ship_image)
+			token.ship_image.forceMove(token.loc)
+		if(token.move_vec)
+			token.move_vec.forceMove(token.loc)
 
 /*
 /datum/overmap/ship/proc/tick_move()
