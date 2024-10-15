@@ -16,17 +16,20 @@
 		return
 	// [CELADON-ADD] - OVERMAP ICON - Это вагабонд насрал
 	if(prob(25))
-		var/image/I = image('icons/turf/overmap.dmi', rand(1, 16))
+		var/image/I = image('icons/turf/overmap.dmi')
+		I.icon_state = "[rand(1, 16)]"
 		I.pixel_x = rand(-16, 16)
 		I.pixel_y = rand(-16, 16)
 		overlays += I
 	if(prob(25))
-		var/image/I = image('icons/turf/overmap.dmi', rand(1, 16))
+		var/image/I = image('icons/turf/overmap.dmi')
+		I.icon_state = "[rand(1, 16)]"
 		I.pixel_x = rand(-16, 16)
 		I.pixel_y = rand(-16, 16)
 		overlays += I
 	if(prob(25))
-		var/image/I = image('icons/turf/overmap.dmi', rand(1, 16))
+		var/image/I = image('icons/turf/overmap.dmi')
+		I.icon_state = "[rand(1, 16)]"
 		I.pixel_x = rand(-16, 16)
 		I.pixel_y = rand(-16, 16)
 		overlays += I
