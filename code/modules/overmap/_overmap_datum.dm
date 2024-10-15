@@ -38,11 +38,14 @@
 	/// The icon state the token will be set to on init.
 	var/token_icon_state = "object"
 
+	// [CELADON-ADD] - OVERMAP SENSORS - Это вагабонд насрал
 	var/sensor_range = 4
+	// [/CELADON-ADD]
 
 	/// The current docking ticket of this object, if any
 	var/datum/docking_ticket/current_docking_ticket
 
+// [CELADON-ADD] - OVERMAP STUFF - Это вагабонд насрал
 /obj/overmap
 	var/skip_alarm = 0
 
@@ -70,7 +73,8 @@
 		else if(A.pixel_z > B.pixel_z)
 			y_dist = A.pixel_z-B.pixel_z
 
-	return x_dist+y_dist
+	return abs(x_dist)+abs(y_dist)
+// [/CELADON-ADD]
 
 /datum/overmap/New(position, ...)
 	SHOULD_NOT_OVERRIDE(TRUE) // Use [/datum/overmap/proc/Initialize] instead.

@@ -1,3 +1,5 @@
+// [CELADON-ADD] - OVERMAP PHYSICS - Это вагабонд насрал
+
 SUBSYSTEM_DEF(overmap_stuff)
 	name = "Overmap Stuff"
 	wait = 10
@@ -17,7 +19,8 @@ SUBSYSTEM_DEF(overmap_stuff)
 	controlled_ships = SSovermap.controlled_ships
 	for(var/datum/overmap/ship/i in controlled_ships)
 		if(QDELING(i) || i.docked_to)
-			i.adjust_speed(-i.speed_x, -i.speed_y)
+			i.speed_x = 0
+			i.speed_y = 0
 		if(!i.docked_to)
 			i.check_proximity()
 			i.x_pixels_moved += i.speed_x*(30 SECONDS)
@@ -31,19 +34,15 @@ SUBSYSTEM_DEF(overmap_stuff)
 			if(i.x_pixels_moved >= 16)
 				i.x_pixels_moved = i.x_pixels_moved-32
 				i.position_to_move["x"] = i.x+1
-//			i.not_tick_move(1, 0)
 			if(i.x_pixels_moved <= -16)
 				i.x_pixels_moved = i.x_pixels_moved+32
 				i.position_to_move["x"] = i.x-1
-//			i.not_tick_move(-1, 0)
 			if(i.y_pixels_moved >= 16)
 				i.y_pixels_moved = i.y_pixels_moved-32
 				i.position_to_move["y"] = i.y+1
-//			i.not_tick_move(0, 1)
 			if(i.y_pixels_moved <= -16)
 				i.y_pixels_moved = i.y_pixels_moved+32
 				i.position_to_move["y"] = i.y-1
-//			i.not_tick_move(0, -1)
 
 			if(i.token)
 				i.token.pixel_w = i.last_anim["x"]
@@ -51,20 +50,17 @@ SUBSYSTEM_DEF(overmap_stuff)
 
 				animate(i.token, pixel_w = smooth_anim["x"], pixel_z = smooth_anim["y"], wait, 1)
 				if(i.token.ship_image)
+					if(i.token.ship_image.loc != i.token.loc)
+						i.token.ship_image.forceMove(i.token.loc)
 					i.token.ship_image.pixel_w = i.last_anim["x"]
 					i.token.ship_image.pixel_z = i.last_anim["y"]
 					animate(i.token.ship_image, pixel_w = smooth_anim["x"], pixel_z = smooth_anim["y"], wait, 1)
 				if(i.token.move_vec)
+					if(i.token.move_vec.loc != i.token.loc)
+						i.token.move_vec.forceMove(i.token.loc)
 					i.token.move_vec.pixel_w = i.last_anim["x"]
 					i.token.move_vec.pixel_z = i.last_anim["y"]
 					animate(i.token.move_vec, pixel_w = smooth_anim["x"], pixel_z = smooth_anim["y"], wait, 1)
-
-
-
-
-//			if(i.token.render_map)
-//				if(i.token.cam_screen)
-//					animate(i.token.cam_screen, screen_loc = "[i.token.map_name]:[1+smooth_anim["x"]],1:[smooth_anim["y"]]", wait, 1)
 
 			if(i.speed_x != 0 || i.speed_y != 0)
 				if(i.skiptickfortrail < 4)
@@ -119,3 +115,5 @@ SUBSYSTEM_DEF(overmap_rotation_velocity)
 					i.token.ship_image.alpha = 0
 				if(i.token.move_vec)
 					i.token.move_vec.alpha = 0
+
+// [/CELADON-ADD]

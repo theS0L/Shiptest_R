@@ -170,6 +170,7 @@
 		return
 
 	.["calibrating"] = calibrating
+	// [CELADON-ADD] - OVERMAP ARPA - Это вагабонд насрал
 	.["arpa_ships"] = list()
 	var/list/arpobjects = current_ship.check_proximity()
 	var/arpdequeue_pointer = 0
@@ -186,6 +187,7 @@
 			tcpa = cpa_list["tcpa"]
 		)
 		.["arpa_ships"] += list(other_data)
+	// [/CELADON-ADD]
 	.["otherInfo"] = list()
 	var/list/objects = current_ship.get_nearby_overmap_objects()
 	var/dequeue_pointer = 0
@@ -222,8 +224,11 @@
 	.["y"] = current_ship.y || current_ship.docked_to.y
 	.["docking"] = current_ship.docking
 	.["docked"] = current_ship.docked_to
+	// [CELADON-EDIT] - OVERMAP ARPA - Это вагабонд насрал
+	// .["heading"] = dir2text(current_ship.get_heading()) || "None"
 	.["course"] = "[current_ship.get_alt_heading()]°"
 	.["heading"] = "[current_ship.bow_heading]°"
+	// [/CELADON-EDIT]
 	.["speed"] = current_ship.get_speed()
 	.["eta"] = current_ship.get_eta()
 	.["estThrust"] = current_ship.est_thrust
@@ -231,7 +236,9 @@
 	.["aiControls"] = allow_ai_control
 	.["burnDirection"] = current_ship.burn_direction
 	.["burnPercentage"] = current_ship.burn_percentage
+	// [CELADON-ADD] - OVERMAP ARPA - Это вагабонд насрал
 	.["rotating"] = current_ship.rotating
+	// [/CELADON-ADD]
 	for(var/datum/weakref/engine in current_ship.shuttle_port.engine_list)
 		var/obj/machinery/power/shuttle/engine/real_engine = engine.resolve()
 		if(!real_engine)
@@ -264,7 +271,10 @@
 		name = current_ship.name,
 		class = current_ship.source_template?.name,
 		mass = current_ship.shuttle_port.turf_count,
+		// [CELADON-EDIT] OVERMAP ARPA - Вага бля
+		// sensor_range = 4
 		sensor_range = current_ship.sensor_range
+		// [/CELADON-EDIT]
 	)
 	.["canFly"] = TRUE
 	.["aiUser"] = issilicon(user)
@@ -282,6 +292,7 @@
 	. = TRUE
 
 	switch(action) // Universal topics
+		// [CELADON-ADD] - OVERMAP STUFF - Это вагабонд насрал
 		if("sensor_increase")
 			current_ship.sensor_range = min(5, current_ship.sensor_range+1)
 			update_static_data(usr, ui)
@@ -292,6 +303,7 @@
 			update_static_data(usr, ui)
 			current_ship.token.update_screen()
 			return
+		// [/CELADON-ADD]
 		if("rename_ship")
 			var/new_name = params["newName"]
 			if(!new_name)
@@ -335,6 +347,7 @@
 
 	if(!current_ship.docked_to && !current_ship.docking)
 		switch(action)
+			// [CELADON-ADD] - OVERMAP STUFF - Это вагабонд насрал
 			if("rotate_left")
 				if(current_ship.rotating == -1)
 					current_ship.rotating = 0
@@ -349,6 +362,7 @@
 				else
 					current_ship.rotating = 1
 				return
+			// [/CELADON-ADD]
 			if("act_overmap")
 				if(SSshuttle.jump_mode > BS_JUMP_CALLED)
 					to_chat(usr, "<span class='warning'>Cannot dock due to bluespace jump preperations!</span>")

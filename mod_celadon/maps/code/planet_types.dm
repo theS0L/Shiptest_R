@@ -8,7 +8,10 @@
 	default_baseturf = /turf/open/floor/plating/asteroid/wasteplanet
 	weather_controller_type = /datum/weather_controller/desert
 	weight = 0
+	// [CELADON-EDIT] -- OVERMAP ICON -- вагагагагагагагагагагага
+	// icon_state = "globe"
 	icon_state = "sand"
+	// [/CELADON-EDIT]
 	preserve_level = TRUE
 	landing_sound = 'sound/effects/planet_landing_2.ogg'
 
@@ -16,28 +19,33 @@
 	name = "plasma giant"
 	desc = "The backbone of interstellar travel, the mighty plasma giant allows fuel collection to take place."
 	planet = DYNAMIC_WORLD_PLASMA_GIANT
-//	color = COLOR_PURPLE
+	// [CELADON-EDIT] -- OVERMAP ICON -- вагагагагагагагагагагага
+	//	color = COLOR_PURPLE
+	icon = 'icons/misc/overmap_large.dmi'
+	pixel_w = -8
+	pixel_z = -8
+	// [/CELADON-EDIT]
 	mapgen = /datum/map_generator/planet_generator/plasma_gaint
 	gravity = GRAVITY_DAMAGE_TRESHOLD
 	default_baseturf = /turf/open/floor/plating/asteroid/plasma_gaint
 	icon_state = "planet-plasma"
-	icon = 'icons/misc/overmap_large.dmi'
 	preserve_level = FALSE
 	weight = 20
 	ruin_type = RUINTYPE_PLASMA
 	landing_sound = 'sound/effects/planet_landing_2.ogg'
-	pixel_w = -8
-	pixel_z = -8
+
 
 /datum/planet_type/earthsand
 	name = "Sand Planet"
 	desc = "Great Quicksand"
 	planet = DYNAMIC_WORLD_EARTH_SAND
-//	color = COLOR_LIGHT_ORANGE
+	// [CELADON-EDIT] -- OVERMAP ICON -- вагагагагагагагагагагага
+	//	color = COLOR_LIGHT_ORANGE
+	icon_state = "sand"
+	// [/CELADON-EDIT]
 	mapgen = /datum/map_generator/planet_generator/earth_sand
 	gravity = STANDARD_GRAVITY
 	default_baseturf = /turf/open/floor/plating/asteroid/sand
-	icon_state = "sand"
 	weight = 0
 	ruin_type = RUINTYPE_EARTH_SAND
 	landing_sound = 'mod_celadon/_storge_sounds/sound/events/planet_landing_3.mp3'

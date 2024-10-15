@@ -2,6 +2,8 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 	name = "Overmap Movement"
 	priority = FIRE_PRIORITY_OVERMAP_MOVEMENT
 
+// [CELADON-ADD] - OVERMAP COLLISION - Это вагабонд насрал
+
 /proc/get_relative_motion(var/A, var/B)
 	var/mins = -1
 	if(A > 0 && B > 0)
@@ -27,21 +29,10 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 	var/relative_motion_angle = get_angle_raw(B.speed_x * 60 SECONDS, B.speed_y * 60 SECONDS, 0, 0, -A.speed_x * 60 SECONDS, -A.speed_y * 60 SECONDS, 0, 0)
 	if(max(closer_angle_difference(SIMPLIFY_DEGREES(bearing+180), relative_motion_angle), -closer_angle_difference(SIMPLIFY_DEGREES(bearing+180), relative_motion_angle)) >= 90)
 		return list("cpa" = "--", "tcpa" = "--", "brg" = round(SIMPLIFY_DEGREES(bearing-A.bow_heading)))
-//	var/adjust_angle = 0
-//	if(SIMPLIFY_DEGREES(bearing+180) < relative_motion_angle)
-//		adjust_angle = 90
-//	else if(SIMPLIFY_DEGREES(bearing+180) > relative_motion_angle)
-//		adjust_angle = -90
-
-//	var/angle_to_cpa = SIMPLIFY_DEGREES(relative_motion_angle+adjust_angle+180)
 	var/hypotenosis = get_pixel_distance(A.token, B.token)
 	var/alpha = max(SIMPLIFY_DEGREES(relative_motion_angle-SIMPLIFY_DEGREES(bearing+180)), -SIMPLIFY_DEGREES(relative_motion_angle-SIMPLIFY_DEGREES(bearing+180)))
-//	var/beta = max(SIMPLIFY_DEGREES(angle_to_cpa-bearing), -SIMPLIFY_DEGREES(angle_to_cpa-bearing))
-//	if(adjust_angle != 0)
 	cpa = sin(alpha)*hypotenosis		//Smoothing the distance for sure
 	cpa = max(cpa, -cpa)
-//	else
-//		cpa = 0
 
 	var/relative_motion_x = get_relative_motion(A.speed_x, B.speed_x)
 	var/relative_motion_y = get_relative_motion(A.speed_y, B.speed_y)
@@ -69,7 +60,7 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 					var/obj/machinery/computer/helm/a = A.helms[arpdequeue_pointer]
 					a.say("Proximity alarm! Possible collision situation.")
 					playsound(a, 'sound/machines/engine_alert1.ogg', 50, FALSE)
-			if(tcpa/SSovermap_stuff.wait <= 1 && cpa <= 4)
+			if(get_pixel_distance(A.token, B.token) <= 4 && cpa != -1 && (A.get_speed() != 0 || B.get_speed() != 0))
 				var/arpdequeue_pointer = 0
 				while (arpdequeue_pointer++ < A.helms.len)
 					var/obj/machinery/computer/helm/a = A.helms[arpdequeue_pointer]
@@ -78,9 +69,18 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 					var/opposite_x = sin(SIMPLIFY_DEGREES(bearing+180))*(B.shuttle_port.turf_count/A.shuttle_port.turf_count)*max(0.002, max(B.speed_x, -B.speed_x))
 					var/opposite_y = cos(SIMPLIFY_DEGREES(bearing+180))*(B.shuttle_port.turf_count/A.shuttle_port.turf_count)*max(0.002, max(B.speed_y, -B.speed_y))
 					if(!(A.datum_flags & DF_ISPROCESSING))
-						A.adjust_speed(-A.speed_x + opposite_x, -A.speed_y + opposite_y)
+						A.adjust_speed(-A.speed_x/2 + opposite_x, -A.speed_y/2 + opposite_y)
 					else
-						A.vector_to_add = list("x" = -A.speed_x + opposite_x, "y" = -A.speed_y + opposite_y)
-					spawn_meteors_alt(round(A.get_speed()+B.get_speed())+1, list(/obj/effect/meteor/invisible), A.shuttle_port.get_virtual_level(), angle2dir_cardinal(SIMPLIFY_DEGREES((bearing+A.bow_heading))))
+						A.vector_to_add = list("x" = -A.speed_x/2 + opposite_x, "y" = -A.speed_y/2 + opposite_y)
+
+					if(!(B.datum_flags & DF_ISPROCESSING))
+						B.adjust_speed(-B.speed_x/2 + opposite_x, -B.speed_y/2 + opposite_y)
+					else
+						B.vector_to_add = list("x" = -B.speed_x/2 + -opposite_x, "y" = -B.speed_y/2 + -opposite_y)
+
+					spawn_meteors_alt(round(A.get_speed()+B.get_speed())+1, list(/obj/effect/meteor/invisible), A.shuttle_port.get_virtual_level(), angle2dir_cardinal(SIMPLIFY_DEGREES((bearing+90+A.bow_heading))))
+					spawn_meteors_alt(round(A.get_speed()+B.get_speed())+1, list(/obj/effect/meteor/invisible), B.shuttle_port.get_virtual_level(), angle2dir_cardinal(SIMPLIFY_DEGREES((bearing+270+B.bow_heading))))
 
 	return list("cpa" = round(cpa), "tcpa" = round(tcpa/10), "brg" = round(SIMPLIFY_DEGREES(bearing-A.bow_heading)))
+
+// [/CELADON-ADD]
