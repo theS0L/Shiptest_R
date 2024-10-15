@@ -9,9 +9,9 @@
 -->
 
 <!-- Название мода. Не важно на русском или на английском. -->
-## OVERMAP_PHYSICS
+## OVERMAP COLLISION, OVERMAP STUFF, OVERMAP ICON, OVERMAP ARPA
 
-ID мода: OVERMAP_PHYSICS
+ID мода: OVERMAP COLLISION, OVERMAP STUFF, OVERMAP ICON, OVERMAP ARPA
 <!--
   Название модпака прописными буквами, СОЕДИНЁННЫМИ_ПОДЧЁРКИВАНИЕМ,
   которое ты будешь использовать для обозначения файлов.
