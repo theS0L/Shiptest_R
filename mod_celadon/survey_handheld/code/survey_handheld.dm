@@ -13,7 +13,6 @@
 
 	if(is_type_in_list(src_area, blacklist_area))
 		to_chat(user, "<span class='notice'>You cannot do this on restricted area!</span>")
-		to_chat(user, "<span class='notice'>[src_turf] [src_area].</span>")
 		return
 
 	var/my_z = "[virtual_z()]"
