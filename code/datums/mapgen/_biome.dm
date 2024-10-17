@@ -30,7 +30,7 @@
 	var/mob_spawn_chance = 6
 	//[CELADON-ADD] - Фиксим спавн грибов и мин в лаве и т.п.
 	var/list/prohibited_turf = list(/turf/open/lava)
-
+	//[/CELADON-ADD]
 
 /datum/biome/New()
 	open_turf_types_expanded = expand_weights(open_turf_types)
