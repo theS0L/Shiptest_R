@@ -276,7 +276,7 @@ SUBSYSTEM_DEF(overmap)
 	var/datum/map_zone/mapzone = SSmapping.create_map_zone(encounter_name)
 	var/datum/virtual_level/vlevel = SSmapping.create_virtual_level(
 		encounter_name,
-		list(ZTRAIT_MINING = TRUE, ZTRAIT_BASETURF = dynamic_datum.default_baseturf, ZTRAIT_GRAVITY = dynamic_datum.gravity, ZTRAIT_SCAN_DISRUPT = TRUE), // [CELADON-EDIT] - CELADON_SURVEY_HANDHELD
+		list(ZTRAIT_MINING = TRUE, ZTRAIT_BASETURF = dynamic_datum.default_baseturf, ZTRAIT_GRAVITY = dynamic_datum.gravity),
 		mapzone,
 		dynamic_datum.vlevel_width,
 		dynamic_datum.vlevel_height,
