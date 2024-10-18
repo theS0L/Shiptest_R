@@ -28,7 +28,7 @@
 	var/feature_spawn_chance = 0.1
 	/// Base percentage chance that an open turf will attempt a flora spawn.
 	var/mob_spawn_chance = 6
-	//[CELADON-ADD] - Фиксим спавн грибов и мин в лаве и т.п.
+	//[CELADON-ADD] -- CELADON_FIXES -- Фиксим спавн грибов и мин в лаве и т.п.
 	var/list/prohibited_turf = list(/turf/open/lava)
 	//[/CELADON-ADD]
 
@@ -83,7 +83,7 @@
 	var/atom/spawned_feature
 	var/atom/spawned_mob
 
-	//[CELADON-ADD] - Фиксим спавн грибов и мин в лаве и т.п.
+	//[CELADON-ADD] -- CELADON_FIXES -- Фиксим спавн грибов и мин в лаве и т.п.
 	for(var/i in prohibited_turf)
 		if(i)
 			if(istype(open_turf, i))
