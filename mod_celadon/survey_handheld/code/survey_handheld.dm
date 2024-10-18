@@ -12,7 +12,7 @@
 	var/turf/src_turf = get_turf(src)
 	var/area/src_area = get_area(src)
 
-	if((is_type_in_list(src_area, blacklist_area)) || src_turf.virtual_level_trait(ZTRAIT_STATION) || src_turf.virtual_level_trait(ZTRAIT_CENTCOM))
+	if((is_type_in_list(src_area, blacklist_area)) || src_turf.virtual_level_trait(ZTRAIT_STATION) || src_turf.virtual_level_trait(ZTRAIT_CENTCOM) || src_turf.virtual_level_trait(ZTRAIT_SCAN_DISRUPT))
 		to_chat(user, "<span class='notice'>You cannot do this on restricted area!</span>")
 		return
 
