@@ -91,7 +91,7 @@
 			if(num_ships_with_template >= template.limit)
 				to_chat(spawnee, "<span class='danger'>There are already [num_ships_with_template] ships of this type; you cannot spawn more!</span>")
 				return
-			//[CELADON-ADD] - фикс спавна пустых шаттлов (вагинобонд)
+			//[CELADON-ADD] -- CELADON_FIXES -- фикс спавна пустых шаттлов (вагинобонд)
 			var/name = spawnee.client.prefs.real_name
 			if(GLOB.real_names_joined.Find(name))
 				to_chat(usr, "<span class='warning'>Someone has spawned with this name already.")
