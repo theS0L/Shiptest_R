@@ -41,7 +41,10 @@ ID мода: CELADON_SURVEY_HANDHELD
 
 ### Изменения *кор кода*
 
-- Отсутствуют
+- `code/modules/overmap/objects/outpost/outpost.dm`: `var/list/hangar_ztraits`
+- `code/controllers/subsystem/overmap.dm`: `proc/spawn_dynamic_encounter`
+- `code/controllers/subsystem/shuttle.dm`: `proc/generate_transit_dock`
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -66,7 +69,7 @@ ID мода: CELADON_SURVEY_HANDHELD
 
 ### Дефайны
 
-- Отсутствуют
+- `code/__DEFINES/maps.dm`: `ZTRAIT_SCAN_DISRUPT`
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
   в которые ты их добавил, а также перечисли имена.
