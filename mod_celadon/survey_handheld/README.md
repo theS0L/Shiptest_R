@@ -41,7 +41,7 @@ ID мода: CELADON_SURVEY_HANDHELD
 
 ### Изменения *кор кода*
 
-- Отсутствуют
+- `code/modules/overmap/objects/outpost/outpost.dm`: `var/list/hangar_ztraits`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
