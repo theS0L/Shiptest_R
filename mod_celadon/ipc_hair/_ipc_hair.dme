@@ -1,0 +1,6 @@
+#ifndef MODPACK_CELADON_IPC_HAIR
+#define MODPACK_CELADON_IPC_HAIR
+
+#include "_ipc_hair.dm"
+
+#endif

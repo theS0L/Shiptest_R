@@ -38,6 +38,7 @@
 	dna.features["tail_elzu"] = GLOB.tails_list_elzu[hex2num(copytext(seed, 17, 18)) % length(GLOB.tails_list_elzu) + 1]
 	dna.features["ipc_chassis"] = GLOB.ipc_chassis_list[hex2num(copytext(seed, 18, 19)) % length(GLOB.ipc_chassis_list) + 1]
 	dna.features["ipc_screen"] = GLOB.ipc_screens_list[hex2num(copytext(seed, 19, 20)) % length(GLOB.ipc_screens_list) + 1]
+	dna.features["ipc_hair"] = GLOB.ipc_hair_list[hex2num(copytext(seed, 20, 21)) % length(GLOB.ipc_hair_list) + 1] // [CELADON-ADD] - CELADON_IPC_HAIR
 
 	// [CELADON-ADD] - TAJARA
 	skin_tone_nose = GLOB.skin_tones_nose[hex2num(copytext(seed, 1, 2)) % length(GLOB.skin_tones_nose)]
