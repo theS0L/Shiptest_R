@@ -6,7 +6,7 @@
 	species_age_max = 300
 	// [CELADON-EDIT] - CELADON_FOOD_AND_DRINKS - Всё для того чтобы ИПС могли пить синтанол и припой
 	// species_traits = list(NOTRANSSTING,NOEYESPRITES,NO_DNA_COPY,TRAIT_EASYDISMEMBER,NOZOMBIE,MUTCOLORS,REVIVESBYHEALING,NOHUSK,NOMOUTH,NO_BONES) //all of these + whatever we inherit from the real species		// CELADONE-EDIT - ORIGINAL
-	species_traits = list(NOTRANSSTING,NOEYESPRITES,NO_DNA_COPY,TRAIT_EASYDISMEMBER,NOZOMBIE,MUTCOLORS,REVIVESBYHEALING,NOHUSK,NO_BONES) //all of these + whatever we inherit from the real species
+	species_traits = list(HAIR,NOTRANSSTING,NOEYESPRITES,NO_DNA_COPY,TRAIT_EASYDISMEMBER,NOZOMBIE,MUTCOLORS,REVIVESBYHEALING,NOHUSK,NO_BONES) //all of these + whatever we inherit from the real species
 	// [/CELADON-EDIT]
 	inherent_traits = list(TRAIT_RESISTCOLD,TRAIT_VIRUSIMMUNE,TRAIT_NOBREATH,TRAIT_RADIMMUNE,TRAIT_GENELESS,TRAIT_LIMBATTACHMENT, TRAIT_METALLIC)
 	inherent_biotypes = MOB_ROBOTIC|MOB_HUMANOID
@@ -20,8 +20,8 @@
 	mutantlungs = null //no more collecting change for you
 	mutantappendix = null
 	mutant_organs = list(/obj/item/organ/cyberimp/arm/power_cord)
-	mutant_bodyparts = list("ipc_hair", "ipc_screen", "ipc_antenna", "ipc_chassis", "ipc_tail", "ipc_brain") // [CELADON-ADD] - CELADON_IPC_HAIR
-	default_features = list("mcolor" = "#7D7D7D", "ipc_hair" = "None", "ipc_screen" = "Static", "ipc_antenna" = "None", "ipc_chassis" = "Morpheus Cyberkinetics (Custom)", "ipc_tail" = "None", "ipc_brain" = "Posibrain", "body_size" = "Normal") // [CELADON-ADD] - CELADON_IPC_HAIR
+	mutant_bodyparts = list("ipc_screen", "ipc_antenna", "ipc_chassis", "ipc_tail", "ipc_brain") // [CELADON-ADD] - CELADON_IPC_HAIR
+	default_features = list("mcolor" = "#7D7D7D", "ipc_screen" = "Static", "ipc_antenna" = "None", "ipc_chassis" = "Morpheus Cyberkinetics (Custom)", "ipc_tail" = "None", "ipc_brain" = "Posibrain", "body_size" = "Normal") // [CELADON-ADD] - CELADON_IPC_HAIR
 	meat = /obj/item/stack/sheet/plasteel{amount = 5}
 	skinned_type = /obj/item/stack/sheet/metal{amount = 10}
 	exotic_bloodtype = "Coolant"
