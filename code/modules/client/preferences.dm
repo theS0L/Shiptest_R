@@ -128,6 +128,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							"spider_spinneret" = "Plain",
 							"spider_mandibles" = "Plain",
 							"squid_face" = "Squidward",
+							"ipc_hair" = "None", // [CELADON-ADD] - CELADON_IPC_HAIR
 							"ipc_screen" = "Blue",
 							"ipc_antenna" = "None",
 							"ipc_tail" = "None",
@@ -666,6 +667,23 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "</td>"
 					mutant_category = 0
 
+			// [CELADON-ADD] - CELADON_IPC_HAIR
+			if("ipc_hair" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>IPC hair Style</h3>"
+
+				dat += "<a href='?_src_=prefs;preference=ipc_hair;task=input'>[features["ipc_hair"]]</a><BR>"
+
+				dat += "<span style='border: 1px solid #161616; background-color: #[hair_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=hair;task=input'>Change</a><BR>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+			// [/CELADON-ADD] - CELADON_IPC_HAIR
+
 			if("ipc_screen" in pref_species.default_features)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
@@ -689,7 +707,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<a href='?_src_=prefs;preference=ipc_antenna;task=input'>[features["ipc_antenna"]]</a><BR>"
 
-				dat += "<span style='border:1px solid #161616; background-color: #[hair_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=hair;task=input'>Change</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[facial_hair_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=facial;task=input'>Change</a><BR>" // [CELADON-EDIT] - CELADON_IPC_HAIR
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -2272,6 +2290,16 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					new_spider_spinneret = input(user, "Choose your character's spinneret markings:", "Character Preference") as null|anything in GLOB.spider_spinneret_list
 					if(new_spider_spinneret)
 						features["spider_spinneret"] = new_spider_spinneret
+
+				// [CELADON-ADD] - CELADON_IPC_HAIR
+				if("ipc_hair")
+					var/new_ipc_hair
+
+					new_ipc_hair = input(user, "Choose your character's IPC hair:", "Character Preference") as null|anything in GLOB.ipc_hair_list
+
+					if(new_ipc_hair)
+						features["ipc_hair"] = new_ipc_hair
+				// [/CELADON-ADD] - CELADON_IPC_HAIR
 
 				if("ipc_screen")
 					var/new_ipc_screen

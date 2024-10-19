@@ -854,6 +854,12 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			bodyparts_to_add -= "ears"
 			bodyparts_to_add -= "ears"
 
+	// [CELADON-ADD] - CELADON_IPC_HAIR
+	if("ipc_hair" in mutant_bodyparts)
+		if(!H.dna.features["ipc_hair"] || H.dna.features["ipc_hair"] == "None" || (H.head && (H.head.flags_inv & HIDEHAIR)) || !HD)
+			bodyparts_to_add -= "ipc_hair"
+	// [/CELADON-ADD] - CELADON_IPC_HAIR
+
 	if("ipc_screen" in mutant_bodyparts)
 		if(!H.dna.features["ipc_screen"] || H.dna.features["ipc_screen"] == "None" || (H.wear_mask && (H.wear_mask.flags_inv & HIDEEYES)) || !HD)
 			bodyparts_to_add -= "ipc_screen"
@@ -1049,6 +1055,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 					S = GLOB.moth_markings_list[H.dna.features["moth_markings"]]
 				if("squid_face")
 					S = GLOB.squid_face_list[H.dna.features["squid_face"]]
+				// [CELADON-ADD] - CELADON_IPC_HAIR
+				if("ipc_hair")
+					S = GLOB.ipc_hair_list[H.dna.features["ipc_hair"]]
+				// [/CELADON-ADD] - CELADON_IPC_HAIR
 				if("ipc_screen")
 					S = GLOB.ipc_screens_list[H.dna.features["ipc_screen"]]
 				if("ipc_antenna")

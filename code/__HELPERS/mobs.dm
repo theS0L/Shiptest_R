@@ -68,6 +68,10 @@
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_markings, GLOB.moth_markings_list)
 	if(!GLOB.squid_face_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/squid_face, GLOB.squid_face_list)
+	// [CELADON-ADD] - CELADON_IPC_HAIR
+	if(!GLOB.ipc_hair_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/ipc_hair, GLOB.ipc_hair_list)
+	// [/CELADON-ADD] - CELADON_IPC_HAIR
 	if(!GLOB.ipc_screens_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/ipc_screens, GLOB.ipc_screens_list)
 	if(!GLOB.ipc_antennas_list.len)
@@ -155,6 +159,7 @@
 		"ipc_brain" = pick(GLOB.ipc_brain_list),
 		"ipc_chassis" = pick(GLOB.ipc_chassis_list),
 		"ipc_screen" = pick(GLOB.ipc_screens_list),
+		"ipc_hair" = pick(GLOB.ipc_hair_list), // [CELADON-ADD] - CELADON_IPC_HAIR
 		"kepori_body_feathers" = pick(GLOB.kepori_body_feathers_list),
 		"kepori_head_feathers" = pick(GLOB.kepori_head_feathers_list),
 		"kepori_feathers" = pick(GLOB.kepori_feathers_list),
