@@ -3,4 +3,6 @@
 
 #include "_ipc_hair.dm"
 
+#include "code/ipc.dm"
+
 #endif
