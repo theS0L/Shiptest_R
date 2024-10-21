@@ -50,14 +50,10 @@ SUBSYSTEM_DEF(overmap_stuff)
 
 				animate(i.token, pixel_w = smooth_anim["x"], pixel_z = smooth_anim["y"], wait, 1)
 				if(i.token.ship_image)
-					if(i.token.ship_image.loc != i.token.loc)
-						i.token.ship_image.forceMove(i.token.loc)
 					i.token.ship_image.pixel_w = i.last_anim["x"]
 					i.token.ship_image.pixel_z = i.last_anim["y"]
 					animate(i.token.ship_image, pixel_w = smooth_anim["x"], pixel_z = smooth_anim["y"], wait, 1)
 				if(i.token.move_vec)
-					if(i.token.move_vec.loc != i.token.loc)
-						i.token.move_vec.forceMove(i.token.loc)
 					i.token.move_vec.pixel_w = i.last_anim["x"]
 					i.token.move_vec.pixel_z = i.last_anim["y"]
 					animate(i.token.move_vec, pixel_w = smooth_anim["x"], pixel_z = smooth_anim["y"], wait, 1)
@@ -93,11 +89,6 @@ SUBSYSTEM_DEF(overmap_rotation_velocity)
 	controlled_ships = SSovermap.controlled_ships
 	for(var/datum/overmap/ship/i in controlled_ships)
 		if(!i.docked_to)
-			if(i.token)
-				if(i.token.ship_image)
-					i.token.ship_image.alpha = 255
-				if(i.token.move_vec)
-					i.token.move_vec.alpha = 255
 			if(i.rotating == 1)
 				i.bow_heading = SIMPLIFY_DEGREES(i.bow_heading+i.rotation_velocity)
 				i.rotation_velocity = min(90, i.rotation_velocity+1)
@@ -109,11 +100,21 @@ SUBSYSTEM_DEF(overmap_rotation_velocity)
 			N.Turn(i.bow_heading)
 			if(i.token.ship_image)
 				i.token.ship_image.transform = N
-		else
-			if(i.token)
-				if(i.token.ship_image)
-					i.token.ship_image.alpha = 0
-				if(i.token.move_vec)
-					i.token.move_vec.alpha = 0
+
+/datum/overmap/ship/complete_dock(datum/overmap/dock_target, datum/docking_ticket/ticket)
+	if(token)
+		if(token.ship_image)
+			token.ship_image.forceMove(token)
+		if(token.move_vec)
+			token.move_vec.forceMove(token)
+	. = ..()
+
+/datum/overmap/ship/complete_undock()
+	if(token)
+		if(token.ship_image)
+			token.ship_image.forceMove(get_turf(docked_to.token))
+		if(token.move_vec)
+			token.move_vec.forceMove(get_turf(docked_to.token))
+	. = ..()
 
 // [/CELADON-ADD]
