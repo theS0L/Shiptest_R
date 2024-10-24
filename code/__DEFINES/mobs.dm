@@ -135,14 +135,15 @@
 #define BODYTYPE_ROBOTIC (1<<1)
 #define BODYTYPE_HUMANOID (1<<2) //Everything
 #define BODYTYPE_SNOUT (1<<3) //Snouts
-#define BODYTYPE_BOXHEAD (1<<4) //TV Head
-#define BODYTYPE_DIGITIGRADE (1<<5) //Lizard legs
-#define BODYTYPE_KEPORI (1<<6) //Just Kepori
-#define BODYTYPE_VOX (1<<7) //Big Vox
+#define BODYTYPE_SNOUT_SMALL (1<<4) //Elzuose snouts
+#define BODYTYPE_BOXHEAD (1<<5) //TV Head
+#define BODYTYPE_DIGITIGRADE (1<<6) //Lizard legs
+#define BODYTYPE_KEPORI (1<<7) //Just Kepori
+#define BODYTYPE_VOX (1<<8) //Big Vox
 // [CELADON-ADD] - TAJARA
-#define BODYTYPE_TAJARA (1<<8) //Fluffy Ass
+#define BODYTYPE_TAJARA (1<<9) //Fluffy Ass
 // [CELADON-ADD] - RIOL
-#define BODYTYPE_RIOL (1<<9)
+#define BODYTYPE_RIOL (1<<10)
 // [/CELADON-ADD]
 
 // Health/damage defines
