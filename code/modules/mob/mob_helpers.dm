@@ -148,7 +148,7 @@
 			if(20)
 				newletter += "[newletter][newletter]"
 			else
-				// do nothing
+				EMPTY_BLOCK_GUARD
 		. += "[newletter]"
 	return sanitize(.)
 	[CELADON REMOVE] */
@@ -194,7 +194,7 @@
 			if(5)
 				newletter = "glor"
 			else
-				// do nothing
+				EMPTY_BLOCK_GUARD
 		. += newletter
 	return sanitize(.)
 
