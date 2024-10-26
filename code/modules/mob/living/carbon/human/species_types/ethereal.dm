@@ -21,7 +21,7 @@
 	exotic_bloodtype = "E"
 	*/
 	// [/CELADON-REMOVE]
-	damage_overlay_type = "" //We are too cool for regular damage overlays
+	// damage_overlay_type = "" //We are too cool for regular damage overlays
 	species_age_max = 300
 	species_traits = list(DYNCOLORS, EYECOLOR, HAIR, FACEHAIR)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN
