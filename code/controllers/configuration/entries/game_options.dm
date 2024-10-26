@@ -441,3 +441,5 @@
 	integer = FALSE
 	default = 1
 	min_val = 0.05
+	config_entry_value = 191
+	min_val = 191
