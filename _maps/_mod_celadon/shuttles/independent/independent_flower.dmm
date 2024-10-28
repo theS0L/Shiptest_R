@@ -511,7 +511,6 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "wI" = (
-/obj/machinery/power/apc/auto_name/directional/east,
 /obj/machinery/light_switch{
 	pixel_y = 11;
 	pixel_x = 20;
@@ -519,9 +518,6 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -765,6 +761,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/cable_coil/yellow,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plating/rust,
 /area/ship/engineering)
 "Hd" = (
@@ -1075,6 +1075,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer2{
 	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
