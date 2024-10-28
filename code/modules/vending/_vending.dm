@@ -815,16 +815,22 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 					// else
 					// 	account.adjust_money(-price_to_use, "vendor_purchase")
 					// SSblackbox.record_feedback("amount", "vending_spent", price_to_use)	// CELADON-EDIT - ORIGINAL
-					var/datum/bank_account/account = C.registered_account
-					if(price_to_use)
-						if(account.has_money(price_to_use))
-							var/datum/bank_account/owner = private_a
-							if(owner)
-								owner.transfer_money(account, price_to_use)
-							else
-								account.adjust_money(-price_to_use, "vendor_purchase")
-							SSblackbox.record_feedback("amount", "vending_spent", price_to_use)
+					// var/datum/bank_account/account = C.registered_account
+					// if(price_to_use)
+					// 	if(account.has_money(price_to_use))
+					// 		var/datum/bank_account/owner = private_a
+					// 		if(owner)
+					// 			owner.transfer_money(account, price_to_use)
+					// 		else
+					// 			account.adjust_money(-price_to_use, "vendor_purchase")
+					// 		SSblackbox.record_feedback("amount", "vending_spent", price_to_use)	// НАШЕ
 					// [/CELADON-EDIT]
+					var/datum/bank_account/payment_account = payment_account_ref.resolve()
+					if(payment_account)
+						payment_account.transfer_money(account, price_to_use)
+					else
+						account.adjust_money(-price_to_use, CREDIT_LOG_VENDOR_PURCHASE)
+					SSblackbox.record_feedback("amount", "vending_spent", price_to_use)
 					log_econ("[price_to_use] credits were inserted into [src] by [H] to buy [R].")
 			if(last_shopper != REF(usr) || purchase_message_cooldown < world.time)
 				say("Thank you for shopping with [src]!")
@@ -1088,7 +1094,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 						if(owner)
 							owner.transfer_money(account, S.custom_price)
 						else
-							account.adjust_money(-S.custom_price, "vendor_purchase")
+							account.adjust_money(-S.custom_price, CREDIT_LOG_VENDOR_PURCHASE)
 						SSblackbox.record_feedback("amount", "vending_spent", S.custom_price)
 						log_econ("[S.custom_price] credits were spent on [src] buying a [S] by [owner.account_holder], owned by [private_a.account_holder].")
 						vending_machine_input[N] = max(vending_machine_input[N] - 1, 0)
