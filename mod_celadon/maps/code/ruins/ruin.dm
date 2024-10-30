@@ -119,7 +119,7 @@
 	description = "\"First the creature's Flame breathed from beneath the stone, Hot battle-fumes, and the earth rumbled.\""
 	suffix = "icemoon_underground_drakelair.dmm"
 
-	/datum/map_template/ruin/icemoon/icemoon_raided_cargobase
+/datum/map_template/ruin/icemoon/icemoon_raided_cargobase
 	id = "raided_cargobase"
 	suffix = "icemoon_raided_cargobase.dmm"
 	name = "Raided Cargo Outpost"
