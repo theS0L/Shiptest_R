@@ -1062,7 +1062,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged,
+/mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault,
 /turf/open/floor/plasteel/lightdark,
 /area/ruin)
 "SU" = (
