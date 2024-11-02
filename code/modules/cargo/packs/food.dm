@@ -53,7 +53,7 @@
 
 /datum/supply_pack/food/ration
 	name = "Ration Crate"
-	desc = "6 standerd issue rations."
+	desc = "6 standard issue rations. For your inner jarhead."
 	cost = 500
 	contains = list(/obj/effect/spawner/random/food_or_drink/ration,
 					/obj/effect/spawner/random/food_or_drink/ration,
@@ -111,12 +111,8 @@
 
 /datum/supply_pack/food/ingredients_randomized
 	name = "Exotic Meat Crate"
-	desc = "The best cuts in the whole galaxy. Probably."
-// [CELADON-EDIT] - CELADON_BALANCE
-//	cost = 500
-// CELADON-EDIT - ORIGINAL
+	desc = "The best cuts in the whole sector. Probably."
 	cost = 500
-// [/CELADON-EDIT]
 	contains = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/slime,
 					/obj/item/reagent_containers/food/snacks/meat/slab/killertomato,
 					/obj/item/reagent_containers/food/snacks/meat/slab/bear,
@@ -138,12 +134,8 @@
 
 /datum/supply_pack/food/ingredients_randomized/meat
 	name = "Standard Meat Crate"
-	desc = "Less interesting cuts of meat, but filling nonetheless."
-// [CELADON-EDIT] - CELADON_BALANCE
-//	cost = 300
-// CELADON-EDIT - ORIGINAL
+	desc = "Less interesting, yet filling cuts of meat."
 	cost = 300
-// [/CELADON-EDIT]
 	contains = list(/obj/item/reagent_containers/food/snacks/meat/slab,
 					/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
 					/obj/item/reagent_containers/food/snacks/meat/slab/synthmeat,
@@ -155,12 +147,8 @@
 
 /datum/supply_pack/food/ingredients_randomized/vegetables
 	name = "Vegetables Crate"
-	desc = "Grown in vats."
-// [CELADON-EDIT] - CELADON_BALANCE
-//	cost = 1300
-// CELADON-EDIT - ORIGINAL
+	desc = "Grown in the finest hydroponic vats."
 	cost = 250
-// [/CELADON-EDIT]
 	contains = list(/obj/item/reagent_containers/food/snacks/grown/chili,
 					/obj/item/reagent_containers/food/snacks/grown/corn,
 					/obj/item/reagent_containers/food/snacks/grown/tomato,
