@@ -282,8 +282,8 @@
 				if(mission.can_complete())
 					mission.turn_in()
 				//[CELADON-EDIT] - CELADON_FIXES - фиксим ролл миссий
-				//else
-				//	mission.give_up()
+				//else if(tgui_alert(usr, "Give up on [mission]?", src, list("Yes", "No")) == "Yes")
+				// mission.give_up()
 					ship.given_up_missions = 0
 					ship.giveup_timer = world.time-15 MINUTES
 					ship.giveup_timeout = FALSE
