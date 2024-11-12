@@ -4283,7 +4283,9 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 6
 	},
-/obj/machinery/vending/wardrobe/sec_wardrobe,
+/obj/machinery/vending/wardrobe/sec_wardrobe{
+	all_items_free = 1
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/security)
 "UH" = (
@@ -4673,7 +4675,9 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "Zc" = (
-/obj/machinery/vending/security,
+/obj/machinery/vending/security{
+	all_items_free = 1
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/security)
 "Zl" = (
