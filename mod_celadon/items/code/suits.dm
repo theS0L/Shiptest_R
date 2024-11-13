@@ -4,8 +4,8 @@
 /obj/item/clothing/suit/armor/vest/tajaran_replica				// Исключение, засунут в лодаут в таком виде, понравился игрокам (пофикшена броня)
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
 	mob_overlay_icon = 'mod_celadon/_storge_icons/icons/items/overlay/tajara_items_overlay.dmi'
-	name = "white light tactical armor vest"
-	desc = "This tactical bulletproof vest was created for winter operations in the desert."
+	name = "white tactical armor vest (replika)"
+	desc = "Эта одежда была сделана в тёмных подвалах. Она похожа с виду на зимний тактический бронижилет, но это лишь реплика её."
 	icon_state = "snowsuit"
 	item_state = "snowsuit"
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/t_scanner, /obj/item/radio)
