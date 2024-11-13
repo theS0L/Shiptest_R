@@ -9,12 +9,12 @@
 	icon_state = "snowsuit"
 	item_state = "snowsuit"
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/t_scanner, /obj/item/radio)
-	body_parts_covered = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "fire" = 50, "acid" = 50)
-	cold_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
-	heat_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
-	resistance_flags = FREEZE_PROOF
+	body_parts_covered = NONE
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "fire" = 0, "acid" = 0)
+	cold_protection = NONE
+	min_cold_protection_temperature = NONE
+	heat_protection = NONE
+	resistance_flags = NONE
 
 /obj/item/clothing/suit/space/hardsuit/tajaran
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/tajara_items.dmi'
