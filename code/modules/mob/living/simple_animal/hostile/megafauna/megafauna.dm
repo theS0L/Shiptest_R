@@ -96,7 +96,8 @@
 
 // [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
 // /mob/living/simple_animal/hostile/megafauna/proc/spawn_mob_trophy()
-// 	loot += mob_trophy
+// 	if(mob_trophy)
+		// loot += mob_trophy
 // [/CELADON-REMOVE]
 
 /mob/living/simple_animal/hostile/megafauna/gib()

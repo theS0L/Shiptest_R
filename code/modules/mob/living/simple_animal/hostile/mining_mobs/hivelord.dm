@@ -52,7 +52,8 @@
 
 // [CELADON-REMOVE] - CRUSHER_TROPHEY - Выпилено ради легенды
 // /mob/living/simple_animal/hostile/asteroid/hivelord/spawn_mob_trophy()
-	// loot += mob_trophy //we don't butcher
+	// if(mob_trophy)
+		// loot += mob_trophy //we don't butcher
 // [/CELADON-REMOVE]
 
 /mob/living/simple_animal/hostile/asteroid/hivelord/death(gibbed)
