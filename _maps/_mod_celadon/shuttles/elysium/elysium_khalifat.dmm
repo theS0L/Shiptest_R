@@ -2244,12 +2244,13 @@
 /turf/closed/wall/r_wall/rust/wasteplanet,
 /area/ship/security)
 "nn" = (
-/obj/machinery/door/window/eastleft{
-	dir = 8
-	},
 /obj/machinery/mass_driver{
 	dir = 4;
 	id = "twinkle_leftmassdriver"
+	},
+/obj/machinery/door/window/brigdoor/westleft{
+	req_ship_access = 1;
+	req_access_txt = null
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/ship/bridge)
@@ -5882,16 +5883,16 @@
 /turf/open/floor/wood/walnut,
 /area/ship/cargo)
 "Ib" = (
-/obj/machinery/door/window/eastright{
-	dir = 8;
-	req_one_access_txt = "150"
-	},
 /obj/machinery/mass_driver{
 	dir = 4;
 	id = "twinkle_rightmassdriver"
 	},
 /obj/item/trash/can/food/peaches/maint,
 /mob/living/carbon/human/species/lizard/ashwalker/kobold,
+/obj/machinery/door/window/brigdoor/westleft{
+	req_ship_access = 1;
+	req_access_txt = null
+	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/ship/bridge)
 "Id" = (
@@ -6612,7 +6613,8 @@
 /area/ship/engineering/engine)
 "MK" = (
 /obj/machinery/door/window/brigdoor/westleft{
-	req_ship_access = 1
+	req_ship_access = 1;
+	req_access_txt = null
 	},
 /turf/open/floor/plating/wasteplanet/rust,
 /area/ship/security)
