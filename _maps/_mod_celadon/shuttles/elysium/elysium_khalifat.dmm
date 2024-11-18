@@ -5982,7 +5982,6 @@
 /obj/effect/turf_decal/rechargefloor,
 /obj/machinery/light/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/mecha/working/ripley/mkii/earth,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "Ir" = (
