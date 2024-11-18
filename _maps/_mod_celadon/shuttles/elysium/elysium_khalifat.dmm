@@ -5032,6 +5032,9 @@
 	pixel_y = 23;
 	pixel_x = 11
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
 "Dm" = (
@@ -6926,6 +6929,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
 "Oz" = (
@@ -8215,7 +8221,6 @@
 /obj/structure/sign/warning/chemdiamond{
 	pixel_x = 30
 	},
-/obj/item/hypospray/mkii/CMO/combat,
 /obj/item/reagent_containers/glass/bottle/vial/large,
 /obj/item/reagent_containers/glass/bottle/vial/large,
 /obj/item/reagent_containers/glass/bottle/vial/large,
