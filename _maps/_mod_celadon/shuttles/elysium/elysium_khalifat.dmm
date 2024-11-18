@@ -6101,8 +6101,6 @@
 /obj/structure/closet/emcloset/wall/directional/west,
 /obj/item/clothing/suit/space/syndicate,
 /obj/item/clothing/head/helmet/space/syndicate,
-/obj/item/clothing/head/helmet/space/syndicate,
-/obj/item/clothing/suit/space/syndicate,
 /obj/effect/turf_decal/trimline/opaque/syndiered/warning{
 	dir = 1
 	},
