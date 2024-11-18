@@ -925,7 +925,8 @@
 	can_be_z_moved = 0;
 	move_self = 0;
 	force = 9;
-	energy = 2025
+	energy = 2025;
+	dissipate = 0
 	},
 /turf/open/space/basic,
 /area/space)
@@ -8179,7 +8180,8 @@
 	can_be_z_moved = 0;
 	move_self = 0;
 	force = 9;
-	energy = 1984
+	energy = 1984;
+	dissipate = 0
 	},
 /turf/open/space/basic,
 /area/space)
@@ -14578,9 +14580,7 @@
 /turf/closed/indestructible/reinforced,
 /area/outpost/hallway/central)
 "TK" = (
-/turf/open/chasm{
-	icon_state = "chasmsa-255"
-	},
+/turf/open/chasm,
 /area/space)
 "TL" = (
 /obj/structure/table,
@@ -16700,10 +16700,13 @@ vV
 vV
 vV
 vV
-vV
-vV
-vV
+Zp
+Zp
+Zp
 TK
+Zp
+Zp
+Zp
 vV
 vV
 vV
@@ -16716,13 +16719,13 @@ vV
 vV
 vV
 vV
-vV
-vV
-vV
-vV
-vV
-vV
+Zp
+Zp
+Zp
 TK
+Zp
+Zp
+Zp
 vV
 vV
 vV
@@ -16734,13 +16737,13 @@ vV
 vV
 vV
 vV
-vV
-vV
-vV
-vV
-vV
-vV
+Zp
+Zp
+Zp
 TK
+Zp
+Zp
+Zp
 vV
 vV
 vV
@@ -16752,16 +16755,13 @@ vV
 vV
 vV
 vV
-vV
-vV
-vV
-vV
-vV
-vV
+Zp
+Zp
+Zp
 TK
-vV
-vV
-vV
+Zp
+Zp
+Zp
 vV
 vV
 vV
@@ -16888,6 +16888,11 @@ vV
 vV
 vV
 vV
+Zp
+vV
+vV
+vV
+Zp
 vV
 vV
 vV
@@ -16902,6 +16907,11 @@ vV
 vV
 vV
 vV
+Zp
+vV
+vV
+vV
+Zp
 vV
 vV
 vV
@@ -16915,6 +16925,11 @@ vV
 vV
 vV
 vV
+Zp
+vV
+vV
+vV
+Zp
 vV
 vV
 vV
@@ -16928,26 +16943,11 @@ vV
 vV
 vV
 vV
+Zp
 vV
 vV
 vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
+Zp
 vV
 vV
 vV
