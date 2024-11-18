@@ -116,19 +116,19 @@
 
 	if(H.shoes || feetCover) //are we wearing shoes
 		playsound(T, pick(GLOB.footstep[T.footstep][1]),
-			GLOB.footstep[T.footstep][2] * volume,
+			pick(GLOB.footstep[T.footstep][2]) * volume,
 			TRUE,
-			GLOB.footstep[T.footstep][3] + e_range, falloff_distance = 1)
+			pick(GLOB.footstep[T.footstep][3]) + e_range, falloff_distance = 1)
 	else
 		if(H.dna.species.special_step_sounds)
 			//[CELADON - EDIT] - CELADON_LANIUS
 			//playsound(T, pick(H.dna.species.special_step_sounds), 50, TRUE, falloff_distance = 1) //[CELADON - EDIT] - ORIGINAL
-			playsound(T, pick(H.dna.species.special_step_sounds), 10, TRUE, falloff_distance = 1) 
+			playsound(T, pick(H.dna.species.special_step_sounds), 10, TRUE, falloff_distance = 1)
 			//[/CELADON - EDIT]
 		else
 			playsound(T, pick(GLOB.barefootstep[T.barefootstep][1]),
-				GLOB.barefootstep[T.barefootstep][2] * volume,
+				pick(GLOB.barefootstep[T.barefootstep][2]) * volume,
 				TRUE,
-				GLOB.barefootstep[T.barefootstep][3] + e_range, falloff_distance = 1)
+				pick(GLOB.barefootstep[T.barefootstep][3]) + e_range, falloff_distance = 1)
 
 #undef SHOULD_DISABLE_FOOTSTEPS
