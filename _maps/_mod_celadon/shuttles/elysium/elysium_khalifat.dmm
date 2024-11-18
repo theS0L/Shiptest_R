@@ -277,7 +277,7 @@
 /obj/effect/turf_decal/corner/transparent/green/half{
 	dir = 1
 	},
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "bR" = (
@@ -427,8 +427,8 @@
 "cC" = (
 /obj/structure/table/wood,
 /obj/item/elysm_manual{
-	pixel_y = -4;
-	pixel_x = 9
+	pixel_y = 3;
+	pixel_x = 6
 	},
 /obj/item/lighter/clockwork,
 /obj/item/megaphone,
@@ -6512,7 +6512,7 @@
 "LG" = (
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/plasteel,
 /area/ship/crew/dorm)
 "LH" = (
@@ -6944,8 +6944,8 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
-/obj/item/banner/elysium,
 /obj/effect/decal/cleanable/blood,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
 "OK" = (
@@ -7264,7 +7264,7 @@
 /turf/closed/wall/mineral/wood,
 /area/ship/cargo)
 "Qt" = (
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "Qv" = (
@@ -7557,7 +7557,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/transparent/green/half,
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "Sg" = (
