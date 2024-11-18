@@ -426,8 +426,6 @@
 /area/ship/engineering/atmospherics)
 "cC" = (
 /obj/structure/table/wood,
-/obj/item/clothing/under/rank/avanpost/elysium_apparel_long,
-/obj/item/clothing/head/turban_elysium,
 /obj/item/elysm_manual{
 	pixel_y = -4;
 	pixel_x = 9
