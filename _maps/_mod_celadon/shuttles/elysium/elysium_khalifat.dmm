@@ -3203,8 +3203,7 @@
 /area/ship/engineering/engine)
 "sY" = (
 /obj/machinery/door/firedoor/closed,
-/obj/machinery/door/firedoor/closed,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/dark,
 /area/ship/engineering/atmospherics)
 "tg" = (
 /obj/effect/decal/cleanable/glass,
