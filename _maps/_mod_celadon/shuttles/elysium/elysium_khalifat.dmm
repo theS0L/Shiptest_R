@@ -2858,6 +2858,10 @@
 /obj/item/aiModule/core/full/elysium,
 /obj/structure/AIcore,
 /obj/item/mmi/posibrain,
+/obj/item/circuitboard/aicore{
+	pixel_x = 1;
+	pixel_y = 0
+	},
 /turf/open/floor/wood/ebony,
 /area/ship/science/ai_chamber)
 "qP" = (
@@ -5182,6 +5186,13 @@
 	},
 /turf/open/floor/plating/rust,
 /area/ship/hallway/aft)
+"Ej" = (
+/obj/item/circuitboard/aicore{
+	pixel_x = -4;
+	pixel_y = -8
+	},
+/turf/closed/wall/r_wall/rust/wasteplanet,
+/area/ship/crew/canteen)
 "En" = (
 /obj/effect/turf_decal/industrial/warning,
 /obj/effect/decal/cleanable/blood,
@@ -9736,7 +9747,7 @@ uY
 uY
 uY
 uY
-uY
+Ej
 uY
 Tn
 WL
