@@ -920,6 +920,16 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/closed/indestructible/reinforced,
 /area/outpost/engineering/atmospherics)
+"dc" = (
+/obj/singularity{
+	can_be_z_moved = 0;
+	move_self = 0;
+	force = 9;
+	energy = 2025;
+	dissipate = 0
+	},
+/turf/open/space/basic,
+/area/space)
 "dd" = (
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	layer = 2.030
@@ -8169,7 +8179,9 @@
 /obj/singularity{
 	can_be_z_moved = 0;
 	move_self = 0;
-	force = 9
+	force = 9;
+	energy = 1984;
+	dissipate = 0
 	},
 /turf/open/space/basic,
 /area/space)
@@ -14567,6 +14579,9 @@
 "TJ" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/hallway/central)
+"TK" = (
+/turf/open/chasm,
+/area/space)
 "TL" = (
 /obj/structure/table,
 /obj/item/book/manual/chef_recipes{
@@ -16685,6 +16700,13 @@ vV
 vV
 vV
 vV
+Zp
+Zp
+Zp
+TK
+Zp
+Zp
+Zp
 vV
 vV
 vV
@@ -16697,6 +16719,13 @@ vV
 vV
 vV
 vV
+Zp
+Zp
+Zp
+TK
+Zp
+Zp
+Zp
 vV
 vV
 vV
@@ -16708,6 +16737,13 @@ vV
 vV
 vV
 vV
+Zp
+Zp
+Zp
+TK
+Zp
+Zp
+Zp
 vV
 vV
 vV
@@ -16719,34 +16755,13 @@ vV
 vV
 vV
 vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
+Zp
+Zp
+Zp
+TK
+Zp
+Zp
+Zp
 vV
 vV
 vV
@@ -16873,6 +16888,11 @@ vV
 vV
 vV
 vV
+Zp
+vV
+vV
+vV
+Zp
 vV
 vV
 vV
@@ -16887,6 +16907,11 @@ vV
 vV
 vV
 vV
+Zp
+vV
+vV
+vV
+Zp
 vV
 vV
 vV
@@ -16900,6 +16925,11 @@ vV
 vV
 vV
 vV
+Zp
+vV
+vV
+vV
+Zp
 vV
 vV
 vV
@@ -16913,26 +16943,11 @@ vV
 vV
 vV
 vV
+Zp
 vV
 vV
 vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
-vV
+Zp
 vV
 vV
 vV
@@ -19493,7 +19508,7 @@ vV
 vV
 vV
 vV
-zT
+dc
 vV
 vV
 vV
