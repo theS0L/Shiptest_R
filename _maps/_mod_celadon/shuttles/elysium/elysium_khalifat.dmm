@@ -1841,8 +1841,7 @@
 	},
 /obj/machinery/door/airlock/security/glass{
 	dir = 4;
-	name = "Шлюз";
-	req_access_txt = "8134"
+	name = "Шлюз"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -2258,7 +2257,7 @@
 /obj/item/radio/intercom/directional/south,
 /obj/structure/closet/secure_closet/wall/directional/west{
 	name = "spare cards locker";
-	req_access = list(3,150)
+	req_ship_access = 1
 	},
 /obj/effect/turf_decal/corner/transparent/green/half{
 	dir = 8
@@ -6613,7 +6612,7 @@
 /area/ship/engineering/engine)
 "MK" = (
 /obj/machinery/door/window/brigdoor/westleft{
-	req_access = list(150, 58)
+	req_ship_access = 1
 	},
 /turf/open/floor/plating/wasteplanet/rust,
 /area/ship/security)
