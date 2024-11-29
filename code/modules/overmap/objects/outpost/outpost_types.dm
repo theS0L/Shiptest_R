@@ -131,6 +131,7 @@
 // 		/datum/map_template/outpost/hangar/nt_ice_56x40
 // 	)
 // [/CELADON-REMOVE]
+	// faction = /datum/faction/nt
 
 /datum/overmap/outpost/no_main_level // For example and adminspawn.
 	main_template = null
