@@ -37,5 +37,6 @@
 #include "code/simple_animal/wizard_constructs.dm"
 #include "code/simple_animal/tele.dm"
 #include "code/simple_animal/plasma_legion.dm"
+#include "code/simple_animal/dragon.dm"
 
 #endif

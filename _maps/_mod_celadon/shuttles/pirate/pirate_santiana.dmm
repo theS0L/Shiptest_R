@@ -73,8 +73,8 @@
 "ak" = (
 /obj/structure/table,
 /obj/item/chainsaw,
-/obj/item/kitchen/knife,
-/obj/item/kitchen/knife/pizza_cutter,
+/obj/item/melee/knife/kitchen,
+/obj/item/melee/knife/pizza_cutter,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/toilet)
@@ -123,26 +123,26 @@
 /area/ship/crew/toilet)
 "aq" = (
 /obj/structure/table,
-/obj/item/kitchen/knife,
-/obj/item/reagent_containers/food/condiment/saltshaker{
+/obj/item/melee/knife/kitchen,
+/obj/item/reagent_containers/condiment/saltshaker{
 	pixel_x = -10;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/food/condiment/soysauce{
+/obj/item/reagent_containers/condiment/soysauce{
 	pixel_x = 9
 	},
-/obj/item/reagent_containers/food/condiment/peppermill{
+/obj/item/reagent_containers/condiment/peppermill{
 	pixel_x = -4;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/food/condiment/bbqsauce{
+/obj/item/reagent_containers/condiment/bbqsauce{
 	pixel_x = -8;
 	pixel_y = -5
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "ar" = (
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	pixel_y = 30
 	},
 /obj/item/weldingtool/old,
@@ -205,9 +205,9 @@
 "ay" = (
 /obj/structure/table,
 /obj/item/melee/baseball_bat/ablative,
-/obj/item/melee/roastingstick,
+/obj/item/roastingstick,
 /obj/item/stack/cable_coil,
-/obj/item/spear,
+/obj/item/melee/spear,
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/toilet)
 "az" = (
@@ -394,17 +394,17 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/item/reagent_containers/food/condiment/milk,
-/obj/item/reagent_containers/food/condiment/milk,
-/obj/item/reagent_containers/food/condiment/oliveoil,
-/obj/item/reagent_containers/food/condiment/mayonnaise,
-/obj/item/reagent_containers/food/condiment/ketchup,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/reagent_containers/food/condiment/enzyme,
-/obj/item/reagent_containers/food/condiment/rice,
-/obj/item/reagent_containers/food/condiment/soymilk,
-/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/oliveoil,
+/obj/item/reagent_containers/condiment/mayonnaise,
+/obj/item/reagent_containers/condiment/ketchup,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/enzyme,
+/obj/item/reagent_containers/condiment/rice,
+/obj/item/reagent_containers/condiment/soymilk,
+/obj/item/reagent_containers/condiment/soymilk,
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
@@ -482,7 +482,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "bf" = (
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat/all_access{
+	all_items_free = 1
+	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "bg" = (
@@ -507,7 +509,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/item/kitchen/knife/hunting,
+/obj/item/melee/knife/hunting,
 /obj/item/pneumatic_cannon/speargun,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/gun/energy/taser,
@@ -576,7 +578,7 @@
 "bp" = (
 /obj/structure/table,
 /obj/item/kitchen/fork,
-/obj/item/kitchen/knife/shiv,
+/obj/item/melee/knife/shiv,
 /obj/item/laser_pointer,
 /obj/item/lipstick/random,
 /obj/item/restraints/handcuffs/cable,
@@ -782,7 +784,7 @@
 /obj/item/clothing/head/helmet/swat,
 /obj/structure/closet/secure_closet,
 /obj/item/camera,
-/obj/item/kitchen/knife/combat,
+/obj/item/melee/knife/combat,
 /obj/item/stack/telecrystal,
 /obj/item/storage/box/donkpockets/donkpocketspicy{
 	desc = "Produced personally be CHUVAK TM. Ultra-spicy";
@@ -881,9 +883,9 @@
 	pixel_x = 7;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/condiment/hotsauce,
-/obj/item/reagent_containers/food/condiment/hotsauce,
-/obj/item/reagent_containers/food/condiment/hotsauce,
+/obj/item/reagent_containers/condiment/hotsauce,
+/obj/item/reagent_containers/condiment/hotsauce,
+/obj/item/reagent_containers/condiment/hotsauce,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/canteen)
 "bY" = (

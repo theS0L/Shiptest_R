@@ -1300,11 +1300,11 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/powered)
 "FE" = (
-/obj/machinery/computer/rdconsole/production{
-	dir = 4
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/salvageable/computer{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/powered)
 "FI" = (
@@ -1874,7 +1874,7 @@
 	req_access = list(103)
 	},
 /obj/item/ammo_box/c38,
-/obj/item/melee/sabre,
+/obj/item/melee/sword/sabre,
 /obj/item/clothing/suit/hooded/wintercoat/captain,
 /obj/item/clothing/head/beret/captain,
 /obj/item/card/id/captains_spare,

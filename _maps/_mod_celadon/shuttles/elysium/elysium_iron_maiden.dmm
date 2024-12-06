@@ -420,7 +420,6 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "qh" = (
-/obj/machinery/airalarm/directional/east,
 /obj/structure/chair/comfy/shuttle{
 	dir = 8;
 	name = "Operations"
@@ -439,6 +438,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/airalarm/directional/east,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "rv" = (
@@ -448,7 +448,8 @@
 /obj/docking_port/stationary{
 	dwidth = 15;
 	height = 15;
-	width = 30
+	width = 30;
+	dir = 8
 	},
 /obj/effect/turf_decal/trimline/opaque/green/warning{
 	dir = 4
@@ -490,8 +491,7 @@
 	},
 /obj/machinery/door/airlock/security/glass{
 	dir = 4;
-	name = "Шлюз";
-	req_access_txt = "12"
+	name = "Шлюз"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -704,7 +704,7 @@
 /obj/machinery/firealarm/directional/west,
 /obj/structure/cable,
 /obj/effect/decal/cleanable/oil,
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -853,7 +853,6 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "EH" = (
-/obj/machinery/airalarm/directional/west,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -866,6 +865,7 @@
 	pixel_y = 13;
 	pixel_x = 14
 	},
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/cryo)
 "Fu" = (
@@ -1277,9 +1277,7 @@
 	dir = 4
 	},
 /obj/structure/rack,
-/obj/item/melee/skimitar{
-	pixel_y = 6
-	},
+/obj/item/storage/belt/skimitar/full,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Sv" = (
@@ -1410,8 +1408,8 @@
 /area/ship/cargo)
 "UU" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/frame,
 /obj/item/circuitboard/machine/autolathe,
+/obj/structure/frame/machine,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "Vf" = (
@@ -1588,11 +1586,14 @@
 /obj/effect/turf_decal/corner/opaque/lime{
 	dir = 4
 	},
-/obj/item/storage/book/bible/koran,
 /obj/item/elysm_manual{
 	pixel_y = 6;
 	pixel_x = -9
 	},
+/obj/item/storage/book/bible/koran{
+	name = "Терик-аль-Шаед"
+	},
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Yr" = (
@@ -1642,7 +1643,7 @@
 /obj/item/clothing/mask/cigarette/rollie/cannabis{
 	pixel_y = 13
 	},
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 

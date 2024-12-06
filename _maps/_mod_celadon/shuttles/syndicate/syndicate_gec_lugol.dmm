@@ -1518,7 +1518,7 @@
 "oF" = (
 /obj/structure/closet/crate/bin,
 /obj/item/trash/syndi_cakes,
-/obj/item/kitchen/knife/shiv,
+/obj/item/melee/knife/shiv,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/canteen)
 "oP" = (
@@ -4654,7 +4654,7 @@
 /obj/structure/catwalk/over/plated_catwalk/white{
 	color = "#4c535b"
 	},
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	dir = 1;
 	pixel_y = -32
 	},
@@ -5507,7 +5507,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
 "Tg" = (
-/obj/machinery/vending/boozeomat/syndicate_access,
+/obj/machinery/vending/boozeomat/syndicate_access{
+	all_items_free = 1
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/canteen)
 "To" = (

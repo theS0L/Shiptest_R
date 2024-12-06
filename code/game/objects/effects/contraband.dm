@@ -519,7 +519,7 @@
 /obj/structure/sign/poster/contraband/m90
 	name = "M90 SMG"
 	desc = "A poster advertising the Scarborough M90. Burst action with a grenade launcher, for some reason."
-	icon_state = "poster-bulldog"
+	icon_state = "poster-m90"
 
 /obj/structure/sign/poster/contraband/inteq_nt
 	name = "Inteq Recruitment"
@@ -1137,7 +1137,7 @@
 	poster_type = /obj/structure/sign/poster/pgf/mission_accomplished_7
 	icon_state = "rolled_poster"
 
-// [CELADON-REMOVE] - CELADON_STUFF_ELYSIUM - REMOVED BECAUSE ITS PREVENTING NEW /random POSTERS FROM OTHER FILES. EXAMPLE FOR PREVENTED /random POSTER: mod_celadon/stuff_elysium/code/elysiumMerch.dm. LINE 37, random_type = POSTER_SUBTYPES -> ERROR: undefined var
+// [CELADON-REMOVE] - CELADON_OUTFIT - REMOVED BECAUSE ITS PREVENTING NEW /random POSTERS FROM OTHER FILES. EXAMPLE FOR PREVENTED /random POSTER: mod_celadon/stuff_elysium/code/elysiumMerch.dm. LINE 37, random_type = POSTER_SUBTYPES -> ERROR: undefined var
 // #undef PLACE_SPEED
 // #undef POSTER_SUBTYPES
 // #undef POSTER_LIST

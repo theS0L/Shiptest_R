@@ -646,9 +646,7 @@
 /obj/structure/closet/body_bag,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/circuitboard/computer/rdconsole,
 /obj/item/stack/medical/suture/medicated,
-/obj/item/circuitboard/machine/rdserver,
 /obj/item/circuitboard/machine/protolathe/department/security,
 /obj/effect/mob_spawn/human/sec,
 /turf/open/floor/plasteel,
@@ -2507,7 +2505,7 @@
 	})
 "IY" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/kitchen/knife{
+/obj/item/melee/knife/kitchen{
 	pixel_x = 7;
 	pixel_y = 10
 	},
@@ -3694,7 +3692,7 @@
 /obj/structure/closet/secure_closet/freezer/kitchen/wall{
 	pixel_y = 29
 	},
-/obj/item/reagent_containers/food/condiment/rice,
+/obj/item/reagent_containers/condiment/rice,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/ruin/beach/oceantown/house{

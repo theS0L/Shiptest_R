@@ -283,10 +283,8 @@
 	pixel_x = -3;
 	pixel_y = 6
 	},
-/obj/item/melee/skimitar{
-	pixel_y = 6
-	},
 /obj/machinery/newscaster/directional/south,
+/obj/item/storage/belt/skimitar/full,
 /turf/open/floor/carpet/green,
 /area/ship/bridge)
 "hn" = (
@@ -1151,7 +1149,7 @@
 	dir = 4;
 	layer = 4.1
 	},
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "Hy" = (
@@ -1441,15 +1439,15 @@
 	pixel_y = 8;
 	pixel_x = -9
 	},
-/obj/item/storage/book/bible/koran{
-	pixel_x = 6
-	},
 /obj/item/bong{
 	pixel_x = -8
 	},
 /obj/item/elysm_manual{
 	pixel_y = 16;
 	pixel_x = -9
+	},
+/obj/item/storage/book/bible/koran{
+	name = "Терик-аль-Шаед"
 	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)

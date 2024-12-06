@@ -275,7 +275,6 @@
 /obj/effect/turf_decal/corner/opaque/lime/border{
 	dir = 8
 	},
-/obj/item/disk/tech_disk/major,
 /turf/open/floor/plasteel/white,
 /area/ruin/unpowered/corprejectrooms{
 	name = "Nanotrasen Genetic Research Test Subject Storage"
@@ -3316,7 +3315,7 @@
 	name = "Nanotrasen Genetic Research Maintenance"
 	})
 "Fy" = (
-/obj/machinery/modular_computer/console/preset/research,
+/obj/structure/salvageable/computer,
 /turf/open/floor/plasteel/white,
 /area/ruin/unpowered/buried_shrine{
 	name = "Nanotrasen Genetic Research Laboratory"

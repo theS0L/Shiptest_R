@@ -131,7 +131,7 @@
 /area/ship/engineering/atmospherics)
 "aG" = (
 /obj/structure/closet/secure_closet/wall/directional/east,
-/obj/item/kitchen/knife,
+/obj/item/melee/knife/kitchen,
 /obj/item/cutting_board,
 /obj/item/clothing/under/suit/waiter/syndicate,
 /obj/item/clothing/suit/hazardvest/donk,
@@ -625,7 +625,9 @@
 	},
 /area/ship/medical)
 "dD" = (
-/obj/machinery/vending/boozeomat/syndicate_access,
+/obj/machinery/vending/boozeomat/syndicate_access{
+	all_items_free = 1
+	},
 /turf/open/floor/carpet/red,
 /area/ship/crew/canteen)
 "dE" = (
@@ -923,7 +925,7 @@
 /obj/item/clothing/gloves/color/black,
 /obj/machinery/light/directional/east,
 /obj/item/flashlight/seclite,
-/obj/item/kitchen/knife/combat,
+/obj/item/melee/knife/combat,
 /obj/item/gun/ballistic/automatic/pistol/ringneck/no_mag,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
@@ -1850,7 +1852,7 @@
 /obj/item/clothing/head/soft/black,
 /obj/item/clothing/glasses/sunglasses,
 /obj/item/flashlight/seclite,
-/obj/item/kitchen/knife/combat,
+/obj/item/melee/knife/combat,
 /obj/item/gun/ballistic/automatic/pistol/ringneck/no_mag,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
@@ -2784,7 +2786,7 @@
 /obj/item/clothing/gloves/color/black,
 /obj/machinery/light/directional/west,
 /obj/item/flashlight/seclite,
-/obj/item/kitchen/knife/combat,
+/obj/item/melee/knife/combat,
 /obj/item/gun/ballistic/automatic/pistol/ringneck/no_mag,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
@@ -2981,18 +2983,18 @@
 "qP" = (
 /obj/machinery/light/directional/north,
 /obj/item/kitchen/rollingpin,
-/obj/item/reagent_containers/food/condiment/sugar,
-/obj/item/reagent_containers/food/condiment/sugar,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/item/reagent_containers/condiment/sugar,
 /obj/structure/closet/secure_closet/freezer/kitchen,
 /obj/item/storage/fancy/egg_box,
 /obj/item/storage/fancy/egg_box,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
 /obj/item/storage/box/ingredients/carnivore,
 /obj/item/storage/box/ingredients/vegetarian,
-/obj/item/reagent_containers/food/condiment/milk,
-/obj/item/reagent_containers/food/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
 /obj/effect/spawner/lootdrop/donkpockets,
 /obj/effect/spawner/lootdrop/donkpockets,
 /turf/open/floor/carpet/red,
@@ -3436,7 +3438,7 @@
 	pixel_y = 4
 	},
 /obj/item/storage/toolbox/electrical,
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	pixel_y = -32;
 	dir = 1
 	},
@@ -4665,7 +4667,7 @@
 /obj/machinery/light/directional/east,
 /obj/item/clothing/head/beret/black,
 /obj/item/flashlight/seclite,
-/obj/item/kitchen/knife/combat,
+/obj/item/melee/knife/combat,
 /obj/item/gun/ballistic/automatic/pistol/ringneck/no_mag,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
@@ -6688,7 +6690,9 @@
 "Mn" = (
 /obj/machinery/light/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/vending/engivend,
+/obj/machinery/vending/engivend{
+	all_items_free = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/atmospherics)
 "Mo" = (
@@ -7963,7 +7967,9 @@
 /area/ship/security/armory)
 "TE" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/vending/tool,
+/obj/machinery/vending/tool{
+	all_items_free = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/atmospherics)
 "TI" = (

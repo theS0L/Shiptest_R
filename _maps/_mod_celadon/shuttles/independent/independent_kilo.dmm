@@ -690,7 +690,9 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "dt" = (
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat/all_access{
+	all_items_free = 1
+	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/canteen/kitchen)
 "dF" = (
@@ -1423,7 +1425,7 @@
 	pixel_x = -6;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/food/condiment/enzyme{
+/obj/item/reagent_containers/condiment/enzyme{
 	layer = 5;
 	pixel_x = 12;
 	pixel_y = 6

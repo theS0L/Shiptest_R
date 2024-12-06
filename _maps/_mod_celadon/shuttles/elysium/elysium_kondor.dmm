@@ -552,7 +552,9 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/components/binary/pump/layer2,
+/obj/machinery/atmospherics/components/binary/pump/layer2{
+	dir = 1
+	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/secure_closet/engineering_personal{
@@ -578,9 +580,6 @@
 	},
 /obj/effect/turf_decal/corner/transparent/green/full,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/door/airlock{
-	name = "eva airlock"
-	},
 /obj/machinery/door/airlock{
 	name = "eva airlock"
 	},
@@ -740,10 +739,6 @@
 "qq" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
-/obj/item/storage/book/bible/koran{
-	pixel_x = 1;
-	pixel_y = 8
-	},
 /obj/item/binoculars{
 	pixel_x = 7
 	},
@@ -754,6 +749,9 @@
 /obj/item/elysm_manual{
 	pixel_y = 5;
 	pixel_x = -10
+	},
+/obj/item/storage/book/bible/koran{
+	name = "Терик-аль-Шаед"
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
@@ -975,7 +973,6 @@
 /area/ship/cargo)
 "uJ" = (
 /obj/structure/table,
-/obj/item/melee/skimitar,
 /obj/item/ammo_box/magazine/skm_762_40/extended,
 /obj/item/ammo_box/magazine/skm_762_40/extended,
 /obj/item/ammo_box/magazine/skm_762_40/extended,
@@ -991,6 +988,7 @@
 	pixel_y = 3;
 	pixel_x = 7
 	},
+/obj/item/storage/belt/skimitar/full,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "uM" = (
@@ -999,7 +997,7 @@
 /obj/machinery/airalarm/directional/south,
 /obj/effect/decal/cleanable/oil,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /obj/effect/decal/cleanable/plasma,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
@@ -1271,7 +1269,7 @@
 /obj/machinery/light/directional/east,
 /obj/machinery/airalarm/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/plasteel/dark,
 /area/ship/storage/eva)
 "Cn" = (
@@ -1297,7 +1295,7 @@
 	icon_state = "0-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "CO" = (
@@ -2056,6 +2054,15 @@
 /obj/item/trash/syndi_cakes,
 /turf/open/floor/plating/rust,
 /area/ship/engineering/electrical)
+"UB" = (
+/obj/docking_port/stationary{
+	dwidth = 15;
+	height = 15;
+	width = 30;
+	dir = 8
+	},
+/turf/template_noop,
+/area/template_noop)
 "UC" = (
 /obj/effect/decal/cleanable/blood/drip,
 /mob/living/simple_animal/hostile/cockroach,
@@ -2223,7 +2230,7 @@
 /turf/open/floor/plating/rust,
 /area/ship/hallway/central)
 "Zz" = (
-/obj/item/banner/elysium,
+/obj/item/banner/elysium/mundane,
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "ZZ" = (
@@ -2316,7 +2323,7 @@ iV
 "}
 (5,1,1) = {"
 iV
-iV
+UB
 iV
 iV
 Og
@@ -2332,7 +2339,7 @@ tC
 aF
 iV
 iV
-iV
+UB
 iV
 "}
 (6,1,1) = {"

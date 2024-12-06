@@ -418,7 +418,8 @@
 /obj/docking_port/stationary{
 	dwidth = 15;
 	height = 15;
-	width = 30
+	width = 30;
+	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/external)
@@ -788,10 +789,10 @@
 /obj/item/ammo_box/magazine/smgm10mm,
 /obj/item/ammo_box/magazine/smgm10mm,
 /obj/item/ammo_box/magazine/smgm10mm,
-/obj/item/ammo_box/magazine/p16/g36,
-/obj/item/ammo_box/magazine/p16/g36,
-/obj/item/ammo_box/magazine/p16/g36,
-/obj/item/ammo_box/magazine/p16/g36,
+/obj/item/ammo_box/magazine/g36,
+/obj/item/ammo_box/magazine/g36,
+/obj/item/ammo_box/magazine/g36,
+/obj/item/ammo_box/magazine/g36,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "EH" = (
@@ -1244,7 +1245,7 @@
 	name = "vanguard's locker";
 	req_access_txt = "20"
 	},
-/obj/item/kitchen/knife/combat,
+/obj/item/melee/knife/combat,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
@@ -1325,8 +1326,8 @@
 	},
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq,
-/obj/item/gun/ballistic/automatic/assault/p16/g36/inteq,
-/obj/item/gun/ballistic/automatic/assault/p16/g36/inteq,
+/obj/item/gun/ballistic/automatic/assault/g36/inteq,
+/obj/item/gun/ballistic/automatic/assault/g36/inteq,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "UC" = (
