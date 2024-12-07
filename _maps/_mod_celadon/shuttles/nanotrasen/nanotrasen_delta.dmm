@@ -140,7 +140,7 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 8
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/ship/hallway/port)
 "aQ" = (
 /obj/effect/turf_decal/corner/opaque/ntblue{
@@ -293,7 +293,7 @@
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/ship/hallway/port)
 "bx" = (
 /obj/effect/turf_decal/corner/opaque/white{
@@ -706,7 +706,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "cS" = (
 /obj/effect/spawner/structure/window/shuttle,
@@ -723,7 +723,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "cU" = (
 /obj/machinery/portable_atmospherics/pump,
@@ -1055,11 +1055,12 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "dR" = (
-/obj/machinery/camera{
-	dir = 10
-	},
 /obj/effect/turf_decal/corner/opaque/ntblue/border,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/mirror{
+	pixel_x = 0;
+	pixel_y = -29
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "dS" = (
@@ -1255,9 +1256,6 @@
 	},
 /obj/machinery/firealarm/directional/east,
 /obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/machinery/camera{
-	dir = 8
-	},
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "ik" = (
@@ -1366,6 +1364,9 @@
 /area/ship/crew)
 "lp" = (
 /obj/machinery/recharge_station,
+/obj/machinery/camera{
+	dir = 5
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "ls" = (
@@ -1423,7 +1424,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/science/robotics)
 "nf" = (
-/obj/machinery/camera,
 /obj/structure/table,
 /obj/structure/closet/secure_closet/freezer/wall/directional/north,
 /obj/item/reagent_containers/food/snacks/burger,
@@ -1747,6 +1747,9 @@
 /area/ship/cargo)
 "uT" = (
 /obj/effect/turf_decal/corner/opaque/ntblue/border,
+/obj/machinery/camera{
+	dir = 10
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "vk" = (
@@ -2686,13 +2689,6 @@
 /obj/item/stock_parts/cell/gun/upgraded,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
-"SD" = (
-/obj/structure/mirror{
-	pixel_x = 0;
-	pixel_y = 6
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/crew)
 "SE" = (
 /obj/structure/sign/nanotrasen,
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -2734,7 +2730,7 @@
 /mob/living/simple_animal/pet/dog/corgi/Ian{
 	name = "Yasha";
 	real_name = "Yasha";
-	desc = "It's RD's beloved corgi!"
+	desc = "It's Science Director's beloved corgi!"
 	},
 /obj/effect/turf_decal/road/line/opaque/white{
 	dir = 1
@@ -3307,7 +3303,7 @@ cR
 dm
 dP
 dR
-SD
+SN
 "}
 (14,1,1) = {"
 aa
