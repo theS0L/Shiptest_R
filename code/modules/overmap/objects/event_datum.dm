@@ -79,6 +79,8 @@
 	//	token.light_color = "#a08444"
 	// [/CELADON-REMOVE]
 	token.update_appearance()
+	if(safe_speed)
+		token.desc += " You can safely navigate through this if your ship is travelling under [safe_speed] Gm/s."
 
 /datum/overmap/event/meteor/apply_effect()
 	for(var/datum/overmap/ship/controlled/Ship in get_nearby_overmap_objects())
