@@ -109,6 +109,35 @@
 	courierbag = /obj/item/storage/backpack/messenger/tox
 	box = /obj/item/storage/box/survival/medical
 
+// Директор СБ - ХОС капитан
+
+/datum/outfit/job/nanotrasen/hos/captain
+	name = "Nanotrasen - Security Director (Captain)"
+	job_icon = "headofsecurity"
+	jobtype = /datum/job/captain
+
+	id = /obj/item/card/id/gold
+	belt = /obj/item/pda/heads/hos
+	gloves = /obj/item/clothing/gloves/combat
+	ears = /obj/item/radio/headset/nanotrasen/alt/captain
+	uniform = /obj/item/clothing/under/nanotrasen/security/director
+	suit = /obj/item/clothing/suit/armor/nanotrasen/sec_director
+	alt_suit = /obj/item/clothing/suit/toggle/armor/hos_formal
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
+	shoes = /obj/item/clothing/shoes/combat
+	neck = /obj/item/clothing/neck/scarf/black
+	head = /obj/item/clothing/head/nanotrasen/beret/security/command
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
+
+	backpack = /obj/item/storage/backpack/security
+	satchel = /obj/item/storage/backpack/satchel/sec
+	duffelbag = /obj/item/storage/backpack/duffelbag/sec
+	courierbag = /obj/item/storage/backpack/messenger/sec
+
+	accessory = /obj/item/clothing/accessory/medal/silver/security
+
+	chameleon_extras = /obj/item/stamp/hos
+
 //лп уборщик
 
 /datum/outfit/job/nanotrasen/janitor/lp
