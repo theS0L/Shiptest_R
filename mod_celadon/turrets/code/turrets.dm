@@ -44,7 +44,7 @@
 	scan_range = 9
 	req_access = list(ACCESS_CENT_GENERAL)
 	mode = TURRET_LETHAL
-	faction = list(ROLE_DEVIL)
+	faction = list(ROLE_HIVE)
 	desc = "A ballistic machine gun/grenade auto-turret."
 
 /obj/machinery/porta_turret/syndicate/no_access/interior_45
