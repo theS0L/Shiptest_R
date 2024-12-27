@@ -53,7 +53,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	"â" = MODE_ADMIN,
 
 	// Misc
-	"ù" = RADIO_CHANNEL_AI_PRIVATE,
+	// "ù" = RADIO_CHANNEL_AI_PRIVATE,
 	"÷" = MODE_VOCALCORDS,
 	"ö" = RADIO_CHANNEL_WIDEBAND
 ))

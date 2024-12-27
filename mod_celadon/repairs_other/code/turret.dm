@@ -1,7 +1,7 @@
 // Офы написали турели говна и сидят радуются поэтому мы их переписываем
 
 /obj/machinery/porta_turret/ship/faction
-	turret_flags = TURRET_FLAG_SHOOT_HEADS | TURRET_FLAG_SHOOT_CRIMINALS | TURRET_FLAG_SHOOT_ANOMALOUS
+	turret_flags = TURRET_FLAG_DEFAULT
 
 // SOLGOV
 /obj/machinery/porta_turret/ship/faction/solgov
@@ -19,9 +19,9 @@
 	base_icon_state = "standard"
 
 /obj/machinery/porta_turret/ship/faction/solgov/laser/cover
-	installation = /obj/item/gun/energy/e_gun/turret
-	has_cover = 1
-	always_up = 0
+	// installation = /obj/item/gun/energy/e_gun/turret
+	// has_cover = 1
+	// always_up = 0
 	icon_state = "turretCover"
 	base_icon_state = "standard"
 
@@ -41,10 +41,10 @@
 	base_icon_state = "standard"
 
 /obj/machinery/porta_turret/ship/faction/syndicate/laser/cover
-	installation = /obj/item/gun/energy/e_gun/turret
-	has_cover = 1
-	always_up = 0
-	cover = /obj/item/gun/energy/e_gun/turret
+	// installation = /obj/item/gun/energy/e_gun/turret
+	// has_cover = 1
+	// always_up = 0
+	// cover = /obj/item/gun/energy/e_gun/turret
 	icon_state = "turretCover"
 	base_icon_state = "standard"
 
@@ -64,9 +64,9 @@
 	base_icon_state = "standard"
 
 /obj/machinery/porta_turret/ship/faction/nanotrasen/laser/cover
-	installation = /obj/item/gun/energy/e_gun/turret
-	has_cover = 1
-	always_up = 0
+	// installation = /obj/item/gun/energy/e_gun/turret
+	// has_cover = 1
+	// always_up = 0
 	icon_state = "turretCover"
 	base_icon_state = "standard"
 
@@ -86,9 +86,9 @@
 	base_icon_state = "standard"
 
 /obj/machinery/porta_turret/ship/faction/inteq/laser/cover
-	installation = /obj/item/gun/energy/e_gun/turret
-	has_cover = 1
-	always_up = 0
+	// installation = /obj/item/gun/energy/e_gun/turret
+	// has_cover = 1
+	// always_up = 0
 	icon_state = "turretCover"
 	base_icon_state = "standard"
 
@@ -108,9 +108,9 @@
 	base_icon_state = "standard"
 
 /obj/machinery/porta_turret/ship/faction/elysium/laser/cover
-	installation = /obj/item/gun/energy/e_gun/turret
-	has_cover = 1
-	always_up = 0
+	// installation = /obj/item/gun/energy/e_gun/turret
+	// has_cover = 1
+	// always_up = 0
 	icon_state = "turretCover"
 	base_icon_state = "standard"
 
@@ -130,8 +130,8 @@
 	base_icon_state = "standard"
 
 /obj/machinery/porta_turret/ship/faction/pirate/laser/cover
-	installation = /obj/item/gun/energy/e_gun/turret
-	has_cover = 1
-	always_up = 0
+	// installation = /obj/item/gun/energy/e_gun/turret
+	// has_cover = 1
+	// always_up = 0
 	icon_state = "turretCover"
 	base_icon_state = "standard"

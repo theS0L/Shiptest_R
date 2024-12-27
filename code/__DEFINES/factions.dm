@@ -4,7 +4,7 @@
 #define FACTION_ANTAG_FRONTIERSMEN "Frontiersmen"
 
 //Player Factions
-// [CELADON-REMOVE] - PREFIXES - (Перемещено в code/__DEFINES/~mod_celadon/prefixes.dm)
+// [CELADON-REMOVE] - PREFIXES - (Перемещено в code/__DEFINES/~mod_celadon/names.dm)
 // #define FACTION_PLAYER_SYNDICATE "playerSyndicate"
 // #define FACTION_PLAYER_NANOTRASEN "playerNanotrasen"
 // #define FACTION_PLAYER_FRONTIERSMEN "playerFrontiersmen"

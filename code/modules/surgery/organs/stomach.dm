@@ -48,32 +48,6 @@
 /obj/item/organ/stomach/proc/handle_disgust(mob/living/carbon/human/H)
 	if(H.disgust)
 		var/pukeprob = 5 + 0.05 * H.disgust
-		выфлрывлофрылворыфолрв
-		// if(H.disgust >= DISGUST_LEVEL_GROSS) /// НОВОЕ !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		// 	if(prob(10))
-		// 		H.stuttering += 1
-		// 		H.confused += 2
-		// 	if(prob(10) && !H.stat)
-		// 		to_chat(H, "<span class='warning'>You feel kind of iffy...</span>")
-		// 	H.jitteriness = max(H.jitteriness - 3, 0)
-		// if(H.disgust >= DISGUST_LEVEL_VERYGROSS)
-		// 	// [CELADON - EDIT] - CELADON_LANIUS
-		// 	if(is_species(H, /datum/species/lanius))
-		// 		H.confused += 2.5
-		// 		H.stuttering += 1
-		// 		if (prob(15))
-		// 			to_chat(H, "<span class='warning'>You feel something strange inside your core..</span>")
-		// 			H.adjust_nutrition(-10)
-		// 	// if(prob(pukeprob)) //iT hAndLeS mOrE ThaN PukInG // [CELADON - EDIT] - ORIGANAL
-		// 	else if(prob(pukeprob))
-		// 	// [/CELADON - EDIT]
-		// 		H.confused += 2.5
-		// 		H.stuttering += 1
-		// 		H.vomit(10, 0, 1, 0, 1, 0)
-		// 	H.Dizzy(5)
-		// if(H.disgust >= DISGUST_LEVEL_DISGUSTED)
-		// 	if(prob(25))
-		// 		H.blur_eyes(3) //We need to add more shit down here
 		switch(H.disgust)
 			if(0 to DISGUST_LEVEL_GROSS)
 				//throw alerts
@@ -91,7 +65,10 @@
 				H.throw_alert("disgust", /atom/movable/screen/alert/gross)
 				SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "disgust", /datum/mood_event/gross)
 				//do the nausea stuff
-				if(prob(pukeprob)) //iT hAndLeS mOrE ThaN PukInG
+				// [CELADON - EDIT] - CELADON_LANIUS
+				// if(prob(pukeprob)) //iT hAndLeS mOrE ThaN PukInG // [CELADON - EDIT] - ORIGANAL
+				if(prob(pukeprob))
+				// [/CELADON - EDIT]
 					H.vomit(10, 0, 0, 0, 1, 0)
 					H.confused += 2.5
 					H.stuttering += 1
