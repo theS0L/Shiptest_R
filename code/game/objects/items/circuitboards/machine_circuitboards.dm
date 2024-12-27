@@ -587,7 +587,6 @@
 		/obj/machinery/smartfridge/food = "food",
 		/obj/machinery/smartfridge/organ = "organs",
 		/obj/machinery/smartfridge = "plant produce",
-		/obj/machinery/smartfridge/extract = "slimes",
 		/obj/machinery/smartfridge/chemistry/virology = "viruses")
 	// [/CELADON-EDIT]
 	needs_anchored = FALSE
