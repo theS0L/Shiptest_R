@@ -174,31 +174,6 @@
 	if(!BB)
 		BB = new projectile_type(src, src)
 
-/obj/item/ammo_casing/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/ammo_box))
-		var/obj/item/ammo_box/box = I
-		if(isturf(loc))
-			var/boolets = 0
-			for(var/obj/item/ammo_casing/bullet in loc)
-				if (box.stored_ammo.len >= box.max_ammo)
-					break
-				if (bullet.BB)
-					if (box.give_round(bullet, 0))
-						boolets++
-						// [CELADON-ADD] - CELADON_BALANCE
-						playsound(loc, 'sound/weapons/gun/general/mag_bullet_insert.ogg', 60, TRUE)
-						break
-						// [/CELADON-ADD]
-				else
-					continue
-			if (boolets > 0)
-				box.update_appearance()
-				to_chat(user, "<span class='notice'>You collect [boolets] shell\s. [box] now contains [box.stored_ammo.len] shell\s.</span>")
-			else
-				to_chat(user, "<span class='warning'>You fail to collect anything!</span>")
-	else
-		return ..()
-
 
 /obj/item/ammo_casing/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	bounce_away(FALSE, NONE)
