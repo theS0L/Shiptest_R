@@ -7,4 +7,3 @@
 	desc = "Use this to keep prisoners in line, they are really itchy."
 	icon = 'mod_celadon/_storge_icons/icons/items/obj/restraints.dmi'
 	icon_state = "pinkcuffs"
-	cuffed_state = "pinkcuff"
