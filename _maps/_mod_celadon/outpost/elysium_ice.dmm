@@ -631,7 +631,7 @@
 /area/outpost/security)
 "axu" = (
 /obj/structure/closet/crate/trashcart,
-/obj/effect/spawner/lootdrop/chicken,
+/obj/effect/spawner/random/chicken,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "axV" = (
@@ -835,7 +835,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/trashcart,
-/obj/effect/spawner/lootdrop/maintenance/four,
+/obj/effect/spawner/random/maintenance/four,
 /turf/open/floor/plating/rust,
 /area/outpost/maintenance/port)
 "aHx" = (
@@ -1324,7 +1324,7 @@
 	req_one_access_txt = "8125";
 	req_access = null
 	},
-/obj/item/ammo_box/ferroslugbox,
+/obj/item/storage/box/ammo/ferroslug,
 /obj/item/storage/box/slugshot,
 /obj/item/storage/fancy/cigarettes/cigars,
 /obj/item/storage/fancy/cigarettes/cigars/havana,
@@ -1332,7 +1332,7 @@
 /obj/item/storage/photo_album/bar,
 /obj/item/storage/box/matches,
 /obj/item/pda/bar,
-/obj/item/stamp/bard,
+/obj/item/stamp/clip/bard,
 /obj/item/clothing/under/rank/civilian/bartender/skirt,
 /obj/item/clothing/under/rank/civilian/bartender/purple,
 /obj/item/clothing/under/rank/civilian/bartender,
@@ -1376,7 +1376,7 @@
 "aZB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/outpost/maintenance/port)
 "bav" = (
@@ -1791,7 +1791,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance{
+/obj/effect/spawner/random/maintenance{
 	pixel_x = -9
 	},
 /turf/open/floor/plating{
@@ -2230,7 +2230,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/hall_1)
 "bJc" = (
@@ -3060,7 +3060,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/closet/crate/trashcart,
-/obj/effect/spawner/lootdrop/mafia_outfit,
+/obj/effect/spawner/random/clothing/mafia_outfit,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -3717,7 +3717,7 @@
 "cPP" = (
 /obj/effect/mob_spawn/human/cook/husked,
 /obj/item/spacecash/bundle/c100,
-/obj/effect/spawner/lootdrop/plushie,
+/obj/effect/spawner/random/entertainment/plushie,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -3805,7 +3805,7 @@
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
 "cVC" = (
-/obj/effect/spawner/lootdrop/plushie,
+/obj/effect/spawner/random/entertainment/plushie,
 /obj/item/spacecash/bundle/c10,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -3903,7 +3903,7 @@
 "daH" = (
 /obj/item/soap/syndie,
 /obj/structure/closet/crate/wooden,
-/obj/item/reagent_containers/food/drinks/breakawayflask/vintage/forcewine,
+/obj/item/reagent_containers/food/drinks/breakawayflask/vintage/icewine,
 /obj/item/reagent_containers/glass/bottle/antitoxin,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -4006,7 +4006,7 @@
 /area/outpost/fraction/solfed)
 "dfm" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/structure/table/scrap,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
@@ -4263,7 +4263,7 @@
 "dns" = (
 /obj/effect/decal/fakelattice,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/item/clothing/head/hardhat/pumpkinhead/blumpkin{
 	light_on = 1
 	},
@@ -4382,7 +4382,7 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
 "dsZ" = (
-/obj/effect/spawner/lootdrop/plushie,
+/obj/effect/spawner/random/entertainment/plushie,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "dtD" = (
@@ -4591,7 +4591,7 @@
 /obj/item/shard{
 	pixel_x = -5
 	},
-/obj/effect/spawner/lootdrop/maintenance/three{
+/obj/effect/spawner/random/maintenance/three{
 	pixel_y = -2;
 	pixel_x = 6
 	},
@@ -4901,7 +4901,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/structure/grille/broken,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plating,
 /area/outpost/maintenance/starboard)
 "dLa" = (
@@ -4947,7 +4947,7 @@
 	pixel_y = 14;
 	pixel_x = 12
 	},
-/obj/effect/spawner/lootdrop/maintenance/six,
+/obj/effect/spawner/random/maintenance/six,
 /obj/item/tank/internals/oxygen/empty,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -5679,7 +5679,7 @@
 /turf/open/floor/wood,
 /area/outpost/medical/cmo)
 "eij" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating{
@@ -5889,7 +5889,7 @@
 /turf/open/floor/plating,
 /area/outpost/maintenance/starboard)
 "eoJ" = (
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6025,7 +6025,7 @@
 /turf/open/floor/carpet/purple,
 /area/outpost/crew/bar)
 "ess" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7160,7 +7160,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/medical/morgue)
 "ffJ" = (
-/obj/effect/spawner/lootdrop/materials,
+/obj/effect/spawner/random/materials,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "ffR" = (
@@ -7271,7 +7271,7 @@
 /area/outpost/cargo/smeltery)
 "fmB" = (
 /obj/structure/curtain/cloth/grey,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/mob_spawn/human/elysium_outpost/wagabond{
 	layer = 2
 	},
@@ -7301,7 +7301,7 @@
 /area/outpost/operations/outpost_command)
 "fmX" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/portable_atmospherics/canister/stimulum,
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/cargo)
 "foo" = (
@@ -8349,7 +8349,7 @@
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "gaf" = (
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/item/clothing/mask/gas/tiki_mask,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -9168,7 +9168,7 @@
 	},
 /area/outpost/fraction/separatist)
 "gCN" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating/asteroid/snow/temperatre{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -9244,7 +9244,7 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/reseption)
 "gGe" = (
-/obj/effect/spawner/lootdrop/maintenance/eight,
+/obj/effect/spawner/random/maintenance/eight,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "gGh" = (
@@ -9697,7 +9697,7 @@
 /area/outpost/crew/cryo)
 "gVe" = (
 /obj/structure/grille/broken,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/structure/spider/stickyweb,
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/rust,
@@ -10618,7 +10618,7 @@
 	},
 /area/outpost/exterior)
 "hEO" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plating{
@@ -12013,7 +12013,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/bin,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/item/trash/sosjerky,
 /obj/item/trash/can,
 /turf/open/floor/plasteel/patterned/brushed{
@@ -12386,7 +12386,7 @@
 "iRB" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /obj/structure/sign/poster/retro/random{
 	pixel_x = -32
 	},
@@ -12759,12 +12759,12 @@
 	pixel_x = -1;
 	pixel_y = 16
 	},
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "jgu" = (
@@ -13224,7 +13224,7 @@
 /turf/open/floor/carpet/cyan,
 /area/outpost/medical/palata_1)
 "jtg" = (
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/effect/portal/permanent/one_way{
 	id = "outpost_joke_endless_1l";
 	alpha = 0;
@@ -13367,7 +13367,7 @@
 /obj/structure/flora/grass/green{
 	layer = 3.1
 	},
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating/asteroid/snow/temperatre{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -13512,7 +13512,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
 "jDr" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/item/spacecash/bundle/c10,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -13606,7 +13606,7 @@
 	default_raw_text = "Это снова Энди. Ох, незнаю как вам а это были очень острые ощущения, ходить по мосту который вот вот грохнется в лаву! Но да ладно. Мы открыли вход. Нам удалось раскапать тунель, который судя по всему ведет куда-то глубоко вниз. Ну что ж, будем готовиться к спуску. К сожалению туннель тут слегка обвалился, приходится ползти ползком. Черт, придется оставить ящики с инструментами, они не пролезут дальше...";
 	pixel_x = 10
 	},
-/obj/effect/spawner/lootdrop/gloves,
+/obj/effect/spawner/random/clothing/gloves,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "jHw" = (
@@ -13615,7 +13615,7 @@
 	},
 /obj/structure/closet/crate/wooden,
 /obj/item/stack/sheet/mineral/sandstone,
-/obj/effect/spawner/lootdrop/materials,
+/obj/effect/spawner/random/materials,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/walnut,
 /area/outpost/exterior)
@@ -14192,7 +14192,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/fraction/inteq)
 "kfF" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -14275,15 +14275,15 @@
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/structure/closet/wall/directional/north,
 /obj/machinery/door/window,
 /obj/machinery/light/small/directional/north{
@@ -14477,7 +14477,7 @@
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "kqB" = (
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "kqF" = (
@@ -14762,7 +14762,7 @@
 	},
 /area/outpost/exterior)
 "kDj" = (
-/obj/item/clothing/suit/armor/heavy/adamantine{
+/obj/item/clothing/suit/armor/heavy{
 	anchored = 1
 	},
 /obj/structure/table/abductor,
@@ -14835,7 +14835,7 @@
 /area/outpost/cargo)
 "kFW" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plating{
@@ -14984,7 +14984,7 @@
 /area/outpost/fraction/separatist)
 "kLU" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/portable_atmospherics/canister/pluoxium,
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/cargo)
 "kLZ" = (
@@ -15315,7 +15315,7 @@
 /area/outpost/crew/cryo)
 "kVU" = (
 /obj/structure/table/abductor,
-/obj/effect/spawner/lootdrop/random_machine_circuit_mech,
+/obj/effect/spawner/random/circuit/machine/mech,
 /turf/open/floor/plating/abductor,
 /area/outpost/exterior)
 "kVV" = (
@@ -15672,7 +15672,7 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/canteen)
 "lqe" = (
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/effect/portal/permanent/one_way{
 	id = "outpost_joke_endless_105l";
 	alpha = 0;
@@ -15727,7 +15727,7 @@
 /area/outpost/exterior)
 "lsF" = (
 /obj/structure/table/abductor,
-/obj/effect/spawner/lootdrop/random_computer_circuit_rare,
+/obj/effect/spawner/random/circuit/computer/rare,
 /turf/open/floor/plating/abductor,
 /area/outpost/exterior)
 "lug" = (
@@ -15977,7 +15977,7 @@
 	layer = 3.1;
 	pixel_x = 13
 	},
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating/asteroid/snow/temperatre{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -17105,7 +17105,7 @@
 /area/outpost/crew/bar/vip_elysium_zone)
 "mrG" = (
 /obj/structure/table/reinforced/titaniumglass,
-/obj/structure/statue/bronze/marx{
+/obj/item/statuebust{
 	pixel_y = 16;
 	mouse_opacity = 0
 	},
@@ -18427,7 +18427,7 @@
 /area/outpost/maintenance/port)
 "nlC" = (
 /obj/structure/table/abductor,
-/obj/effect/spawner/lootdrop/random_ammo_protolathe_lootdrop,
+/obj/effect/spawner/random/random_ammo_protolathe_lootdrop,
 /turf/open/floor/plating/abductor,
 /area/outpost/exterior)
 "nlM" = (
@@ -18869,7 +18869,7 @@
 /area/outpost/cargo/smeltery)
 "nyo" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/machinery/portable_atmospherics/canister/nitryl,
+/obj/machinery/portable_atmospherics/canister/freon,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/cargo)
 "nzG" = (
@@ -18972,7 +18972,7 @@
 	short_desc = "Искусаное тараканами тело клоуна выглядит так как-будто его задушили одноцветным зеленым шарфом. Вы также замечаете что вокруг его шеи обмотан шарф в полосочку запачканый то ли грязью толи блевотиной клоуна. По цветам не скажешь, но кажется он был красно-серого цвета. Хороший был шарф, жаль его.";
 	desc = "Искусаное тараканами тело клоуна выглядит так как-будто его задушили одноцветным зеленым шарфом. Вы также замечаете что вокруг его шеи обмотан шарф в полосочку запачканый то ли грязью толи блевотиной клоуна. По цветам не скажешь, но кажется он был красно-серого цвета. Хороший был шарф, жаль его."
 	},
-/obj/effect/spawner/lootdrop/plushie,
+/obj/effect/spawner/random/entertainment/plushie,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -19740,7 +19740,7 @@
 	pixel_x = 14;
 	all_items_free = 1
 	},
-/obj/machinery/vending/snack/random{
+/obj/effect/spawner/random/vending/snack{
 	pixel_x = -14;
 	all_items_free = 1
 	},
@@ -20468,7 +20468,7 @@
 	pixel_x = 10;
 	pixel_y = 1
 	},
-/obj/item/toy/talking/codex_gigas{
+/obj/item/storage/book/bible{
 	pixel_y = 10;
 	pixel_x = 12
 	},
@@ -20770,7 +20770,7 @@
 	pixel_y = 7;
 	pixel_x = -6
 	},
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/wood/walnut,
 /area/outpost/exterior)
 "oOO" = (
@@ -20778,7 +20778,7 @@
 	color = "#808080"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/wood/walnut,
 /area/outpost/exterior)
 "oPl" = (
@@ -20912,7 +20912,7 @@
 	},
 /obj/structure/closet/crate/wooden,
 /obj/item/stack/sheet/mineral/sandstone/thirty,
-/obj/effect/spawner/lootdrop/materials,
+/obj/effect/spawner/random/materials,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/walnut,
 /area/outpost/exterior)
@@ -21421,7 +21421,7 @@
 /obj/item/reagent_containers/glass/bottle/antitoxin,
 /obj/item/storage/ration/pepper_jack_beef_patty,
 /obj/item/storage/ration/pepper_jack_beef_patty,
-/obj/effect/spawner/lootdrop/salvage/plasma,
+/obj/effect/spawner/random/salvage/plasma,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "prZ" = (
@@ -21812,7 +21812,7 @@
 "pBF" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/portable_atmospherics/canister/stimulum,
+/obj/machinery/portable_atmospherics/canister/toxins,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/cargo)
 "pCc" = (
@@ -21856,7 +21856,7 @@
 "pDh" = (
 /obj/effect/decal/fakelattice,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/outpost/maintenance/port)
 "pDq" = (
@@ -21996,7 +21996,7 @@
 	},
 /obj/item/stack/sheet/mineral/plasma,
 /obj/structure/closet/crate/wooden,
-/obj/effect/spawner/lootdrop/materials,
+/obj/effect/spawner/random/materials,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/walnut,
 /area/outpost/exterior)
@@ -22004,7 +22004,7 @@
 /obj/structure/spider/stickyweb{
 	color = "#808080"
 	},
-/obj/effect/spawner/lootdrop/materials,
+/obj/effect/spawner/random/materials,
 /turf/open/floor/wood/walnut,
 /area/outpost/exterior)
 "pIS" = (
@@ -22077,7 +22077,7 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/crew/garden)
 "pLe" = (
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/effect/portal/permanent/one_way{
 	id = "outpost_joke_endless_101l";
 	alpha = 0;
@@ -22796,7 +22796,7 @@
 /area/outpost/crew/garden)
 "qlM" = (
 /obj/structure/table/abductor,
-/obj/effect/spawner/lootdrop/random_gun_protolathe_lootdrop,
+/obj/effect/spawner/random/random_gun_protolathe_lootdrop,
 /turf/open/floor/plating/abductor,
 /area/outpost/exterior)
 "qlN" = (
@@ -23667,15 +23667,15 @@
 "qRW" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance{
+/obj/effect/spawner/random/maintenance{
 	pixel_x = -2;
 	pixel_y = -11
 	},
-/obj/effect/spawner/lootdrop/maintenance{
+/obj/effect/spawner/random/maintenance{
 	pixel_x = 3;
 	pixel_y = 13
 	},
-/obj/effect/spawner/lootdrop/maintenance{
+/obj/effect/spawner/random/maintenance{
 	pixel_x = 21;
 	pixel_y = 11
 	},
@@ -24284,7 +24284,7 @@
 /obj/structure/closet/crate/secure/loot,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -24576,7 +24576,7 @@
 /area/outpost/fraction/separatist)
 "rBo" = (
 /obj/machinery/light/small/directional/east,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -24656,7 +24656,7 @@
 /area/outpost/fraction/solfed)
 "rDZ" = (
 /obj/effect/turf_decal/borderfloor/full,
-/obj/effect/spawner/lootdrop/maintenance{
+/obj/effect/spawner/random/maintenance{
 	pixel_x = -9
 	},
 /turf/open/floor/plating{
@@ -25153,7 +25153,7 @@
 	},
 /area/outpost/fraction/separatist)
 "rVu" = (
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "rVx" = (
@@ -25605,7 +25605,7 @@
 /area/outpost/medical/reseption)
 "smM" = (
 /obj/machinery/light/small/directional/east,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating{
@@ -25790,7 +25790,7 @@
 /obj/structure/closet/crate/wooden,
 /obj/item/reagent_containers/glass/bottle/antitoxin,
 /obj/item/reagent_containers/glass/bottle/antitoxin,
-/obj/effect/spawner/lootdrop/salvage,
+/obj/effect/spawner/random/salvage,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "ssN" = (
@@ -25883,7 +25883,7 @@
 /turf/open/floor/plating/rust,
 /area/outpost/maintenance/starboard)
 "suZ" = (
-/obj/effect/spawner/lootdrop/rnd{
+/obj/effect/spawner/random/rnd{
 	max_integrity = 100000;
 	pixel_x = 0;
 	anchored = 1;
@@ -26070,7 +26070,7 @@
 	dir = 8;
 	pixel_y = -15
 	},
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/mob_spawn/human/elysium_outpost/wagabond{
 	layer = 2
 	},
@@ -26092,7 +26092,7 @@
 /obj/structure/closet/crate/radiation,
 /obj/effect/radiation/waste/intense,
 /obj/item/mining_scanner,
-/obj/effect/spawner/lootdrop/prison_contraband,
+/obj/effect/spawner/random/stockparts,
 /turf/open/floor/plating,
 /area/outpost/exterior)
 "sDN" = (
@@ -26219,7 +26219,7 @@
 	},
 /obj/item/stack/sheet/mineral/sandstone/thirty,
 /obj/structure/closet/crate/wooden,
-/obj/effect/spawner/lootdrop/materials,
+/obj/effect/spawner/random/materials,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/walnut,
 /area/outpost/exterior)
@@ -26893,7 +26893,7 @@
 /area/outpost/operations/outpost_command)
 "tig" = (
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/machinery/portable_atmospherics/canister/nob,
+/obj/machinery/portable_atmospherics/canister/freon,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/cargo)
 "tjC" = (
@@ -27199,7 +27199,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -27365,7 +27365,7 @@
 /turf/open/floor/wood/walnut,
 /area/outpost/exterior)
 "tBn" = (
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/effect/portal/permanent/one_way{
 	id = "outpost_joke_endless_222r";
 	alpha = 0;
@@ -27732,7 +27732,7 @@
 	},
 /obj/machinery/light/small/directional/west,
 /obj/structure/closet/crate/trashcart,
-/obj/effect/spawner/lootdrop/mafia_outfit,
+/obj/effect/spawner/random/clothing/mafia_outfit,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -27820,7 +27820,7 @@
 /area/outpost/crew/bar/vip_elysium_zone)
 "tWq" = (
 /obj/structure/closet/crate/trashcart,
-/obj/effect/spawner/lootdrop/glowstick,
+/obj/effect/spawner/random/decoration/glowstick,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "tWE" = (
@@ -27828,7 +27828,7 @@
 	layer = 3.1
 	},
 /obj/item/shard,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating/asteroid/snow/temperatre{
 	light_color = "#1B1D2E";
 	light_range = 2
@@ -28087,7 +28087,7 @@
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/lounge/cab_4)
 "udk" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "udN" = (
@@ -28663,7 +28663,7 @@
 /turf/open/floor/plating/asteroid/icerock/smooth,
 /area/outpost/exterior)
 "uGn" = (
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/effect/portal/permanent/one_way{
 	id = "outpost_joke_endless_333l";
 	alpha = 0;
@@ -29009,9 +29009,9 @@
 /obj/structure/spider/stickyweb{
 	color = "#808080"
 	},
-/obj/effect/spawner/lootdrop/gloves,
+/obj/effect/spawner/random/clothing/gloves,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance/eight,
+/obj/effect/spawner/random/maintenance/eight,
 /turf/open/floor/wood/walnut,
 /area/outpost/exterior)
 "uXa" = (
@@ -29611,7 +29611,7 @@
 /turf/open/floor/wood/walnut,
 /area/outpost/fraction/solfed)
 "vCR" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/item/tank/internals/emergency_oxygen,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -29864,7 +29864,7 @@
 	icon_state = "2-8"
 	},
 /obj/effect/turf_decal/borderfloor/full,
-/obj/effect/spawner/lootdrop/maintenance{
+/obj/effect/spawner/random/maintenance{
 	pixel_x = -9
 	},
 /turf/open/floor/plating{
@@ -29918,7 +29918,7 @@
 /turf/open/floor/carpet/orange,
 /area/outpost/medical/relax_room)
 "vNC" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating{
 	light_color = "#1B1D2E";
@@ -30727,9 +30727,9 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /obj/item/reagent_containers/food/drinks/flask/det,
 /obj/item/storage/box/matches,
-/obj/item/ammo_box/a357_box/match,
-/obj/item/ammo_box/a357_box/hp,
-/obj/item/ammo_box/a357_box,
+/obj/item/storage/box/ammo/a357_match,
+/obj/item/storage/box/ammo/a357_hp,
+/obj/item/storage/box/ammo/a357,
 /obj/machinery/light/directional/west,
 /obj/item/pda/detective,
 /obj/structure/closet/secure_closet/detective{
@@ -30748,8 +30748,8 @@
 /obj/item/cartridge/detective,
 /obj/item/camera/detective,
 /obj/item/gun/ballistic/revolver/viper,
-/obj/item/ammo_box/c38_box,
-/obj/item/storage/pistolcase/detective,
+/obj/item/storage/box/ammo/c38,
+/obj/item/storage/guncase/pistol/detective,
 /obj/item/detective_scanner,
 /obj/item/camera_film,
 /obj/item/camera_film,
@@ -31849,7 +31849,7 @@
 /area/outpost/security/armory)
 "xaZ" = (
 /obj/structure/closet/crate/trashcart,
-/obj/effect/spawner/lootdrop/mafia_outfit,
+/obj/effect/spawner/random/clothing/mafia_outfit,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "xbv" = (
@@ -32536,7 +32536,7 @@
 "xEL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/west,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/structure/closet/crate/secure/loot,
 /turf/open/floor/plating,
 /area/outpost/maintenance/starboard)
@@ -33051,7 +33051,7 @@
 /turf/open/floor/wood/walnut,
 /area/outpost/crew/bar)
 "xZy" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating{
@@ -33200,7 +33200,7 @@
 /obj/structure/closet/crate/radiation,
 /obj/effect/radiation/waste/intense,
 /obj/item/pizzabox/bomb,
-/obj/effect/spawner/lootdrop/plushie,
+/obj/effect/spawner/random/entertainment/plushie,
 /turf/open/floor/plating,
 /area/outpost/exterior)
 "yfF" = (

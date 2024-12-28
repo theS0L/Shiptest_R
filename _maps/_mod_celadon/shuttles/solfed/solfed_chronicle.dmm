@@ -4612,7 +4612,7 @@
 /obj/structure/closet/cabinet{
 	name = "ammunition"
 	},
-/obj/item/ammo_box/amagpellet_claris,
+/obj/item/storage/box/ammo/amagpellet_claris,
 /obj/item/ammo_box/magazine/pistol556mm,
 /obj/item/ammo_box/magazine/pistol556mm,
 /obj/item/ammo_box/magazine/pistol556mm,

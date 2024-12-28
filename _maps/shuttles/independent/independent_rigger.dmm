@@ -3581,8 +3581,8 @@
 /obj/item/clothing/glasses/sunglasses,
 /obj/item/gun/ballistic/revolver/detective,
 /obj/item/clothing/head/HoS/cowboy,
-/obj/item/ammo_box/c38,
-/obj/item/ammo_box/c38,
+/obj/item/storage/box/ammo/c38,
+/obj/item/storage/box/ammo/c38,
 /obj/structure/closet/secure_closet/wall/directional/west{
 	icon_state = "solgov_wall";
 	name = "first mate's closet";

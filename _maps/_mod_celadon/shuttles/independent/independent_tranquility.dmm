@@ -1149,10 +1149,10 @@
 /area/ship/hallway/starboard)
 "ld" = (
 /obj/structure/closet/crate/hydroponics,
-/obj/effect/spawner/lootdrop/seeded,
-/obj/effect/spawner/lootdrop/seeded,
-/obj/effect/spawner/lootdrop/seeded,
-/obj/effect/spawner/lootdrop/seeded,
+/obj/effect/spawner/random/seeded,
+/obj/effect/spawner/random/seeded,
+/obj/effect/spawner/random/seeded,
+/obj/effect/spawner/random/seeded,
 /obj/item/seeds/random,
 /obj/machinery/light/directional/east,
 /turf/open/floor/grass,
@@ -4318,7 +4318,7 @@
 /obj/item/clothing/head/beret,
 /obj/item/clothing/under/color/jumpskirt/random,
 /obj/item/clothing/under/color/random,
-/obj/item/clothing/under/dress/skirt/red,
+/obj/item/clothing/under/dress/skirt/color/red,
 /obj/item/clothing/suit/longcoat,
 /obj/item/clothing/suit/jacket/letterman_red,
 /obj/item/clothing/head/wizard/marisa,

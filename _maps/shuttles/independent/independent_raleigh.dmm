@@ -681,8 +681,8 @@
 	name = "Captain's Locker";
 	req_access_txt = "20"
 	},
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
+/obj/item/storage/box/ammo/a357,
+/obj/item/storage/box/ammo/a357,
 /obj/item/clothing/under/rank/command/captain,
 /obj/item/clothing/head/caphat,
 /obj/item/clothing/under/syndicate/camo{

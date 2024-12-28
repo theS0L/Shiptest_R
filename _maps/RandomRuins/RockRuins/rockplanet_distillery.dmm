@@ -618,11 +618,11 @@
 	pixel_y = 6;
 	start_empty = 1
 	},
-/obj/item/ammo_casing/c9mm,
-/obj/item/ammo_casing/c9mm,
-/obj/item/ammo_casing/c9mm,
-/obj/item/ammo_casing/c9mm,
-/obj/item/ammo_casing/c9mm,
+/obj/item/storage/box/ammo/c9mm,
+/obj/item/storage/box/ammo/c9mm,
+/obj/item/storage/box/ammo/c9mm,
+/obj/item/storage/box/ammo/c9mm,
+/obj/item/storage/box/ammo/c9mm,
 /turf/open/floor/carpet,
 /area/ruin/rockplanet/distillery/office)
 "gM" = (
@@ -3069,7 +3069,7 @@
 /obj/structure/closet/crate/secure/weapon{
 	name = "ammo crate"
 	},
-/obj/item/ammo_box/a357{
+/obj/item/storage/box/ammo/a357{
 	pixel_x = -3
 	},
 /obj/item/ammo_box/magazine/illestren_a850r,
@@ -3081,7 +3081,7 @@
 /obj/item/ammo_box/magazine/co9mm{
 	start_empty = 1
 	},
-/obj/item/ammo_box/a357{
+/obj/item/storage/box/ammo/a357{
 	pixel_x = 3
 	},
 /obj/machinery/button/door{

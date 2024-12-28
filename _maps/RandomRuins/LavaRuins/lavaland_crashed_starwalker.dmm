@@ -1243,7 +1243,7 @@
 	pixel_x = 6;
 	pixel_y = 5
 	},
-/obj/item/ammo_box/a357{
+/obj/item/storage/box/ammo/a357{
 	pixel_y = 6
 	},
 /turf/open/floor/plasteel/dark,

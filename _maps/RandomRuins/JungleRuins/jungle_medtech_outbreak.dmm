@@ -3171,7 +3171,7 @@
 "VL" = (
 /obj/structure/closet/cabinet,
 /obj/item/hatchet/wooden,
-/obj/item/ammo_box/a357,
+/obj/item/storage/box/ammo/a357,
 /obj/item/gun/ballistic/revolver/viper,
 /turf/open/floor/wood,
 /area/ship/bridge)

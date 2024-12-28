@@ -341,7 +341,7 @@
 	pixel_y = 14;
 	pixel_x = 5
 	},
-/obj/item/ammo_box/c38_box{
+/obj/item/storage/box/ammo/c38{
 	pixel_x = -6;
 	pixel_y = 7
 	},
@@ -349,7 +349,7 @@
 	pixel_x = 8;
 	pixel_y = 6
 	},
-/obj/item/ammo_box/c38_box{
+/obj/item/storage/box/ammo/c38{
 	pixel_x = -6;
 	pixel_y = 1
 	},
@@ -2033,7 +2033,7 @@
 	},
 /obj/item/gun/ballistic/revolver/montagne,
 /obj/item/storage/backpack/satchel/leather,
-/obj/item/ammo_box/c45,
+/obj/item/storage/box/ammo/c45,
 /obj/item/clothing/head/cowboy/sec/roumain/montagne,
 /obj/item/clothing/suit/armor/roumain/montagne,
 /obj/item/ammo_box/a44roum_speedloader,

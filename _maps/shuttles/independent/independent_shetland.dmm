@@ -3477,8 +3477,8 @@
 	},
 /obj/item/storage/box/ammo/c38,
 /obj/effect/turf_decal/box,
-/obj/item/ammo_box/c38,
-/obj/item/ammo_box/c38,
+/obj/item/storage/box/ammo/c38,
+/obj/item/storage/box/ammo/c38,
 /obj/item/gun/ballistic/revolver/detective,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)

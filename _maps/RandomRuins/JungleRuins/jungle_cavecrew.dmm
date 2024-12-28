@@ -1340,7 +1340,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/heavy/neutered,
+/mob/living/simple_animal/hostile/human/frontier/ranged/trooper/heavy/internals/neutered,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ruin/jungle/cavecrew/security)
 "pB" = (

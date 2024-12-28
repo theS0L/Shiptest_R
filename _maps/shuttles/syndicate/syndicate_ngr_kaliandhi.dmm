@@ -3489,8 +3489,8 @@
 /obj/item/megaphone,
 /obj/item/storage/guncase/pistol/inherit,
 /obj/item/gun/ballistic/revolver/viper/empty,
-/obj/item/ammo_box/a357/empty,
-/obj/item/ammo_box/a357/empty,
+/obj/item/storage/box/ammo/a357/empty,
+/obj/item/storage/box/ammo/a357/empty,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/dorm/captain)
 "xo" = (

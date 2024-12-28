@@ -750,8 +750,8 @@
 /obj/machinery/microwave{
 	pixel_y = 2
 	},
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
 	},
@@ -1849,19 +1849,19 @@
 	dir = 2;
 	req_one_access_txt = "2"
 	},
-/obj/item/gun/ballistic/automatic/assault/p16{
+/obj/item/gun/ballistic/automatic/assault/cm82{
 	pixel_x = -11;
 	pixel_y = 9
 	},
-/obj/item/gun/ballistic/automatic/assault/p16{
+/obj/item/gun/ballistic/automatic/assault/cm82{
 	pixel_x = 4;
 	pixel_y = -6
 	},
-/obj/item/gun/ballistic/automatic/assault/p16{
+/obj/item/gun/ballistic/automatic/assault/cm82{
 	pixel_x = -2;
 	pixel_y = -1
 	},
-/obj/item/gun/ballistic/automatic/assault/p16{
+/obj/item/gun/ballistic/automatic/assault/cm82{
 	pixel_x = -7;
 	pixel_y = 5
 	},
@@ -2003,7 +2003,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/mineral/gold,
 /area/ship/engineering)
 "ps" = (
@@ -2081,7 +2081,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate/trashcart,
 /obj/item/paper/pamphlet,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/mineral/gold,
 /area/ship/crew/office)
 "qi" = (
@@ -2315,7 +2315,7 @@
 	pixel_y = -28;
 	pixel_x = -5
 	},
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/turf_decal/trimline/opaque/blue/warning{
 	dir = 10
 	},
@@ -2999,17 +2999,17 @@
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical/surgery)
 "xz" = (
-/obj/item/ammo_box/a556_box,
+/obj/item/storage/box/ammo/a556_box,
 /obj/structure/rack,
 /obj/effect/turf_decal/box/red,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/corner/opaque/bar{
 	dir = 5
 	},
-/obj/item/ammo_box/a556_box{
+/obj/item/storage/box/ammo/a556_box{
 	pixel_y = 10
 	},
-/obj/item/ammo_box/a556_box{
+/obj/item/storage/box/ammo/a556_box{
 	pixel_y = 19
 	},
 /obj/structure/window/reinforced{
@@ -3468,7 +3468,7 @@
 /obj/structure/closet/firecloset/wall{
 	pixel_y = -28
 	},
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/turf_decal/corner/opaque/solgovgold{
 	dir = 10
 	},
@@ -4674,20 +4674,20 @@
 /obj/machinery/airalarm/directional/north,
 /obj/structure/rack,
 /obj/structure/rack,
-/obj/item/ammo_box/c556mmHITP/rubbershot{
+/obj/item/storage/box/ammo/c556mmHITP/rubbershot{
 	pixel_x = -7;
 	pixel_y = 10
 	},
-/obj/item/ammo_box/c556mmHITP{
+/obj/item/storage/box/ammo/c556mmHITP{
 	pixel_x = -1;
 	pixel_y = 6
 	},
-/obj/item/ammo_box/c556mmHITP{
+/obj/item/storage/box/ammo/c556mmHITP{
 	pixel_x = 6;
 	pixel_y = 1
 	},
 /obj/effect/decal/cleanable/cobweb,
-/obj/item/ammo_box/c556mmHITP{
+/obj/item/storage/box/ammo/c556mmHITP{
 	pixel_x = 6;
 	pixel_y = 1
 	},
@@ -5194,14 +5194,14 @@
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
 	},
-/obj/item/reagent_containers/food/snacks/rationpack{
+/obj/effect/spawner/random/food_or_drink/ration{
 	pixel_x = -4;
 	pixel_y = 7
 	},
-/obj/item/reagent_containers/food/snacks/rationpack{
+/obj/effect/spawner/random/food_or_drink/ration{
 	pixel_y = 11
 	},
-/obj/item/reagent_containers/food/snacks/rationpack{
+/obj/effect/spawner/random/food_or_drink/ration{
 	pixel_x = -1;
 	pixel_y = 1
 	},
@@ -5303,7 +5303,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/effect/spawner/lootdrop/glowstick{
+/obj/effect/spawner/random/decoration/glowstick{
 	pixel_x = 5;
 	pixel_y = 9
 	},
@@ -6021,12 +6021,12 @@
 	req_one_access_txt = "3"
 	},
 /obj/item/gun/ballistic/rifle/solgov,
-/obj/item/ammo_box/a858,
-/obj/item/ammo_box/a858{
+/obj/item/storage/box/ammo/a858,
+/obj/item/storage/box/ammo/a858{
 	pixel_x = 3;
 	pixel_y = -4
 	},
-/obj/item/ammo_box/a858{
+/obj/item/storage/box/ammo/a858{
 	pixel_x = 6;
 	pixel_y = -8
 	},
