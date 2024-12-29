@@ -1040,12 +1040,12 @@
 	pixel_y = 1
 	},
 /obj/structure/closet/crate/wooden,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "xF" = (
@@ -2039,9 +2039,9 @@
 /obj/item/gun/energy/disabler,
 /obj/item/gun/energy/disabler,
 /obj/item/gun/ballistic/automatic/pistol/ringneck/no_mag,
-/obj/item/ammo_box/c10mm/rubbershot,
+/obj/item/storage/box/ammo/c10mm_rubber,
 /obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/ammo_box/c10mm/ap,
+/obj/item/storage/box/ammo/c10mm_ap,
 /obj/item/ammo_box/magazine/m10mm_ringneck,
 /obj/item/book/granter/martial/cqc,
 /turf/open/floor/plasteel/stairs{
@@ -2096,7 +2096,7 @@
 "Yp" = (
 /obj/structure/window/reinforced/spawner,
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance/five,
+/obj/effect/spawner/random/maintenance/five,
 /obj/item/stack/marker_beacon/thirty,
 /obj/effect/turf_decal/box,
 /obj/item/stack/sheet/metal/twenty{

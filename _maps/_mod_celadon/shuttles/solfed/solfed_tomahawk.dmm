@@ -459,9 +459,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "fO" = (
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /obj/effect/turf_decal/box/corners,
-/obj/effect/spawner/lootdrop/maintenance/five,
+/obj/effect/spawner/random/maintenance/five,
 /obj/structure/closet/crate/trashcart,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
@@ -474,8 +474,8 @@
 /obj/structure/sink{
 	pixel_y = 13
 	},
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /turf/open/floor/plasteel/white,
 /area/ship/security/prison)
 "fY" = (
@@ -1702,7 +1702,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/effect/spawner/lootdrop/glowstick,
+/obj/effect/spawner/random/decoration/glowstick,
 /obj/machinery/atmospherics/pipe/manifold/orange/hidden{
 	dir = 4
 	},
@@ -2364,7 +2364,7 @@
 /obj/item/clothing/neck/cloak/solgovcap,
 /obj/item/binoculars,
 /obj/item/ammo_box/magazine/gar,
-/obj/item/ammo_box/ferrolancebox,
+/obj/item/storage/box/ammo/ferrolancebox,
 /obj/item/hatchet/wooden{
 	name = "Tomahawk";
 	force = 20;
@@ -2478,7 +2478,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
@@ -2895,8 +2895,8 @@
 	},
 /obj/item/ammo_box/magazine/gar,
 /obj/item/ammo_box/magazine/gar,
-/obj/item/ammo_box/ferrolancebox,
-/obj/item/ammo_box/ferrolancebox,
+/obj/item/storage/box/ammo/ferrolancebox,
+/obj/item/storage/box/ammo/ferrolancebox,
 /turf/open/floor/plasteel/white,
 /area/ship/security/prison)
 "Gw" = (

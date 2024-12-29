@@ -576,13 +576,13 @@
 /obj/structure/closet/crate/secure/weapon{
 	req_access_txt = "3"
 	},
-/obj/item/ammo_box/a556_box,
-/obj/item/ammo_box/a556_box,
-/obj/item/ammo_box/a556_box/a856,
-/obj/item/ammo_box/a556_box/m903,
-/obj/item/ammo_box/c10mm,
-/obj/item/ammo_box/c10mm,
-/obj/item/ammo_box/c10mm,
+/obj/item/storage/box/ammo/a556_box,
+/obj/item/storage/box/ammo/a556_box,
+/obj/item/storage/box/ammo/a556_box/a856,
+/obj/item/storage/box/ammo/a556_box/m903,
+/obj/item/storage/box/ammo/c10mm,
+/obj/item/storage/box/ammo/c10mm,
+/obj/item/storage/box/ammo/c10mm,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "xk" = (
@@ -884,14 +884,14 @@
 /obj/item/reagent_containers/food/drinks/waterbottle/large,
 /obj/item/reagent_containers/food/drinks/waterbottle/large,
 /obj/item/reagent_containers/food/drinks/waterbottle/large,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "JU" = (
@@ -1246,9 +1246,9 @@
 	req_access_txt = "20"
 	},
 /obj/item/melee/knife/combat,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
+/obj/item/storage/box/ammo/a357,
+/obj/item/storage/box/ammo/a357,
+/obj/item/storage/box/ammo/a357,
 /obj/item/melee/baton/loaded,
 /obj/item/storage/belt/military/assault,
 /obj/structure/sign/poster/contraband/inteq{
@@ -1625,14 +1625,14 @@
 /obj/structure/closet/crate/secure/weapon{
 	req_access_txt = "3"
 	},
-/obj/item/ammo_box/c9mm,
-/obj/item/ammo_box/c9mm,
-/obj/item/ammo_box/c9mm,
-/obj/item/ammo_box/c9mm,
-/obj/item/ammo_box/c9mm,
-/obj/item/ammo_box/c9mm,
-/obj/item/ammo_box/c45,
-/obj/item/ammo_box/c45,
+/obj/item/storage/box/ammo/c9mm,
+/obj/item/storage/box/ammo/c9mm,
+/obj/item/storage/box/ammo/c9mm,
+/obj/item/storage/box/ammo/c9mm,
+/obj/item/storage/box/ammo/c9mm,
+/obj/item/storage/box/ammo/c9mm,
+/obj/item/storage/box/ammo/c45,
+/obj/item/storage/box/ammo/c45,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "ZZ" = (

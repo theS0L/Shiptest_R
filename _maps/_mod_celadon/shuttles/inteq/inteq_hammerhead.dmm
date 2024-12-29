@@ -68,10 +68,10 @@
 	anchored = 1;
 	req_access_txt = "8486"
 	},
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
+/obj/item/storage/box/ammo/a357,
+/obj/item/storage/box/ammo/a357,
+/obj/item/storage/box/ammo/a357,
+/obj/item/storage/box/ammo/a357,
 /obj/item/clothing/accessory/holster,
 /obj/item/clothing/mask/gas/sechailer/balaclava/inteq,
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
@@ -780,7 +780,7 @@
 /area/ship/security/prison)
 "dS" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/central)
 "dU" = (
@@ -941,8 +941,8 @@
 	icon_state = "0-2"
 	},
 /obj/item/reagent_containers/food/snacks/pizzaslice/arnold,
-/obj/effect/spawner/lootdrop/maintenance/eight,
-/obj/effect/spawner/lootdrop/mafia_outfit,
+/obj/effect/spawner/random/maintenance/eight,
+/obj/effect/spawner/random/clothing/mafia_outfit,
 /obj/structure/closet/crate/wooden{
 	name = "old wooden crate"
 	},
@@ -2625,7 +2625,7 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo/office)
 "rD" = (
@@ -3469,7 +3469,7 @@
 	},
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/maintenance/seven,
+/obj/effect/spawner/random/maintenance/seven,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "wR" = (
@@ -3908,9 +3908,9 @@
 	name = "Kitchen"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /turf/open/floor/plastic,
 /area/ship/crew/canteen/kitchen)
 "zh" = (
@@ -4252,7 +4252,7 @@
 /obj/structure/closet/crate/large,
 /obj/effect/turf_decal/industrial/traffic,
 /obj/effect/turf_decal/box/white,
-/obj/effect/spawner/lootdrop/maintenance/seven,
+/obj/effect/spawner/random/maintenance/seven,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "AT" = (
@@ -4488,7 +4488,7 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Cd" = (
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /obj/structure/disposalpipe/segment{
 	dir = 2
 	},
@@ -4508,7 +4508,7 @@
 	name = "good looking turtleneck";
 	desc = "a midnight black turtleneck."
 	},
-/obj/item/storage/box/inteqmaid,
+/obj/item/storage/box/maid,
 /obj/item/storage/belt/security/webbing/inteq/alt,
 /obj/item/clothing/suit/hooded/wintercoat/security/inteq/alt,
 /obj/item/clothing/head/beret/sec/hos/inteq/honorable{
@@ -4745,7 +4745,7 @@
 /obj/structure/closet/crate/engineering,
 /obj/item/storage/cans/sixbeer,
 /obj/item/storage/cans/sixbeer,
-/obj/item/storage/box/inteqmaid,
+/obj/item/storage/box/maid,
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -4850,7 +4850,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/box/white,
-/obj/effect/spawner/lootdrop/maintenance/seven,
+/obj/effect/spawner/random/maintenance/seven,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Em" = (
@@ -4938,15 +4938,15 @@
 /area/ship/engineering/electrical)
 "EY" = (
 /obj/effect/turf_decal/box/white,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/item/reagent_containers/food/snacks/rationpack,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/structure/closet/crate/large,
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -7194,7 +7194,7 @@
 	},
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /obj/structure/closet/crate/large,
-/obj/effect/spawner/lootdrop/maintenance/seven,
+/obj/effect/spawner/random/maintenance/seven,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Un" = (
@@ -7891,7 +7891,7 @@
 "Yv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/dresser,
-/obj/item/ammo_box/foambox{
+/obj/item/storage/box/ammo/foam_darts{
 	pixel_y = 11;
 	layer = 6
 	},

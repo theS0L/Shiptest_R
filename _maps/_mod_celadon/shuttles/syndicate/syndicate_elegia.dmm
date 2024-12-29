@@ -1978,7 +1978,7 @@
 /obj/item/storage/box/lethalshot,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/effect/turf_decal/industrial/traffic/full,
-/obj/item/ammo_box/c10mm,
+/obj/item/storage/box/ammo/c10mm,
 /obj/item/ammo_box/magazine/m10mm_ringneck,
 /obj/item/ammo_box/magazine/m10mm_ringneck,
 /turf/open/floor/mineral/plastitanium/red,
@@ -2218,8 +2218,8 @@
 /area/ship/bridge)
 "JA" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 1
 	},

@@ -282,7 +282,7 @@
 /area/ship/bridge)
 "bR" = (
 /obj/machinery/light/directional/south,
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
@@ -957,7 +957,7 @@
 /obj/structure/table/scrap,
 /obj/item/gun/ballistic/shotgun/brimstone,
 /obj/item/gun/energy/kinetic_accelerator,
-/obj/item/ammo_box/a12g/blanks,
+/obj/item/storage/box/ammo/a12g_blanks,
 /turf/open/floor/plasteel/darkgreenfull,
 /area/ship/security)
 "fN" = (
@@ -1218,7 +1218,7 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/dorm)
 "hb" = (
-/obj/effect/spawner/lootdrop/tool_surgery_common,
+/obj/effect/spawner/random/medical/surgery_tool/common,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/green,
 /area/ship/medical/surgery)
@@ -1704,7 +1704,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/glass,
-/obj/effect/spawner/lootdrop/tool_surgery_common,
+/obj/effect/spawner/random/medical/surgery_tool/common,
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "ka" = (
@@ -1780,10 +1780,10 @@
 /obj/item/gun/ballistic/derringer/gold,
 /obj/item/gun/ballistic/automatic/pistol/ringneck,
 /obj/item/gun/ballistic/automatic/smg/skm_carbine,
-/obj/item/ammo_box/c10mm,
-/obj/item/ammo_box/magazine/skm_545_39,
-/obj/item/ammo_box/magazine/skm_545_39,
-/obj/item/ammo_box/magazine/skm_545_39,
+/obj/item/storage/box/ammo/c10mm,
+/obj/item/ammo_box/magazine/skm_762_40,
+/obj/item/ammo_box/magazine/skm_762_40,
+/obj/item/ammo_box/magazine/skm_762_40,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "kJ" = (
@@ -2337,7 +2337,7 @@
 	},
 /obj/machinery/power/terminal,
 /obj/structure/cable,
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /turf/open/floor/carpet/green,
 /area/ship/cargo)
 "oi" = (
@@ -2487,7 +2487,7 @@
 /obj/effect/turf_decal/trimline/opaque/green/arrow_ccw{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/crate_spawner,
+/obj/effect/spawner/random/structure/crate_abandoned,
 /obj/item/stack/sheet/metal/five{
 	pixel_x = -3
 	},
@@ -2875,8 +2875,8 @@
 /obj/item/storage/box/ingredients/vegetarian,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/milk,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
 "qQ" = (
@@ -4135,7 +4135,7 @@
 /obj/structure/table/scrap,
 /obj/item/gun/ballistic/revolver/montagne,
 /obj/item/gun/ballistic/rifle/illestren/sawn,
-/obj/item/ammo_box/a357_box,
+/obj/item/storage/box/ammo/a357,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "yO" = (
@@ -4170,7 +4170,7 @@
 /area/ship/hallway/port)
 "yT" = (
 /obj/structure/closet/crate/secure/exo,
-/obj/item/ammo_box/a762_40{
+/obj/item/storage/box/ammo/a762_40{
 	pixel_x = -5;
 	pixel_y = -3
 	},
@@ -5010,7 +5010,7 @@
 /obj/item/borg/upgrade/hypospray/expanded,
 /obj/item/borg/upgrade/defib,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/tool_surgery_common,
+/obj/effect/spawner/random/medical/surgery_tool/common,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "Dk" = (
@@ -5499,7 +5499,7 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central1,
 /obj/structure/table/glass,
 /obj/item/storage/book/bible/koran,
-/obj/effect/spawner/lootdrop/tool_surgery_common,
+/obj/effect/spawner/random/medical/surgery_tool/common,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "Gg" = (
@@ -5711,7 +5711,7 @@
 	dir = 8
 	},
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/maintenance/eight,
+/obj/effect/spawner/random/maintenance/eight,
 /obj/item/circuitboard/machine/autolathe,
 /obj/item/stock_parts/manipulator,
 /obj/item/stock_parts/matter_bin,
@@ -6259,7 +6259,7 @@
 /area/ship/crew/canteen)
 "Kg" = (
 /obj/machinery/light/directional/north,
-/obj/machinery/vending/cola/random,
+/obj/effect/spawner/random/vending/cola,
 /obj/effect/turf_decal/borderfloorblack/corner{
 	dir = 8
 	},
@@ -7396,7 +7396,7 @@
 	icon_state = "2-8"
 	},
 /obj/structure/closet/emcloset,
-/obj/effect/spawner/lootdrop/maintenance/four,
+/obj/effect/spawner/random/maintenance/four,
 /obj/item/reagent_containers/food/snacks/burger/red{
 	name = "suspicious red burger";
 	desc = "A suspicious looking burger.";
@@ -7452,7 +7452,7 @@
 /area/ship/cargo)
 "Ry" = (
 /obj/structure/table/scrap,
-/obj/item/ammo_box/a12g,
+/obj/item/storage/box/ammo/a12g_buckshot,
 /obj/item/gun/ballistic/shotgun/doublebarrel/improvised/sawn,
 /obj/item/ammo_casing/shotgun/improvised,
 /obj/item/ammo_casing/shotgun/improvised,
@@ -8466,7 +8466,7 @@
 "Xf" = (
 /obj/structure/table/wood,
 /obj/machinery/door/firedoor/border_only,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
 "Xg" = (

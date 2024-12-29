@@ -34,7 +34,7 @@
 /turf/open/floor/plasteel/sepia,
 /area/ship/crew/ccommons)
 "az" = (
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /turf/open/floor/suns/diagonal{
 	color = "#543C30"
 	},
@@ -6581,11 +6581,11 @@
 	pixel_x = 8;
 	pixel_y = 7
 	},
-/obj/item/ammo_box/amagpellet_claris{
+/obj/item/storage/box/ammo/amagpellet_claris{
 	pixel_x = 4;
 	pixel_y = -4
 	},
-/obj/item/ammo_box/amagpellet_claris{
+/obj/item/storage/box/ammo/amagpellet_claris{
 	pixel_x = -2;
 	pixel_y = -4
 	},
@@ -6604,7 +6604,7 @@
 	req_one_access = list(1, 20);
 	name = "Peacekeeper's locker"
 	},
-/obj/item/ammo_box/ferropelletbox,
+/obj/item/storage/box/ammo/ferropelletbox,
 /obj/item/storage/belt/security/military,
 /turf/open/floor/suns/dark/plain,
 /area/ship/security)
@@ -7171,7 +7171,7 @@
 /turf/open/floor/carpet/red,
 /area/ship/crew/dorm/dormtwo)
 "Qi" = (
-/obj/machinery/vending/cola/random,
+/obj/effect/spawner/random/vending/cola,
 /turf/open/floor/suns/diagonal{
 	color = "#543C30"
 	},
@@ -8199,7 +8199,7 @@
 /area/ship/engineering)
 "Wr" = (
 /obj/machinery/light/directional/north,
-/obj/machinery/vending/cola/random,
+/obj/effect/spawner/random/vending/cola,
 /turf/open/floor/suns/dark/plain,
 /area/ship/crew/ccommons)
 "Wu" = (

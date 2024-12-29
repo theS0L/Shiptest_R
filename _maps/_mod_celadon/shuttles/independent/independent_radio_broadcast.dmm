@@ -23,7 +23,7 @@
 /obj/item/megaphone/command,
 /obj/item/binoculars,
 /obj/item/gun/ballistic/automatic/pistol/commissar,
-/obj/item/ammo_box/c9mm,
+/obj/item/storage/box/ammo/c9mm,
 /obj/item/ammo_box/magazine/co9mm,
 /obj/item/ammo_box/magazine/co9mm,
 /obj/item/storage/firstaid/medical,
@@ -460,8 +460,8 @@
 	pixel_y = 5
 	},
 /obj/item/camera/detective,
-/obj/item/ammo_box/c38/dumdum,
-/obj/item/ammo_box/c38/iceblox,
+/obj/item/storage/box/ammo/c38/dumdum,
+/obj/item/storage/box/ammo/c38/iceblox,
 /obj/structure/closet/wall/directional/south{
 	pixel_y = -32
 	},

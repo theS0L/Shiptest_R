@@ -1481,7 +1481,7 @@
 /area/ship/cargo)
 "jM" = (
 /obj/structure/closet/cardboard,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /obj/effect/turf_decal/industrial/stand_clear,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
@@ -2535,7 +2535,7 @@
 /obj/effect/turf_decal/industrial/stand_clear{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "qw" = (
@@ -2634,7 +2634,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "rm" = (
-/obj/effect/spawner/lootdrop/crate_spawner,
+/obj/effect/spawner/random/structure/crate_abandoned,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "rz" = (
@@ -5110,7 +5110,7 @@
 /obj/structure/closet/crate,
 /obj/effect/turf_decal/techfloor,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage)
 "GO" = (
@@ -5333,7 +5333,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "IC" = (
-/obj/effect/spawner/lootdrop/crate_spawner,
+/obj/effect/spawner/random/structure/crate_abandoned,
 /obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech/grid,
@@ -6012,7 +6012,7 @@
 /area/ship/crew/canteen/kitchen)
 "Nj" = (
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "Np" = (

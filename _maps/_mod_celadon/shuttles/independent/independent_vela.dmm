@@ -30,9 +30,9 @@
 /obj/structure/cable{
 	icon_state = "0-6"
 	},
-/obj/item/ammo_box/c9mm/rubbershot,
-/obj/item/ammo_box/c9mm,
-/obj/item/ammo_box/c9mm,
+/obj/item/storage/box/ammo/c9mm_rubber,
+/obj/item/storage/box/ammo/c9mm,
+/obj/item/storage/box/ammo/c9mm,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "al" = (
@@ -1076,7 +1076,7 @@
 /area/ship/science/ai_chamber)
 "gX" = (
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew)
 "hf" = (
@@ -3056,9 +3056,9 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/techfloor,
-/obj/effect/spawner/lootdrop/aimodule_harmless,
-/obj/effect/spawner/lootdrop/aimodule_harmless,
-/obj/effect/spawner/lootdrop/aimodule_harmless,
+/obj/effect/spawner/random/aimodule_harmless,
+/obj/effect/spawner/random/aimodule_harmless,
+/obj/effect/spawner/random/aimodule_harmless,
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/science/ai_chamber)
@@ -3435,7 +3435,7 @@
 /obj/item/pizzabox/pineapple,
 /obj/item/pizzabox/pineapple,
 /obj/item/pizzabox/pineapple,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/item/reagent_containers/glass/mortar/metal,
 /obj/item/pestle,
 /obj/item/reagent_containers/condiment/saltshaker,
@@ -4673,7 +4673,7 @@
 /area/ship/bridge)
 "zC" = (
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/central)
 "zE" = (
@@ -4812,9 +4812,9 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/techfloor,
-/obj/effect/spawner/lootdrop/aimodule_neutral,
-/obj/effect/spawner/lootdrop/aimodule_neutral,
-/obj/effect/spawner/lootdrop/aimodule_neutral,
+/obj/effect/spawner/random/aimodule_neutral,
+/obj/effect/spawner/random/aimodule_neutral,
+/obj/effect/spawner/random/aimodule_neutral,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/science/ai_chamber)
 "Aq" = (

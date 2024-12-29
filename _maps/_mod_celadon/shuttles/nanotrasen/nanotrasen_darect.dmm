@@ -944,7 +944,7 @@
 /obj/machinery/light/small/directional/north{
 	pixel_x = -9
 	},
-/obj/effect/spawner/lootdrop/glowstick,
+/obj/effect/spawner/random/decoration/glowstick,
 /obj/machinery/shower{
 	pixel_y = 13
 	},
@@ -1263,18 +1263,18 @@
 /obj/structure/closet/secure_closet/freezer{
 	name = "emergency donuts locker"
 	},
-/obj/effect/spawner/lootdrop/donut,
-/obj/effect/spawner/lootdrop/donut,
-/obj/effect/spawner/lootdrop/donut,
-/obj/effect/spawner/lootdrop/donut,
-/obj/effect/spawner/lootdrop/donut,
-/obj/effect/spawner/lootdrop/donut,
-/obj/effect/spawner/lootdrop/donut,
-/obj/effect/spawner/lootdrop/donut,
-/obj/effect/spawner/lootdrop/donut,
-/obj/effect/spawner/lootdrop/donut,
-/obj/effect/spawner/lootdrop/donut,
-/obj/effect/spawner/lootdrop/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
 /obj/item/storage/fancy/donut_box{
 	pixel_x = 0;
 	pixel_y = -4
@@ -1372,9 +1372,9 @@
 	name = "ammo locker"
 	},
 /obj/item/ammo_box/magazine/gauss,
-/obj/item/ammo_box/ferropelletbox,
-/obj/item/ammo_box/c46x30mm_box,
-/obj/item/ammo_box/c46x30mm_box,
+/obj/item/storage/box/ammo/ferropelletbox,
+/obj/item/storage/box/ammo/c46x30mm_box,
+/obj/item/storage/box/ammo/c46x30mm_box,
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,
 /obj/item/ammo_box/magazine/wt550m9,

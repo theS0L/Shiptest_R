@@ -37,14 +37,14 @@
 
 // No Access
 /obj/machinery/porta_turret/syndicate/no_access
-	installation = null
-	always_up = 1
+	// installation = null
+	// always_up = 1
 	use_power = NO_POWER_USE
-	has_cover = 0
+	// has_cover = 0
 	scan_range = 9
 	req_access = list(ACCESS_CENT_GENERAL)
-	mode = TURRET_LETHAL
-	faction = list(ROLE_DEVIL)
+	lethal = TRUE
+	faction = list(ROLE_HIVE)
 	desc = "A ballistic machine gun/grenade auto-turret."
 
 /obj/machinery/porta_turret/syndicate/no_access/interior_45

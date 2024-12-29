@@ -1358,7 +1358,7 @@
 /area/ship/hallway/central)
 "rr" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /obj/effect/turf_decal/industrial/stand_clear,
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/patterned/cargo_one,
@@ -1920,7 +1920,7 @@
 	pixel_x = -1;
 	pixel_y = 4
 	},
-/obj/effect/spawner/lootdrop/random_machine_circuit_mech,
+/obj/effect/spawner/random/circuit/machine/mech,
 /turf/open/floor/plasteel/white,
 /area/ship/science/robotics)
 "wK" = (
@@ -3509,7 +3509,7 @@
 /obj/item/trash/waffles,
 /obj/item/trash/chips,
 /obj/item/trash/energybar,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/item/trash/can,
 /obj/effect/turf_decal/industrial/stand_clear{
 	dir = 1
@@ -3691,9 +3691,9 @@
 	},
 /obj/item/ammo_box/magazine/modelh,
 /obj/item/ammo_box/magazine/modelh,
-/obj/item/ammo_box/ferroslugbox,
-/obj/item/ammo_box/ferroslugbox,
-/obj/item/ammo_box/ferropelletbox,
+/obj/item/storage/box/ammo/ferroslug,
+/obj/item/storage/box/ammo/ferroslug,
+/obj/item/storage/box/ammo/ferropelletbox,
 /turf/open/floor/plasteel/white,
 /area/ship/security/armory)
 "RN" = (
@@ -3771,7 +3771,7 @@
 /obj/structure/closet/firecloset/wall{
 	pixel_y = -28
 	},
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "TJ" = (
