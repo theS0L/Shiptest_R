@@ -112,6 +112,12 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/dorm)
+"aw" = (
+/obj/machinery/porta_turret/ship/inteq{
+	dir = 8
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
 "ax" = (
 /obj/structure/railing{
 	dir = 4
@@ -450,8 +456,8 @@
 "bU" = (
 /obj/machinery/light/directional/north,
 /obj/effect/decal/cleanable/robot_debris,
-/obj/machinery/porta_turret/ship/faction/inteq/laser/cover{
-	density = null
+/obj/machinery/porta_turret/ship/inteq/light{
+	dir = 6
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
@@ -1092,7 +1098,9 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo/office)
 "gy" = (
-/obj/machinery/porta_turret/ship/faction/inteq/laser/cover,
+/obj/machinery/porta_turret/ship/inteq{
+	dir = 8
+	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
 "gF" = (
@@ -1122,7 +1130,9 @@
 /area/ship/maintenance/central)
 "gG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/porta_turret/ship/faction/inteq/laser/cover,
+/obj/machinery/porta_turret/ship/inteq{
+	dir = 5
+	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "gJ" = (
@@ -1540,8 +1550,8 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "ji" = (
-/obj/machinery/porta_turret/ship/faction/inteq/laser/cover{
-	density = null
+/obj/machinery/porta_turret/ship/inteq/light{
+	dir = 5
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
@@ -2311,8 +2321,8 @@
 /area/ship/security/prison)
 "oN" = (
 /obj/effect/decal/cleanable/squid_ink,
-/obj/machinery/porta_turret/ship/faction/inteq/laser/cover{
-	density = null
+/obj/machinery/porta_turret/ship/inteq/light{
+	dir = 5
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
@@ -3307,7 +3317,9 @@
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/dorm)
 "vU" = (
-/obj/machinery/porta_turret/ship/faction/inteq/laser/cover,
+/obj/machinery/porta_turret/ship/inteq{
+	dir = 1
+	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "vX" = (
@@ -3695,6 +3707,12 @@
 "yb" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/medical)
+"yh" = (
+/obj/machinery/porta_turret/ship/inteq/heavy{
+	dir = 4
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
 "yj" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/window/plasma/reinforced/spawner,
@@ -3751,6 +3769,12 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/prison)
+"yu" = (
+/obj/machinery/porta_turret/ship/inteq{
+	dir = 6
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
 "yv" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/atmospherics/pipe/simple/dark/hidden/layer5{
@@ -4790,6 +4814,12 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
+"DW" = (
+/obj/machinery/porta_turret/ship/inteq{
+	dir = 5
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
 "DY" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/autolathe/hacked,
@@ -6015,6 +6045,12 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
+"Lj" = (
+/obj/machinery/porta_turret/ship/inteq/heavy{
+	dir = 4
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
 "Ln" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/atmospherics/components/trinary/mixer{
@@ -6590,7 +6626,7 @@
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
 "PB" = (
-/obj/machinery/porta_turret/ship/faction/inteq/laser/cover,
+/obj/machinery/porta_turret/ship/inteq,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
 "PC" = (
@@ -6986,8 +7022,8 @@
 /area/ship/cargo/office)
 "SU" = (
 /obj/machinery/light/directional/north,
-/obj/machinery/porta_turret/ship/faction/inteq/laser/cover{
-	density = null
+/obj/machinery/porta_turret/ship/inteq/light{
+	dir = 6
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
@@ -7652,6 +7688,12 @@
 /obj/item/bedsheet/random,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/prison)
+"Xy" = (
+/obj/machinery/porta_turret/ship/inteq{
+	dir = 1
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
 "XD" = (
 /obj/effect/turf_decal/corner/opaque/brown/border{
 	dir = 1
@@ -8109,11 +8151,11 @@ Vx
 Vx
 fn
 fn
-PB
+aw
 Gf
 fO
 mW
-PB
+aw
 Vx
 Vx
 Vx
@@ -8125,11 +8167,11 @@ Vx
 Vx
 Vx
 Vx
-PB
+aw
 Jy
 wW
 Ok
-PB
+aw
 fn
 fn
 Vx
@@ -8143,7 +8185,7 @@ Vx
 Vx
 Vx
 fn
-PB
+Xy
 fO
 WZ
 qD
@@ -8353,7 +8395,7 @@ Vx
 Vx
 Vx
 fn
-PB
+Xy
 fO
 tH
 tH
@@ -8635,7 +8677,7 @@ Vx
 Vx
 Vx
 fn
-PB
+Xy
 eL
 Bm
 GD
@@ -9126,7 +9168,7 @@ Vx
 Vx
 Vx
 fn
-PB
+Xy
 yb
 fP
 fP
@@ -9461,7 +9503,7 @@ dp
 Sy
 mR
 dp
-PB
+aw
 Gf
 mW
 PB
@@ -9539,7 +9581,7 @@ Vx
 "}
 (43,1,1) = {"
 Vx
-PB
+Xy
 CM
 tH
 tH
@@ -9890,7 +9932,7 @@ Vx
 (53,1,1) = {"
 Vx
 Vx
-vU
+DW
 pD
 IR
 xA
@@ -9918,7 +9960,7 @@ Ig
 kw
 Dg
 Tb
-PB
+yu
 Vx
 Vx
 "}
@@ -9969,7 +10011,7 @@ gG
 tI
 lN
 lN
-vU
+yh
 nS
 VP
 VP
@@ -9979,11 +10021,11 @@ VP
 VP
 VP
 nS
-PB
+Lj
 Tc
 Tc
 Tb
-PB
+yu
 Vx
 Vx
 Vx
