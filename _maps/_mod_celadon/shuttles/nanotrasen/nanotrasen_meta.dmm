@@ -403,7 +403,9 @@
 /obj/structure/filingcabinet/double{
 	dir = 1
 	},
-/obj/item/documents/nanotrasen,
+/obj/item/documents/nanotrasen{
+	icon_state = "docs_blue"
+	},
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm/captain)
 "bt" = (
@@ -1516,13 +1518,14 @@
 	pixel_x = 9;
 	pixel_y = 9
 	},
-/obj/item/stamp/qm{
-	pixel_x = 9;
-	pixel_y = 0
-	},
 /obj/item/pen/fountain/captain{
 	pixel_x = 0;
 	pixel_y = 5
+	},
+/obj/item/stamp/nanotrasen/ns/supply{
+	pixel_x = 9;
+	pixel_y = 1;
+	name = "NT Supply Director's rubber stamp"
 	},
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm/captain)
