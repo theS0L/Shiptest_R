@@ -29,10 +29,8 @@
 
 	tac_reloads = FALSE
 	tactical_reload_delay = 1.2 SECONDS
-// [CELADON_REMOVE] - CELADON BALANCE - часть ненужной системы оффов
-// 	var/latch_closed = TRUE
-// 	var/latch_toggle_delay = 1.0 SECONDS
-// [/CELADON_REMOVE]
+	var/latch_closed = TRUE
+	var/latch_toggle_delay = 1.0 SECONDS
 	valid_attachments = list(
 		/obj/item/attachment/laser_sight,
 		/obj/item/attachment/rail_light,
