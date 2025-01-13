@@ -1385,7 +1385,6 @@
 	pixel_x = -6;
 	pixel_y = -3
 	},
-/obj/item/storage/backpack/duffelbag/med/surgery,
 /obj/item/stack/medical/splint{
 	pixel_x = 6
 	},
@@ -1394,7 +1393,7 @@
 	},
 /obj/item/defibrillator/loaded,
 /obj/item/roller,
-/obj/item/clothing/under/syndicate/inteq/skirt/corpsman,
+/obj/item/clothing/under/syndicate/inteq/corpsman/skirt,
 /obj/item/gun/energy/e_gun/mini,
 /obj/item/clothing/under/syndicate/inteq/corpsman,
 /obj/item/clothing/head/soft/inteq/corpsman,
@@ -1406,6 +1405,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/item/storage/case/surgery,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "UR" = (

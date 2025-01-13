@@ -41,9 +41,11 @@
 /obj/item/storage/box/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.storage_flags = STORAGE_FLAGS_VOLUME_DEFAULT
-	STR.max_volume = STORAGE_VOLUME_CONTAINER_S
-	STR.max_w_class = WEIGHT_CLASS_SMALL
+	// [CELADON-EDIT]
+	//STR.storage_flags = STORAGE_FLAGS_VOLUME_DEFAULT
+	//STR.max_volume = STORAGE_VOLUME_CONTAINER_S
+	//STR.max_w_class = WEIGHT_CLASS_SMALL
+	// [/CELADON-EDIT]
 	STR.use_sound = 'sound/items/storage/briefcase.ogg'
 
 /obj/item/storage/box/update_overlays()
@@ -487,7 +489,12 @@
 	icon_state = "donkpocketbox"
 	illustration=null
 	var/donktype = /obj/item/reagent_containers/food/snacks/donkpocket
-
+// [CELADON-EDIT]
+/obj/item/storage/box/donkpockets/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.set_holdable(list(/obj/item/reagent_containers/food/snacks/donkpocket))
+// [/CELADON-EDIT]
 /obj/item/storage/box/donkpockets/PopulateContents()
 	for(var/i in 1 to 6)
 		new donktype(src)
@@ -528,7 +535,13 @@
 	icon_state = "monkeycubebox"
 	illustration = null
 	var/cube_type = /obj/item/reagent_containers/food/snacks/monkeycube
-
+// [CELADON-EDIT]
+/obj/item/storage/box/monkeycubes/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_items = 7
+	STR.set_holdable(list(/obj/item/reagent_containers/food/snacks/monkeycube))
+// [/CELADON-EDIT]
 /obj/item/storage/box/monkeycubes/PopulateContents()
 	for(var/i in 1 to 5)
 		new cube_type(src)
@@ -542,6 +555,13 @@
 	desc = "Waffle Co. brand gorilla cubes. Do not taunt."
 	icon_state = "monkeycubebox"
 	illustration = null
+// [CELADON-EDIT]
+/obj/item/storage/box/gorillacubes/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_items = 3
+	STR.set_holdable(list(/obj/item/reagent_containers/food/snacks/monkeycube))
+// [/CELADON-EDIT]
 
 /obj/item/storage/box/gorillacubes/PopulateContents()
 	for(var/i in 1 to 3)
@@ -673,7 +693,13 @@
 	desc = "Eight wrappers of fun! Ages 8 and up. Not suitable for children."
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "spbox"
-
+	// [CELADON-EDIT]
+/obj/item/storage/box/snappops/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.set_holdable(list(/obj/item/toy/snappop))
+	STR.max_items = 8
+// [/CELADON-EDIT]
 /obj/item/storage/box/snappops/PopulateContents()
 	SEND_SIGNAL(src, COMSIG_TRY_STORAGE_FILL_TYPE, /obj/item/toy/snappop)
 
@@ -688,7 +714,13 @@
 	drop_sound = 'sound/items/handling/matchbox_drop.ogg'
 	pickup_sound =  'sound/items/handling/matchbox_pickup.ogg'
 	custom_price = 2
-
+// [CELADON-EDIT]
+/obj/item/storage/box/matches/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_items = 10
+	STR.set_holdable(list(/obj/item/match))
+// [/CELADON-EDIT]
 /obj/item/storage/box/matches/PopulateContents()
 	SEND_SIGNAL(src, COMSIG_TRY_STORAGE_FILL_TYPE, /obj/item/match)
 
@@ -802,27 +834,6 @@
 	user.changeNext_move(CLICK_CD_MELEE)
 	playsound(loc, "rustle", 50, TRUE, -5)
 	user.visible_message("<span class='notice'>[user] hugs \the [src].</span>","<span class='notice'>You hug \the [src].</span>")
-
-/////clown box & honkbot assembly
-/obj/item/storage/box/clown
-	name = "clown box"
-	desc = "A colorful cardboard box for the clown"
-	illustration = "clown"
-
-/obj/item/storage/box/clown/attackby(obj/item/I, mob/user, params)
-	if((istype(I, /obj/item/bodypart/l_arm/robot)) || (istype(I, /obj/item/bodypart/r_arm/robot)))
-		if(contents.len) //prevent accidently deleting contents
-			to_chat(user, "<span class='warning'>You need to empty [src] out first!</span>")
-			return
-		if(!user.temporarilyRemoveItemFromInventory(I))
-			return
-		qdel(I)
-		to_chat(user, "<span class='notice'>You add some wheels to the [src]! You've got a honkbot assembly now! Honk!</span>")
-		var/obj/item/bot_assembly/honkbot/A = new
-		qdel(src)
-		user.put_in_hands(A)
-	else
-		return ..()
 
 //////
 /obj/item/storage/box/hug/medical/PopulateContents()
@@ -1464,8 +1475,10 @@
 /obj/item/storage/box/gum/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_volume = (STORAGE_VOLUME_CONTAINER_S / 2)
-
+// [CELADON-EDIT]
+	STR.set_holdable(list(/obj/item/reagent_containers/food/snacks/chewable/bubblegum))
+	STR.max_items = 4
+// [/CELADON-EDIT]
 /obj/item/storage/box/gum/PopulateContents()
 	for(var/i in 1 to 4)
 		new/obj/item/reagent_containers/food/snacks/chewable/bubblegum(src)
