@@ -89,14 +89,16 @@
 	job_icon = "securityofficer"
 	jobtype = /datum/job/officer
 
-	suit = /obj/item/clothing/suit/armor/vest
+separatist-outfit+vessel
 	gloves = /obj/item/clothing/gloves/color/black
+beta-dev
 	mask = /obj/item/clothing/mask/bandana/green
 	backpack = /obj/item/storage/backpack/satchel
 	uniform = /obj/item/clothing/under/utility
+separatist-outfit+vessel
 	shoes = /obj/item/clothing/shoes/jackboots
-	head = /obj/item/clothing/head/helmet/m10_elysium
 	ears = /obj/item/radio/headset/alt
+beta-dev
 	backpack_contents = list(/obj/item/melee/knife/switchblade)
 	id = /obj/item/card/id/elysium/security
 
