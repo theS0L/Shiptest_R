@@ -70,7 +70,6 @@
 	name = "Elysium - Caid"
 	job_icon = "captain"
 	jobtype = /datum/job/captain
-
 	backpack = /obj/item/storage/backpack/satchel/leather
 	gloves = /obj/item/clothing/gloves/color/black
 	back = /obj/item/storage/backpack/satchel/leather
@@ -88,14 +87,11 @@
 	name = "Elysium - Mukatell"
 	job_icon = "securityofficer"
 	jobtype = /datum/job/officer
-
-	suit = /obj/item/clothing/suit/armor/vest
 	gloves = /obj/item/clothing/gloves/color/black
 	mask = /obj/item/clothing/mask/bandana/green
 	backpack = /obj/item/storage/backpack/satchel
 	uniform = /obj/item/clothing/under/utility
 	shoes = /obj/item/clothing/shoes/jackboots
-	head = /obj/item/clothing/head/helmet/m10_elysium
 	ears = /obj/item/radio/headset/alt
 	backpack_contents = list(/obj/item/melee/knife/switchblade)
 	id = /obj/item/card/id/elysium/security

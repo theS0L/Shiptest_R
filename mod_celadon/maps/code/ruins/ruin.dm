@@ -137,6 +137,13 @@
 	suffix = "icemoon_underground_solfed_prison.dmm"
 	description = "The prison is a temporary detention outpost for criminals awaiting sentencing or transfer to the main prison."
 
+/datum/map_template/ruin/icemoon/hydroponicsla
+	name = "Tesla Lab"
+	id = "teslalab"
+	suffix = "icemoon_tesla_lab.dmm"
+	description = "The destroyed SolFed laboratory for the development of a new type of engine."
+
+
 //							///
 //		Jungle ruin			///
 //							///
@@ -464,6 +471,13 @@
 //							///
 //		Space ruin			///
 //							///
+
+/datum/map_template/ruin/space/abandoned_remora
+	id = "abandoned_remora"
+	suffix = "abandoned_remora.dmm"
+	name = "Destroyed Remora Ship"
+	description = "A very old syndie ship, abandoned and destroyed by Nanotrasen."
+
 /datum/map_template/ruin/space/corporate_mining
 	id = "corporate_mining"
 	suffix = "corporate_mining.dmm"
