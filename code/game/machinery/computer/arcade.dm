@@ -43,7 +43,7 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 		/obj/item/extendohand/acme = 1,
 		/obj/item/hot_potato/harmless/toy = 1,
 		/obj/item/card/emagfake = 1,
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 		/obj/item/clothing/shoes/wheelys = 2,
 		// [/CELADON-ADD]
 		/obj/item/clothing/shoes/kindleKicks = 2,
@@ -866,10 +866,6 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 						if(obj_flags & EMAGGED)
 							say("WEEWOO! WEEWOO! Spaceport security en route!")
 							playsound(src, 'sound/items/weeoo1.ogg', 100, FALSE)
-							for(var/i, i<=3, i++)
-								var/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/orion/O = new/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/orion(get_turf(src))
-								O.target = usr
-
 
 				fuel += FU
 				food += FO
@@ -1241,13 +1237,6 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 	desc = "Learn how our ancestors got to Orion, and try not to die in the process!"
 	newgame()
 	obj_flags |= EMAGGED
-
-/mob/living/simple_animal/hostile/human/syndicate/ranged/smg/orion
-	name = "spaceport security"
-	desc = "Premier corporate security forces for all spaceports found along the Orion Trail."
-	faction = list("orion")
-	loot = list()
-	del_on_death = TRUE
 
 /obj/item/orion_ship
 	name = "model settler ship"

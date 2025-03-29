@@ -18,7 +18,7 @@
 #define DEFAULT_NECK_PATH 'mod_celadon/_storge_icons/icons/items/overlay/neck.dmi'
 // [/CELADON-EDIT]
 #define DEFAULT_GLOVES_PATH 'icons/mob/clothing/hands.dmi'
-// [CELADON-EDIT] - CELADON_RETURN_CONTENT
+// [CELADON-EDIT] - CELADON_RETURN_CONTENT_SPAWN
 // #define DEFAULT_GLASSES_PATH 'icons/mob/clothing/eyes/eyes.dmi'	// CELADON-EDIT - ORIGINAL
 #define DEFAULT_GLASSES_PATH 'mod_celadon/_storge_icons/icons/clothing/overlay/eyes.dmi'
 // [/CELADON-EDIT]
@@ -36,6 +36,9 @@
 #define VOX_GLOVES_PATH 'icons/mob/species/vox/onmob_hands_vox.dmi'
 #define VOX_GLASSES_PATH 'icons/mob/species/vox/onmob_eyes_vox.dmi'
 #define VOX_BELT_PATH 'icons/mob/species/vox/onmob_belt_vox.dmi'
+#define VOX_UNDERWEAR_TORSO_PATH 'icons/mob/clothing/underwear/species/vox/underwear_torso_vox.dmi'
+#define VOX_UNDERWEAR_LEGS_PATH 'icons/mob/clothing/underwear/species/vox/underwear_legs_vox.dmi'
+#define VOX_UNDERWEAR_SOCKS_PATH 'icons/mob/clothing/underwear/species/vox/underwear_socks_vox.dmi'
 
 ///KEPORI PATHS
 #define KEPORI_UNIFORM_PATH 'icons/mob/species/kepori/onmob_uniform_kepori.dmi'

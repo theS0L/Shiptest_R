@@ -53,6 +53,10 @@
 	sec_hud_set_ID()
 	sec_hud_set_implants()
 	sec_hud_set_security_status()
+	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+	//...fan gear
+	fan_hud_set_fandom()
+	// [/CELADON-ADD]
 	//...and display them.
 	add_to_all_human_data_huds()
 
@@ -1247,7 +1251,7 @@
 
 /mob/living/carbon/human/do_after_coefficent()
 	. = ..()
-	. *= physiology.do_after_speed
+	return max(. *= physiology.do_after_speed, 0.1)
 
 /mob/living/carbon/human/updatehealth()
 	. = ..()
@@ -1290,6 +1294,9 @@
 	if(known_name)
 		return known_name
 	return .
+
+/mob/living/carbon/human/monkeybrain
+	ai_controller = /datum/ai_controller/monkey
 
 /mob/living/carbon/human/species
 	var/race = null
@@ -1372,9 +1379,6 @@
 
 /mob/living/carbon/human/species/zombie/infectious
 	race = /datum/species/zombie/infectious
-
-/mob/living/carbon/human/species/zombie/krokodil_addict
-	race = /datum/species/human/krokodil_addict
 
 /mob/living/carbon/human/species/ipc
 	race = /datum/species/ipc

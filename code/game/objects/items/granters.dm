@@ -332,7 +332,10 @@
 
 /obj/item/book/granter/spell/random/Initialize()
 	. = ..()
-	var/static/banned_spells = list(/obj/item/book/granter/spell/mimery_blockade)
+	// [CELADON-EDIT] - CELADON_RETURN_CONTENT_CLOWNS
+	// var/static/banned_spells = list(/obj/item/book/granter/spell/mimery_blockade)	// CELADON-EDIT - ORIGINAL
+	var/static/banned_spells = list(/obj/item/book/granter/spell/mimery_blockade, /obj/item/book/granter/spell/mimery_guns)
+	// [/CELADON-EDIT]
 	var/real_type = pick(subtypesof(/obj/item/book/granter/spell) - banned_spells)
 	new real_type(loc)
 	return INITIALIZE_HINT_QDEL
@@ -444,10 +447,14 @@
 
 /obj/item/book/granter/crafting_recipe/cooking_sweets_101
 	name = "Cooking Desserts 101"
-	desc = "A cook book that teaches you some more of the newest desserts. AI approved, and a best seller on Honkplanet."
+	desc = "A cook book that teaches you some more of the newest desserts. A best seller on Maxim."
 	crafting_recipe_types = list(
 		/datum/crafting_recipe/food/berrytart,
 		/datum/crafting_recipe/food/cocolavatart,
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		/datum/crafting_recipe/food/mimetart,
+		/datum/crafting_recipe/food/clowncake,
+		// [/CELADON-ADD]
 		/datum/crafting_recipe/food/vanillacake
 	)
 	icon_state = "cooking_learing_sweets"

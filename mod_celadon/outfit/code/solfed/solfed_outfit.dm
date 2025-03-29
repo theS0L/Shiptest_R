@@ -15,7 +15,7 @@
 				I = O
 				break
 		if (I)
-			I.access = list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
+			I.access += list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED, ACCESS_OUTPOST_FACTION_NT)
 			I.update_label()
 		W.combined_access = list()
 		for (var/obj/item/card/id/card in W.contents)
@@ -137,7 +137,7 @@
 	job_icon = "scientist"
 
 	id = /obj/item/card/id/solfed
-	ears = /obj/item/radio/headset/headset_sci
+	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solgov/formal
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = /obj/item/clothing/suit/toggle/labcoat/science
@@ -165,7 +165,7 @@
 	job_icon = "sonnensoldner"
 
 	id = /obj/item/card/id/solfed
-	ears = /obj/item/radio/headset/headset_sci
+	ears = /obj/item/radio/headset/solgov/alt
 	uniform = /obj/item/clothing/under/solfed
 	shoes = /obj/item/clothing/shoes/jackboots
 
@@ -186,7 +186,6 @@
 	name = "SolFed - Kommandant"
 	jobtype = /datum/job/captain
 	job_icon = "solgovrepresentative" // idk
-
 	id = /obj/item/card/id/solfed/commander
 	gloves = /obj/item/clothing/gloves/combat/solfed/captain
 	ears = /obj/item/radio/headset/solgov/alt/captain
@@ -297,6 +296,25 @@
 	backpack = /obj/item/storage/backpack/solfed
 	satchel = /obj/item/storage/backpack/satchel/solfed
 	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+
+/datum/outfit/job/solfed/miner
+	name = "SolFed - Contract Miner"
+	jobtype = /datum/job/mining
+	job_icon = "stationminer"
+
+	id = /obj/item/card/id/solfed
+	uniform = /obj/item/clothing/under/solfed/industrial
+	shoes = /obj/item/clothing/shoes/workboots
+	head = /obj/item/clothing/head/hardhat/solfed
+	belt = /obj/item/storage/belt/mining
+
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+
+/datum/outfit/job/solfed/miner/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_solfed_general_access(H)
 
 
 //							///
